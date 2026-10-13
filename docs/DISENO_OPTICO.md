@@ -3,7 +3,7 @@
 Este documento técnico define la geometría y los componentes ópticos del prototipo Cruz. El diseño está en curso y sirve como especificación base para el diseño mecánico y electrónico.
 
 ## 1. Parámetros Confirmados
-*   **Rendija de Transmisión:** 0.5 mm de ancho, ubicada a 60 mm de la cámara óptica.
+*   **Rendija de Transmisión:** 0,5 mm de ancho, después de la celda en el camino óptico. Alex confirmó una separación nominal de 60 mm respecto a la cámara; la figura del MonoSpectro acota 60 mm hasta la red/lente unida a ella. Medir las superficies de referencia antes de trasladar esa cota al CAD.
 *   **Rango Espectral de Transmisión:** 420–780 nm.
 *   **Lente:** Gran angular (la utilizada y validada físicamente en el montaje de MonoSpectro).
 *   **Celda de Muestra:** Celda de flujo de cuarzo, comprada y compartida entre ambos caminos ópticos.
@@ -19,10 +19,10 @@ Este documento técnico define la geometría y los componentes ópticos del prot
 ```mermaid
 flowchart TD
     subgraph Eje Transmisión
-    A[Fuente de Luz Blanca] -->|Luz incidente| B(Rendija 0.5 mm)
-    B -->|Haz divergente, sin colimador| C{Celda de Cuarzo}
-    C -->|Luz transmitida| D[Lente Gran Angular + Cámara]
-    B -.->|Distancia total 60 mm| D
+    A[Fuente de Luz Blanca] -->|Luz incidente| C{Celda de Cuarzo}
+    C -->|Luz transmitida, sin colimador| B[Rendija 0,5 mm]
+    B --> G[Red + lente gran angular]
+    G --> D[Cámara monocroma]
     end
 
     subgraph Eje Fluorescencia
@@ -30,6 +30,8 @@ flowchart TD
     C -->|Emisión de Fluorescencia| F[Sensor AS7265x]
     end
 ```
+
+La distancia nominal de 60 mm pertenece al conjunto rendija–cámara heredado; el punto exacto desde el cual medirla sigue pendiente de verificación física.
 
 ## 3. Interfaces y Dimensiones Pendientes (TBD)
 *   **Distancias Exactas AS7265x:** Distancia desde la ventana de cuarzo hasta la superficie del sensor AS7265x (TBD).

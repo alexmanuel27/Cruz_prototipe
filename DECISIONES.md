@@ -30,6 +30,9 @@ Estados: **fijada por Alex**, **recomendación pendiente de ensayo**, **alternat
 
 | D22 | Fijada por Alex | Secuencia: transmisión primero y fluorescencia después | Orden fijado por Alex; OPT-06 comprobará si la transmisión previa altera la fluorescencia y fijará tiempos de espera si fueran necesarios. | Instrucción del 26 sep |
 | D23 | Fijada por Alex | Magnitudes de octubre | Otras magnitudes sugeridas podrán incorporarse después, no quedan descartadas permanentemente (fuera de alcance inicial hasta que haya señal/referencia). | Instrucción del 26 sep |
+| D24 | Modelo M1 provisional | Tres cavidades secas impresas: cabezal óptico en cruz con cubeta desmontable, caja de batería/electrónica y cápsula independiente para bomba | Dejar la bomba IP31 expuesta bajo el agua es incompatible con su ficha; ubicarla con la batería agravaría una fuga de tubo | [CAD M1](cad/README.md), 30 sep; comprobar medidas y EST-01 |
+| D25 | Modelo M1 provisional | Junta plana de silicona cortada para cada tapa, tornillos fuera de cavidad y racores estáticos comerciales | Una simple unión de dos piezas FDM o una junta impresa no acredita estanqueidad a 1 m | [CAD M1](cad/README.md); cerrar juntas/racores en X1.3 |
+| D26 | Modelo M1 provisional | Cubeta de cuatro caras NEXACULE 3,5 ml/10 mm, variante 46090230005978; bomba Denash B0FRB83924 | La ficha de venta no aporta todas las tolerancias ni demuestra caudal sumergido; medir ambas piezas antes de fabricar | [Ficha y cotas pendientes](cad/README.md); X1.3/HID-01 |
 
 ## Acta de cierre de óptica
 

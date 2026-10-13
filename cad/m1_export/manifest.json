@@ -1,0 +1,226 @@
+{
+  "units": "mm",
+  "note": "M1 provisional geometry, NOT cleared for immersion or printing",
+  "parts": {
+    "H01_head_body": {
+      "bbox_mm": [
+        207.0,
+        160.0,
+        120.0
+      ],
+      "volume_mm3": 921017.6,
+      "print": true,
+      "quantity": 1
+    },
+    "H02_head_lid": {
+      "bbox_mm": [
+        207.0,
+        160.0,
+        8.0
+      ],
+      "volume_mm3": 118519.8,
+      "print": true,
+      "quantity": 1
+    },
+    "H03_cell_cradle": {
+      "bbox_mm": [
+        32.0,
+        32.0,
+        45.0
+      ],
+      "volume_mm3": 7893.1,
+      "print": true,
+      "quantity": 1
+    },
+    "H04_cell_clamp": {
+      "bbox_mm": [
+        32.0,
+        32.0,
+        4.0
+      ],
+      "volume_mm3": 3550.7,
+      "print": true,
+      "quantity": 1
+    },
+    "H05_slit_holder": {
+      "bbox_mm": [
+        24.0,
+        30.0,
+        86.0
+      ],
+      "volume_mm3": 9200.7,
+      "print": true,
+      "quantity": 1
+    },
+    "H06_camera_angled_plate": {
+      "bbox_mm": [
+        36.0,
+        30.0,
+        75.0
+      ],
+      "volume_mm3": 10348.0,
+      "print": true,
+      "quantity": 1
+    },
+    "H07_led_slider": {
+      "bbox_mm": [
+        38.0,
+        30.0,
+        87.0
+      ],
+      "volume_mm3": 13504.3,
+      "print": true,
+      "quantity": 1
+    },
+    "H08_as7265x_slider": {
+      "bbox_mm": [
+        38.0,
+        30.0,
+        87.0
+      ],
+      "volume_mm3": 13504.3,
+      "print": true,
+      "quantity": 1
+    },
+    "H10_lamp_metal_bracket_base": {
+      "bbox_mm": [
+        36.0,
+        30.0,
+        7.0
+      ],
+      "volume_mm3": 7153.4,
+      "print": true,
+      "quantity": 1
+    },
+    "H11_pi_shelf": {
+      "bbox_mm": [
+        90.0,
+        60.0,
+        10.0
+      ],
+      "volume_mm3": 21887.0,
+      "print": true,
+      "quantity": 1
+    },
+    "E01_power_body": {
+      "bbox_mm": [
+        210.0,
+        170.0,
+        90.0
+      ],
+      "volume_mm3": 535632.9,
+      "print": true,
+      "quantity": 1
+    },
+    "E02_power_lid": {
+      "bbox_mm": [
+        210.0,
+        170.0,
+        8.0
+      ],
+      "volume_mm3": 150388.1,
+      "print": true,
+      "quantity": 1
+    },
+    "E03_battery_tray": {
+      "bbox_mm": [
+        168.0,
+        64.0,
+        5.0
+      ],
+      "volume_mm3": 52360.0,
+      "print": true,
+      "quantity": 1
+    },
+    "E04_electronics_tray": {
+      "bbox_mm": [
+        162.0,
+        60.0,
+        4.0
+      ],
+      "volume_mm3": 37984.0,
+      "print": true,
+      "quantity": 1
+    },
+    "P01_pump_body": {
+      "bbox_mm": [
+        125.0,
+        125.0,
+        100.0
+      ],
+      "volume_mm3": 334846.2,
+      "print": true,
+      "quantity": 1
+    },
+    "P02_pump_lid": {
+      "bbox_mm": [
+        125.0,
+        125.0,
+        8.0
+      ],
+      "volume_mm3": 61453.1,
+      "print": true,
+      "quantity": 1
+    },
+    "P03_pump_mount": {
+      "bbox_mm": [
+        82.0,
+        82.0,
+        5.0
+      ],
+      "volume_mm3": 32500.0,
+      "print": true,
+      "quantity": 1
+    },
+    "M01_head_power_link_x2": {
+      "bbox_mm": [
+        97.57,
+        16.0,
+        5.0
+      ],
+      "volume_mm3": 7660.1,
+      "print": true,
+      "quantity": 2
+    },
+    "M02_power_pump_link_x2": {
+      "bbox_mm": [
+        50.76,
+        16.0,
+        5.0
+      ],
+      "volume_mm3": 3915.9,
+      "print": true,
+      "quantity": 2
+    },
+    "H09_head_gasket_PATTERN_ONLY": {
+      "bbox_mm": [
+        205.4,
+        158.4,
+        2.0
+      ],
+      "volume_mm3": 7761.6,
+      "print": false,
+      "quantity": 1
+    },
+    "E05_power_gasket_PATTERN_ONLY": {
+      "bbox_mm": [
+        188.6,
+        148.6,
+        2.0
+      ],
+      "volume_mm3": 4752.0,
+      "print": false,
+      "quantity": 1
+    },
+    "P04_pump_gasket_PATTERN_ONLY": {
+      "bbox_mm": [
+        103.6,
+        103.6,
+        2.0
+      ],
+      "volume_mm3": 2880.0,
+      "print": false,
+      "quantity": 1
+    }
+  }
+}

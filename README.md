@@ -10,12 +10,15 @@ This repository contains exclusively the **engineering, design, fabrication, fir
 
 ## 📊 Current Status
 - 🟢 **Functional specification approved**
-- 🟡 **Optical design in progress**
+- 🟢 **Optical layout agreed; physical integration still to be measured**
+- 🟡 **Parametric M1 enclosure and printable parts ready for dimensional review**
 - ⚪ **Validation pending**
 
 ## 🔬 System Architecture
 
-The system physically separates the wet circuit from the electronics. The optics follow a 4-arm cross geometry, enabling collinear excitation and detection for fluorescence, and direct transmission measurement on the perpendicular axis.
+Water travels through tubing and the quartz cell inside a sealed optical head; leak detection and a dry-immersion test are required before electronics are installed. The optics follow a 4-arm cross geometry, enabling collinear excitation and detection for fluorescence, and direct transmission measurement on the perpendicular axis.
+
+The [M1 mechanical design](cad/README.md) includes the cross-shaped optical head, a battery/electronics enclosure, and a sealed enclosure for the IP31 peristaltic pump. The Raspberry Pi sits in the optical head so the camera ribbon stays inside one dry cavity. Individual printable STL and editable STEP solids are provided for review; fitting dimensions, battery sizing, and immersion performance still need physical verification.
 
 ```mermaid
 flowchart TD
@@ -29,9 +32,9 @@ flowchart TD
     subgraph Optics [Optics - 4-Arm Cross Geometry]
         direction TB
         %% Transmission Axis
-        WL[White Light] -->|Incident| Slit[0.5 mm Slit]
-        Slit -->|Divergent| Cell
-        Cell -->|Transmitted| Cam[Wide-angle Lens<br/>+ Camera]
+        WL[White Light] -->|Incident| Cell
+        Cell -->|Transmitted| Slit[0.5 mm Slit]
+        Slit -->|No collimator| Cam[Grating + Wide-angle Lens<br/>+ Camera]
         
         %% Fluorescence Axis (Perpendicular)
         LED[430 nm Blue LED] -->|Excitation| Cell
@@ -73,6 +76,9 @@ flowchart TD
 - [`DECISIONES.md`](DECISIONES.md) - Engineering decisions log and status.
 - [`docs/ANALISIS_ARQUITECTURA.md`](docs/ANALISIS_ARQUITECTURA.md) - Architecture analysis for detectors, optics, and operation.
 - [`docs/DISENO_OPTICO.md`](docs/DISENO_OPTICO.md) - Detailed optical design and geometry.
+- [`cad/README.md`](cad/README.md) - Parametric M1 design, 3D preview, STL/STEP parts, sealing and fit checks.
+- [`electronica/ARQUITECTURA_M1.md`](electronica/ARQUITECTURA_M1.md) - Preliminary placement and power architecture.
+- [`docs/drawings/CRUZ-CON-001_exploded_concept.pdf`](docs/drawings/CRUZ-CON-001_exploded_concept.pdf) - A3 exploded concept drawing and functional parts list.
 - [`docs/PLAN_TRABAJO.md`](docs/PLAN_TRABAJO.md) - Detailed schedule, dependencies, and work plan.
 
 ## 📸 Documentation Workflow & Photographic Record
