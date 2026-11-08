@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "changes": [
+    {
+      "component": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+      "removed_cm3": 1.0703408289120944
+    },
+    {
+      "component": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "removed_cm3": 11.527416259869938
+    }
+  ],
+  "new_printed_part": "P_TRAV216",
+  "hardware": "2 x M3x16 countersunk + 2 x M3 nuts",
+  "original_backup": "CROSS_ANTES_ANIMACION.f3d",
+  "minimum_ideal_channel_floor_mm": 8.7,
+  "status": "Proposed; print tolerances and physical assembly untested"
+}

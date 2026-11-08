@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-03",
+  "body_count": 185,
+  "intersections": [
+    {
+      "bodies": [
+        "R1 M8 A4 threaded tie rod; 420mm provisional cut",
+        "N1F M8 closed dome nut; verify usable blind thread"
+      ],
+      "volume_cm3": 0.1248406088683458,
+      "expected_thread": true
+    },
+    {
+      "bodies": [
+        "R1 M8 A4 threaded tie rod; 420mm provisional cut",
+        "N1R M8 closed dome nut; verify usable blind thread"
+      ],
+      "volume_cm3": 0.12484060886834542,
+      "expected_thread": true
+    },
+    {
+      "bodies": [
+        "R2 M8 A4 threaded tie rod; 420mm provisional cut",
+        "N2F M8 closed dome nut; verify usable blind thread"
+      ],
+      "volume_cm3": 0.1248406088683458,
+      "expected_thread": true
+    },
+    {
+      "bodies": [
+        "R2 M8 A4 threaded tie rod; 420mm provisional cut",
+        "N2R M8 closed dome nut; verify usable blind thread"
+      ],
+      "volume_cm3": 0.12484060886834542,
+      "expected_thread": true
+    },
+    {
+      "bodies": [
+        "R3 M8 A4 threaded tie rod; 420mm provisional cut",
+        "N3F M8 closed dome nut; verify usable blind thread"
+      ],
+      "volume_cm3": 0.12484060886834575,
+      "expected_thread": true
+    },
+    {
+      "bodies": [
+        "R3 M8 A4 threaded tie rod; 420mm provisional cut",
+        "N3R M8 closed dome nut; verify usable blind thread"
+      ],
+      "volume_cm3": 0.12484060886834542,
+      "expected_thread": true
+    },
+    {
+      "bodies": [
+        "R4 M8 A4 threaded tie rod; 420mm provisional cut",
+        "N4F M8 closed dome nut; verify usable blind thread"
+      ],
+      "volume_cm3": 0.12484060886834575,
+      "expected_thread": true
+    },
+    {
+      "bodies": [
+        "R4 M8 A4 threaded tie rod; 420mm provisional cut",
+        "N4R M8 closed dome nut; verify usable blind thread"
+      ],
+      "volume_cm3": 0.12484060886834542,
+      "expected_thread": true
+    }
+  ],
+  "unexpected": 0,
+  "tube_unchanged": true
+}

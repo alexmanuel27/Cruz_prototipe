@@ -1,0 +1,194 @@
+[
+  {
+    "code": "H2_TUBE_IN",
+    "name": "Entrada a temperatura - bajo bandeja",
+    "group": "06",
+    "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+    "printed": false,
+    "bbox_mm": [
+      55.5,
+      51.736,
+      51.5
+    ],
+    "volume_cm3": 1.4685,
+    "centerline_points_mm": [
+      [
+        374,
+        -35,
+        35
+      ],
+      [
+        360,
+        -35,
+        28
+      ],
+      [
+        321,
+        -35,
+        28
+      ],
+      [
+        321,
+        12,
+        28
+      ],
+      [
+        321,
+        12,
+        -14
+      ]
+    ],
+    "bend_radii_mm": [
+      15.0,
+      15.0,
+      15.0
+    ]
+  },
+  {
+    "code": "H2_TUBE_TEMP_EC",
+    "name": "Temperatura a conductividad - circuito completo",
+    "group": "06",
+    "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+    "printed": false,
+    "bbox_mm": [
+      49.0,
+      26.0,
+      32.0
+    ],
+    "volume_cm3": 1.3233,
+    "centerline_points_mm": [
+      [
+        321,
+        12,
+        -46
+      ],
+      [
+        321,
+        12,
+        -73
+      ],
+      [
+        365,
+        -9,
+        -73
+      ],
+      [
+        365,
+        -9,
+        -46
+      ],
+      [
+        345,
+        -9,
+        -46
+      ]
+    ],
+    "bend_radii_mm": [
+      15.0,
+      12.825,
+      12.825
+    ]
+  },
+  {
+    "code": "H2_TUBE_CELL_PUMP",
+    "name": "Cubeta a bomba - lateral libre de PCB",
+    "group": "06",
+    "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+    "printed": false,
+    "bbox_mm": [
+      136.5,
+      59.0,
+      45.5
+    ],
+    "volume_cm3": 3.0598,
+    "centerline_points_mm": [
+      [
+        126.5,
+        0,
+        30
+      ],
+      [
+        126.5,
+        0,
+        62
+      ],
+      [
+        165,
+        -42,
+        62
+      ],
+      [
+        235,
+        -42,
+        62
+      ],
+      [
+        258,
+        -42,
+        35
+      ],
+      [
+        258,
+        12,
+        35
+      ],
+      [
+        258,
+        12,
+        19
+      ]
+    ],
+    "bend_radii_mm": [
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0
+    ]
+  },
+  {
+    "code": "H2_TUBE_OUT",
+    "name": "Bomba a descarga - bajo bandeja",
+    "group": "06",
+    "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+    "printed": false,
+    "bbox_mm": [
+      98.056,
+      21.0,
+      18.413
+    ],
+    "volume_cm3": 1.379,
+    "centerline_points_mm": [
+      [
+        280,
+        32,
+        19
+      ],
+      [
+        280,
+        32,
+        29
+      ],
+      [
+        300,
+        48,
+        29
+      ],
+      [
+        356,
+        48,
+        29
+      ],
+      [
+        374,
+        35,
+        35
+      ]
+    ],
+    "bend_radii_mm": [
+      9.5,
+      15.0,
+      15.0
+    ]
+  }
+]

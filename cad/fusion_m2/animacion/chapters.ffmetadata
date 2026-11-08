@@ -1,0 +1,163 @@
+;FFMETADATA1
+title=Instrument assembly — Cross M2
+comment=Assembly order from the Fusion CAD model; proposed mechanical revision.
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=3000
+title=00. Vista general
+[CHAPTER]
+TIMEBASE=1/1000
+START=3000
+END=6733
+title=01. Unir las dos mitades del chasis
+[CHAPTER]
+TIMEBASE=1/1000
+START=6733
+END=11067
+title=02. Introducir la sonda de conductividad
+[CHAPTER]
+TIMEBASE=1/1000
+START=11067
+END=14800
+title=03. Introducir la sonda de temperatura
+[CHAPTER]
+TIMEBASE=1/1000
+START=14800
+END=18533
+title=04. Fijar los apoyos ópticos
+[CHAPTER]
+TIMEBASE=1/1000
+START=18533
+END=22267
+title=05. Instalar el módulo óptico premontado
+[CHAPTER]
+TIMEBASE=1/1000
+START=22267
+END=26000
+title=06. Instalar la cubeta de flujo
+[CHAPTER]
+TIMEBASE=1/1000
+START=26000
+END=29733
+title=07. Montar la cámara auxiliar
+[CHAPTER]
+TIMEBASE=1/1000
+START=29733
+END=33467
+title=08. Instalar la bomba completa
+[CHAPTER]
+TIMEBASE=1/1000
+START=33467
+END=37867
+title=09. Fijar la interfaz Atlas en seco
+[CHAPTER]
+TIMEBASE=1/1000
+START=37867
+END=42400
+title=10. Colocar la cubierta óptica
+[CHAPTER]
+TIMEBASE=1/1000
+START=42400
+END=46133
+title=11. Introducir las dos tuercas cautivas
+[CHAPTER]
+TIMEBASE=1/1000
+START=46133
+END=49867
+title=12. Asentar el travesaño desmontable
+[CHAPTER]
+TIMEBASE=1/1000
+START=49867
+END=53600
+title=13. Fijar el travesaño con dos M3
+[CHAPTER]
+TIMEBASE=1/1000
+START=53600
+END=57333
+title=14. Sujetar la batería
+[CHAPTER]
+TIMEBASE=1/1000
+START=57333
+END=62067
+title=15. Bajar la bandeja antes de la Raspberry
+[CHAPTER]
+TIMEBASE=1/1000
+START=62067
+END=66400
+title=16. Montar la Raspberry junto a la PiCam
+[CHAPTER]
+TIMEBASE=1/1000
+START=66400
+END=70733
+title=17. Instalar PCB y módulos en la bandeja
+[CHAPTER]
+TIMEBASE=1/1000
+START=70733
+END=74467
+title=18. Colocar los retenedores laterales
+[CHAPTER]
+TIMEBASE=1/1000
+START=74467
+END=78200
+title=19. Preparar y apoyar la tapa trasera
+[CHAPTER]
+TIMEBASE=1/1000
+START=78200
+END=82733
+title=20. Conectar las mangueras inferiores
+[CHAPTER]
+TIMEBASE=1/1000
+START=82733
+END=87267
+title=21. Conectar cubeta y bomba por arriba
+[CHAPTER]
+TIMEBASE=1/1000
+START=87267
+END=91767
+title=22. Revisar el conjunto todavía abierto
+[CHAPTER]
+TIMEBASE=1/1000
+START=91767
+END=96100
+title=23. Deslizar el tubo desde el frente
+[CHAPTER]
+TIMEBASE=1/1000
+START=96100
+END=99833
+title=24. Introducir las cuatro varillas desde atrás
+[CHAPTER]
+TIMEBASE=1/1000
+START=99833
+END=103567
+title=25. Colocar las arandelas interiores traseras
+[CHAPTER]
+TIMEBASE=1/1000
+START=103567
+END=107300
+title=26. Colocar los limitadores de compresión
+[CHAPTER]
+TIMEBASE=1/1000
+START=107300
+END=112700
+title=27. Deslizar los dos conjuntos de lastre
+[CHAPTER]
+TIMEBASE=1/1000
+START=112700
+END=116433
+title=28. Colocar las arandelas interiores delanteras
+[CHAPTER]
+TIMEBASE=1/1000
+START=116433
+END=120767
+title=29. Presentar junta y tapa frontal
+[CHAPTER]
+TIMEBASE=1/1000
+START=120767
+END=125500
+title=30. Cerrar alternando las diagonales
+[CHAPTER]
+TIMEBASE=1/1000
+START=125500
+END=130500
+title=31. Comprobar el montaje terminado

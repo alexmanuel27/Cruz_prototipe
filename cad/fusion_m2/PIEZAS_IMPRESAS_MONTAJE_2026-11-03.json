@@ -1,0 +1,185 @@
+{
+  "status": "Proposed assembly access revision; tolerances and printing not physically verified",
+  "parts": [
+    {
+      "name": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+01_3D_CHASIS_Y_AROS:1+P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint:1",
+      "size_mm": [
+        198.05,
+        169.2,
+        169.2
+      ]
+    },
+    {
+      "name": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+01_3D_CHASIS_Y_AROS:1+P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint:1",
+      "size_mm": [
+        185.05,
+        168.0,
+        168.0
+      ]
+    },
+    {
+      "name": "P_TRAV216 Removable bridge; two countersunk M3x16",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+01_3D_CHASIS_Y_AROS:1+P_TRAV216 Removable bridge; two countersunk M3x16:1",
+      "size_mm": [
+        8.0,
+        152.722,
+        4.0
+      ]
+    },
+    {
+      "name": "P_TOP Removable electronics tray; slots for cable ties",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_TOP Removable electronics tray; slots for cable ties:1",
+      "size_mm": [
+        173.9,
+        104.0,
+        18.4
+      ]
+    },
+    {
+      "name": "P_T216_-28 Electronics tray spacer; attachment to shield",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T216_-28 Electronics tray spacer; attachment to shield:1",
+      "size_mm": [
+        6.4,
+        6.4,
+        2.0
+      ]
+    },
+    {
+      "name": "P_T216_28 Electronics tray spacer; attachment to shield",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T216_28 Electronics tray spacer; attachment to shield:1",
+      "size_mm": [
+        6.4,
+        6.4,
+        2.0
+      ]
+    },
+    {
+      "name": "P_T344_-28 Electronics tray spacer; attachment to shield",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T344_-28 Electronics tray spacer; attachment to shield:1",
+      "size_mm": [
+        6.4,
+        6.4,
+        2.0
+      ]
+    },
+    {
+      "name": "P_T344_28 Electronics tray spacer; attachment to shield",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T344_28 Electronics tray spacer; attachment to shield:1",
+      "size_mm": [
+        6.4,
+        6.4,
+        2.0
+      ]
+    },
+    {
+      "name": "P_HOOD_UPPER Opaque optical cover UPPER",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_HOOD_UPPER Opaque optical cover UPPER:1",
+      "size_mm": [
+        165.0,
+        128.0,
+        66.792
+      ]
+    },
+    {
+      "name": "P_OPT_A Optical saddle; contact based on approximate source",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_OPT_A Optical saddle; contact based on approximate source:1",
+      "size_mm": [
+        9.0,
+        50.0,
+        32.0
+      ]
+    },
+    {
+      "name": "P_OPT_B Optical saddle; contact based on approximate source",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_OPT_B Optical saddle; contact based on approximate source:1",
+      "size_mm": [
+        20.0,
+        60.0,
+        10.0
+      ]
+    },
+    {
+      "name": "P_EZO_V2 Placa lateral - 2 tornillos M3 y 2 bridas",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_EZO_V2 Placa lateral - 2 tornillos M3 y 2 bridas:1",
+      "size_mm": [
+        61.7,
+        4.0,
+        48.0
+      ]
+    },
+    {
+      "name": "P_PCB_CLIP_216_L M3x25 - ranura para borde PCB",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_216_L M3x25 - ranura para borde PCB:1",
+      "size_mm": [
+        12.0,
+        19.195,
+        16.4
+      ]
+    },
+    {
+      "name": "P_PCB_CLIP_216_R M3x25 - ranura para borde PCB",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_216_R M3x25 - ranura para borde PCB:1",
+      "size_mm": [
+        12.0,
+        19.195,
+        16.4
+      ]
+    },
+    {
+      "name": "P_PCB_CLIP_344_L M3x25 - ranura para borde PCB",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_344_L M3x25 - ranura para borde PCB:1",
+      "size_mm": [
+        12.0,
+        19.195,
+        16.4
+      ]
+    },
+    {
+      "name": "P_PCB_CLIP_344_R M3x25 - ranura para borde PCB",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_344_R M3x25 - ranura para borde PCB:1",
+      "size_mm": [
+        12.0,
+        19.195,
+        16.4
+      ]
+    },
+    {
+      "name": "P_C40_LOWER Split external saddle collar",
+      "path": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C40_LOWER Split external saddle collar:1",
+      "size_mm": [
+        20.0,
+        210.0,
+        100.0
+      ]
+    },
+    {
+      "name": "P_C40_UPPER Split external saddle collar",
+      "path": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C40_UPPER Split external saddle collar:1",
+      "size_mm": [
+        20.0,
+        210.0,
+        100.0
+      ]
+    },
+    {
+      "name": "P_C335_LOWER Split external saddle collar",
+      "path": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C335_LOWER Split external saddle collar:1",
+      "size_mm": [
+        20.0,
+        210.0,
+        100.0
+      ]
+    },
+    {
+      "name": "P_C335_UPPER Split external saddle collar",
+      "path": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C335_UPPER Split external saddle collar:1",
+      "size_mm": [
+        20.0,
+        210.0,
+        100.0
+      ]
+    }
+  ]
+}

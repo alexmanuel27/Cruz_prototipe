@@ -1,0 +1,158 @@
+{
+  "sampled_progress": [
+    0.15,
+    0.5,
+    0.85
+  ],
+  "boolean_tests": 1116,
+  "hits": [
+    {
+      "step": 2,
+      "fraction": 0.15,
+      "moving": "EC4_SONDA Atlas K1 oficial - punta mojada y cuerpo seco",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 0.00764781217887178
+    },
+    {
+      "step": 2,
+      "fraction": 0.15,
+      "moving": "EC4_RACOR_12mm Sellado del vastago - reserva dimensional",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 0.7947222463592953
+    },
+    {
+      "step": 2,
+      "fraction": 0.5,
+      "moving": "H_TEMP_OUT Temperature tee 3mm bore port",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 0.002927709688161917
+    },
+    {
+      "step": 2,
+      "fraction": 0.5,
+      "moving": "EC4_SONDA Atlas K1 oficial - punta mojada y cuerpo seco",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 0.292246656600203
+    },
+    {
+      "step": 2,
+      "fraction": 0.5,
+      "moving": "EC4_RACOR_12mm Sellado del vastago - reserva dimensional",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 0.22297414646666816
+    },
+    {
+      "step": 2,
+      "fraction": 0.85,
+      "moving": "H_TEMP_IN Temperature tee 3mm bore port",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 0.0007337678212630482
+    },
+    {
+      "step": 2,
+      "fraction": 0.85,
+      "moving": "EC4_SONDA Atlas K1 oficial - punta mojada y cuerpo seco",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 1.511903220527738
+    },
+    {
+      "step": 2,
+      "fraction": 0.85,
+      "moving": "EC4_SONDA Atlas K1 oficial - punta mojada y cuerpo seco",
+      "stationary": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+      "cm3": 0.20879524627932805
+    },
+    {
+      "step": 2,
+      "fraction": 0.85,
+      "moving": "EC4_BLOQUE_FLUJO Corto 37 mm - solo zona activa",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 0.2743892368513612
+    },
+    {
+      "step": 2,
+      "fraction": 0.85,
+      "moving": "EC4_BLOQUE_FLUJO Corto 37 mm - solo zona activa",
+      "stationary": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+      "cm3": 0.38910564337932374
+    },
+    {
+      "step": 2,
+      "fraction": 0.85,
+      "moving": "EC4_ENTRADA_LATERAL Desde temperatura",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 0.0657886829779713
+    },
+    {
+      "step": 2,
+      "fraction": 0.85,
+      "moving": "EC4_RACOR_12mm Sellado del vastago - reserva dimensional",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 1.4209864780453332
+    },
+    {
+      "step": 4,
+      "fraction": 0.5,
+      "moving": "O03 MonoSpectro camera optics APPROX",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 1.5999999999999956
+    },
+    {
+      "step": 4,
+      "fraction": 0.85,
+      "moving": "O03 MonoSpectro camera optics APPROX",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 1.5999999999999959
+    },
+    {
+      "step": 12,
+      "fraction": 0.5,
+      "moving": "P_HOOD_UPPER Opaque optical cover UPPER",
+      "stationary": "H2_TUBE_CELL_PUMP Cubeta a bomba - lateral libre de PCB",
+      "cm3": 0.044301853321175644
+    },
+    {
+      "step": 12,
+      "fraction": 0.85,
+      "moving": "P_HOOD_UPPER Opaque optical cover UPPER",
+      "stationary": "H2_TUBE_CELL_PUMP Cubeta a bomba - lateral libre de PCB",
+      "cm3": 0.10053096491487315
+    },
+    {
+      "step": 12,
+      "fraction": 0.85,
+      "moving": "P_HOOD_UPPER Opaque optical cover UPPER",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 0.11042904791274019
+    },
+    {
+      "step": 13,
+      "fraction": 0.5,
+      "moving": "EL_BAT CITYORK 24V 3Ah pack; advertised 70x37.5x56",
+      "stationary": "H2_TUBE_CELL_PUMP Cubeta a bomba - lateral libre de PCB",
+      "cm3": 0.5244930896370191
+    },
+    {
+      "step": 14,
+      "fraction": 0.85,
+      "moving": "P_TOP Removable electronics tray; slots for cable ties",
+      "stationary": "H2_TUBE_CELL_PUMP Cubeta a bomba - lateral libre de PCB",
+      "cm3": 0.10439432717131468
+    },
+    {
+      "step": 14,
+      "fraction": 0.85,
+      "moving": "P_TOP Removable electronics tray; slots for cable ties",
+      "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "cm3": 0.5134292066627937
+    },
+    {
+      "step": 15,
+      "fraction": 0.85,
+      "moving": "P_PCB_CLIP_216_L M3x25 - ranura para borde PCB",
+      "stationary": "H2_TUBE_CELL_PUMP Cubeta a bomba - lateral libre de PCB",
+      "cm3": 0.06564161710567112
+    }
+  ],
+  "limit": "Discrete samples, modeled solids only. Flexible cables/tubes, tools, hand clearance, tolerances and continuous swept volumes are not validated."
+}

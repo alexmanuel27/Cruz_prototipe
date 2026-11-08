@@ -1,0 +1,230 @@
+{
+  "tests": 131,
+  "results": [
+    {
+      "group": "temp",
+      "delta_mm": [
+        0,
+        0,
+        90
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "ENV_TEMP DS18B20 6x50 envelope; tip wet / cable dry",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.3,
+        "cm3": 0.024090260319749934
+      }
+    },
+    {
+      "group": "temp",
+      "delta_mm": [
+        0,
+        50,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "H_TEMP_TEE Temperature flow tee POM; seal and fittings HOLD",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.1,
+        "cm3": 1.2057070124300155
+      }
+    },
+    {
+      "group": "temp",
+      "delta_mm": [
+        100,
+        0,
+        -20
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "H_TEMP_TEE Temperature flow tee POM; seal and fittings HOLD",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.5,
+        "cm3": 0.20000000000000018
+      }
+    },
+    {
+      "group": "temp",
+      "delta_mm": [
+        100,
+        0,
+        20
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "H_TEMP_OUT Temperature tee 3mm bore port",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.9,
+        "cm3": 0.05432480499485948
+      }
+    },
+    {
+      "group": "as7265x",
+      "delta_mm": [
+        0,
+        0,
+        85
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "O02 AS7265x 18-channel detector APPROX",
+        "stationary": "O01 Optical carrier from original cross APPROX",
+        "fraction": 0.9,
+        "cm3": 0.12312736293886377
+      }
+    },
+    {
+      "group": "as7265x",
+      "delta_mm": [
+        0,
+        20,
+        65
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "O02 AS7265x 18-channel detector APPROX",
+        "stationary": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+        "fraction": 0.7,
+        "cm3": 0.018900000000012074
+      }
+    },
+    {
+      "group": "as7265x",
+      "delta_mm": [
+        -140,
+        0,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "O02 AS7265x 18-channel detector APPROX",
+        "stationary": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+        "fraction": 0.1,
+        "cm3": 0.04937982547624947
+      }
+    },
+    {
+      "group": "pump",
+      "delta_mm": [
+        0,
+        -95,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "MS11HS5P",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.1,
+        "cm3": 9.021762083815652
+      }
+    },
+    {
+      "group": "pump",
+      "delta_mm": [
+        0,
+        95,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "MS11HS5P",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.5,
+        "cm3": 4.963611587849414
+      }
+    },
+    {
+      "group": "pump",
+      "delta_mm": [
+        0,
+        -20,
+        100
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "MS11HS5P",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.9,
+        "cm3": 0.1031595319854702
+      }
+    },
+    {
+      "group": "pump",
+      "delta_mm": [
+        0,
+        20,
+        100
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "MS11HS5P",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.9,
+        "cm3": 0.23779230329087395
+      }
+    },
+    {
+      "group": "pump",
+      "delta_mm": [
+        100,
+        0,
+        100
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "MS11HS5P",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.1,
+        "cm3": 1.1950130346658934
+      }
+    },
+    {
+      "group": "atlas",
+      "delta_mm": [
+        0,
+        0,
+        100
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "P_EZO_V2 Placa lateral - 2 tornillos M3 y 2 bridas",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.3,
+        "cm3": 0.00012366687198652607
+      }
+    },
+    {
+      "group": "atlas",
+      "delta_mm": [
+        100,
+        0,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "P_EZO_V2 Placa lateral - 2 tornillos M3 y 2 bridas",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.5,
+        "cm3": 0.3816877347623008
+      }
+    },
+    {
+      "group": "atlas",
+      "delta_mm": [
+        0,
+        -30,
+        100
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "Board_Iso_carry_type-II.step",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.5,
+        "cm3": 0.06299906010099916
+      }
+    }
+  ]
+}

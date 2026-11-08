@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1360" viewBox="0 0 1600 1360" role="img"><title>ARCHIVO · tapa del cuerpo acrílico</title><defs>
+<marker id="a-water" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#1396b8" stroke-width="1.5"/></marker>
+<marker id="a-red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#d75a62" stroke-width="1.5"/></marker>
+<marker id="a-amber" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#eaa33d" stroke-width="1.5"/></marker>
+<marker id="a-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#237dba" stroke-width="1.5"/></marker>
+<marker id="a-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#172b3a" stroke-width="1.5"/></marker>
+<linearGradient id="rainbow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#995cde"/><stop offset=".25" stop-color="#4493df"/><stop offset=".5" stop-color="#60b97d"/><stop offset=".75" stop-color="#f8d85d"/><stop offset="1" stop-color="#eb7063"/></linearGradient></defs>
+<rect width="1600" height="1360" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<text x="65" y="65" font-size="39" fill="#172b3a" font-weight="700" text-anchor="start">ARCHIVO · tapa del cuerpo acrílico</text>
+<text x="65" y="105" font-size="23" fill="#5e7180" font-weight="400" text-anchor="start">Referencia anterior · Ø200 y posiciones no aplicables automáticamente a PVC</text>
+<text x="65" y="163" font-size="28" fill="#172b3a" font-weight="700" text-anchor="start">A · Todos los servicios en una tapa</text>
+<circle cx="500" cy="590" r="320.0" fill="#f1edf8" stroke="#775aa5" stroke-width="2"/>
+<circle cx="500" cy="590" r="240.0" fill="#e1f3f8" stroke="#1396b8" stroke-width="2"/>
+<circle cx="500" cy="590" r="224.0" fill="#fff" stroke="#1396b8" stroke-width="2"/>
+<circle cx="500" cy="590" r="232.0" fill="none" stroke="#eaa33d" stroke-width="2"/>
+<polyline points="155,590 845,590" fill="none" stroke="#b9c9d3" stroke-width="1" stroke-dasharray="8 8"/>
+<polyline points="500,245 500,935" fill="none" stroke="#b9c9d3" stroke-width="1" stroke-dasharray="8 8"/>
+<circle cx="303.1414721176652" cy="393.1414721176652" r="24" fill="#dce3e8" stroke="#738594" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="303.1414721176652" cy="393.1414721176652" r="7" fill="#738594" stroke="#738594" stroke-width="2"/>
+<circle cx="303.1414721176652" cy="786.8585278823348" r="24" fill="#dce3e8" stroke="#738594" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="303.1414721176652" cy="786.8585278823348" r="7" fill="#738594" stroke="#738594" stroke-width="2"/>
+<circle cx="696.8585278823348" cy="393.1414721176652" r="24" fill="#dce3e8" stroke="#738594" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="696.8585278823348" cy="393.1414721176652" r="7" fill="#738594" stroke="#738594" stroke-width="2"/>
+<circle cx="696.8585278823348" cy="786.8585278823348" r="24" fill="#dce3e8" stroke="#738594" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="696.8585278823348" cy="786.8585278823348" r="7" fill="#738594" stroke="#738594" stroke-width="2"/>
+<circle cx="404.0" cy="510.0" r="38.400000000000006" fill="#f8fbfd" stroke="#1396b8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="404.0" y="516.0" font-size="22" fill="#1396b8" font-weight="700" text-anchor="middle">H1</text>
+<text x="404.0" y="575.4" font-size="18" fill="#1396b8" font-weight="400" text-anchor="middle">Entrada de agua</text>
+<circle cx="596.0" cy="510.0" r="38.400000000000006" fill="#f8fbfd" stroke="#1396b8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="596.0" y="516.0" font-size="22" fill="#1396b8" font-weight="700" text-anchor="middle">H2</text>
+<text x="596.0" y="575.4" font-size="18" fill="#1396b8" font-weight="400" text-anchor="middle">Salida desde bomba</text>
+<circle cx="404.0" cy="670.0" r="32.0" fill="#f8fbfd" stroke="#bb7333" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="404.0" y="676.0" font-size="22" fill="#bb7333" font-weight="700" text-anchor="middle">V1</text>
+<text x="404.0" y="729.0" font-size="18" fill="#bb7333" font-weight="400" text-anchor="middle">Vent o PRV</text>
+<circle cx="564.0" cy="670.0" r="57.6" fill="#f8fbfd" stroke="#41896a" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="564.0" y="676.0" font-size="22" fill="#41896a" font-weight="700" text-anchor="middle">E1</text>
+<text x="564.0" y="754.6" font-size="18" fill="#41896a" font-weight="400" text-anchor="middle">Datos + carga</text>
+<text x="500" y="975" font-size="23" fill="#775aa5" font-weight="700" text-anchor="middle">Ø200 mm: reserva de contorno de tapa</text>
+<text x="500" y="1008" font-size="20" fill="#5e7180" font-weight="400" text-anchor="middle">Ø150 / Ø140: tubo · naranja: posición provisional del sello</text>
+<text x="500" y="1040" font-size="20" fill="#5e7180" font-weight="400" text-anchor="middle">Gris: cuatro tirantes exteriores al tubo</text>
+<rect x="905" y="183" width="630" height="272" rx="10" fill="#f5f9fb" stroke="#b9c9d3" stroke-width="2"/>
+<text x="935" y="225" font-size="27" fill="#172b3a" font-weight="700" text-anchor="start">Cuatro puertos funcionales</text>
+<text x="935" y="273" font-size="24" fill="#1396b8" font-weight="700" text-anchor="start">H1   Entrada de agua</text>
+<text x="935" y="319" font-size="24" fill="#1396b8" font-weight="700" text-anchor="start">H2   Salida desde bomba</text>
+<text x="935" y="365" font-size="24" fill="#bb7333" font-weight="700" text-anchor="start">V1   Vent o PRV</text>
+<text x="935" y="411" font-size="24" fill="#41896a" font-weight="700" text-anchor="start">E1   Datos + carga</text>
+<text x="935" y="501" font-size="23" fill="#172b3a" font-weight="700" text-anchor="start">Los círculos discontinuos reservan sitio</text>
+<text x="935" y="534" font-size="23" fill="#172b3a" font-weight="700" text-anchor="start">para tuercas, juntas y herramienta.</text>
+<text x="935" y="571" font-size="22" fill="#d75a62" font-weight="400" text-anchor="start">Su diámetro NO es el diámetro del taladro.</text>
+<text x="935" y="627" font-size="27" fill="#172b3a" font-weight="700" text-anchor="start">Antes de perforar</text>
+<text x="935" y="673" font-size="22" fill="#5e7180" font-weight="400" text-anchor="start">• Elegir cada componente de panel.</text>
+<text x="935" y="712" font-size="22" fill="#5e7180" font-weight="400" text-anchor="start">• Comprobar tuerca, arandela y tapón.</text>
+<text x="935" y="751" font-size="22" fill="#5e7180" font-weight="400" text-anchor="start">• Fijar espesor de tapa y ranura.</text>
+<text x="935" y="790" font-size="22" fill="#5e7180" font-weight="400" text-anchor="start">• Verificar giro y radios de manguera.</text>
+<text x="935" y="829" font-size="22" fill="#5e7180" font-weight="400" text-anchor="start">• Calcular ligamentos y apriete.</text>
+<rect x="905" y="915" width="630" height="158" rx="8" fill="#f4f1f8" stroke="#775aa5" stroke-width="2"/>
+<text x="935" y="955" font-size="25" fill="#775aa5" font-weight="700" text-anchor="start">Tapa inferior: ciega y desmontable</text>
+<text x="935" y="993" font-size="21" fill="#5e7180" font-weight="400" text-anchor="start">Salida del bastidor por abajo, con conexiones</text>
+<text x="935" y="1025" font-size="21" fill="#5e7180" font-weight="400" text-anchor="start">de servicio accesibles y desconectables.</text>
+<polyline points="65,1110 1535,1110" fill="none" stroke="#b9c9d3" stroke-width="1.5"/>
+<text x="65" y="1154" font-size="27" fill="#1396b8" font-weight="700" text-anchor="start">H1 → entrada inferior de cubeta → salida superior → bomba → H2</text>
+<text x="65" y="1197" font-size="23" fill="#5e7180" font-weight="400" text-anchor="start">La toma exterior se prolonga lejos de la descarga para evitar recircular la misma agua.</text>
+<text x="65" y="1250" font-size="22" fill="#d75a62" font-weight="400" text-anchor="start">Ø200, posiciones y reservas de puertos son propuestas; espesor y taladros no están definidos.</text>
+<text x="65" y="1292" font-size="22" fill="#5e7180" font-weight="400" text-anchor="start">No perforar la pared curva. No imprimir ni mecanizar a partir de esta lámina.</text>
+</g></svg>

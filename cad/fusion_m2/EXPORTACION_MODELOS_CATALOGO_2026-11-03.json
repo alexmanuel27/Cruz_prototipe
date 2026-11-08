@@ -1,0 +1,44 @@
+{
+  "occurrences": 261,
+  "brep_bodies": 330,
+  "timeline_leaf_items_checked": 977,
+  "timeline_health_states": {
+    "1": 5,
+    "0": 971,
+    "2": 1
+  },
+  "timeline_warnings_or_errors": [
+    {
+      "name": "Sketch2",
+      "message": "Face 1 missing<b>1 Reference Failures</b><br/>The sketch plane is lost, Cache is used. Please redefine the sketch to select other plane!Face 1 missing<b>1 Reference Failures</b><br/>The project source is lost, Cache is used!Project1Sketch2",
+      "state": 1
+    },
+    {
+      "name": "Extrude5",
+      "message": "Body 1 missing<b>1 Reference Failures</b><br/>The body reference is lost and this feature is using cached geometry.<br/>Edit this feature and select new body references.Extrude5",
+      "state": 1
+    },
+    {
+      "name": "Sketch12",
+      "message": "Face 1 missing<b>1 Reference Failures</b><br/>The project source is lost, Cache is used!Failed to get target occurrence transform<b>1 Reference Failures</b><br/>Failed to get target occurrence transformProject1Sketch12",
+      "state": 1
+    },
+    {
+      "name": "Combine5",
+      "message": "Body 1 missing<b>1 Reference Failures</b><br/>The target body is lost, try editing this feature to reselect target body.Target Body ErrorCombine5",
+      "state": 2
+    },
+    {
+      "name": "Sketch34",
+      "message": "Face 1 missing<b>1 Reference Failures</b><br/>The sketch plane is lost, Cache is used. Please redefine the sketch to select other plane!Face 1 missing<b>1 Reference Failures</b><br/>The project source is lost, Cache is used!Project1Sketch34",
+      "state": 1
+    },
+    {
+      "name": "Sketch35",
+      "message": "Face 1 missing<b>1 Reference Failures</b><br/>The sketch plane is lost, Cache is used. Please redefine the sketch to select other plane!Face 1 missing<b>1 Reference Failures</b><br/>The project source is lost, Cache is used!Project1Sketch35",
+      "state": 1
+    }
+  ],
+  "export": "/Users/alex/Nube /repos/Cruz_prototipe/cad/fusion_m2/CROSS_MODELOS_CATALOGO_2026-11-03.f3d",
+  "cloud_document_saved": false
+}

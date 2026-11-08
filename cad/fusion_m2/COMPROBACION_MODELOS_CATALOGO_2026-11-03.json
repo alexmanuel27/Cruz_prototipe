@@ -1,0 +1,2468 @@
+{
+  "date": "2026-11-03",
+  "document": "Cross_M2_horizontal_design",
+  "scope": "Modeled solids only, not physical fit or pressure validation. Exact camera/head, carrier revision and custom motor dimensions remain unverified.",
+  "solid_bodies_checked": 325,
+  "nonphysical_clearance_omitted": [
+    "EL_PI_PLUG_SPACE Pi USB plug clearance; verify cable bend"
+  ],
+  "nonsolid_bodies_omitted": 4,
+  "classification_counts": {
+    "SIMPLIFIED_M8_THREADS": 8,
+    "INTERNAL_CATALOG_GEOMETRY": 98,
+    "PROVISIONAL_MOTOR_HEAD_COUPLING": 1,
+    "CATALOG_BORE_CLOSED_VS_CONTINUOUS_TUBE": 2,
+    "CATALOG_MATING_THREADS": 2
+  },
+  "unexplained_external_count": 0,
+  "notes": [
+    "Catalog CAD includes pins embedded in PCBs and overlapping package details.",
+    "Two WetLink public catalog bodies have a closed internal bore where the continuous 5mm-OD tube is represented. Original CAD retained; this is not clearance approval.",
+    "MOONS family shaft/pilot overlaps the unverified pump-head reserve. Coupling dimensions must be measured.",
+    "No pressure, optical, electrical, hose bending-radius, thermal or tolerance validation is implied."
+  ],
+  "intersections": [
+    {
+      "a": {
+        "component": "R1 M8 A4 threaded tie rod; 420mm provisional cut",
+        "body": "R1 M8 A4 threaded tie rod; 420mm provisional cut",
+        "owner": null
+      },
+      "b": {
+        "component": "N1F M8 closed dome nut; verify usable blind thread",
+        "body": "N1F M8 closed dome nut; verify usable blind thread",
+        "owner": null
+      },
+      "volume_cm3": 0.1248406088683458,
+      "classification": "SIMPLIFIED_M8_THREADS",
+      "bbox_mm": [
+        -20.0,
+        67.41778489984131,
+        67.4177848998413,
+        -11.050000000000004,
+        75.41778489984131,
+        75.4177848998413
+      ]
+    },
+    {
+      "a": {
+        "component": "R1 M8 A4 threaded tie rod; 420mm provisional cut",
+        "body": "R1 M8 A4 threaded tie rod; 420mm provisional cut",
+        "owner": null
+      },
+      "b": {
+        "component": "N1R M8 closed dome nut; verify usable blind thread",
+        "body": "N1R M8 closed dome nut; verify usable blind thread",
+        "owner": null
+      },
+      "volume_cm3": 0.12484060886834542,
+      "classification": "SIMPLIFIED_M8_THREADS",
+      "bbox_mm": [
+        391.05000000000007,
+        67.41778489984131,
+        67.4177848998413,
+        400.0,
+        75.41778489984131,
+        75.4177848998413
+      ]
+    },
+    {
+      "a": {
+        "component": "R2 M8 A4 threaded tie rod; 420mm provisional cut",
+        "body": "R2 M8 A4 threaded tie rod; 420mm provisional cut",
+        "owner": null
+      },
+      "b": {
+        "component": "N2F M8 closed dome nut; verify usable blind thread",
+        "body": "N2F M8 closed dome nut; verify usable blind thread",
+        "owner": null
+      },
+      "volume_cm3": 0.1248406088683458,
+      "classification": "SIMPLIFIED_M8_THREADS",
+      "bbox_mm": [
+        -20.0,
+        -75.4177848998413,
+        67.41778489984131,
+        -11.050000000000004,
+        -67.4177848998413,
+        75.41778489984131
+      ]
+    },
+    {
+      "a": {
+        "component": "R2 M8 A4 threaded tie rod; 420mm provisional cut",
+        "body": "R2 M8 A4 threaded tie rod; 420mm provisional cut",
+        "owner": null
+      },
+      "b": {
+        "component": "N2R M8 closed dome nut; verify usable blind thread",
+        "body": "N2R M8 closed dome nut; verify usable blind thread",
+        "owner": null
+      },
+      "volume_cm3": 0.12484060886834542,
+      "classification": "SIMPLIFIED_M8_THREADS",
+      "bbox_mm": [
+        391.05000000000007,
+        -75.4177848998413,
+        67.41778489984131,
+        400.0,
+        -67.4177848998413,
+        75.41778489984131
+      ]
+    },
+    {
+      "a": {
+        "component": "R3 M8 A4 threaded tie rod; 420mm provisional cut",
+        "body": "R3 M8 A4 threaded tie rod; 420mm provisional cut",
+        "owner": null
+      },
+      "b": {
+        "component": "N3F M8 closed dome nut; verify usable blind thread",
+        "body": "N3F M8 closed dome nut; verify usable blind thread",
+        "owner": null
+      },
+      "volume_cm3": 0.12484060886834575,
+      "classification": "SIMPLIFIED_M8_THREADS",
+      "bbox_mm": [
+        -20.0,
+        -75.41778489984132,
+        -75.4177848998413,
+        -11.050000000000004,
+        -67.41778489984131,
+        -67.4177848998413
+      ]
+    },
+    {
+      "a": {
+        "component": "R3 M8 A4 threaded tie rod; 420mm provisional cut",
+        "body": "R3 M8 A4 threaded tie rod; 420mm provisional cut",
+        "owner": null
+      },
+      "b": {
+        "component": "N3R M8 closed dome nut; verify usable blind thread",
+        "body": "N3R M8 closed dome nut; verify usable blind thread",
+        "owner": null
+      },
+      "volume_cm3": 0.12484060886834542,
+      "classification": "SIMPLIFIED_M8_THREADS",
+      "bbox_mm": [
+        391.05000000000007,
+        -75.41778489984132,
+        -75.4177848998413,
+        400.0,
+        -67.41778489984131,
+        -67.4177848998413
+      ]
+    },
+    {
+      "a": {
+        "component": "R4 M8 A4 threaded tie rod; 420mm provisional cut",
+        "body": "R4 M8 A4 threaded tie rod; 420mm provisional cut",
+        "owner": null
+      },
+      "b": {
+        "component": "N4F M8 closed dome nut; verify usable blind thread",
+        "body": "N4F M8 closed dome nut; verify usable blind thread",
+        "owner": null
+      },
+      "volume_cm3": 0.12484060886834575,
+      "classification": "SIMPLIFIED_M8_THREADS",
+      "bbox_mm": [
+        -20.0,
+        67.41778489984128,
+        -75.41778489984132,
+        -11.050000000000004,
+        75.41778489984128,
+        -67.41778489984131
+      ]
+    },
+    {
+      "a": {
+        "component": "R4 M8 A4 threaded tie rod; 420mm provisional cut",
+        "body": "R4 M8 A4 threaded tie rod; 420mm provisional cut",
+        "owner": null
+      },
+      "b": {
+        "component": "N4R M8 closed dome nut; verify usable blind thread",
+        "body": "N4R M8 closed dome nut; verify usable blind thread",
+        "owner": null
+      },
+      "volume_cm3": 0.12484060886834542,
+      "classification": "SIMPLIFIED_M8_THREADS",
+      "bbox_mm": [
+        391.05000000000007,
+        67.41778489984128,
+        -75.41778489984132,
+        400.0,
+        75.41778489984128,
+        -67.41778489984131
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134184,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        53.37499999999998,
+        43.4,
+        159.1218387983807,
+        53.62499999999998,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body2",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227133854,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        52.37499999999998,
+        43.4,
+        159.1218387983807,
+        52.62499999999997,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body3",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134878,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        51.37499999999997,
+        43.4,
+        159.1218387983807,
+        51.62499999999998,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body4",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0001869167522713453,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        50.37499999999998,
+        43.4,
+        159.1218387983807,
+        50.624999999999986,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body5",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227133588,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        49.374999999999986,
+        43.400000000000006,
+        159.1218387983807,
+        49.62499999999998,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body6",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134266,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        48.37499999999998,
+        43.400000000000006,
+        159.1218387983807,
+        48.62499999999998,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body7",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134282,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        47.37499999999998,
+        43.400000000000006,
+        159.1218387983807,
+        47.62499999999997,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body8",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134266,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        46.37499999999997,
+        43.400000000000006,
+        159.1218387983807,
+        46.62499999999998,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body9",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134266,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        45.37499999999998,
+        43.400000000000006,
+        159.1218387983807,
+        45.624999999999986,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227133414,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        44.374999999999986,
+        43.400000000000006,
+        159.1218387983807,
+        44.62499999999998,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body11",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0001869167522713444,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        43.37499999999998,
+        43.400000000000006,
+        159.1218387983807,
+        43.62499999999998,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body12",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227133414,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        42.37499999999998,
+        43.400000000000006,
+        159.1218387983807,
+        42.62499999999997,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body13",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134266,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        41.37499999999997,
+        43.400000000000006,
+        159.1218387983807,
+        41.62499999999998,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body14",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227133854,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        54.374999999999986,
+        43.4,
+        159.1218387983807,
+        54.62499999999998,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body15",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134878,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        154.3,
+        55.37499999999998,
+        43.4,
+        159.1218387983807,
+        55.624999999999986,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Microphone Plug, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0010977916977979783,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        145.38595218229423,
+        55.90000000000008,
+        42.05000000000018,
+        152.61404781770577,
+        56.900000000000084,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Microphone Plug, RPi4ModelB",
+        "body": "Body2",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0003874999999997037,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        146.025,
+        47.85000000000083,
+        42.05000000000021,
+        146.275,
+        48.850000000000264,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Microphone Plug, RPi4ModelB",
+        "body": "Body3",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0003874999999997037,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        151.72500000000002,
+        47.85000000000083,
+        42.05000000000021,
+        151.975,
+        48.850000000000264,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Microphone Plug, RPi4ModelB",
+        "body": "Body4",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0010876953587808484,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        148.525,
+        50.425000000000075,
+        42.800000000000004,
+        149.475,
+        58.375000000000085,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Microphone Plug, RPi4ModelB",
+        "body": "Body5",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00038766414008994086,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        147.39999999994944,
+        47.47500000000009,
+        42.05000000000021,
+        150.5999999999484,
+        51.192955467791506,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0001869167522711359,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        26.875,
+        43.400000000000006,
+        201.20000000000002,
+        27.125000000000004,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body2",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227117498,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        27.875000000000007,
+        43.400000000000006,
+        201.20000000000002,
+        28.125,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body3",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227121748,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        28.875,
+        43.400000000000006,
+        201.20000000000002,
+        29.125000000000007,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body4",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227126042,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        29.875,
+        43.400000000000006,
+        201.20000000000002,
+        30.125,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body5",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227130381,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        30.875000000000004,
+        43.400000000000006,
+        201.20000000000002,
+        31.125,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body6",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0001869167522713458,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        31.875,
+        43.400000000000006,
+        201.20000000000002,
+        32.12499999999999,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body7",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134122,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        32.87500000000001,
+        43.400000000000006,
+        201.20000000000002,
+        33.125,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body8",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0001869167522713433,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        33.875,
+        43.4,
+        201.20000000000002,
+        34.12500000000001,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body9",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134333,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        34.875,
+        43.4,
+        201.20000000000002,
+        35.125,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0001869167522713433,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        35.875,
+        43.4,
+        201.20000000000002,
+        36.125,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body11",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134238,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        36.875,
+        43.4,
+        201.20000000000002,
+        37.125,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body12",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0001869167522713433,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        37.87500000000001,
+        43.4,
+        201.20000000000002,
+        38.125,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body13",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227134244,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        38.875,
+        43.4,
+        201.20000000000002,
+        39.12500000000001,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body14",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227108911,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        25.875000000000004,
+        43.400000000000006,
+        201.20000000000002,
+        26.125,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body15",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00018691675227135106,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.37816120161932,
+        24.875,
+        43.400000000000006,
+        201.20000000000002,
+        25.125,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Gigabit Ethernet Port, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.02103442534205867,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        120.35,
+        6.149999999999975,
+        42.0,
+        134.825,
+        22.349999999999977,
+        43.60000000000002
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Female Micro HDMI Connector, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0007302710032935848,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        160.25000000000003,
+        55.45000000000008,
+        43.05500000000005,
+        166.75,
+        59.99999988681008,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Female Micro HDMI Connector, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.0007302710032935848,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        173.75,
+        55.45000000000008,
+        43.05500000000005,
+        180.25,
+        59.99999988681008,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Female USB Type C Connector, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.001154016627951997,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        187.33,
+        53.60000000356106,
+        42.80000000000001,
+        196.26999999999998,
+        60.0,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "2X USB3.0 PORTS, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.006802371265004833,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        123.00556842808518,
+        25.19018998944742,
+        42.0,
+        130.66,
+        40.80981000808983,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "PCB, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "2X USB2.0 PORTS, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.012690321918544696,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        118.0,
+        44.095414982820145,
+        41.99999999966954,
+        131.86999999999995,
+        57.90458501717981,
+        43.6
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979736e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        53.37499999999998,
+        47.9,
+        155.94461105030962,
+        53.62499999999998,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body2",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835978834e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        52.37499999999998,
+        47.9,
+        155.94461105030962,
+        52.624999999999964,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body3",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.53882098359797e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        51.37499999999997,
+        47.9,
+        155.94461105030962,
+        51.62499999999998,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body4",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.53882098359797e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        50.37499999999998,
+        47.9,
+        155.94461105030962,
+        50.624999999999986,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body5",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835978796e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        49.374999999999986,
+        47.9,
+        155.94461105030962,
+        49.62499999999998,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body6",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.53882098359797e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        48.37499999999998,
+        47.9,
+        155.94461105030962,
+        48.62499999999998,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body7",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.53882098359797e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        47.37499999999998,
+        47.9,
+        155.94461105030962,
+        47.624999999999986,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body8",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.53882098359797e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        46.37499999999997,
+        47.9,
+        155.94461105030962,
+        46.62499999999998,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body9",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979677e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        45.37499999999998,
+        47.9,
+        155.94461105030962,
+        45.62499999999997,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.538820983597878e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        44.37499999999997,
+        47.9,
+        155.94461105030962,
+        44.62499999999997,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body11",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979703e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        43.37499999999998,
+        47.9,
+        155.94461105030962,
+        43.62499999999998,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body12",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835978796e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        42.37499999999998,
+        47.9,
+        155.94461105030962,
+        42.62499999999997,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body13",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979703e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        41.37499999999997,
+        47.9,
+        155.94461105030962,
+        41.62499999999998,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body14",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.538820983597728e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        54.374999999999986,
+        47.9,
+        155.9446110503096,
+        54.62499999999998,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body15",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835978178e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.6711309314543,
+        55.37499999999998,
+        47.9,
+        155.9446110503096,
+        55.624999999999986,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body16",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Camera Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00023342735521613241,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        155.8899999999999,
+        39.49999999999998,
+        45.60000000000001,
+        156.07123241864608,
+        57.499999999999986,
+        47.9
+      ]
+    },
+    {
+      "a": {
+        "component": "Microphone Plug, RPi4ModelB",
+        "body": "Body3",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Microphone Plug, RPi4ModelB",
+        "body": "Body4",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 9.261906036910589e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        150.59999999559068,
+        47.850000000000826,
+        49.09330127019285,
+        151.6999999999937,
+        50.25000000000019,
+        49.35000000000001
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979736e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        26.875,
+        47.9,
+        199.82886906854574,
+        27.125000000000004,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body2",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979283e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        27.874999999999996,
+        47.9,
+        199.82886906854574,
+        28.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body3",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.538820983597925e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        28.875,
+        47.9,
+        199.82886906854574,
+        29.124999999999996,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body4",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.538820983597925e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        29.875000000000007,
+        47.9,
+        199.82886906854574,
+        30.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body5",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835978796e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        30.875000000000004,
+        47.9,
+        199.82886906854574,
+        31.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body6",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979245e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        31.875,
+        47.9,
+        199.82886906854574,
+        32.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body7",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979245e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        32.875,
+        47.9,
+        199.82886906854574,
+        33.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body8",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979245e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        33.875,
+        47.9,
+        199.82886906854574,
+        34.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body9",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.538820983597923e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        34.875,
+        47.9,
+        199.82886906854574,
+        35.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.538820983597923e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        35.875,
+        47.9,
+        199.82886906854574,
+        36.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body11",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979245e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        36.875,
+        47.9,
+        199.82886906854574,
+        37.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body12",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979245e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        37.875,
+        47.9,
+        199.82886906854574,
+        38.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body13",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.5388209835979245e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        38.875,
+        47.9,
+        199.82886906854574,
+        39.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body14",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.538820983597773e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        25.875000000000004,
+        47.9,
+        199.82886906854574,
+        26.125000000000007,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body15",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.538820983597773e-06,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.55538894969044,
+        24.875000000000007,
+        47.9,
+        199.82886906854574,
+        25.125,
+        47.95404741815329
+      ]
+    },
+    {
+      "a": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body16",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "Display Connector, RPi4ModelB",
+        "body": "Body17",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 0.00023342735521624086,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        199.42876758135395,
+        23.000000000000004,
+        45.60000000000001,
+        199.61000000000016,
+        41.00000000000001,
+        47.9
+      ]
+    },
+    {
+      "a": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body1",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 8.532628940577023e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        190.22000000000003,
+        26.069999999999997,
+        40.67,
+        200.5,
+        37.77999999999999,
+        41.65
+      ]
+    },
+    {
+      "a": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body2",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.4601185057800332e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.49180774602922,
+        33.04999999999999,
+        41.62,
+        197.77791673448746,
+        33.389999999999986,
+        41.7325114413092
+      ]
+    },
+    {
+      "a": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body3",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.4601185057799665e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.49180774602922,
+        31.949999999999996,
+        41.62,
+        197.77791673448746,
+        32.289999999999985,
+        41.7325114413092
+      ]
+    },
+    {
+      "a": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body4",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.4601185057798533e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.49180774602922,
+        30.849999999999987,
+        41.62,
+        197.77791673448746,
+        31.18999999999999,
+        41.7325114413091
+      ]
+    },
+    {
+      "a": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body5",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.460118505779998e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.49180774602922,
+        29.749999999999986,
+        41.62,
+        197.77791673448746,
+        30.08999999999999,
+        41.7325114413092
+      ]
+    },
+    {
+      "a": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body6",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.460118505779991e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.49180774602917,
+        36.34999999999999,
+        41.62,
+        197.77791673448746,
+        36.68999999999998,
+        41.732511441309214
+      ]
+    },
+    {
+      "a": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body7",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.460118505779853e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.49180774602922,
+        35.24999999999999,
+        41.62,
+        197.77791673448746,
+        35.58999999999999,
+        41.7325114413091
+      ]
+    },
+    {
+      "a": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body8",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.4601185057799617e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.49180774602922,
+        34.14999999999999,
+        41.62,
+        197.77791673448746,
+        34.48999999999999,
+        41.7325114413092
+      ]
+    },
+    {
+      "a": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body9",
+        "owner": "RASPBERRY_PI4"
+      },
+      "b": {
+        "component": "SD Card Slot, RPi4ModelB",
+        "body": "Body10",
+        "owner": "RASPBERRY_PI4"
+      },
+      "volume_cm3": 2.460118505779966e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        196.49180774602917,
+        28.649999999999988,
+        41.62,
+        197.77791673448746,
+        28.989999999999988,
+        41.7325114413092
+      ]
+    },
+    {
+      "a": {
+        "component": "Board_Iso_carry_type-II.step",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "hdr-1x5th_1.27_6x5.step",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 1.7681485435023066e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        360.22389390133634,
+        -58.999999999999986,
+        -6.006315669417513,
+        360.98389319058924,
+        -57.41040000000298,
+        -5.206315081182487
+      ]
+    },
+    {
+      "a": {
+        "component": "Board_Iso_carry_type-II.step",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "hdr-1x5th_1.27_6x5.step",
+        "body": "Body2",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 1.7681485434999858e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        360.22389639153295,
+        -58.999999999999986,
+        -3.4663156694187354,
+        360.9838956807858,
+        -57.41040000000298,
+        -2.666315081183708
+      ]
+    },
+    {
+      "a": {
+        "component": "Board_Iso_carry_type-II.step",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "hdr-1x5th_1.27_6x5.step",
+        "body": "Body3",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 1.7681485435054264e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        360.2238988817295,
+        -58.999999999999986,
+        -0.9263156694199555,
+        360.98389817098246,
+        -57.41040000000298,
+        -0.12631508118492812
+      ]
+    },
+    {
+      "a": {
+        "component": "Board_Iso_carry_type-II.step",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "hdr-1x5th_1.27_6x5.step",
+        "body": "Body4",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 1.7681485435024218e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        360.2239013719261,
+        -58.999999999999986,
+        1.6136843305788242,
+        360.983900661179,
+        -57.41040000000298,
+        2.4136849188138507
+      ]
+    },
+    {
+      "a": {
+        "component": "Board_Iso_carry_type-II.step",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "hdr-1x5th_1.27_6x5.step",
+        "body": "Body5",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 1.7681485435017506e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        360.22390386212265,
+        -58.999999999999986,
+        4.153684330577603,
+        360.98390315137556,
+        -57.41040000000298,
+        4.9536849188126295
+      ]
+    },
+    {
+      "a": {
+        "component": "Board_Iso_carry_type-II.step",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "User_Library-RO-0505.step",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 0.00023788111619830747,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        334.4933825888273,
+        -58.999999999999986,
+        -14.21857924120654,
+        342.82372157187325,
+        -57.41040000000298,
+        -13.938748717332608
+      ]
+    },
+    {
+      "a": {
+        "component": "Board_Iso_carry_type-II.step",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "SMA edge mount",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 0.0006454386929201756,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        323.9210993673853,
+        -57.625000000000014,
+        -1.1031236585945847,
+        328.5210993673777,
+        -57.41040000000298,
+        -0.16037673037156697
+      ]
+    },
+    {
+      "a": {
+        "component": "soic-8_150mil.step",
+        "body": "Body1",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "soic-8_150mil.step",
+        "body": "Body9",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 2.5524206456652506e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        341.43236426824393,
+        -56.65803785514045,
+        -1.7570969914389587,
+        341.8523640231457,
+        -56.410460921105134,
+        -1.5070965796742921
+      ]
+    },
+    {
+      "a": {
+        "component": "soic-8_150mil.step",
+        "body": "Body2",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "soic-8_150mil.step",
+        "body": "Body9",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 2.55242064566526e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        342.70236426824334,
+        -56.65803785514045,
+        -1.7570982365372467,
+        343.1223640231451,
+        -56.41046092110513,
+        -1.5070978247725804
+      ]
+    },
+    {
+      "a": {
+        "component": "soic-8_150mil.step",
+        "body": "Body3",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "soic-8_150mil.step",
+        "body": "Body9",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 2.552420645665259e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        343.9723642682427,
+        -56.65803785514049,
+        -1.7570994816355356,
+        344.3923640231445,
+        -56.410460921105134,
+        -1.5070990698708686
+      ]
+    },
+    {
+      "a": {
+        "component": "soic-8_150mil.step",
+        "body": "Body4",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "soic-8_150mil.step",
+        "body": "Body9",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 2.552420645665256e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        345.2423642682421,
+        -56.65803785514047,
+        -1.7571007267338241,
+        345.6623640231438,
+        -56.41046092110514,
+        -1.5071003149691569
+      ]
+    },
+    {
+      "a": {
+        "component": "soic-8_150mil.step",
+        "body": "Body5",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "soic-8_150mil.step",
+        "body": "Body9",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 2.5524206456650626e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        345.2423678466741,
+        -56.65803785514047,
+        1.8928992732644214,
+        345.66236760157585,
+        -56.410460921105134,
+        2.1428996850290885
+      ]
+    },
+    {
+      "a": {
+        "component": "soic-8_150mil.step",
+        "body": "Body6",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "soic-8_150mil.step",
+        "body": "Body9",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 2.5524206456655715e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        343.97236784667473,
+        -56.65803785514047,
+        1.8929005183627097,
+        344.3923676015765,
+        -56.410460921105134,
+        2.1429009301273765
+      ]
+    },
+    {
+      "a": {
+        "component": "soic-8_150mil.step",
+        "body": "Body7",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "soic-8_150mil.step",
+        "body": "Body9",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 2.5524206456657785e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        342.7023678466753,
+        -56.65803785514047,
+        1.892901763460998,
+        343.1223676015771,
+        -56.41046092110514,
+        2.142902175225665
+      ]
+    },
+    {
+      "a": {
+        "component": "soic-8_150mil.step",
+        "body": "Body8",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "b": {
+        "component": "soic-8_150mil.step",
+        "body": "Body9",
+        "owner": "ATLAS_ISCCB_GEN2"
+      },
+      "volume_cm3": 2.552420645664566e-05,
+      "classification": "INTERNAL_CATALOG_GEOMETRY",
+      "bbox_mm": [
+        341.4323678466759,
+        -56.65803785514045,
+        1.8929030085592862,
+        341.8523676015777,
+        -56.41046092110513,
+        2.1429034203239534
+      ]
+    },
+    {
+      "a": {
+        "component": "MS11HS5P",
+        "body": "Body1",
+        "owner": "MOONS_MS11HS5_FAMILY"
+      },
+      "b": {
+        "component": "H_PUMP_HEAD Peristaltic head APPROX; downstream of cell",
+        "body": "H_PUMP_HEAD Peristaltic head APPROX; downstream of cell",
+        "owner": null
+      },
+      "volume_cm3": 0.9693839051849592,
+      "classification": "PROVISIONAL_MOTOR_HEAD_COUPLING",
+      "bbox_mm": [
+        258.0,
+        21.0,
+        -3.999999999999999,
+        280.0,
+        43.00000000000001,
+        11.0
+      ]
+    },
+    {
+      "a": {
+        "component": "H_EXTERNAL_INTAKE Continuous silicone tube through intake; external cut end",
+        "body": "H_EXTERNAL_INTAKE Continuous silicone tube through intake; external cut end",
+        "owner": null
+      },
+      "b": {
+        "component": "WLP-BULKHEAD-JPT_WLP-M10-BULKHEAD-5.5MM-PUBLIC",
+        "body": "Body1",
+        "owner": "WETLINK_JPT"
+      },
+      "volume_cm3": 0.20179029894464712,
+      "classification": "CATALOG_BORE_CLOSED_VS_CONTINUOUS_TUBE",
+      "bbox_mm": [
+        386.49203822748336,
+        -37.5,
+        32.5,
+        402.54999999999995,
+        -32.5,
+        37.5
+      ]
+    },
+    {
+      "a": {
+        "component": "H_EXTERNAL_DISCHARGE Continuous silicone tube through discharge; external cut end",
+        "body": "H_EXTERNAL_DISCHARGE Continuous silicone tube through discharge; external cut end",
+        "owner": null
+      },
+      "b": {
+        "component": "WLP-BULKHEAD-JPT_WLP-M10-BULKHEAD-5.5MM-PUBLIC",
+        "body": "Body1",
+        "owner": "WETLINK_JPT"
+      },
+      "volume_cm3": 0.20179029894464712,
+      "classification": "CATALOG_BORE_CLOSED_VS_CONTINUOUS_TUBE",
+      "bbox_mm": [
+        386.49203822748336,
+        32.5,
+        32.5,
+        402.54999999999995,
+        37.5,
+        37.5
+      ]
+    },
+    {
+      "a": {
+        "component": "WLP-BULKHEAD-JPT_WLP-M10-BULKHEAD-5.5MM-PUBLIC",
+        "body": "Body1",
+        "owner": "WETLINK_JPT"
+      },
+      "b": {
+        "component": "WL-M10-NUT",
+        "body": "Body1",
+        "owner": "WETLINK_NUT"
+      },
+      "volume_cm3": 0.008587623936354866,
+      "classification": "CATALOG_MATING_THREADS",
+      "bbox_mm": [
+        374.099999999705,
+        -39.94999999999999,
+        30.728336867837648,
+        381.00000000000165,
+        -30.050000000000004,
+        39.95
+      ]
+    },
+    {
+      "a": {
+        "component": "WLP-BULKHEAD-JPT_WLP-M10-BULKHEAD-5.5MM-PUBLIC",
+        "body": "Body1",
+        "owner": "WETLINK_JPT"
+      },
+      "b": {
+        "component": "WL-M10-NUT",
+        "body": "Body1",
+        "owner": "WETLINK_NUT"
+      },
+      "volume_cm3": 0.008587623937482993,
+      "classification": "CATALOG_MATING_THREADS",
+      "bbox_mm": [
+        374.099999999705,
+        30.050000000000008,
+        30.728336867837672,
+        381.00000000000165,
+        39.95,
+        39.949999999999996
+      ]
+    }
+  ]
+}

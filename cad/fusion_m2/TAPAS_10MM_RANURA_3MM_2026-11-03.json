@@ -1,0 +1,153 @@
+{
+  "caps": [
+    {
+      "side": "FRONT",
+      "x_limits_mm": [
+        -9.55,
+        0.4499999999999993
+      ],
+      "stock_mm": 10,
+      "groove_depth_mm": 3,
+      "floor_mm": 7,
+      "groove_id_mm": 168.8,
+      "groove_od_mm": 181.2
+    },
+    {
+      "side": "REAR",
+      "x_limits_mm": [
+        379.54999999999995,
+        389.54999999999995
+      ],
+      "stock_mm": 10,
+      "groove_depth_mm": 3,
+      "floor_mm": 7,
+      "groove_id_mm": 168.8,
+      "groove_od_mm": 181.2
+    }
+  ],
+  "body_count": 185,
+  "gasket_free_mm": 3,
+  "gasket_working_mm": 2.55,
+  "compression_percent": 15,
+  "tube_insertion_into_groove_mm": 0.45,
+  "rod_cut_mm": 420,
+  "moved": [
+    {
+      "component": "W1FO M8 wide washer OD22 ID9",
+      "dx_mm": 8
+    },
+    {
+      "component": "W1RO M8 wide washer OD22 ID9",
+      "dx_mm": -8
+    },
+    {
+      "component": "N1F M8 closed dome nut; verify usable blind thread",
+      "dx_mm": 8
+    },
+    {
+      "component": "N1R M8 closed dome nut; verify usable blind thread",
+      "dx_mm": -8
+    },
+    {
+      "component": "W2FO M8 wide washer OD22 ID9",
+      "dx_mm": 8
+    },
+    {
+      "component": "W2RO M8 wide washer OD22 ID9",
+      "dx_mm": -8
+    },
+    {
+      "component": "N2F M8 closed dome nut; verify usable blind thread",
+      "dx_mm": 8
+    },
+    {
+      "component": "N2R M8 closed dome nut; verify usable blind thread",
+      "dx_mm": -8
+    },
+    {
+      "component": "W3FO M8 wide washer OD22 ID9",
+      "dx_mm": 8
+    },
+    {
+      "component": "W3RO M8 wide washer OD22 ID9",
+      "dx_mm": -8
+    },
+    {
+      "component": "N3F M8 closed dome nut; verify usable blind thread",
+      "dx_mm": 8
+    },
+    {
+      "component": "N3R M8 closed dome nut; verify usable blind thread",
+      "dx_mm": -8
+    },
+    {
+      "component": "W4FO M8 wide washer OD22 ID9",
+      "dx_mm": 8
+    },
+    {
+      "component": "W4RO M8 wide washer OD22 ID9",
+      "dx_mm": -8
+    },
+    {
+      "component": "N4F M8 closed dome nut; verify usable blind thread",
+      "dx_mm": 8
+    },
+    {
+      "component": "N4R M8 closed dome nut; verify usable blind thread",
+      "dx_mm": -8
+    },
+    {
+      "component": "EL_EN3 EN3P8MX 8pin charging and RS485; panel 4mm local",
+      "dx_mm": -8
+    },
+    {
+      "component": "H_INTAKE M10 WetLink JPT envelope intake",
+      "dx_mm": -8
+    },
+    {
+      "component": "H_DISCHARGE M10 WetLink JPT envelope discharge",
+      "dx_mm": -8
+    },
+    {
+      "component": "W1FI",
+      "dx_mm": 3
+    },
+    {
+      "component": "W1RI",
+      "dx_mm": -3
+    },
+    {
+      "component": "W2FI",
+      "dx_mm": 3
+    },
+    {
+      "component": "W2RI",
+      "dx_mm": -3
+    },
+    {
+      "component": "W3FI",
+      "dx_mm": 3
+    },
+    {
+      "component": "W3RI",
+      "dx_mm": -3
+    },
+    {
+      "component": "W4FI",
+      "dx_mm": 3
+    },
+    {
+      "component": "W4RI",
+      "dx_mm": -3
+    }
+  ],
+  "cnc_status": "Editable geometry; CAM setup and pressure test pending",
+  "date": "2026-11-03",
+  "compression_limiter_mm": 376.1,
+  "washer_seat_pockets": false,
+  "unexpected_interferences": 0,
+  "expected_simplified_thread_interferences": 8,
+  "chassis_end_clearance_mm": 0.5,
+  "tray_relief_radius_mm": 10,
+  "reference": "CROSS_TAPAS_10MM_RANURA_3MM_2026-11-03.f3d"
+}

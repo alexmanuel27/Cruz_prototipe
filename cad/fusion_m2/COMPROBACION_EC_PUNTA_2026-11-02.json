@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-02",
+  "assessed_bodies": 185,
+  "unexpected_intersections": 0,
+  "expected_simplified_thread_intersections": 8,
+  "all_main_categories_included_even_if_hidden_in_user_view": true,
+  "sources": {
+    "probe": "https://files.atlas-scientific.com/EC_K_1.0_probe.pdf",
+    "official_STEP": "https://files.atlas-scientific.com/ENV-40-EC-K-1.0.zip",
+    "inline_mounting": "https://files.atlas-scientific.com/connecting-probes-into-a-pipe.pdf"
+  },
+  "geometry": {
+    "wet_flow_block_mm": 37,
+    "cavity_x_mm": [
+      178,
+      206
+    ],
+    "tip_x_mm": 186,
+    "active_area_envelope_x_mm": [
+      186,
+      201.5
+    ],
+    "axis_yz_mm": [
+      0,
+      -60
+    ],
+    "compression_fitting": "12 mm commercial fitting; 30 mm OD x reserved length are approximate, verify actual hardware"
+  },
+  "limits": [
+    "Official STEP is legacy (2021), latest datasheet Gen3 differs in dimensions; purchased generation requires verification.",
+    "Compression fitting, NPT threads and seal not production drawings.",
+    "Only modeled solid interference checked; hydraulic purge, pressure and calibration remain physical tests."
+  ],
+  "category_visibility_before": {
+    "01_CARCASA_Y_TAPAS": false,
+    "02_VARILLAS_Y_CIERRES": false,
+    "03_CHASIS_Y_SOPORTES": false,
+    "04_OPTICA_REFERENCIAS": true,
+    "05_ELECTRONICA_REFERENCIAS": false,
+    "06_AGUA_Y_SENSORES": true,
+    "07_LASTRE": false
+  }
+}

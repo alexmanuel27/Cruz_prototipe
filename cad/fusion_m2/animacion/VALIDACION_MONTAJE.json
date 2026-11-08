@@ -1,0 +1,201 @@
+{
+  "seconds": 118.63587808300508,
+  "tests": 2756,
+  "results": [
+    {
+      "step": 1,
+      "title": "Unir las dos mitades del chasis",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 2,
+      "title": "Introducir la sonda de conductividad",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 3,
+      "title": "Introducir la sonda de temperatura",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 4,
+      "title": "Fijar los apoyos \u00f3pticos",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 5,
+      "title": "Instalar el m\u00f3dulo \u00f3ptico premontado",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 6,
+      "title": "Instalar la cubeta de flujo",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 7,
+      "title": "Montar la c\u00e1mara auxiliar",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 8,
+      "title": "Instalar la bomba completa",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 9,
+      "title": "Fijar la interfaz Atlas en seco",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 10,
+      "title": "Colocar la cubierta \u00f3ptica",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 11,
+      "title": "Introducir las dos tuercas cautivas",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 12,
+      "title": "Asentar el travesa\u00f1o desmontable",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 13,
+      "title": "Fijar el travesa\u00f1o con dos M3",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 14,
+      "title": "Sujetar la bater\u00eda",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 15,
+      "title": "Bajar la bandeja antes de la Raspberry",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 16,
+      "title": "Montar la Raspberry junto a la PiCam",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 17,
+      "title": "Instalar PCB y m\u00f3dulos en la bandeja",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 18,
+      "title": "Colocar los retenedores laterales",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 19,
+      "title": "Preparar y apoyar la tapa trasera",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 20,
+      "title": "Conectar las mangueras inferiores",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 21,
+      "title": "Conectar cubeta y bomba por arriba",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 22,
+      "title": "Revisar el conjunto todav\u00eda abierto",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 23,
+      "title": "Deslizar el tubo desde el frente",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 24,
+      "title": "Presentar las abrazaderas de lastre",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 25,
+      "title": "Introducir las cuatro varillas desde atr\u00e1s",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 26,
+      "title": "Colocar las arandelas interiores traseras",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 27,
+      "title": "Colocar los limitadores de compresi\u00f3n",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 28,
+      "title": "Colocar las arandelas interiores delanteras",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 29,
+      "title": "Presentar junta y tapa frontal",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 30,
+      "title": "Cerrar alternando las diagonales",
+      "complete": true,
+      "hits": [
+        {
+          "group": "front_hardware",
+          "moving": "N1F M8 closed dome nut; verify usable blind thread",
+          "stationary": "R1 M8 A4 threaded tie rod; 420mm provisional cut",
+          "stationary_group": "rods_rear_hardware",
+          "fraction": 0.95,
+          "cm3": 0.07253309118608436
+        }
+      ]
+    },
+    {
+      "step": 31,
+      "title": "Comprobar el montaje terminado",
+      "complete": true,
+      "hits": []
+    }
+  ]
+}

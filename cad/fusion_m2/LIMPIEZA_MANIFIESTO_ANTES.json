@@ -1,0 +1,2541 @@
+{
+  "document": "Cross_M2_horizontal_design",
+  "targets": [
+    {
+      "path": "sensor:1",
+      "name": "sensor"
+    },
+    {
+      "path": "sensor:1",
+      "name": "sensor"
+    },
+    {
+      "path": "camara:1",
+      "name": "camara"
+    },
+    {
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+01_3D_CHASIS_Y_AROS:1+P01 FRONT non sealing centering ring:1",
+      "name": "P01 FRONT non sealing centering ring"
+    },
+    {
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+01_3D_CHASIS_Y_AROS:1+P02 REAR non sealing centering ring:1",
+      "name": "P02 REAR non sealing centering ring"
+    },
+    {
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_F1 Removable internal frame end:1",
+      "name": "P_F1 Removable internal frame end"
+    },
+    {
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_F2 Removable internal frame end:1",
+      "name": "P_F2 Removable internal frame end"
+    },
+    {
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_PI Raspberry Pi lower mounting tray:1",
+      "name": "P_PI Raspberry Pi lower mounting tray"
+    },
+    {
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_CAM Forward camera cradle with strap adjustment:1",
+      "name": "P_CAM Forward camera cradle with strap adjustment"
+    },
+    {
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_HOOD_LOWER Opaque optical cover LOWER:1",
+      "name": "P_HOOD_LOWER Opaque optical cover LOWER"
+    },
+    {
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+04_FUSIONADOS_O_SUSTITUIDOS_NO_IMPRIMIR:1",
+      "name": "04_FUSIONADOS_O_SUSTITUIDOS_NO_IMPRIMIR"
+    },
+    {
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+05_REFERENCIAS_DE_CONSTRUCCION_OCULTAS:1",
+      "name": "05_REFERENCIAS_DE_CONSTRUCCION_OCULTAS"
+    },
+    {
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_ESP ESP32 dev module:1",
+      "name": "EL_ESP ESP32 dev module"
+    },
+    {
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_BUCK1 5V buck Pi approx:1",
+      "name": "EL_BUCK1 5V buck Pi approx"
+    },
+    {
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_BUCK2 5V buck standby approx:1",
+      "name": "EL_BUCK2 5V buck standby approx"
+    },
+    {
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_BUCK3 LED buck approx:1",
+      "name": "EL_BUCK3 LED buck approx"
+    },
+    {
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_A4988 A4988 approximate:1",
+      "name": "EL_A4988 A4988 approximate"
+    },
+    {
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_RELAY Charge isolation relay approximate:1",
+      "name": "EL_RELAY Charge isolation relay approximate"
+    },
+    {
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_LED_W White LED current regulator reserve:1",
+      "name": "EL_LED_W White LED current regulator reserve"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H_TUBE_IN Intake -> temperature tee:1",
+      "name": "H_TUBE_IN Intake -> temperature tee"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H_TUBE_EC_CELL Conductivity cell -> optical cell lower port:1",
+      "name": "H_TUBE_EC_CELL Conductivity cell -> optical cell lower port"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H_TUBE_CELL_PUMP Upper optical cell -> pump intake:1",
+      "name": "H_TUBE_CELL_PUMP Upper optical cell -> pump intake"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H_TUBE_OUT Pump discharge -> rear discharge:1",
+      "name": "H_TUBE_OUT Pump discharge -> rear discharge"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H2_TUBE_IN Entrada a temperatura - bajo bandeja:1",
+      "name": "H2_TUBE_IN Entrada a temperatura - bajo bandeja"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H2_TUBE_TEMP_EC Temperatura a conductividad - circuito completo:1",
+      "name": "H2_TUBE_TEMP_EC Temperatura a conductividad - circuito completo"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H2_TUBE_OUT Bomba a descarga - bajo bandeja:1",
+      "name": "H2_TUBE_OUT Bomba a descarga - bajo bandeja"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H3_TUBE_TEMP_EC Temperatura a conductividad - circuito completo:1",
+      "name": "H3_TUBE_TEMP_EC Temperatura a conductividad - circuito completo"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+90_RECORRIDOS_ANTERIORES_NO_USAR:1",
+      "name": "90_RECORRIDOS_ANTERIORES_NO_USAR"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H4_TEMP_EC Temperatura a punta conductividad:1",
+      "name": "H4_TEMP_EC Temperatura a punta conductividad"
+    },
+    {
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+90_EC_CAMARA_LARGA_DESCARTADA_NO_USAR:1",
+      "name": "90_EC_CAMARA_LARGA_DESCARTADA_NO_USAR"
+    },
+    {
+      "path": "90_PCB_ANTERIORES_NO_USAR:1",
+      "name": "90_PCB_ANTERIORES_NO_USAR"
+    },
+    {
+      "path": "EC_K1_CAD_FABRICANTE_ORIGINAL_REFERENCIA:1",
+      "name": "EC_K1_CAD_FABRICANTE_ORIGINAL_REFERENCIA"
+    }
+  ],
+  "before_occurrences": 384,
+  "retained_bodies": [
+    {
+      "key": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E01 Acrylic tube OD180 ID170 L380 proposal:1#0",
+      "body": "E01 Acrylic tube OD180 ID170 L380 proposal",
+      "volume_cm3": 1044.5795573186078,
+      "bbox_cm": [
+        0.0,
+        -9.0,
+        -9.0,
+        38.0,
+        9.0,
+        9.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E02 FRONT acrylic cap; port details HOLD:1#0",
+      "body": "E02 FRONT acrylic cap; port details HOLD",
+      "volume_cm3": 619.3964075817903,
+      "bbox_cm": [
+        -1.7550000000000001,
+        -11.5,
+        -11.5,
+        -0.2550000000000001,
+        11.5,
+        11.5
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E03 REAR acrylic cap; port details HOLD:1#0",
+      "body": "E03 REAR acrylic cap; port details HOLD",
+      "volume_cm3": 601.9906333960611,
+      "bbox_cm": [
+        38.255,
+        -11.5,
+        -11.5,
+        39.755,
+        11.5,
+        11.5
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E04 FRONT silicone gasket 3mm free / 2.55mm working:1#0",
+      "body": "E04 FRONT silicone gasket 3mm free / 2.55mm working",
+      "volume_cm3": 7.009678608319746,
+      "bbox_cm": [
+        -0.255,
+        -9.0,
+        -9.0,
+        0.0,
+        9.0,
+        9.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E05 REAR silicone gasket 3mm free / 2.55mm working:1#0",
+      "body": "E05 REAR silicone gasket 3mm free / 2.55mm working",
+      "volume_cm3": 7.009678608319625,
+      "bbox_cm": [
+        38.0,
+        -9.0,
+        -9.0,
+        38.254999999999995,
+        9.0,
+        9.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+N1F M8 closed dome nut; verify usable blind thread:1#0",
+      "body": "N1F M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 1.3096923435365417,
+      "bbox_cm": [
+        -3.305,
+        6.491778489984131,
+        6.391223140037616,
+        -1.9050000000000002,
+        7.791778489984131,
+        7.892333839930644
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+N1R M8 closed dome nut; verify usable blind thread:1#0",
+      "body": "N1R M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 1.3096923435365428,
+      "bbox_cm": [
+        39.905,
+        6.491778489984131,
+        6.391223140037616,
+        41.305,
+        7.791778489984131,
+        7.892333839930644
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+R1 M8 A4 threaded tie rod; 436mm provisional cut:1#0",
+      "body": "R1 M8 A4 threaded tie rod; 436mm provisional cut",
+      "volume_cm3": 21.91575035144146,
+      "bbox_cm": [
+        -2.799999999999997,
+        6.741778489984131,
+        6.741778489984129,
+        40.8,
+        7.541778489984131,
+        7.54177848998413
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+S1 A4 compression limiter OD14 ID9 L382.1:1#0",
+      "body": "S1 A4 compression limiter OD14 ID9 L382.1",
+      "volume_cm3": 34.51157339692746,
+      "bbox_cm": [
+        -0.10499999999999687,
+        6.441778489984131,
+        6.441778489984129,
+        38.105000000000004,
+        7.841778489984131,
+        7.841778489984129
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+W1FI M8 wide washer OD22 ID9:1#0",
+      "body": "W1FI M8 wide washer OD22 ID9",
+      "volume_cm3": 0.47477318977377797,
+      "bbox_cm": [
+        -0.255,
+        6.0417784899841305,
+        6.041778489984129,
+        -0.10499999999999998,
+        8.241778489984132,
+        8.24177848998413
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+W1FO M8 wide washer OD22 ID9:1#0",
+      "body": "W1FO M8 wide washer OD22 ID9",
+      "volume_cm3": 0.4747731897737777,
+      "bbox_cm": [
+        -1.905,
+        6.0417784899841305,
+        6.041778489984129,
+        -1.7550000000000001,
+        8.241778489984132,
+        8.24177848998413
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+W1RI M8 wide washer OD22 ID9:1#0",
+      "body": "W1RI M8 wide washer OD22 ID9",
+      "volume_cm3": 0.4747731897737959,
+      "bbox_cm": [
+        38.105000000000004,
+        6.0417784899841305,
+        6.041778489984129,
+        38.25500000000001,
+        8.241778489984132,
+        8.24177848998413
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+W1RO M8 wide washer OD22 ID9:1#0",
+      "body": "W1RO M8 wide washer OD22 ID9",
+      "volume_cm3": 0.4747731897737959,
+      "bbox_cm": [
+        39.754999999999995,
+        6.0417784899841305,
+        6.041778489984129,
+        39.905,
+        8.241778489984132,
+        8.24177848998413
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+N2F M8 closed dome nut; verify usable blind thread:1#0",
+      "body": "N2F M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 1.309692343536546,
+      "bbox_cm": [
+        -3.305,
+        -7.79177848998413,
+        6.391223140037618,
+        -1.9050000000000002,
+        -6.491778489984129,
+        7.892333839930645
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+N2R M8 closed dome nut; verify usable blind thread:1#0",
+      "body": "N2R M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 1.309692343536546,
+      "bbox_cm": [
+        39.905,
+        -7.79177848998413,
+        6.391223140037618,
+        41.305,
+        -6.491778489984129,
+        7.892333839930645
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+R2 M8 A4 threaded tie rod; 436mm provisional cut:1#0",
+      "body": "R2 M8 A4 threaded tie rod; 436mm provisional cut",
+      "volume_cm3": 21.91575035144146,
+      "bbox_cm": [
+        -2.799999999999997,
+        -7.54177848998413,
+        6.741778489984131,
+        40.8,
+        -6.741778489984129,
+        7.541778489984131
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+S2 A4 compression limiter OD14 ID9 L382.1:1#0",
+      "body": "S2 A4 compression limiter OD14 ID9 L382.1",
+      "volume_cm3": 34.51157339692746,
+      "bbox_cm": [
+        -0.10499999999999687,
+        -7.841778489984129,
+        6.441778489984131,
+        38.105000000000004,
+        -6.441778489984129,
+        7.841778489984131
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+W2FI M8 wide washer OD22 ID9:1#0",
+      "body": "W2FI M8 wide washer OD22 ID9",
+      "volume_cm3": 0.47477318977377797,
+      "bbox_cm": [
+        -0.255,
+        -8.24177848998413,
+        6.0417784899841305,
+        -0.10499999999999998,
+        -6.041778489984129,
+        8.241778489984132
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+W2FO M8 wide washer OD22 ID9:1#0",
+      "body": "W2FO M8 wide washer OD22 ID9",
+      "volume_cm3": 0.4747731897737777,
+      "bbox_cm": [
+        -1.905,
+        -8.24177848998413,
+        6.0417784899841305,
+        -1.7550000000000001,
+        -6.041778489984129,
+        8.241778489984132
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+W2RI M8 wide washer OD22 ID9:1#0",
+      "body": "W2RI M8 wide washer OD22 ID9",
+      "volume_cm3": 0.4747731897737959,
+      "bbox_cm": [
+        38.105000000000004,
+        -8.24177848998413,
+        6.0417784899841305,
+        38.25500000000001,
+        -6.041778489984129,
+        8.241778489984132
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+W2RO M8 wide washer OD22 ID9:1#0",
+      "body": "W2RO M8 wide washer OD22 ID9",
+      "volume_cm3": 0.4747731897737959,
+      "bbox_cm": [
+        39.754999999999995,
+        -8.24177848998413,
+        6.0417784899841305,
+        39.905,
+        -6.041778489984129,
+        8.241778489984132
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+N3F M8 closed dome nut; verify usable blind thread:1#0",
+      "body": "N3F M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 1.3096923435365448,
+      "bbox_cm": [
+        -3.305,
+        -7.791778489984132,
+        -7.892333839930642,
+        -1.9050000000000002,
+        -6.4917784899841315,
+        -6.3912231400376145
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+N3R M8 closed dome nut; verify usable blind thread:1#0",
+      "body": "N3R M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 1.3096923435365444,
+      "bbox_cm": [
+        39.905,
+        -7.791778489984132,
+        -7.892333839930642,
+        41.305,
+        -6.4917784899841315,
+        -6.3912231400376145
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+R3 M8 A4 threaded tie rod; 436mm provisional cut:1#0",
+      "body": "R3 M8 A4 threaded tie rod; 436mm provisional cut",
+      "volume_cm3": 21.915750351441456,
+      "bbox_cm": [
+        -2.799999999999997,
+        -7.541778489984132,
+        -7.54177848998413,
+        40.8,
+        -6.7417784899841315,
+        -6.741778489984129
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+S3 A4 compression limiter OD14 ID9 L382.1:1#0",
+      "body": "S3 A4 compression limiter OD14 ID9 L382.1",
+      "volume_cm3": 34.51157339692746,
+      "bbox_cm": [
+        -0.10499999999999687,
+        -7.841778489984132,
+        -7.841778489984129,
+        38.105000000000004,
+        -6.441778489984132,
+        -6.441778489984129
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+W3FI M8 wide washer OD22 ID9:1#0",
+      "body": "W3FI M8 wide washer OD22 ID9",
+      "volume_cm3": 0.4747731897737781,
+      "bbox_cm": [
+        -0.255,
+        -8.241778489984132,
+        -8.24177848998413,
+        -0.10499999999999998,
+        -6.041778489984132,
+        -6.041778489984129
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+W3FO M8 wide washer OD22 ID9:1#0",
+      "body": "W3FO M8 wide washer OD22 ID9",
+      "volume_cm3": 0.4747731897737777,
+      "bbox_cm": [
+        -1.905,
+        -8.241778489984132,
+        -8.24177848998413,
+        -1.7550000000000001,
+        -6.041778489984132,
+        -6.041778489984129
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+W3RI M8 wide washer OD22 ID9:1#0",
+      "body": "W3RI M8 wide washer OD22 ID9",
+      "volume_cm3": 0.474773189773796,
+      "bbox_cm": [
+        38.105000000000004,
+        -8.241778489984132,
+        -8.24177848998413,
+        38.25500000000001,
+        -6.041778489984132,
+        -6.041778489984129
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+W3RO M8 wide washer OD22 ID9:1#0",
+      "body": "W3RO M8 wide washer OD22 ID9",
+      "volume_cm3": 0.474773189773796,
+      "bbox_cm": [
+        39.754999999999995,
+        -8.241778489984132,
+        -8.24177848998413,
+        39.905,
+        -6.041778489984132,
+        -6.041778489984129
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+N4F M8 closed dome nut; verify usable blind thread:1#0",
+      "body": "N4F M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 1.3096923435365437,
+      "bbox_cm": [
+        -3.305,
+        6.491778489984128,
+        -7.892333839930647,
+        -1.9050000000000002,
+        7.791778489984129,
+        -6.39122314003762
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+N4R M8 closed dome nut; verify usable blind thread:1#0",
+      "body": "N4R M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 1.3096923435365446,
+      "bbox_cm": [
+        39.905,
+        6.491778489984128,
+        -7.892333839930647,
+        41.305,
+        7.791778489984129,
+        -6.39122314003762
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+R4 M8 A4 threaded tie rod; 436mm provisional cut:1#0",
+      "body": "R4 M8 A4 threaded tie rod; 436mm provisional cut",
+      "volume_cm3": 21.915750351441456,
+      "bbox_cm": [
+        -2.799999999999997,
+        6.741778489984128,
+        -7.541778489984132,
+        40.8,
+        7.541778489984129,
+        -6.7417784899841315
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+S4 A4 compression limiter OD14 ID9 L382.1:1#0",
+      "body": "S4 A4 compression limiter OD14 ID9 L382.1",
+      "volume_cm3": 34.51157339692746,
+      "bbox_cm": [
+        -0.10499999999999687,
+        6.441778489984128,
+        -7.841778489984132,
+        38.105000000000004,
+        7.8417784899841285,
+        -6.441778489984132
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+W4FI M8 wide washer OD22 ID9:1#0",
+      "body": "W4FI M8 wide washer OD22 ID9",
+      "volume_cm3": 0.47477318977377797,
+      "bbox_cm": [
+        -0.255,
+        6.041778489984129,
+        -8.241778489984132,
+        -0.10499999999999998,
+        8.241778489984128,
+        -6.041778489984132
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+W4FO M8 wide washer OD22 ID9:1#0",
+      "body": "W4FO M8 wide washer OD22 ID9",
+      "volume_cm3": 0.4747731897737777,
+      "bbox_cm": [
+        -1.905,
+        6.041778489984129,
+        -8.241778489984132,
+        -1.7550000000000001,
+        8.241778489984128,
+        -6.041778489984132
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+W4RI M8 wide washer OD22 ID9:1#0",
+      "body": "W4RI M8 wide washer OD22 ID9",
+      "volume_cm3": 0.474773189773796,
+      "bbox_cm": [
+        38.105000000000004,
+        6.041778489984129,
+        -8.241778489984132,
+        38.25500000000001,
+        8.241778489984128,
+        -6.041778489984132
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+W4RO M8 wide washer OD22 ID9:1#0",
+      "body": "W4RO M8 wide washer OD22 ID9",
+      "volume_cm3": 0.474773189773796,
+      "bbox_cm": [
+        39.754999999999995,
+        6.041778489984129,
+        -8.241778489984132,
+        39.905,
+        8.241778489984128,
+        -6.041778489984132
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+01_3D_CHASIS_Y_AROS:1+P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint:1#0",
+      "body": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+      "volume_cm3": 533.9242568402711,
+      "bbox_cm": [
+        -0.2549999999999999,
+        -8.459999999999999,
+        -8.459999999999999,
+        19.9,
+        8.459999999999999,
+        8.459999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+01_3D_CHASIS_Y_AROS:1+P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint:1#0",
+      "body": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "volume_cm3": 477.9465442435185,
+      "bbox_cm": [
+        19.4,
+        -8.4,
+        -8.4,
+        38.1,
+        8.4,
+        8.4
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T216_-28 Electronics tray spacer; attachment to shield:1#0",
+      "body": "P_T216_-28 Electronics tray spacer; attachment to shield",
+      "volume_cm3": 0.04618141200777188,
+      "bbox_cm": [
+        21.28,
+        -3.1199999999999997,
+        3.9000000000000004,
+        21.92,
+        -2.48,
+        4.1
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T216_28 Electronics tray spacer; attachment to shield:1#0",
+      "body": "P_T216_28 Electronics tray spacer; attachment to shield",
+      "volume_cm3": 0.04618141200777188,
+      "bbox_cm": [
+        21.28,
+        2.48,
+        3.9000000000000004,
+        21.92,
+        3.1199999999999997,
+        4.1
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T344_-28 Electronics tray spacer; attachment to shield:1#0",
+      "body": "P_T344_-28 Electronics tray spacer; attachment to shield",
+      "volume_cm3": 0.04618141200777173,
+      "bbox_cm": [
+        34.08,
+        -3.1199999999999997,
+        3.9000000000000004,
+        34.72,
+        -2.48,
+        4.1
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T344_28 Electronics tray spacer; attachment to shield:1#0",
+      "body": "P_T344_28 Electronics tray spacer; attachment to shield",
+      "volume_cm3": 0.04618141200777173,
+      "bbox_cm": [
+        34.08,
+        2.48,
+        3.9000000000000004,
+        34.72,
+        3.1199999999999997,
+        4.1
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_TOP Removable electronics tray; slots for cable ties:1#0",
+      "body": "P_TOP Removable electronics tray; slots for cable ties",
+      "volume_cm3": 37.03237413354708,
+      "bbox_cm": [
+        19.65,
+        -5.2,
+        4.1,
+        37.5,
+        5.2,
+        5.9399999999999995
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_HOOD_UPPER Opaque optical cover UPPER:1#0",
+      "body": "P_HOOD_UPPER Opaque optical cover UPPER",
+      "volume_cm3": 92.47672593809611,
+      "bbox_cm": [
+        7.55,
+        -6.4,
+        0.0,
+        24.05,
+        6.4,
+        6.679165942028438
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_OPT_A Optical saddle; contact based on approximate source:1#0",
+      "body": "P_OPT_A Optical saddle; contact based on approximate source",
+      "volume_cm3": 13.565413873765461,
+      "bbox_cm": [
+        10.9,
+        -2.5,
+        -4.050000000000001,
+        11.799999999999999,
+        2.5,
+        -0.8500000000000001
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_OPT_B Optical saddle; contact based on approximate source:1#0",
+      "body": "P_OPT_B Optical saddle; contact based on approximate source",
+      "volume_cm3": 5.361243813593425,
+      "bbox_cm": [
+        18.0,
+        -3.0,
+        -4.05,
+        20.0,
+        3.0,
+        -3.05
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_EZO_V2 Placa lateral - 2 tornillos M3 y 2 bridas:1#0",
+      "body": "Body1",
+      "volume_cm3": 12.07136637784902,
+      "bbox_cm": [
+        31.000000000000004,
+        -7.4,
+        -2.4,
+        37.400000000000006,
+        -7.0,
+        2.4
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_216_L M3x25 - ranura para borde PCB:1#0",
+      "body": "Body1",
+      "volume_cm3": 1.7870039395201098,
+      "bbox_cm": [
+        21.0,
+        -5.199999999999999,
+        4.3999999999999995,
+        22.200000000000003,
+        -3.2805,
+        6.039999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_216_R M3x25 - ranura para borde PCB:1#0",
+      "body": "Body1",
+      "volume_cm3": 1.78700393952011,
+      "bbox_cm": [
+        21.0,
+        3.2805,
+        4.3999999999999995,
+        22.200000000000003,
+        5.199999999999999,
+        6.039999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_344_L M3x25 - ranura para borde PCB:1#0",
+      "body": "Body1",
+      "volume_cm3": 1.787003939520108,
+      "bbox_cm": [
+        33.8,
+        -5.199999999999999,
+        4.3999999999999995,
+        35.0,
+        -3.2805,
+        6.039999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_344_R M3x25 - ranura para borde PCB:1#0",
+      "body": "Body1",
+      "volume_cm3": 1.787003939520108,
+      "bbox_cm": [
+        33.8,
+        3.2805,
+        4.3999999999999995,
+        35.0,
+        5.199999999999999,
+        6.039999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O01 Optical carrier from original cross APPROX:1#0",
+      "body": "O01 Optical carrier from original cross APPROX",
+      "volume_cm3": 23.101450094502514,
+      "bbox_cm": [
+        8.000000000000558,
+        -4.7750154213106555,
+        -2.8630041134713258,
+        14.899999999999977,
+        5.699999999999999,
+        2.479393056686373
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O02 AS7265x 18-channel detector APPROX:1#0",
+      "body": "Body1",
+      "volume_cm3": 3.989749910316468,
+      "bbox_cm": [
+        10.399999999999977,
+        5.449999999999999,
+        -1.9920000000000266,
+        14.899999999999977,
+        5.899999999999999,
+        1.607999999999973
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O03 MonoSpectro camera optics APPROX:1#0",
+      "body": "Body1",
+      "volume_cm3": 334.42563225446247,
+      "bbox_cm": [
+        13.600000000000646,
+        -2.4700152892086873,
+        -3.680834332286056,
+        23.550000000000303,
+        2.7299847107913173,
+        3.089165667713947
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O04 Auxiliary camera APPROX; lens toward FRONT window:1#0",
+      "body": "Body1",
+      "volume_cm3": 152.65029947655378,
+      "bbox_cm": [
+        1.3000000000000007,
+        -2.961386627607129,
+        -2.028426411673747,
+        7.299999999999999,
+        2.961386627607129,
+        3.6284264116737486
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O05 Quartz flow cell APPROX; vertical water ports:1#0",
+      "body": "O05 Quartz flow cell APPROX; vertical water ports",
+      "volume_cm3": 6.25,
+      "bbox_cm": [
+        12.025,
+        -0.625,
+        -2.0,
+        13.275,
+        0.625,
+        2.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O06 430nm excitation source facing AS7265x across cell:1#0",
+      "body": "O06 430nm excitation source facing AS7265x across cell",
+      "volume_cm3": 0.5760000000000002,
+      "bbox_cm": [
+        12.05,
+        -4.2,
+        -0.6,
+        13.25,
+        -3.8,
+        0.6
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O07 White Optisolis source transmission axis +X:1#0",
+      "body": "O07 White Optisolis source transmission axis +X",
+      "volume_cm3": 0.7680000000000019,
+      "bbox_cm": [
+        7.449999999999999,
+        -0.8,
+        -0.8,
+        7.75,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+01_RASPBERRY_PI_4_JUNTO_PICAM:1+EL_PI Raspberry Pi 4 PCB reference; USB toward front:1#0",
+      "body": "EL_PI Raspberry Pi 4 PCB reference; USB toward front",
+      "volume_cm3": 7.5793564632885335,
+      "bbox_cm": [
+        11.8,
+        0.40000000000000036,
+        4.199999999999999,
+        20.3,
+        6.0,
+        4.359999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+01_RASPBERRY_PI_4_JUNTO_PICAM:1+EL_PI Raspberry Pi 4 PCB reference; USB toward front:1#1",
+      "body": "Body2",
+      "volume_cm3": 0.5625,
+      "bbox_cm": [
+        16.25,
+        2.45,
+        4.359999999999999,
+        17.75,
+        3.95,
+        4.609999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+01_RASPBERRY_PI_4_JUNTO_PICAM:1+EL_PI Raspberry Pi 4 PCB reference; USB toward front:1#2",
+      "body": "Body3",
+      "volume_cm3": 1.732499999999998,
+      "bbox_cm": [
+        14.525,
+        5.35,
+        4.359999999999999,
+        19.475,
+        5.85,
+        5.059999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+01_RASPBERRY_PI_4_JUNTO_PICAM:1+EL_PI_PLUG_SPACE Pi USB plug clearance; verify cable bend:1#0",
+      "body": "EL_PI_PLUG_SPACE Pi USB plug clearance; verify cable bend",
+      "volume_cm3": 24.192,
+      "bbox_cm": [
+        9.4,
+        0.40000000000000036,
+        4.199999999999999,
+        11.8,
+        6.0,
+        6.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+01_RASPBERRY_PI_4_JUNTO_PICAM:1+EL_PI_PORTS Pi USB/Ethernet bodies approximate:1#0",
+      "body": "EL_PI_PORTS Pi USB/Ethernet bodies approximate",
+      "volume_cm3": 3.6719999999999993,
+      "bbox_cm": [
+        11.8,
+        4.2,
+        4.359999999999999,
+        13.5,
+        5.800000000000001,
+        5.709999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+01_RASPBERRY_PI_4_JUNTO_PICAM:1+EL_PI_PORTS Pi USB/Ethernet bodies approximate:1#1",
+      "body": "Body2",
+      "volume_cm3": 4.319999999999998,
+      "bbox_cm": [
+        11.8,
+        0.6500000000000004,
+        4.359999999999999,
+        13.600000000000001,
+        2.1500000000000004,
+        5.959999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+01_RASPBERRY_PI_4_JUNTO_PICAM:1+EL_PI_PORTS Pi USB/Ethernet bodies approximate:1#2",
+      "body": "Body3",
+      "volume_cm3": 4.3199999999999985,
+      "bbox_cm": [
+        11.8,
+        2.45,
+        4.359999999999999,
+        13.600000000000001,
+        3.95,
+        5.959999999999999
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_BAT CITYORK 24V 3Ah pack; advertised 70x37.5x56:1#0",
+      "body": "EL_BAT CITYORK 24V 3Ah pack; advertised 70x37.5x56",
+      "volume_cm3": 147.0,
+      "bbox_cm": [
+        24.8,
+        -4.675,
+        -4.0,
+        31.8,
+        -0.9249999999999998,
+        1.5999999999999996
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_EN3 EN3P8MX 8pin charging and RS485; panel 4mm local:1#0",
+      "body": "EL_EN3 EN3P8MX 8pin charging and RS485; panel 4mm local",
+      "volume_cm3": 3.2971643217956874,
+      "bbox_cm": [
+        39.355000000000004,
+        1.97,
+        -4.03,
+        40.955,
+        4.03,
+        -1.9699999999999998
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_EZO Atlas isolated EZO carrier 56.2x32; 20mm height reserve:1#0",
+      "body": "EL_EZO Atlas isolated EZO carrier 56.2x32; 20mm height reserve",
+      "volume_cm3": 35.96800000000001,
+      "bbox_cm": [
+        31.390000000000004,
+        -7.0,
+        -1.6,
+        37.010000000000005,
+        -5.0,
+        1.6
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_GATE Acquisition power switch reserve:1#0",
+      "body": "EL_GATE Acquisition power switch reserve",
+      "volume_cm3": 4.400000000000006,
+      "bbox_cm": [
+        19.800000000000004,
+        -3.4,
+        4.3999999999999995,
+        22.000000000000007,
+        -1.4,
+        5.3999999999999995
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_LED_B Blue LED current regulator reserve:1#0",
+      "body": "EL_LED_B Blue LED current regulator reserve",
+      "volume_cm3": 3.5999999999999996,
+      "bbox_cm": [
+        19.9,
+        1.5,
+        4.3999999999999995,
+        21.9,
+        3.3,
+        5.3999999999999995
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_PUMP_MOTOR MS11HS5L410C-01 motor APPROX:1#0",
+      "body": "EL_PUMP_MOTOR MS11HS5L410C-01 motor APPROX",
+      "volume_cm3": 39.98399999999995,
+      "bbox_cm": [
+        25.5,
+        1.8,
+        -5.5,
+        28.299999999999997,
+        4.6,
+        -0.40000000000000036
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_RS485 RS485 module approximate:1#0",
+      "body": "EL_RS485 RS485 module approximate",
+      "volume_cm3": 6.800000000000001,
+      "bbox_cm": [
+        22.0,
+        -3.35,
+        4.3999999999999995,
+        26.0,
+        -1.65,
+        5.3999999999999995
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_RTC RTC module approximate:1#0",
+      "body": "EL_RTC RTC module approximate",
+      "volume_cm3": 6.299999999999999,
+      "bbox_cm": [
+        22.35,
+        1.6,
+        4.3999999999999995,
+        25.85,
+        3.4,
+        5.3999999999999995
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+CP_Radial_D8.0mm_P3.50mm (3):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.3895638550403831,
+      "bbox_cm": [
+        34.2297479,
+        1.6703763,
+        5.5595,
+        35.029747900000004,
+        2.4703763,
+        6.5595
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+C_Disc_D5.0mm_W2.5mm_P5.00mm (3):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.028007932617931018,
+      "bbox_cm": [
+        26.3295,
+        -0.8345000000000004,
+        5.5595,
+        26.5795,
+        -0.2845000000000003,
+        6.2695
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+C_Disc_D5.0mm_W2.5mm_P5.00mm (3):2#0",
+      "body": "Body1",
+      "volume_cm3": 0.028007932617931018,
+      "bbox_cm": [
+        29.1295,
+        -0.8345000000000004,
+        5.5595,
+        29.3795,
+        -0.2845000000000003,
+        6.2695
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+C_Disc_D5.0mm_W2.5mm_P5.00mm (3):3#0",
+      "body": "Body1",
+      "volume_cm3": 0.028007932617931018,
+      "bbox_cm": [
+        30.1845,
+        -0.47950000000000026,
+        5.5595,
+        30.734499999999997,
+        -0.22950000000000026,
+        6.2695
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+C_Disc_D5.0mm_W2.5mm_P5.00mm (3):4#0",
+      "body": "Body1",
+      "volume_cm3": 0.028007932617931018,
+      "bbox_cm": [
+        35.6845,
+        -0.5795000000000003,
+        5.5595,
+        36.2345,
+        -0.32950000000000035,
+        6.2695
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+C_Disc_D5.0mm_W2.5mm_P5.00mm (3):5#0",
+      "body": "Body1",
+      "volume_cm3": 0.028007932617931018,
+      "bbox_cm": [
+        26.729499999999998,
+        -1.1345,
+        5.5595,
+        26.979499999999998,
+        -0.5845000000000001,
+        6.2695
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+DFR1015_ENVELOPE_APROX:1#0",
+      "body": "Body1",
+      "volume_cm3": 5.462000000000001,
+      "bbox_cm": [
+        20.1375,
+        1.1655,
+        6.6095,
+        22.868499999999997,
+        3.1654999999999998,
+        7.6095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+DFR1015_ENVELOPE_APROX:2#0",
+      "body": "Body1",
+      "volume_cm3": 5.462000000000001,
+      "bbox_cm": [
+        23.037499999999998,
+        1.1655,
+        6.6095,
+        25.768499999999996,
+        3.1654999999999998,
+        7.6095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+DFR1015_ENVELOPE_APROX:3#0",
+      "body": "Body1",
+      "volume_cm3": 5.462000000000001,
+      "bbox_cm": [
+        25.9375,
+        1.1655,
+        6.6095,
+        28.668499999999998,
+        3.1654999999999998,
+        7.6095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+DIP-14_W7.62mm:1#0",
+      "body": "Body1",
+      "volume_cm3": 0.38616997519162977,
+      "bbox_cm": [
+        32.6977999,
+        1.3279999999999998,
+        5.4295,
+        33.485199900000005,
+        3.233,
+        6.1275
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+DIP-4_W7.62mm (2):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.09384222853714426,
+      "bbox_cm": [
+        35.236999999999995,
+        1.6158,
+        5.4295,
+        35.73,
+        2.4032,
+        6.1275
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.03640463071564225,
+      "bbox_cm": [
+        32.628499999999995,
+        0.10449999999999983,
+        5.5095,
+        32.9005,
+        1.2005,
+        6.0805
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):2#0",
+      "body": "Body1",
+      "volume_cm3": 0.03640463071564225,
+      "bbox_cm": [
+        33.0285,
+        0.10449999999999983,
+        5.5095,
+        33.30050000000001,
+        1.2005,
+        6.0805
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):3#0",
+      "body": "Body1",
+      "volume_cm3": 0.03640463071564225,
+      "bbox_cm": [
+        20.1995,
+        0.6994999999999998,
+        5.5095,
+        21.2955,
+        0.9714999999999998,
+        6.0805
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):4#0",
+      "body": "Body1",
+      "volume_cm3": 0.03640463071564225,
+      "bbox_cm": [
+        21.5995,
+        0.6994999999999998,
+        5.5095,
+        22.6955,
+        0.9714999999999998,
+        6.0805
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):5#0",
+      "body": "Body1",
+      "volume_cm3": 0.03640463071564225,
+      "bbox_cm": [
+        22.999499999999998,
+        0.6994999999999998,
+        5.5095,
+        24.095499999999998,
+        0.9714999999999998,
+        6.0805
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):6#0",
+      "body": "Body1",
+      "volume_cm3": 0.03640463071564225,
+      "bbox_cm": [
+        24.3995,
+        0.6994999999999998,
+        5.5095,
+        25.4955,
+        0.9714999999999998,
+        6.0805
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):7#0",
+      "body": "Body1",
+      "volume_cm3": 0.03640463071564225,
+      "bbox_cm": [
+        25.799500000000002,
+        0.6994999999999998,
+        5.5095,
+        26.895500000000002,
+        0.9714999999999998,
+        6.0805
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+Disipador_A4988_9x9x5_APROX (1):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.405,
+      "bbox_cm": [
+        30.5425,
+        1.7044999999999997,
+        6.9094999999999995,
+        31.4425,
+        2.6045,
+        7.4094999999999995
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+Fusible_5x20_envolvente_APROX (1):1#0",
+      "body": "Body1",
+      "volume_cm3": 1.2656000000000003,
+      "bbox_cm": [
+        33.69949999999999,
+        2.5555,
+        5.7595,
+        35.9595,
+        3.2555,
+        6.5595
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+Fusible_5x20_envolvente_APROX (1):2#0",
+      "body": "Body1",
+      "volume_cm3": 1.2656000000000003,
+      "bbox_cm": [
+        36.04449999999999,
+        0.9404999999999996,
+        5.7595,
+        36.744499999999995,
+        3.2005,
+        6.5595
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+KiCad_Omron_G2RL_DPDT (1):1#0",
+      "body": "Body1",
+      "volume_cm3": 5.661218699246577,
+      "bbox_cm": [
+        28.8295,
+        0.29049999999999976,
+        5.4095,
+        30.0795,
+        3.1705,
+        7.3295
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.03938221877333338,
+      "bbox_cm": [
+        23.354499999999998,
+        -0.7625,
+        5.4595,
+        23.608499999999996,
+        -0.25449999999999995,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):10#0",
+      "body": "Body1",
+      "volume_cm3": 0.03938221877333338,
+      "bbox_cm": [
+        28.654500000000002,
+        -0.7625,
+        5.4595,
+        28.9085,
+        -0.25449999999999995,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):2#0",
+      "body": "Body1",
+      "volume_cm3": 0.03938221877333338,
+      "bbox_cm": [
+        23.854499999999998,
+        -0.7625,
+        5.4595,
+        24.108499999999996,
+        -0.25449999999999995,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):3#0",
+      "body": "Body1",
+      "volume_cm3": 0.03938221877333338,
+      "bbox_cm": [
+        24.354499999999998,
+        -0.7625,
+        5.4595,
+        24.608499999999996,
+        -0.25449999999999995,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):4#0",
+      "body": "Body1",
+      "volume_cm3": 0.03938221877333338,
+      "bbox_cm": [
+        24.854499999999998,
+        -0.7625,
+        5.4595,
+        25.108499999999996,
+        -0.25449999999999995,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):5#0",
+      "body": "Body1",
+      "volume_cm3": 0.03938221877333338,
+      "bbox_cm": [
+        25.354499999999998,
+        -0.7625,
+        5.4595,
+        25.608499999999996,
+        -0.25449999999999995,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):6#0",
+      "body": "Body1",
+      "volume_cm3": 0.03938221877333338,
+      "bbox_cm": [
+        25.854499999999998,
+        -0.7625,
+        5.4595,
+        26.108499999999996,
+        -0.25449999999999995,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):7#0",
+      "body": "Body1",
+      "volume_cm3": 0.03938221877333338,
+      "bbox_cm": [
+        27.1545,
+        -0.7625,
+        5.4595,
+        27.408499999999997,
+        -0.25449999999999995,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):8#0",
+      "body": "Body1",
+      "volume_cm3": 0.03938221877333338,
+      "bbox_cm": [
+        27.6545,
+        -0.7625,
+        5.4595,
+        27.908499999999997,
+        -0.25449999999999995,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):9#0",
+      "body": "Body1",
+      "volume_cm3": 0.03938221877333338,
+      "bbox_cm": [
+        28.154500000000002,
+        -0.7625,
+        5.4595,
+        28.4085,
+        -0.25449999999999995,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x03_P2.54mm_Vertical (3):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.05907332816000005,
+      "bbox_cm": [
+        31.2545,
+        0.18349999999999977,
+        5.4595,
+        31.508499999999998,
+        0.9454999999999998,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x04_P2.54mm_Vertical (3):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.07876443754666676,
+      "bbox_cm": [
+        27.1545,
+        -0.07050000000000034,
+        5.4595,
+        27.408499999999997,
+        0.9454999999999997,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x04_P2.54mm_Vertical (3):2#0",
+      "body": "Body1",
+      "volume_cm3": 0.07876443754666676,
+      "bbox_cm": [
+        27.6545,
+        -0.07050000000000034,
+        5.4595,
+        27.908499999999997,
+        0.9454999999999997,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x04_P2.54mm_Vertical (3):3#0",
+      "body": "Body1",
+      "volume_cm3": 0.07876443754666676,
+      "bbox_cm": [
+        28.154500000000002,
+        -0.07050000000000034,
+        5.4595,
+        28.4085,
+        0.9454999999999997,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x04_P2.54mm_Vertical (3):4#0",
+      "body": "Body1",
+      "volume_cm3": 0.07876443754666676,
+      "bbox_cm": [
+        30.2545,
+        -0.07050000000000034,
+        5.4595,
+        30.508499999999998,
+        0.9454999999999997,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x04_P2.54mm_Vertical (3):5#0",
+      "body": "Body1",
+      "volume_cm3": 0.07876443754666676,
+      "bbox_cm": [
+        30.7545,
+        -0.07050000000000034,
+        5.4595,
+        31.008499999999998,
+        0.9454999999999997,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x05_P2.54mm_Vertical:1#0",
+      "body": "Body1",
+      "volume_cm3": 0.09845554693333672,
+      "bbox_cm": [
+        35.354499999999994,
+        0.07549999999999968,
+        5.4595,
+        35.6085,
+        1.3454999999999997,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x08_P2.54mm_Vertical:1#0",
+      "body": "Body1",
+      "volume_cm3": 0.15752887509334645,
+      "bbox_cm": [
+        33.7545,
+        0.4135,
+        5.4595,
+        34.008500000000005,
+        2.4455,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_2x20_P2.54mm_Vertical (3):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.7941992010668932,
+      "bbox_cm": [
+        31.9545,
+        -1.9355000000000002,
+        5.4595,
+        32.4625,
+        3.1445,
+        6.6135
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinSocket_1x05_P2.54mm_Vertical (3):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.2582044333333298,
+      "bbox_cm": [
+        34.857499999999995,
+        0.07250000000000001,
+        5.4495000000000005,
+        35.1115,
+        1.3425,
+        6.609500000000001
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinSocket_1x08_P2.54mm_Vertical (1):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.4131270933333278,
+      "bbox_cm": [
+        30.230500000000003,
+        1.1384999999999996,
+        5.4495000000000005,
+        30.4845,
+        3.1704999999999997,
+        6.609500000000001
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinSocket_1x08_P2.54mm_Vertical (1):2#0",
+      "body": "Body1",
+      "volume_cm3": 0.4131270933333278,
+      "bbox_cm": [
+        31.5005,
+        1.1384999999999996,
+        5.4495000000000005,
+        31.754499999999997,
+        3.1704999999999997,
+        6.609500000000001
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+Pololu_A4988_referencia (1):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.5268768069277465,
+      "bbox_cm": [
+        30.2305,
+        1.1385,
+        6.6095,
+        31.7545,
+        3.1705,
+        6.9464999999999995
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        35.829499999999996,
+        -0.1015000000000008,
+        5.4595,
+        36.079499999999996,
+        0.7204999999999993,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):10#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        33.4795,
+        0.02049999999999974,
+        5.4595,
+        34.301500000000004,
+        0.27049999999999974,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):11#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        20.179499899999996,
+        -0.07950000000000035,
+        5.4595,
+        21.0014999,
+        0.17049999999999965,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):12#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        21.2795,
+        -0.07950000000000035,
+        5.4595,
+        22.1015,
+        0.17049999999999965,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):13#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        22.379499999999997,
+        -0.07950000000000035,
+        5.4595,
+        23.2015,
+        0.17049999999999965,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):14#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        23.479499999999998,
+        -0.07950000000000035,
+        5.4595,
+        24.3015,
+        0.17049999999999965,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):15#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        24.579499999999996,
+        -0.07950000000000035,
+        5.4595,
+        25.4015,
+        0.17049999999999965,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):16#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        25.679499999999997,
+        -0.07950000000000035,
+        5.4595,
+        26.5015,
+        0.17049999999999965,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):17#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        28.679499999999997,
+        -0.07950000000000035,
+        5.4595,
+        29.5015,
+        0.17049999999999965,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):18#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        29.7295,
+        -0.7015000000000005,
+        5.4595,
+        29.9795,
+        0.12049999999999961,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):19#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        31.2295,
+        -0.9015000000000006,
+        5.4595,
+        31.4795,
+        -0.07950000000000057,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):2#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        36.2295,
+        -0.1015000000000008,
+        5.4595,
+        36.4795,
+        0.7204999999999993,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):20#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        32.6795,
+        -0.3795000000000006,
+        5.4595,
+        33.5015,
+        -0.12950000000000061,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):21#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        33.7795,
+        -0.3795000000000006,
+        5.4595,
+        34.6015,
+        -0.12950000000000061,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):22#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        34.829499999999996,
+        -1.0015000000000003,
+        5.4595,
+        35.079499999999996,
+        -0.17950000000000021,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):23#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        35.2295,
+        -1.0015000000000003,
+        5.4595,
+        35.4795,
+        -0.17950000000000021,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):24#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        20.179499899999996,
+        -0.47950000000000026,
+        5.4595,
+        21.0014999,
+        -0.22950000000000026,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):3#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        20.179499899999996,
+        0.32049999999999956,
+        5.4595,
+        21.0014999,
+        0.5704999999999996,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):4#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        21.2795,
+        0.32049999999999956,
+        5.4595,
+        22.1015,
+        0.5704999999999996,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):5#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        22.379499999999997,
+        0.32049999999999956,
+        5.4595,
+        23.2015,
+        0.5704999999999996,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):6#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        23.479499999999998,
+        0.32049999999999956,
+        5.4595,
+        24.3015,
+        0.5704999999999996,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):7#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        24.579499999999996,
+        0.32049999999999956,
+        5.4595,
+        25.4015,
+        0.5704999999999996,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):8#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        25.679499999999997,
+        0.32049999999999956,
+        5.4595,
+        26.5015,
+        0.5704999999999996,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):9#0",
+      "body": "Body1",
+      "volume_cm3": 0.029373716280165357,
+      "bbox_cm": [
+        26.729499999999998,
+        -0.30150000000000055,
+        5.4595,
+        26.979499999999998,
+        0.5204999999999995,
+        6.0095
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+SOT-23 (2):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.004402523112082189,
+      "bbox_cm": [
+        32.6725,
+        -0.8244999999999997,
+        5.7595,
+        32.9225,
+        -0.5244999999999996,
+        5.8795
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+SOT-23 (2):2#0",
+      "body": "Body1",
+      "volume_cm3": 0.004402523112082189,
+      "bbox_cm": [
+        33.1725,
+        -0.8244999999999997,
+        5.7595,
+        33.4225,
+        -0.5244999999999996,
+        5.8795
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+SOT-23 (2):3#0",
+      "body": "Body1",
+      "volume_cm3": 0.004402523112082189,
+      "bbox_cm": [
+        33.6725,
+        -0.8244999999999997,
+        5.7595,
+        33.9225,
+        -0.5244999999999996,
+        5.8795
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+SOT-23 (2):4#0",
+      "body": "Body1",
+      "volume_cm3": 0.004402523112082189,
+      "bbox_cm": [
+        34.1725,
+        -0.8244999999999997,
+        5.7595,
+        34.4225,
+        -0.5244999999999996,
+        5.8795
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+SOT-23 (2):5#0",
+      "body": "Body1",
+      "volume_cm3": 0.004402523112082189,
+      "bbox_cm": [
+        20.1725,
+        -0.9245000000000002,
+        5.7595,
+        20.4225,
+        -0.6245000000000002,
+        5.8795
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+TO-220-3_Vertical (3):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.4867616258905543,
+      "bbox_cm": [
+        34.2285,
+        0.45799999999999946,
+        4.7844999999999995,
+        34.674,
+        1.4829999999999997,
+        7.6370000000000005
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+TO-92_Inline (3):1#0",
+      "body": "Body1",
+      "volume_cm3": 0.07590600759627195,
+      "bbox_cm": [
+        21.2359999,
+        -0.6105,
+        5.5095,
+        21.7189999,
+        -0.236,
+        6.4895
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+TO-92_Inline (3):2#0",
+      "body": "Body1",
+      "volume_cm3": 0.07590600759627195,
+      "bbox_cm": [
+        21.936,
+        -0.6105,
+        5.5095,
+        22.419,
+        -0.236,
+        6.4895
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+TO-92_Inline (3):3#0",
+      "body": "Body1",
+      "volume_cm3": 0.07590600759627195,
+      "bbox_cm": [
+        22.636,
+        -0.6105,
+        5.5095,
+        23.119,
+        -0.236,
+        6.4895
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+cross_v8_draft_PCB:1#0",
+      "body": "Body1",
+      "volume_cm3": 17.17911622563436,
+      "bbox_cm": [
+        19.9,
+        -3.400000000000001,
+        5.6,
+        36.9,
+        3.4,
+        5.7509999999999994
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+01_ENTRADA_Y_SALIDA:1+H_DISCHARGE M10 WetLink JPT envelope discharge:1#0",
+      "body": "H_DISCHARGE M10 WetLink JPT envelope discharge",
+      "volume_cm3": 7.50480931849089,
+      "bbox_cm": [
+        37.755,
+        2.6,
+        2.6,
+        41.955,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+01_ENTRADA_Y_SALIDA:1+H_EXTERNAL_DISCHARGE Continuous silicone tube through discharge; external cut end:1#0",
+      "body": "H_EXTERNAL_DISCHARGE Continuous silicone tube through discharge; external cut end",
+      "volume_cm3": 0.7037167544040834,
+      "bbox_cm": [
+        37.400000000000006,
+        3.25,
+        3.25,
+        43.0,
+        3.75,
+        3.75
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+01_ENTRADA_Y_SALIDA:1+H_EXTERNAL_INTAKE Continuous silicone tube through intake; external cut end:1#0",
+      "body": "H_EXTERNAL_INTAKE Continuous silicone tube through intake; external cut end",
+      "volume_cm3": 0.7037167544040834,
+      "bbox_cm": [
+        37.400000000000006,
+        -3.75,
+        3.25,
+        43.0,
+        -3.25,
+        3.75
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+01_ENTRADA_Y_SALIDA:1+H_INTAKE M10 WetLink JPT envelope intake:1#0",
+      "body": "H_INTAKE M10 WetLink JPT envelope intake",
+      "volume_cm3": 7.504809318490891,
+      "bbox_cm": [
+        37.755,
+        -4.4,
+        2.6,
+        41.955,
+        -2.6,
+        4.4
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H2_TUBE_CELL_PUMP Cubeta a bomba - lateral libre de PCB:1#0",
+      "body": "H2_TUBE_CELL_PUMP Cubeta a bomba - lateral libre de PCB",
+      "volume_cm3": 3.059791200963768,
+      "bbox_cm": [
+        12.4,
+        -4.449999999999992,
+        1.9000000000000008,
+        26.049999999999994,
+        1.450000000000001,
+        6.449999999999996
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H3_TUBE_IN Entrada a temperatura - canal en travesano:1#0",
+      "body": "H3_TUBE_IN Entrada a temperatura - canal en travesano",
+      "volume_cm3": 1.8739460667301169,
+      "bbox_cm": [
+        31.85,
+        -3.75,
+        -1.3999999999999937,
+        37.4,
+        2.750000000000007,
+        3.7499999999999996
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H3_TUBE_OUT Bomba a descarga - canal en travesano:1#0",
+      "body": "H3_TUBE_OUT Bomba a descarga - canal en travesano",
+      "volume_cm3": 1.3032624799990344,
+      "bbox_cm": [
+        27.75,
+        2.95,
+        1.9,
+        37.400000000000006,
+        3.7499999999999996,
+        3.75
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H4_EC_CELL Salida alta conductividad a cubeta:1#0",
+      "body": "H4_EC_CELL Salida alta conductividad a cubeta",
+      "volume_cm3": 0.6730792504634342,
+      "bbox_cm": [
+        12.399999999999999,
+        -0.25,
+        -5.4,
+        16.5,
+        0.25,
+        -3.0000000000000018
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H5_TEMP_EC Temperatura a punta conductividad - fuera de union:1#0",
+      "body": "H5_TEMP_EC Temperatura a punta conductividad - fuera de union",
+      "volume_cm3": 1.8659063467633357,
+      "bbox_cm": [
+        20.299999999999997,
+        2.25,
+        -7.149999999999999,
+        32.35,
+        4.411980434952628,
+        -4.6
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_CONDUCTIVIDAD_SOLO_PUNTA_HUMEDA:1+EC4_BLOQUE_FLUJO Corto 37 mm - solo zona activa:1#0",
+      "body": "Body1",
+      "volume_cm3": 8.243326409976323,
+      "bbox_cm": [
+        17.5,
+        -1.4,
+        -7.4,
+        21.2,
+        1.4,
+        -4.6
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_CONDUCTIVIDAD_SOLO_PUNTA_HUMEDA:1+EC4_ENTRADA_LATERAL Desde temperatura:1#0",
+      "body": "Body1",
+      "volume_cm3": 0.2120575041173201,
+      "bbox_cm": [
+        20.25,
+        1.4,
+        -6.3,
+        20.85,
+        2.4,
+        -5.7
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_CONDUCTIVIDAD_SOLO_PUNTA_HUMEDA:1+EC4_ESPUMA_181 Apoyo seco - cortar, NO imprimir:1#0",
+      "body": "Body1",
+      "volume_cm3": 0.5089380098815419,
+      "bbox_cm": [
+        17.800000000000004,
+        -1.45,
+        -7.45,
+        18.4,
+        1.45,
+        -6.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_CONDUCTIVIDAD_SOLO_PUNTA_HUMEDA:1+EC4_ESPUMA_300 Apoyo seco - cortar, NO imprimir:1#0",
+      "body": "Body1",
+      "volume_cm3": 0.3449468733641602,
+      "bbox_cm": [
+        29.700000000000003,
+        -1.0150000000000001,
+        -7.015000000000001,
+        30.299999999999997,
+        1.0150000000000001,
+        -6.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_CONDUCTIVIDAD_SOLO_PUNTA_HUMEDA:1+EC4_RACOR_12mm Sellado del vastago - reserva dimensional:1#0",
+      "body": "Body1",
+      "volume_cm3": 16.41266177005662,
+      "bbox_cm": [
+        20.619999999999997,
+        -1.5,
+        -7.5,
+        23.799999999999997,
+        1.5,
+        -4.5
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_CONDUCTIVIDAD_SOLO_PUNTA_HUMEDA:1+EC4_SALIDA_SUPERIOR Hacia cubeta - purga del punto alto:1#0",
+      "body": "Body1",
+      "volume_cm3": 0.21205750411730193,
+      "bbox_cm": [
+        16.5,
+        -0.3,
+        -5.45,
+        17.5,
+        0.3,
+        -4.8500000000000005
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_CONDUCTIVIDAD_SOLO_PUNTA_HUMEDA:1+EC4_SONDA Atlas K1 oficial - punta mojada y cuerpo seco:1#0",
+      "body": "Body1",
+      "volume_cm3": 20.218999381683993,
+      "bbox_cm": [
+        18.6,
+        -0.8150000000000001,
+        -6.815,
+        33.6,
+        0.8150000000000001,
+        -5.185
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+04_SENSOR_TEMPERATURA_Y_TEE:1+ENV_TEMP DS18B20 6x50 envelope; tip wet / cable dry:1#0",
+      "body": "ENV_TEMP DS18B20 6x50 envelope; tip wet / cable dry",
+      "volume_cm3": 1.413716694115346,
+      "bbox_cm": [
+        31.799999999999997,
+        2.2,
+        -3.3,
+        36.8,
+        2.8,
+        -2.7
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+04_SENSOR_TEMPERATURA_Y_TEE:1+H_TEMP_GLAND Compression gland around DS18B20 case; HOLD:1#0",
+      "body": "H_TEMP_GLAND Compression gland around DS18B20 case; HOLD",
+      "volume_cm3": 0.8290663012823822,
+      "bbox_cm": [
+        33.0,
+        1.9,
+        -3.6,
+        34.0,
+        3.0999999999999996,
+        -2.4
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+04_SENSOR_TEMPERATURA_Y_TEE:1+H_TEMP_IN Temperature tee 3mm bore port:1#0",
+      "body": "H_TEMP_IN Temperature tee 3mm bore port",
+      "volume_cm3": 0.12723450247038118,
+      "bbox_cm": [
+        31.8,
+        2.2,
+        -2.0,
+        32.4,
+        2.8,
+        -1.4
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+04_SENSOR_TEMPERATURA_Y_TEE:1+H_TEMP_OUT Temperature tee 3mm bore port:1#0",
+      "body": "H_TEMP_OUT Temperature tee 3mm bore port",
+      "volume_cm3": 0.1272345024703811,
+      "bbox_cm": [
+        31.8,
+        2.2,
+        -4.6,
+        32.4,
+        2.8,
+        -4.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+04_SENSOR_TEMPERATURA_Y_TEE:1+H_TEMP_TEE Temperature flow tee POM; seal and fittings HOLD:1#0",
+      "body": "H_TEMP_TEE Temperature flow tee POM; seal and fittings HOLD",
+      "volume_cm3": 4.1427047371780334,
+      "bbox_cm": [
+        31.200000000000003,
+        1.8,
+        -4.0,
+        33.0,
+        3.2,
+        -2.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+05_BOMBA_Y_PUERTOS_CUBETA:1+H_CELL_-1 Flow cell port APPROX:1#0",
+      "body": "H_CELL_-1 Flow cell port APPROX",
+      "volume_cm3": 0.38484510006473316,
+      "bbox_cm": [
+        12.3,
+        -0.35,
+        -3.0,
+        13.0,
+        0.35,
+        -2.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+05_BOMBA_Y_PUERTOS_CUBETA:1+H_CELL_1 Flow cell port APPROX:1#0",
+      "body": "H_CELL_1 Flow cell port APPROX",
+      "volume_cm3": 0.38484510006473316,
+      "bbox_cm": [
+        12.3,
+        -0.35,
+        2.0,
+        13.0,
+        0.35,
+        3.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+05_BOMBA_Y_PUERTOS_CUBETA:1+H_PUMP_HEAD Peristaltic head APPROX; downstream of cell:1#0",
+      "body": "H_PUMP_HEAD Peristaltic head APPROX; downstream of cell",
+      "volume_cm3": 29.452431127405568,
+      "bbox_cm": [
+        24.4,
+        0.7,
+        -0.3999999999999999,
+        29.4,
+        5.699999999999999,
+        1.1
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+05_BOMBA_Y_PUERTOS_CUBETA:1+H_PUMP_PORT_258 Pump nozzle reservation; actual orientation pending:1#0",
+      "body": "H_PUMP_PORT_258 Pump nozzle reservation; actual orientation pending",
+      "volume_cm3": 0.1696460032938415,
+      "bbox_cm": [
+        25.5,
+        0.8999999999999999,
+        1.1,
+        26.1,
+        1.5,
+        1.9
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+05_BOMBA_Y_PUERTOS_CUBETA:1+H_PUMP_PORT_280 Pump nozzle reservation; actual orientation pending:1#0",
+      "body": "H_PUMP_PORT_280 Pump nozzle reservation; actual orientation pending",
+      "volume_cm3": 0.1696460032938415,
+      "bbox_cm": [
+        27.7,
+        2.9,
+        1.1,
+        28.3,
+        3.5,
+        1.9
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C335_LOWER Split external saddle collar:1#0",
+      "body": "P_C335_LOWER Split external saddle collar",
+      "volume_cm3": 58.592600935359364,
+      "bbox_cm": [
+        32.5,
+        -10.5,
+        -10.0,
+        34.5,
+        10.5,
+        0.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C335_UPPER Split external saddle collar:1#0",
+      "body": "P_C335_UPPER Split external saddle collar",
+      "volume_cm3": 59.2008132730946,
+      "bbox_cm": [
+        32.5,
+        -10.5,
+        0.0,
+        34.5,
+        10.5,
+        10.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C40_LOWER Split external saddle collar:1#0",
+      "body": "P_C40_LOWER Split external saddle collar",
+      "volume_cm3": 58.59260093535936,
+      "bbox_cm": [
+        3.0,
+        -10.5,
+        -10.0,
+        5.0,
+        10.5,
+        0.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C40_UPPER Split external saddle collar:1#0",
+      "body": "P_C40_UPPER Split external saddle collar",
+      "volume_cm3": 59.200813273094596,
+      "bbox_cm": [
+        3.0,
+        -10.5,
+        0.0,
+        5.0,
+        10.5,
+        10.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+07_LASTRE:1+02_PLACAS_METALICAS_REFERENCIA:1+B347 A4 3mm ballast eye plate; load test required:1#0",
+      "body": "B347 A4 3mm ballast eye plate; load test required",
+      "volume_cm3": 16.724310359829367,
+      "bbox_cm": [
+        34.550000000000004,
+        -9.0,
+        -11.0,
+        34.85,
+        9.0,
+        -6.0
+      ]
+    },
+    {
+      "key": "M2_GENERATED:1+07_LASTRE:1+02_PLACAS_METALICAS_REFERENCIA:1+B52 A4 3mm ballast eye plate; load test required:1#0",
+      "body": "B52 A4 3mm ballast eye plate; load test required",
+      "volume_cm3": 16.724310359829566,
+      "bbox_cm": [
+        5.05,
+        -9.0,
+        -11.0,
+        5.3500000000000005,
+        9.0,
+        -6.0
+      ]
+    }
+  ]
+}

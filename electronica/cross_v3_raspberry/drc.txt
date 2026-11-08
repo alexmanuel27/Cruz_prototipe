@@ -1,0 +1,302 @@
+** Drc report for cross_v3_draft.kicad_pcb **
+** Created on 2026-11-02T15:18:37+0100 **
+
+** Found 0 DRC violations **
+
+** Found 73 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(39.6200 mm, 8.0000 mm): PTH pad 2 [3V3_PI] of R1
+    @(12.0000 mm, 8.0000 mm): PTH pad 1 [3V3_PI] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(39.6200 mm, 44.0000 mm): PTH pad 2 [3V3_PI] of R10
+    @(39.6200 mm, 8.0000 mm): PTH pad 2 [3V3_PI] of R1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.0000 mm, 20.1600 mm): PTH pad 5 [3V3_PI] of U1
+    @(90.0000 mm, 22.7000 mm): PTH pad 6 [3V3_PI] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.0000 mm, 20.1600 mm): PTH pad 5 [3V3_PI] of U1
+    @(39.6200 mm, 8.0000 mm): PTH pad 2 [3V3_PI] of R1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.0000 mm, 22.7000 mm): PTH pad 6 [3V3_PI] of U1
+    @(102.7000 mm, 25.2400 mm): PTH pad 10 [3V3_PI] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.7000 mm, 25.2400 mm): PTH pad 10 [3V3_PI] of U1
+    @(110.0000 mm, 24.0000 mm): PTH pad 1 [3V3_PI] of J6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.7000 mm, 25.2400 mm): PTH pad 10 [3V3_PI] of U1
+    @(94.0000 mm, 44.0000 mm): PTH pad 1 [3V3_PI] of C2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.0000 mm, 24.0000 mm): PTH pad 1 [3V3_PI] of J6
+    @(133.0000 mm, 24.0000 mm): PTH pad 1 [3V3_PI] of J8
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(133.0000 mm, 24.0000 mm): PTH pad 1 [3V3_PI] of J8
+    @(147.0000 mm, 24.0000 mm): PTH pad 1 [3V3_PI] of J9
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(158.0000 mm, 24.0000 mm): PTH pad 1 [3V3_PI] of J10
+    @(147.0000 mm, 24.0000 mm): PTH pad 1 [3V3_PI] of J9
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(12.0000 mm, 38.4800 mm): PTH pad 25 [GND] of J1
+    @(14.5400 mm, 43.5600 mm): PTH pad 30 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.5400 mm, 13.0800 mm): PTH pad 6 [GND] of J1
+    @(12.0000 mm, 18.1600 mm): PTH pad 9 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.5400 mm, 23.2400 mm): PTH pad 14 [GND] of J1
+    @(12.0000 mm, 18.1600 mm): PTH pad 9 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.5400 mm, 30.8600 mm): PTH pad 20 [GND] of J1
+    @(14.5400 mm, 23.2400 mm): PTH pad 14 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.5400 mm, 30.8600 mm): PTH pad 20 [GND] of J1
+    @(12.0000 mm, 38.4800 mm): PTH pad 25 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.5400 mm, 48.6400 mm): PTH pad 34 [GND] of J1
+    @(14.5400 mm, 43.5600 mm): PTH pad 30 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.5400 mm, 48.6400 mm): PTH pad 34 [GND] of J1
+    @(12.0000 mm, 56.2600 mm): PTH pad 39 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(53.6200 mm, 8.0000 mm): PTH pad 2 [GND] of R2
+    @(14.5400 mm, 13.0800 mm): PTH pad 6 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(67.6200 mm, 8.0000 mm): PTH pad 2 [GND] of R3
+    @(67.6200 mm, 20.0000 mm): PTH pad 2 [GND] of R6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(67.6200 mm, 8.0000 mm): PTH pad 2 [GND] of R3
+    @(53.6200 mm, 8.0000 mm): PTH pad 2 [GND] of R2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(67.6200 mm, 32.0000 mm): PTH pad 2 [GND] of R9
+    @(67.6200 mm, 20.0000 mm): PTH pad 2 [GND] of R6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(67.6200 mm, 32.0000 mm): PTH pad 2 [GND] of R9
+    @(85.5000 mm, 44.0000 mm): PTH pad 2 [GND] of C1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(85.5000 mm, 44.0000 mm): PTH pad 2 [GND] of C1
+    @(99.0000 mm, 44.0000 mm): PTH pad 2 [GND] of C2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.0000 mm, 15.0800 mm): PTH pad 3 [GND] of U1
+    @(90.0000 mm, 12.5400 mm): PTH pad 2 [GND] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.0000 mm, 17.6200 mm): PTH pad 4 [GND] of U1
+    @(90.0000 mm, 15.0800 mm): PTH pad 3 [GND] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.7000 mm, 12.5400 mm): PTH pad 15 [GND] of U1
+    @(90.0000 mm, 12.5400 mm): PTH pad 2 [GND] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.7000 mm, 27.7800 mm): PTH pad 9 [GND] of U1
+    @(102.7000 mm, 12.5400 mm): PTH pad 15 [GND] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.7000 mm, 27.7800 mm): PTH pad 9 [GND] of U1
+    @(99.0000 mm, 44.0000 mm): PTH pad 2 [GND] of C2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(109.0000 mm, 44.0000 mm): PTH pad 2 [GND] of C3
+    @(112.0000 mm, 45.5400 mm): PTH pad 2 [GND] of J11
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(109.0000 mm, 44.0000 mm): PTH pad 2 [GND] of C3
+    @(99.0000 mm, 44.0000 mm): PTH pad 2 [GND] of C2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.0000 mm, 26.5400 mm): PTH pad 2 [GND] of J6
+    @(102.7000 mm, 27.7800 mm): PTH pad 9 [GND] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.0000 mm, 26.5400 mm): PTH pad 2 [GND] of J6
+    @(122.0000 mm, 26.5400 mm): PTH pad 2 [GND] of J7
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(122.0000 mm, 26.5400 mm): PTH pad 2 [GND] of J7
+    @(133.0000 mm, 26.5400 mm): PTH pad 2 [GND] of J8
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.0000 mm, 45.5400 mm): PTH pad 2 [GND] of J12
+    @(112.0000 mm, 45.5400 mm): PTH pad 2 [GND] of J11
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(133.0000 mm, 26.5400 mm): PTH pad 2 [GND] of J8
+    @(147.0000 mm, 29.0800 mm): PTH pad 3 [GND] of J9
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(133.0000 mm, 26.5400 mm): PTH pad 2 [GND] of J8
+    @(136.0000 mm, 12.5400 mm): PTH pad 2 [GND] of J4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(147.0000 mm, 12.5400 mm): PTH pad 2 [GND] of J5
+    @(136.0000 mm, 12.5400 mm): PTH pad 2 [GND] of J4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(147.0000 mm, 29.0800 mm): PTH pad 3 [GND] of J9
+    @(156.0000 mm, 43.0000 mm): PTH pad 1 [GND] of Q1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(158.0000 mm, 26.5400 mm): PTH pad 2 [GND] of J10
+    @(147.0000 mm, 29.0800 mm): PTH pad 3 [GND] of J9
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.7000 mm, 20.1600 mm): PTH pad 12 [M1A] of U1
+    @(108.0000 mm, 10.0000 mm): PTH pad 1 [M1A] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.7000 mm, 22.7000 mm): PTH pad 11 [M1B] of U1
+    @(108.0000 mm, 12.5400 mm): PTH pad 2 [M1B] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.7000 mm, 17.6200 mm): PTH pad 13 [M2A] of U1
+    @(108.0000 mm, 15.0800 mm): PTH pad 3 [M2A] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.7000 mm, 15.0800 mm): PTH pad 14 [M2B] of U1
+    @(108.0000 mm, 17.6200 mm): PTH pad 4 [M2B] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(60.0000 mm, 8.0000 mm): PTH pad 1 [M_DIR] of R3
+    @(14.5400 mm, 20.7000 mm): PTH pad 12 [M_DIR] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.0000 mm, 27.7800 mm): PTH pad 8 [M_DIR] of U1
+    @(60.0000 mm, 8.0000 mm): PTH pad 1 [M_DIR] of R3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(32.0000 mm, 8.0000 mm): PTH pad 1 [M_ENABLE_N] of R1
+    @(12.0000 mm, 23.2400 mm): PTH pad 13 [M_ENABLE_N] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.0000 mm, 10.0000 mm): PTH pad 1 [M_ENABLE_N] of U1
+    @(32.0000 mm, 8.0000 mm): PTH pad 1 [M_ENABLE_N] of R1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(46.0000 mm, 8.0000 mm): PTH pad 1 [M_STEP] of R2
+    @(12.0000 mm, 20.7000 mm): PTH pad 11 [M_STEP] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.0000 mm, 25.2400 mm): PTH pad 7 [M_STEP] of U1
+    @(46.0000 mm, 8.0000 mm): PTH pad 1 [M_STEP] of R2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(12.0000 mm, 13.0800 mm): PTH pad 5 [SCL] of J1
+    @(110.0000 mm, 31.6200 mm): PTH pad 4 [SCL] of J6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(133.0000 mm, 31.6200 mm): PTH pad 4 [SCL] of J8
+    @(110.0000 mm, 31.6200 mm): PTH pad 4 [SCL] of J6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(147.0000 mm, 34.1600 mm): PTH pad 5 [SCL] of J9
+    @(133.0000 mm, 31.6200 mm): PTH pad 4 [SCL] of J8
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(12.0000 mm, 10.5400 mm): PTH pad 3 [SDA] of J1
+    @(110.0000 mm, 29.0800 mm): PTH pad 3 [SDA] of J6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(133.0000 mm, 29.0800 mm): PTH pad 3 [SDA] of J8
+    @(110.0000 mm, 29.0800 mm): PTH pad 3 [SDA] of J6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(147.0000 mm, 31.6200 mm): PTH pad 4 [SDA] of J9
+    @(133.0000 mm, 29.0800 mm): PTH pad 3 [SDA] of J8
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(12.0000 mm, 15.6200 mm): PTH pad 7 [TEMP_1WIRE] of J1
+    @(32.0000 mm, 44.0000 mm): PTH pad 1 [TEMP_1WIRE] of R10
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(32.0000 mm, 44.0000 mm): PTH pad 1 [TEMP_1WIRE] of R10
+    @(158.0000 mm, 29.0800 mm): PTH pad 3 [TEMP_1WIRE] of J10
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(125.0000 mm, 10.0000 mm): PTH pad 1 [WHITE_A] of J3
+    @(39.6200 mm, 20.0000 mm): PTH pad 2 [WHITE_A] of R4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(139.0000 mm, 40.0000 mm): PTH pad 1 [WHITE_A] of U2
+    @(125.0000 mm, 10.0000 mm): PTH pad 1 [WHITE_A] of J3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(60.0000 mm, 20.0000 mm): PTH pad 1 [WHITE_BASE] of R6
+    @(53.6200 mm, 20.0000 mm): PTH pad 2 [WHITE_BASE] of R5
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.2700 mm, 43.0000 mm): PTH pad 2 [WHITE_BASE] of Q1
+    @(60.0000 mm, 20.0000 mm): PTH pad 1 [WHITE_BASE] of R6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(125.0000 mm, 12.5400 mm): PTH pad 2 [WHITE_K] of J3
+    @(158.5400 mm, 43.0000 mm): PTH pad 3 [WHITE_K] of Q1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(46.0000 mm, 32.0000 mm): PTH pad 1 [Net-(J11-Pin_1)] of R8
+    @(82.0000 mm, 44.0000 mm): PTH pad 1 [Net-(J11-Pin_1)] of C1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(82.0000 mm, 44.0000 mm): PTH pad 1 [Net-(J11-Pin_1)] of C1
+    @(112.0000 mm, 43.0000 mm): PTH pad 1 [Net-(J11-Pin_1)] of J11
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(112.0000 mm, 43.0000 mm): PTH pad 1 [Net-(J11-Pin_1)] of J11
+    @(102.7000 mm, 10.0000 mm): PTH pad 16 [Net-(J11-Pin_1)] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.5400 mm, 25.7800 mm): PTH pad 16 [Net-(J1-Pin_16)] of J1
+    @(147.0000 mm, 10.0000 mm): PTH pad 1 [Net-(J1-Pin_16)] of J5
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.0000 mm, 43.0000 mm): PTH pad 1 [Net-(J12-Pin_1)] of J12
+    @(144.0800 mm, 40.0000 mm): PTH pad 3 [Net-(J12-Pin_1)] of U2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(144.0800 mm, 40.0000 mm): PTH pad 3 [Net-(J12-Pin_1)] of U2
+    @(136.0000 mm, 10.0000 mm): PTH pad 1 [Net-(J12-Pin_1)] of J4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(53.6200 mm, 32.0000 mm): PTH pad 2 [Net-(J7-Pin_1)] of R8
+    @(60.0000 mm, 32.0000 mm): PTH pad 1 [Net-(J7-Pin_1)] of R9
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(60.0000 mm, 32.0000 mm): PTH pad 1 [Net-(J7-Pin_1)] of R9
+    @(104.0000 mm, 44.0000 mm): PTH pad 1 [Net-(J7-Pin_1)] of C3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(104.0000 mm, 44.0000 mm): PTH pad 1 [Net-(J7-Pin_1)] of C3
+    @(122.0000 mm, 24.0000 mm): PTH pad 1 [Net-(J7-Pin_1)] of J7
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(32.0000 mm, 20.0000 mm): PTH pad 1 [Net-(U2-VO)] of R4
+    @(141.5400 mm, 40.0000 mm): PTH pad 2 [Net-(U2-VO)] of U2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(12.0000 mm, 25.7800 mm): PTH pad 15 [Net-(J1-Pin_15)] of J1
+    @(46.0000 mm, 20.0000 mm): PTH pad 1 [Net-(J1-Pin_15)] of R5
+
+** Found 0 Footprint errors **
+
+** End of Report **

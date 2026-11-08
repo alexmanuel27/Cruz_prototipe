@@ -1,0 +1,13 @@
+{
+  "models": [
+    "Raspberry Pi 4 community",
+    "Atlas ISCCB Gen2 manufacturer",
+    "Pololu2814 manufacturer",
+    "MOONS MS11HS5P manufacturer family",
+    "WetLink JPT X55 manufacturer shared CAD",
+    "WetLink nut manufacturer"
+  ],
+  "removed_approximate_occurrences": 7,
+  "staging_removed": true,
+  "body_count": 330
+}

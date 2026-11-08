@@ -1,6 +1,8 @@
 # Registro de decisiones de ingeniería
 
-**Inicio: 26 de septiembre de 2026. Revisión: 27 de septiembre de 2026.**
+**Inicio: 26 de septiembre de 2026. Revisión: 30 de octubre de 2026.**
+
+**Vigencia: D49/D50/D51.** Cuerpo acrílico transparente horizontal, cámara frontal y junta plana de silicona. D50 reduce la compra a faltantes, fija varillas M8 con ocho tuercas ciegas y arandelas y añade la red exacta de 1000 líneas/mm del MonoSpectro. Se mantienen DS18B20 y Atlas K1.0 disponibles; se excluye sensor de profundidad. El pedido Bulgin con pines separados se retira y Alex confirma en D51 el conjunto Switchcraft EN3 con ocho contactos montados, macho, hembra y tapa. Vent manual y lubricante compatible quedan como recomendaciones, no decisiones nuevas de Alex. Driver/potencia aplazados; sin recálculo energético ni ensayo aprobado.
 
 Estados: **fijada por Alex**, **recomendación pendiente de ensayo**, **alternativa descartada para esta versión** y **pendiente de cierre**. Una recomendación escrita por el asistente no equivale a aprobación experimental o autorización de fabricación. La especificación funcional ha sido aprobada. Diseño óptico detallado en curso.
 
@@ -34,6 +36,76 @@ Estados: **fijada por Alex**, **recomendación pendiente de ensayo**, **alternat
 | D25 | Modelo M1 provisional | Junta plana de silicona cortada para cada tapa, tornillos fuera de cavidad y racores estáticos comerciales | Una simple unión de dos piezas FDM o una junta impresa no acredita estanqueidad a 1 m | [CAD M1](cad/README.md); cerrar juntas/racores en X1.3 |
 | D26 | Modelo M1 provisional | Cubeta de cuatro caras NEXACULE 3,5 ml/10 mm, variante 46090230005978; bomba Denash B0FRB83924 | La ficha de venta no aporta todas las tolerancias ni demuestra caudal sumergido; medir ambas piezas antes de fabricar | [Ficha y cotas pendientes](cad/README.md); X1.3/HID-01 |
 
+## Revisión de componentes — 21 octubre 2026
+
+| ID | Estado | Decisión y motivo | Alternativa / consecuencia | Evidencia |
+|---|---|---|---|---|
+| D27 | Fijada por Alex; dimensiones por confirmar | Cuerpo de tubo acrílico; largo final abierto | El enlace B0DCTW22XJ es 134/124 × 900 mm, pared **5 mm**, distinto de 10 mm previos. No cerrar tapas antes de resolver discrepancia y medir. Sustituye envolvente de D24 | [Compra C02, antecedente](docs/ANTECEDENTES_LISTA_COMPRA.md) |
+| D28 | Fijada por Alex | Bomba MS11HS5L410C-01; 24 V / 20 W comunicados | Sustituye Denash de D26; conservar aguas abajo de muestra y motor seco salvo calificación sumergible específica | Conversación; ficha exacta pendiente |
+| D29 | Fijada por Alex | CITYORK B0FQ583Q2J, 24 V / 3 Ah anunciados, BMS y cargador incluidos; precio y tiempo favorecen primer prototipo | Pack 10 Ah / alternativa 6,75 Ah se posponen. Aproximadamente 39,7 h antes de auxiliares con hipótesis actuales; no demuestra 72 h de D14 | [Presupuesto y comprobaciones](LISTA_COMPRA.md#7-presupuesto-energético-conservado) |
+| D30 | Fijada por Alex | Sin Wi-Fi; un conector exterior de carga y datos | Debe sellar durante inmersión desconectado. Tipo de datos, contactos y referencia por cerrar | ESPECIFICACION §7 |
+| D31 | Fijada por Alex; tiempos supuestos | Apagado ordenado y corte de alimentación de Pi entre ciclos; cinco LED totales | Presupuesto: Pi 5 W / 90 s, bomba 20 W / 30 s, halógena 10 W / 5 s, cada LED 0,4 W / 5 s. Medir arranque, estabilización y auxiliares | [Presupuesto actualizado](LISTA_COMPRA.md) |
+| D32 | Recomendación pendiente de cierre | Evaluar tapas impresas/híbridas y sellos mecanizados para tubo; juntas comerciales, apoyo y retención calculados | No se ha aprobado material ni espesor. No trasladar junta plana D25 al tubo sin rediseño | [Revisión técnica](docs/REVISION_ESTANQUEIDAD_TUBO.md) |
+| D33 | Recomendación de compra pendiente de plazo/compatibilidad | PRV Blue Robotics BR-100804 para alivio interno y prueba de vacío | Tienda bajo pedido; vent manual BR-100783 disponible como alternativa de función distinta. WetLink solo si se elige cable fijo, no adicional obligatorio a conector de panel | [Compra C04–C07, antecedente](docs/ANTECEDENTES_LISTA_COMPRA.md) |
+
+## Arquitectura de fontanería — revisión posterior del 21 octubre
+
+| ID | Estado | Decisión y motivo | Consecuencia / pendiente | Evidencia |
+|---|---|---|---|---|
+| D34 | Base acordada con Alex; dimensiones y pedido pendientes | Usar tubo y cierres comerciales de PVC-U como arquitectura reproducible del equipo, con bastidor extraíble impreso | Sustituye cuerpo acrílico D27 y tapas propias D32 en la lista base. Propuesta GF d140; d160 si lo exige el encaje. Verificar masa, diámetro de brida, puertos, presión exterior, suministro y coste; no hay aún tamaño final ni ensayo aprobado | [Componentes P01–P15](docs/ANTECEDENTES_LISTA_COMPRA.md) |
+
+## Revisión de presupuesto — 21 octubre
+
+Alex solicita reducir el coste de la selección GF. Se suspende su recomendación de compra y se conserva como comparación. La [lista de compra](docs/ANTECEDENTES_LISTA_COMPRA.md) incorpora un candidato de evacuación SN4 d160 con tapa roscada: subtotal de cuerpo 50,16 EUR, sin puertos, consumibles ni envío. Sigue pendiente de comprobar juntas, encaje, resistencia exterior y ensayo sin electrónica; no se considera equivalente a tubería de presión ni aprobado para inmersión prolongada. La arquitectura tubular permanece; modelo y serie finales abiertos.
+
+## Base económica aceptada — cierre de discusión del cuerpo
+
+| ID | Estado | Decisión | Pendiente de verificación |
+|---|---|---|---|
+| D35 | Fijada por Alex para desarrollar y ensayar | Tubo SN4 PVC d160 × 4 mm, tramo de 300 mm cortado de suministro de 1 m; dos manguitos encolados y dos extremos con tapa roscada. Bastidor interior extraíble impreso. Sustituye GF/acrílico como lista vigente | La longitud total incluye cierres/solapes. Medir abertura útil, juntas y espesor de tapas, encaje y puertos; validar presión exterior, retención y estanqueidad antes de electrónica. Conjunto no certificado por esta decisión |
+
+La [lista vigente](LISTA_COMPRA.md#1-compras-previstas) añade consumibles, hidráulica, conector, potencia, soportes, herramientas reutilizables y presupuesto parcial; las referencias no cerradas quedan abiertas para discutir con Alex. No se han hecho pedidos, CAD nuevo ni mecanizado.
+
+## Manguera de bomba — dato confirmado
+
+**D36 · Fijada por Alex, 21 oct:** tubo peristáltico **3,0 mm interior / 5,0 mm exterior / 1,0 mm de pared**, para la bomba seleccionada. Registrar material y referencia antes de comprar recambio. H01/H02 de la [lista vigente](LISTA_MATERIALES.md#2-agua-puertos-y-ventilación) se ajustan a esa dimensión; racores de espiga especificados para ID3 como propuesta. Rosca de mamparo, sello exterior, espesor de panel, boquillas de cuarzo y precio siguen por cerrar. No confundir ID de manguera con OD de un racor de compresión.
+
+## Retorno a acrílico y cámara adicional
+
+**D37 · Fijada por Alex, 21 oct:** recuperar cuerpo transparente de acrílico para cámara interior adicional, [Fruugo 478082530 / 972533366](https://www.fruugo.be/industriele-4k-usb-webcam-pc-laptops-video-8mp-autofocus-usb-camera-imx179-sensor-otg-uvc-plug-play/p-478082530-972533366?language=nl). Se recupera tubo B0DCTW22XJ, 134/124 mm y pared 5 mm; tramo de 300 mm como referencia que se comprobará con el nuevo encaje. Se retiran de compra vigente manguitos, cierres y adhesivo de PVC de D35; tapas propias y juntas por diseñar. Añadir soporte y cable USB interiores, manteniendo cámara OV9281 y AS7265x. Conservar ventana de visión libre y proteger localmente los módulos ópticos de luz ambiente. Ficha/precio/dimensiones/modos efectivos de cámara no verificados en esta consulta. **Por instrucción expresa, no recalcular consumo.** No se han realizado compras, impresión, corte ni CAD nuevo en esta revisión.
+
+## Boceto de tapas acrílicas — propuesta en revisión
+
+**D38 · Propuesta para discutir, 21 oct:** dos discos de tapa de PMMA colado con una junta tórica axial por extremo, ranura mecanizada y cuatro tirantes exteriores. [Boceto de sección y detalle](docs/drawings/cierre-acrilico-boceto-v1.png), [fuente vectorial](docs/drawings/cierre-acrilico-boceto-v1.svg). El borde del tubo hace de apoyo y la ranura determina el alojamiento de la junta; el apriete y dimensiones finales aún no están calculados. La cantidad propuesta M03 pasa a dos juntas de servicio y dos repuestos; no cerrar medida ni fabricar a partir del boceto. Esta propuesta no modifica los detectores, hidráulica ni presupuesto de energía.
+
+## Dimensiones del cuerpo y aceptación del cierre
+
+**D39 · Fijada por Alex, 21 oct:** acepta el concepto de cierre de D38: dos tapas de PMMA colado, una tórica axial por extremo y cuatro tirantes exteriores. Actualiza el tubo transparente de Amazon a **Ø150 mm exterior / Ø140 mm interior / pared radial 5 mm** y **330 mm de altura de tubo**, para alojar la cámara USB adicional. Sustituye las dimensiones 134/124 y la referencia de 300 mm de D27/D37; las decisiones anteriores se conservan como historial. La altura total del equipo añade tapas y retención. Alex comunica **122,00 EUR** como precio del nuevo tubo (corrección de 112 EUR). Variante comercial exacta, longitud de suministro, porte y entrega pendientes de verificar; no trasladar el precio ni porte anteriores. Actualizar encaje, tapas, ranuras, apoyos y cargas al nuevo diámetro; el concepto aceptado no fija aún espesores ni medidas de fabricación. Se actualizan especificación, lista, arquitectura de implantación, revisión de estanqueidad y boceto. **No se recalcula el consumo.** No se han realizado compras ni fabricación.
+
+## Implantación interior — propuesta 01
+
+**D40 · Propuesta para discutir, 21 oct:** dentro del tubo D39, situar bomba arriba, cubeta vertical con cruz transversal en nivel intermedio, Pi y cámara USB auxiliar en lados opuestos, y batería abajo sobre soporte elevado. Concentrar en tapa superior dos racores de agua, conector único de carga/datos y vent o PRV; tapa inferior ciega para extracción con conexiones accesibles. [Dos bocetos y memoria dimensional](docs/IMPLANTACION_INTERIOR_V1.md). El contorno de tapa Ø200, posiciones de puertos, zonas axiales y envolventes de piezas son **reservas propuestas**, no cotas aceptadas ni de fabricación. Faltan cotas reales de bomba, cámara y óptica; el brazo de cámara queda especialmente ajustado a ID140. No modificar distancias/ángulo ópticos para forzar encaje. Se conserva bomba aguas abajo, junta axial por tapa y cuatro tirantes. Bandejas y canales no se presentan como compartimentos estancos. No se recalcula energía ni se compra/imprime nada.
+
+## Pasos de agua profesionales y ensuciamiento
+
+**D41 · Candidatos y recomendaciones para discutir, 21 oct:** Alex pide mejorar la selección de pasamuros y estudiar cobre contra ensuciamiento. Se añade candidato WetLink **JPT** para paso de tubo continuo, sin dar por probada la compatibilidad de la manguera blanda. Mantener diferenciación respecto al WetLink estándar y al conector eléctrico único. Estudiar cobre exterior desmontable para zona de visión; no proponerlo dentro del circuito ni inmediatamente ante la toma sin validar integridad de muestra. Protección exterior no elimina biofilm de la cubeta. [Análisis, fuentes y ensayo propuesto](docs/ANTIFOULING_Y_PASAMUROS.md). No hay aún selección aceptada de pasamuros o cobre, cotas de taladro, compras ni cambios de energía.
+
+## Puerto eléctrico y futura boya
+
+**D42 · Requisito fijado por Alex; solución propuesta, 21 oct:** contemplar futura instalación en boya con panel solar y registrador/transmisor. Se recomienda conector multipolar Bulgin Buccaneer 400 de ocho contactos, con panel PX0412/08S, contraparte PX0410/08P y tapón PX0480, contactos separados y cable por seleccionar. Reservar carga, alimentación externa regulada, RS-485 con referencia y un contacto adicional. RS-485/Modbus RTU es propuesta para lectura por registrador; exportación íntegra de datos crudos por definir y probar. El panel necesita controlador y carga compatible con el pack; no se conectará directamente a batería. D30 conserva un único puerto y ausencia de Wi-Fi; no se compra panel/registrador para el prototipo actual. [Esquema funcional y BOM candidata](electronica/PUERTO_SERVICIO_Y_BOYA.md). Conector, pinout, protocolo y electrónica aún por cerrar; no se recalcula consumo.
+
+## Lista completa y aceptación del puerto
+
+**D43 · Fijada por Alex, 21 oct:** acepta la propuesta de conector eléctrico Bulgin Buccaneer 400 de ocho contactos y enlace RS-485 con previsión de boya, y solicita actualizar toda la [lista con enlaces](LISTA_COMPRA.md). Se desglosan panel PX0412/08S, contraparte PX0410/08P con sufijo por cable, tapón PX0480 y contactos para soldar SA3347/1 + SA3348/1, un paquete de diez de cada tipo. Cable, pinout, módulos, protocolo detallado y esquema quedan pendientes. Catálogos y candidatos de potencia no pasan a seleccionados por añadir enlaces. H01/JPT y válvula siguen pendientes de cierre; no consta compra de esos elementos. Cobre/limpieza de toma quedan aplazados por indicación anterior de Alex. Se conserva energía sin recalcular y se traslada el [historial PVC/GF y dimensiones antiguas](docs/ANTECEDENTES_LISTA_COMPRA.md) a documento separado, preservando los tres enlaces PVC para consulta. La lista distingue fabricación propia, material comprado y material por inventariar; no se realizan pedidos.
+
+## Alcance de la lista y aplazamiento del driver
+
+**D44 · Instrucción expresa de Alex, 21 oct:** actualizar únicamente lo que hemos tratado. No seleccionar ni comprar driver del motor hasta terminar y probar el diseño. Se retiran de la lista vigente las nuevas propuestas de módulos RS-485, sensores, fusibles, RTC y catálogos de drivers/convertidores añadidas por iniciativa del asistente. Se mantienen cuerpo, cierre y accesorios tratados, hidráulica, válvula por elegir, conjunto Bulgin aceptado, batería, bomba, cámara auxiliar y cubeta comprada; piezas de instrumentos anteriores se indican como inventario para reutilizar. DC/DC y electrónica de potencia quedan para la fase posterior; pinout/cable siguen abiertos. Esta instrucción prevalece sobre los órdenes de compra anteriores que sugerían cerrar potencia inmediatamente. Sin compras ni recálculo energético.
+
+## Retorno a PVC y orientación horizontal
+
+**D45 · Fijada por Alex, 21 oct:** volver al cuerpo de PVC con tapa atornillada de acrílico y silicona, desplegar horizontalmente y añadir argollas para pesos. Alex confirma **cámara mirando hacia delante por la tapa**, no verticalmente hacia el fondo del agua. Se propone junta plana maciza de silicona desmontable; forma detallada del cierre y su apoyo aún abierta. Se recupera como referencia el antiguo PVC Ø160 × 4 mm / ID152, y se conserva largo 330 mm únicamente provisional: no se ha confirmado tamaño ni corte para esta nueva implantación. Argollas sobre collares exteriores como propuesta, sin cantidades/cargas finales ni perforaciones de la pared aprobadas. Se actualizan especificación, lista, README y concepto; dibujos verticales de acrílico quedan archivados. No reactivar automáticamente dos manguitos y dos tapones del antiguo PVC, ni los cuatro tirantes/tóricas del cuerpo acrílico. Mantener instrumentación, bomba aguas abajo, Bulgin/RS-485 y futura boya; cobre y driver siguen aplazados. [Concepto horizontal y pendientes](docs/IMPLANTACION_PVC_HORIZONTAL.md). Precio consultado del tubo candidato 13,48 EUR con IVA; subtotal tubo+batería 57,47 EUR, sin pretender total del cuerpo. Sin compras, fabricación ni recálculo energético.
+
 ## Acta de cierre de óptica
 
 **Estado actual: cerrado.**
@@ -44,6 +116,46 @@ Alcance: 420-780 nm.
 Celda: Flujo de cuarzo comprada.
 Filtro óptico: Eliminado del diseño base (señal en 435 nm es excitación, resto cero, 645 nm es fluorescencia).
 
+## Sensores y lastre — 30 de octubre de 2026
+
+**D46 · Fijada por Alex:** incorporar temperatura DS18B20 encapsulado y conductividad Atlas K1.0 del listado ARES_2025, inventariando antes de comprar. Se exige operación sin intervención durante la misión; no se promete ausencia indefinida de limpieza/calibración ni una duración no ensayada. Añadir medición de profundidad con modelo por seleccionar. Alex permite situarlo dentro del cuerpo; requiere comunicar la entrada de presión con el agua exterior y mantener seco el interior. El Honeywell MIPAG1XX002BAAAX se registra como candidato económico, pendiente de aceptación, sellado, compatibilidad marina, adquisición y comprobación del error útil. El cable graduado se plantea como alternativa manual, sin decisión de sustituir el sensor. No equiparar longitud largada a profundidad medida. No se realizan pedidos ni se recalcula autonomía.
+
+**D47 · Fijada por Alex:** se mantiene el despliegue horizontal y la cámara al frente por la tapa; sujetar los pesos a varillas laterales exteriores. Proponer collares como apoyo que distribuya las cargas, lastre debajo del eje y retenciones contra deslizamiento/giro. Cantidades, secciones, masas y fijaciones por dimensionar; no cargar la ventana ni reutilizar automáticamente los cuatro tirantes de cierre antiguos. El boceto D45 sigue siendo conceptual y no incluye el detalle de estas varillas.
+
+**D48 · Fijada por Alex, 30 oct:** retirar el Honeywell MIPAG1XX002BAAAX tras discutir su conexión industrial roscada. No comprar ni desarrollar su adaptación. Profundidad queda pendiente; el cable graduado sigue como alternativa planteada, sin decisión de sustitución. Se mantienen DS18B20 y Atlas K1.0 aceptados en D46.
+
+**D49 · Fijada por Alex, 30 oct:** retorno definitivo al cuerpo acrílico; PVC descartado. Conservar la disposición horizontal, cámara hacia delante por la tapa, junta plana de silicona y varillas laterales para pesos. Recuperar Ø150/140, pared radial 5 mm y tramo de 330 mm como última referencia acrílica, verificando encaje en ID140 antes de fabricar. No reactivar automáticamente tóricas ni cuatro tirantes antiguos. Precio previo comunicado por Alex: 122 EUR, sin nueva consulta comercial. Retirar tubo/accesorios/adhesivos PVC de compra vigente; subtotal histórico tubo+batería 165,99 EUR, sin pretender total actualizado. Sensores, interfaz, profundidad pendiente y driver aplazado permanecen. [Base actual](docs/IMPLANTACION_ACRILICO_HORIZONTAL.md).
+
 ## Cómo registrar una revisión
 
 Añadir fecha, decisión anterior, nueva decisión, motivo, evidencia, datos ya conocidos, archivos afectados y ensayos que deben repetirse. Mantener el historial mediante Git y el acta correspondiente; no borrar un fallo ni presentarlo como ensayo pendiente.
+
+
+**D50 · Revisión de compra fijada por Alex, 30 oct:** convertir la relación amplia en una lista de faltantes. Mantener tubo acrílico, retal para tapas sin enlace, junta plana, pasos JPT, batería y comprar la red de difracción del MonoSpectro. Solicitar varillas M8 con ocho tuercas ciegas abombadas y ocho arandelas; el antiguo ítem 31 se integra en el 4. Se proponen inox A4 y cuatro tramos a partir de los ocho extremos, con longitudes por cerrar. Retirar del pedido los elementos indicados por Alex: no implica que todos estén recibidos ni retirar sus funciones del instrumento. **La excepción funcional expresa es profundidad: no se incorpora en esta versión.** Mantener profundidad mecánica de servicio de 1 m.
+
+Para la junta se localiza Greendale Rubber (NL), que declara corte de silicona según dibujo y suministro unitario; no consta que sea el proveedor mencionado por el tutor. Se conserva la opción de lámina maciza para recorte. Referencia óptica encontrada en el MonoSpectro: Edmund Optics **#40-267**, película de transmisión de 1000 líneas/mm, paquete de dos hojas; 4621 es ID de página, no número de stock.
+
+**Conector:** Alex exige una única propuesta con macho, hembra, tapa y ocho contactos montados, sin compra separada de pines. Se retira el pedido Bulgin anterior; propuesta única **Switchcraft EN3P8MX + EN3C8FX + EN3IPCAPX**, con terminales integrados de soldadura. Modelo propuesto para revisión, no compra ni montaje aprobados por el mero hecho de enlazarlo. Macho en equipo y hembra en cable: revisar montaje de tapa, corriente, pinout y desconexión de potencia. Conservar RS-485 y reserva para futura boya. Vent manual BR-100783 recomendado, aún por decidir; vaselina común no aceptada como sustituto universal del lubricante. Mantener la junta plana de silicona sin grasa por defecto y seguir su fabricante. No se añaden driver, DC/DC, sensores ni presupuesto energético nuevo. [Lista de faltantes](LISTA_COMPRA.md); [materiales anteriores, archivados](LISTA_MATERIALES.md).
+
+
+**D51 · Fijada por Alex, 30 oct:** mantener el conjunto DigiKey **Switchcraft EN3P8MX + EN3C8FX + EN3IPCAPX** después de comparar con el conector Twist-Lock de In-Situ usado en Aqua TROLL. La alternativa In-Situ se descarta por coste: su adaptador de panel 0053240 se encontró anunciado a 390 USD antes de impuestos, solo esa pieza. El conjunto EN3 conserva ocho contactos montados, macho de panel, hembra de cable y tapa; referencia del presupuesto existente **70,98 EUR con IVA del 21 %, sin portes**, sin nueva cotización. Se sustituye el estado de propuesta del conector D50 por selección confirmada. Montaje de panel, cable, pinout, protección eléctrica y ensayo siguen por resolver; esta confirmación no registra una compra ni una validación. Los demás componentes del pedido y el aplazamiento de driver/potencia permanecen. Fuentes de comparación: [manual Aqua TROLL 500](https://www.in-situ.com/pub/media/support/documents/at500-manual.pdf) y [adaptador In-Situ 0053240](https://envirotechonline.com/products/in-situ-aqua-troll-100-200-accessories?variant=48166835126462).
+
+
+## Electrónica y fuentes — 30 de octubre de 2026
+
+**D52 · Requisitos de Alex y propuesta de ingeniería:** Alex autoriza comenzar la electrónica e integrarla en una sola lista para el técnico; queda superado el aplazamiento D44. Confirma que tiene A4988 y convertidores DC/DC de 5 A del inventario ARES_2025. Se asigna un driver y tres convertidores, sin comprarlos de nuevo. Declara motor de cuatro hilos a 24 V, pero no hay corriente por fase ni etiqueta adicional; tampoco hay información nueva del pack/cargador CITYORK. No se deduce corriente de bobina de 20 W / 24 V.
+
+**Fuente fijada por Alex:** sustituir la halógena por [Nichia Optisolis NF2W757GT-F1, star PCB SKU 32724](https://www.ledrise.eu/nichia-nf2w757gt-f1-optisolis-smd-led-with-star-pcb-23lm-5000-kelvin-cri-98-sku-32724.html). Azul fijado: [RS 0283199, ILH-XC01-S420-SC211-WIR200.](https://benl.rs-online.com/web/p/uv-leds/0283199). ESP32: Dev Module, sin modelo físico adicional. Blanco especificado a 65 mA; la familia del azul indica 420–430 nm de pico y datos a 350 mA. Registrar la longitud real/nominal y no trasladar la hipótesis energética de 100 mA a estos LED. El Optisolis anuncia producción de 6–12 semanas; no consta que ya esté disponible ni se sustituye sin Alex.
+
+**Propuesta del asistente para revisar:** fuente blanca LM317 a unos 62,5 mA desde 9 V; PLD333 a 333 mA para el azul. Corte positivo de rama de adquisición Pololu 2814, supervisor ESP32 y DS3231, buffer UART con Ioff, RS485 aislado DFR0845 y adaptador USB en PC. Relé normalmente abierto de dos polos en la carga original, optoacoplador para detectar cable mediante el octavo contacto; pinout físico pendiente. Entrada externa de futura boya sin conectar en V1. Alarma interna de fuga, fusibles y pasivos de montaje. No dar por comprados ni aprobados en banco estos módulos por aparecer en la lista.
+
+Los DC/DC existentes admiten como máximo 30 V: tensión de batería/cargador y transitorios son comprobación previa al montaje, con criterio provisional de margen definido en el documento eléctrico. Corriente por fase, Rsense/VREF, carga térmica y arranque del BMS se verifican antes de aprobar A4988. Se descartan comprar otro driver/convertidores sin probar el inventario, alimentar el blanco a los 333 mA del driver azul, tratar el relé como cargador, y conectar directamente una futura fuente de boya al pack.
+
+Se actualizan [diseño eléctrico V1](electronica/DISENO_ELECTRICO_V1.md), arquitectura, especificación, puerto, README y [compra consolidada](LISTA_COMPRA.md), incluido Excel en inglés con IVA y subtotales separados EUR/USD. Se conserva el presupuesto energético como histórico, sin recalcular; ya no representa la fuente blanca nueva. El cambio de fuente exige nuevo blanco y comprobación de respuesta/ruido, especialmente 700–780 nm. No hay pedidos, fabricación ni resultados de estanqueidad o eléctricos registrados en esta revisión.
+
+**Aclaración posterior de Alex en esta revisión:** el Optisolis todavía hay que comprarlo. No se ha localizado stock inmediato verificable del mismo conjunto 5000 K sobre estrella. Se mantiene presupuestado como referencia elegida, con su pedido pendiente de resolver el plazo; el emisor SMD suelto SKU 33712 tampoco aparece con entrega inmediata. No se cambia a otra temperatura de color ni a un LED CRI 80 por similitud del nombre.
+
+
+## D53 — Raspberry Pi como controlador principal (2026-11-02)
+
+Alex decidió retirar el ESP32 de este instrumento: la Raspberry Pi se ocupará de la adquisición y el control. Las placas reutilizadas se prevén enchufadas a la placa principal. Esta decisión sustituye las partes de D52 que asignan control o supervisión al ESP32; no valida aún el circuito de alimentación. El encendido autónomo programable, apagado seguro, carga, detección de fugas y huellas de los módulos siguen por diseñar y ensayar. Véase [el borrador KiCad y su estado](electronica/cross_v2_raspberry/README.md).

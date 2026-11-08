@@ -1,0 +1,35 @@
+{
+  "document": "Cross_M2_horizontal_design",
+  "verified_occurrence_poses": 108,
+  "bodies": 335,
+  "camera": "assembled isometric",
+  "cloud_saved": false,
+  "archive": "/Users/alex/Nube /repos/Cruz_prototipe/cad/fusion_m2/CROSS_MONTAJE_ACCESIBLE_2026-11-03.f3d",
+  "timeline_feature_count": 987,
+  "timeline_issues": [
+    {
+      "name": "Sketch2",
+      "message": "Face 1 missing<b>1 Reference Failures</b><br/>The sketch plane is lost, Cache is used. Please redefine the sketch to select other plane!Face 1 missing<b>1 Reference Failures</b><br/>The project source is lost, Cache is used!Project1Sketch2"
+    },
+    {
+      "name": "Extrude5",
+      "message": "Body 1 missing<b>1 Reference Failures</b><br/>The body reference is lost and this feature is using cached geometry.<br/>Edit this feature and select new body references.Extrude5"
+    },
+    {
+      "name": "Sketch12",
+      "message": "Face 1 missing<b>1 Reference Failures</b><br/>The project source is lost, Cache is used!Failed to get target occurrence transform<b>1 Reference Failures</b><br/>Failed to get target occurrence transformProject1Sketch12"
+    },
+    {
+      "name": "Combine5",
+      "message": "Body 1 missing<b>1 Reference Failures</b><br/>The target body is lost, try editing this feature to reselect target body.Target Body ErrorCombine5"
+    },
+    {
+      "name": "Sketch34",
+      "message": "Face 1 missing<b>1 Reference Failures</b><br/>The sketch plane is lost, Cache is used. Please redefine the sketch to select other plane!Face 1 missing<b>1 Reference Failures</b><br/>The project source is lost, Cache is used!Project1Sketch34"
+    },
+    {
+      "name": "Sketch35",
+      "message": "Face 1 missing<b>1 Reference Failures</b><br/>The sketch plane is lost, Cache is used. Please redefine the sketch to select other plane!Face 1 missing<b>1 Reference Failures</b><br/>The project source is lost, Cache is used!Project1Sketch35"
+    }
+  ]
+}

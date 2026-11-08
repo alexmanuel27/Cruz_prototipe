@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1380" viewBox="0 0 1600 1380" role="img" aria-labelledby="title desc">
+<title id="title">Boceto del cierre acrílico con junta axial y tirantes exteriores</title>
+<desc id="desc">Corte longitudinal del tubo con dos tapas, dos tirantes visibles y juntas naranjas; ampliación de una junta alojada en la tapa y vista frontal con una tórica completa y cuatro tirantes.</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#475569" stroke-width="1.3"/></marker>
+<marker id="orange-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#ad5c13" stroke-width="1.3"/></marker>
+<pattern id="hatch-cap" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(45)"><rect width="12" height="12" fill="#e6e0f5"/><line x1="0" y1="0" x2="0" y2="12" stroke="#c0b4df" stroke-width="2"/></pattern>
+<pattern id="hatch-tube" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(-45)"><rect width="10" height="10" fill="#dff2f8"/><line x1="0" y1="0" x2="0" y2="10" stroke="#b8dfe9" stroke-width="2"/></pattern>
+</defs>
+<rect width="1600" height="1380" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#172b3a" stroke-linejoin="round" stroke-linecap="round">
+<text x="80" y="68" font-size="44" font-weight="700" text-anchor="start" fill="#172b3a">ARCHIVO · cierre del cuerpo acrílico</text>
+<text x="80" y="111" font-size="27" font-weight="400" text-anchor="start" fill="#526574">Sustituido por PVC horizontal + silicona · revisión D45</text>
+<text x="80" y="169" font-size="29" font-weight="700" text-anchor="start" fill="#172b3a">A · Corte longitudinal del conjunto</text>
+<text x="80" y="205" font-size="24" font-weight="400" text-anchor="start" fill="#526574">Se muestran dos de los cuatro tirantes.</text>
+<rect x="430" y="268" width="720" height="322" rx="0" fill="#f6fbfd" stroke="#247f9c" stroke-width="3"/>
+<rect x="430" y="268" width="720" height="12" rx="0" fill="url(#hatch-tube)" stroke="#247f9c" stroke-width="2"/>
+<rect x="430" y="578" width="720" height="12" rx="0" fill="url(#hatch-tube)" stroke="#247f9c" stroke-width="2"/>
+<line x1="460" y1="429" x2="1120" y2="429" stroke="#b7c3cb" stroke-width="1.5" stroke-dasharray="12 10"/>
+<rect x="394" y="211" width="36" height="436" rx="0" fill="url(#hatch-cap)" stroke="#7157a1" stroke-width="3"/>
+<rect x="1150" y="211" width="36" height="436" rx="0" fill="url(#hatch-cap)" stroke="#7157a1" stroke-width="3"/>
+<rect x="422" y="266" width="9" height="16" rx="0" fill="#fff" stroke="none" stroke-width="2"/>
+<polyline points="430,266 422,266 422,282 430,282" fill="none" stroke="#7157a1" stroke-width="2.4"/>
+<ellipse cx="426" cy="274" rx="4" ry="7" fill="#ee9436" stroke="#ad5c13" stroke-width="1.5"/>
+<rect x="1149" y="266" width="9" height="16" rx="0" fill="#fff" stroke="none" stroke-width="2"/>
+<polyline points="1150,266 1158,266 1158,282 1150,282" fill="none" stroke="#7157a1" stroke-width="2.4"/>
+<ellipse cx="1154" cy="274" rx="4" ry="7" fill="#ee9436" stroke="#ad5c13" stroke-width="1.5"/>
+<rect x="422" y="576" width="9" height="16" rx="0" fill="#fff" stroke="none" stroke-width="2"/>
+<polyline points="430,576 422,576 422,592 430,592" fill="none" stroke="#7157a1" stroke-width="2.4"/>
+<ellipse cx="426" cy="584" rx="4" ry="7" fill="#ee9436" stroke="#ad5c13" stroke-width="1.5"/>
+<rect x="1149" y="576" width="9" height="16" rx="0" fill="#fff" stroke="none" stroke-width="2"/>
+<polyline points="1150,576 1158,576 1158,592 1150,592" fill="none" stroke="#7157a1" stroke-width="2.4"/>
+<ellipse cx="1154" cy="584" rx="4" ry="7" fill="#ee9436" stroke="#ad5c13" stroke-width="1.5"/>
+<rect x="350" y="241" width="880" height="8" rx="0" fill="#798894" stroke="#445564" stroke-width="1.5"/>
+<rect x="386" y="233" width="8" height="24" rx="0" fill="#b6c1c9" stroke="#445564" stroke-width="1.5"/>
+<rect x="1186" y="233" width="8" height="24" rx="0" fill="#b6c1c9" stroke="#445564" stroke-width="1.5"/>
+<path d="M368,235 L374,228 L386,228 L392,235 L392,255 L386,262 L374,262 L368,255 Z" fill="#d2d9de" stroke="#445564" stroke-width="2"/>
+<path d="M1194,235 L1200,228 L1212,228 L1218,235 L1218,255 L1212,262 L1200,262 L1194,255 Z" fill="#d2d9de" stroke="#445564" stroke-width="2"/>
+<rect x="350" y="609" width="880" height="8" rx="0" fill="#798894" stroke="#445564" stroke-width="1.5"/>
+<rect x="386" y="601" width="8" height="24" rx="0" fill="#b6c1c9" stroke="#445564" stroke-width="1.5"/>
+<rect x="1186" y="601" width="8" height="24" rx="0" fill="#b6c1c9" stroke="#445564" stroke-width="1.5"/>
+<path d="M368,603 L374,596 L386,596 L392,603 L392,623 L386,630 L374,630 L368,623 Z" fill="#d2d9de" stroke="#445564" stroke-width="2"/>
+<path d="M1194,603 L1200,596 L1212,596 L1218,603 L1218,623 L1212,630 L1200,630 L1194,623 Z" fill="#d2d9de" stroke="#445564" stroke-width="2"/>
+<text x="790" y="390" font-size="34" font-weight="700" text-anchor="middle" fill="#172b3a">Interior seco</text>
+<text x="790" y="464" font-size="27" font-weight="400" text-anchor="middle" fill="#247f9c">Ø140 mm interior</text>
+<text x="1360" y="401" font-size="26" font-weight="700" text-anchor="start" fill="#172b3a">Ø150 mm</text>
+<text x="1360" y="437" font-size="25" font-weight="400" text-anchor="start" fill="#526574">exterior</text>
+<line x1="1238" y1="268" x2="1338" y2="268" stroke="#a3aeb8" stroke-width="1.5"/>
+<line x1="1238" y1="590" x2="1338" y2="590" stroke="#a3aeb8" stroke-width="1.5"/>
+<line x1="1325" y1="268" x2="1325" y2="590" stroke="#64748b" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="104" y="358" font-size="28" font-weight="700" text-anchor="start" fill="#7157a1">Tapa acrílica</text>
+<polyline points="120,376 290,376 393,417" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="779" y="230" font-size="25" font-weight="400" text-anchor="middle" fill="#172b3a">Tirantes por fuera del tubo</text>
+<polyline points="1027,222 1067,222 1083,242" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="104" y="521" font-size="27" font-weight="700" text-anchor="start" fill="#ad5c13">Junta tórica</text>
+<polyline points="270,515 321,515 423,580" fill="none" stroke="#ad5c13" stroke-width="2.4" marker-end="url(#orange-arrow)"/>
+<text x="104" y="552" font-size="24" font-weight="400" text-anchor="start" fill="#526574">ver detalle B</text>
+<line x1="430" y1="653" x2="430" y2="704" stroke="#a3aeb8" stroke-width="1.5"/>
+<line x1="1150" y1="653" x2="1150" y2="704" stroke="#a3aeb8" stroke-width="1.5"/>
+<line x1="430" y1="689" x2="1150" y2="689" stroke="#64748b" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<rect x="687" y="668" width="207" height="42" rx="0" fill="#fff" stroke="none" stroke-width="2"/>
+<text x="790" y="698" font-size="26" font-weight="700" text-anchor="middle" fill="#172b3a">330 mm de tubo</text>
+<text x="80" y="731" font-size="25" font-weight="400" text-anchor="start" fill="#526574">El largo total incluye las tapas. La pared del tubo no se perfora para los tirantes.</text>
+<line x1="80" y1="763" x2="1520" y2="763" stroke="#c9d3da" stroke-width="1.5"/>
+<text x="80" y="814" font-size="29" font-weight="700" text-anchor="start" fill="#172b3a">B · Detalle ampliado de la junta</text>
+<text x="80" y="849" font-size="24" font-weight="400" text-anchor="start" fill="#526574">Corte de una pequeña zona del borde</text>
+<path d="M160,910 H350 V966 H315 V1014 H350 V1160 H160 Z" fill="url(#hatch-cap)" stroke="#7157a1" stroke-width="3"/>
+<rect x="350" y="940" width="420" height="100" rx="0" fill="url(#hatch-tube)" stroke="#247f9c" stroke-width="3"/>
+<ellipse cx="332.5" cy="990" rx="17.5" ry="22" fill="#ee9436" stroke="#ad5c13" stroke-width="2"/>
+<text x="190" y="894" font-size="26" font-weight="700" text-anchor="start" fill="#7157a1">Tapa</text>
+<text x="566" y="909" font-size="26" font-weight="700" text-anchor="start" fill="#247f9c">Pared del tubo</text>
+<polyline points="640,916 640,938" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="518" y="1078" font-size="25" font-weight="700" text-anchor="start" fill="#172b3a">Apoyo directo</text>
+<text x="518" y="1111" font-size="25" font-weight="400" text-anchor="start" fill="#172b3a">tubo–tapa</text>
+<polyline points="500,1070 424,1070 353,1034" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="442" y="1183" font-size="25" font-weight="700" text-anchor="start" fill="#ad5c13">La junta se comprime</text>
+<text x="442" y="1215" font-size="25" font-weight="400" text-anchor="start" fill="#ad5c13">dentro de esta ranura.</text>
+<polyline points="458,1148 403,1117 348,1003" fill="none" stroke="#ad5c13" stroke-width="2.4" marker-end="url(#orange-arrow)"/>
+<text x="80" y="1204" font-size="25" font-weight="700" text-anchor="start" fill="#7157a1">Ranura mecanizada</text>
+<polyline points="290,1178 297,1124 315,1010" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="925" y="814" font-size="29" font-weight="700" text-anchor="start" fill="#172b3a">C · Vista de una tapa</text>
+<circle cx="1217" cy="1022" r="158" fill="#f0edf8" stroke="#7157a1" stroke-width="3"/>
+<circle cx="1217" cy="1022" r="118" fill="#e2f2f7" stroke="#247f9c" stroke-width="3"/>
+<circle cx="1217" cy="1022" r="109.2" fill="#f6fbfd" stroke="#247f9c" stroke-width="2"/>
+<circle cx="1217" cy="1022" r="113.6" fill="none" stroke="#ee9436" stroke-width="5"/>
+<circle cx="1217" cy="886" r="9" fill="#d2d9de" stroke="#445564" stroke-width="2"/>
+<circle cx="1353" cy="1022" r="9" fill="#d2d9de" stroke="#445564" stroke-width="2"/>
+<circle cx="1217" cy="1158" r="9" fill="#d2d9de" stroke="#445564" stroke-width="2"/>
+<circle cx="1081" cy="1022" r="9" fill="#d2d9de" stroke="#445564" stroke-width="2"/>
+<text x="1217" y="1014" font-size="28" font-weight="700" text-anchor="middle" fill="#ad5c13">Una junta</text>
+<text x="1217" y="1051" font-size="25" font-weight="400" text-anchor="middle" fill="#ad5c13">circular completa</text>
+<text x="989" y="1220" font-size="25" font-weight="400" text-anchor="start" fill="#172b3a">4 tirantes alrededor del tubo</text>
+<polyline points="1428,1189 1445,1158 1354,1022" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="80" y1="1250" x2="1520" y2="1250" stroke="#c9d3da" stroke-width="1.5"/>
+<text x="80" y="1302" font-size="31" font-weight="700" text-anchor="start" fill="#172b3a">Las tuercas sujetan las tapas; las juntas impiden que entre agua.</text>
+<text x="80" y="1347" font-size="24" font-weight="400" text-anchor="start" fill="#526574">Boceto conceptual · sin escala · espesor de tapas y dimensiones de juntas pendientes</text>
+</g></svg>

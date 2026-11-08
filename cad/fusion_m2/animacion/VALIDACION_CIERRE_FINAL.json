@@ -1,0 +1,63 @@
+{
+  "seconds": 9.966606041009072,
+  "tests": 703,
+  "results": [
+    {
+      "step": 24,
+      "title": "Introducir las cuatro varillas desde atr\u00e1s",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 25,
+      "title": "Colocar las arandelas interiores traseras",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 26,
+      "title": "Colocar los limitadores de compresi\u00f3n",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 27,
+      "title": "Deslizar los dos conjuntos de lastre",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 28,
+      "title": "Colocar las arandelas interiores delanteras",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 29,
+      "title": "Presentar junta y tapa frontal",
+      "complete": true,
+      "hits": []
+    },
+    {
+      "step": 30,
+      "title": "Cerrar alternando las diagonales",
+      "complete": true,
+      "hits": [
+        {
+          "group": "front_hardware",
+          "moving": "N1F M8 closed dome nut; verify usable blind thread",
+          "stationary": "R1 M8 A4 threaded tie rod; 420mm provisional cut",
+          "stationary_group": "rods_rear_hardware",
+          "fraction": 0.95,
+          "cm3": 0.07253309118608436
+        }
+      ]
+    },
+    {
+      "step": 31,
+      "title": "Comprobar el montaje terminado",
+      "complete": true,
+      "hits": []
+    }
+  ]
+}

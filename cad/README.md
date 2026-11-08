@@ -1,6 +1,22 @@
 # CRUZ M1 — diseño mecánico paramétrico
 
+> **Montaje Fusion actual (3 Nov 2026):** [revisión de modelos de catálogo](fusion_m2/REVISION_STEP_2026-11-03.md) y [copia F3D](fusion_m2/CROSS_MODELOS_CATALOGO_2026-11-03.f3d). Tubo modelado Ø180/170 × 380 mm, tapas de 10 mm y ranuras de junta de 3 mm; contraste físico y ensayos pendientes. El contenido M1 de abajo es histórico.
+
+> **D49 · Base vigente:** cuerpo acrílico transparente horizontal, cámara hacia delante por tapa acrílica, junta plana de silicona y pesos sobre varillas laterales. [Concepto y pendientes](../docs/IMPLANTACION_ACRILICO_HORIZONTAL.md) · [lista actual](../LISTA_COMPRA.md). Ø150/140 y tramo de 330 mm se recuperan como referencia de encaje. Tapas, apoyos, retención y varillas por dimensionar. Los bocetos verticales acrílicos, el horizontal PVC y los STL de tres cajas son antecedentes; no planos actuales de fabricación.
+
 **Estado: revisión dimensional y ensayos pendientes.** Este modelo contiene las piezas imprimibles, archivos STEP editables, STL individuales y una vista 3D de montaje. Es una base concreta para revisar y ajustar; todavía no acredita estanqueidad ni autonomía. No se ha impreso ni comprado nada al crear estos archivos.
+
+## Archivo: cierre del cuerpo acrílico anterior
+
+[Boceto en PNG](../docs/drawings/cierre-acrilico-boceto-v1.png) · [Dibujo vectorial editable SVG](../docs/drawings/cierre-acrilico-boceto-v1.svg).
+
+Muestra dos discos de tapa, una junta axial por extremo y cuatro tirantes exteriores, sin agujeros de sujeción en la pared del tubo. En el detalle, el borde plano del tubo apoya en la tapa y la junta ocupa una ranura mecanizada. Los 330 mm corresponden a la altura del tramo de tubo; las proporciones de tapas/juntas se exageran para explicar el cierre. Material propuesto PMMA colado; espesores, ranuras, apriete, puertos y resistencia pendientes. Concepto anterior sustituido por D45; no es el cierre vigente. No es un plano de fabricación ni evidencia de ensayo.
+
+## Archivo: implantación tubular vertical 01
+
+[Distribución interior y secciones](../docs/drawings/implantacion-interior-v1.png) · [Tapa de puertos](../docs/drawings/tapa-servicios-v1.png) · [Memoria de implantación y cotas de reserva](../docs/IMPLANTACION_INTERIOR_V1.md).
+
+Propuesta vertical archivada, sustituida por D45: bomba arriba, cubeta y cruz en nivel intermedio, Pi/cámara auxiliar en caras opuestas y batería sobre base elevada. Tapa superior de cuatro puertos y tapa inferior ciega para acceso al bastidor. Los SVG están junto a los PNG; [generador editable](implantacion/generar_bocetos.py). Ø200 de tapa y alturas internas son reservas; no hay aún encaje verificado ni taladros de fabricación. La óptica y la bomba son los pendientes principales de medición.
 
 ## Vista del conjunto
 

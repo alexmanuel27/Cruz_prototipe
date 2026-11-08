@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/multigamesystem/MGS-CAD-Files/main/STEP%20files%20with%20images/Raspberry%20Pi%204%20Model%20B%20v4.step
+NOT an official Raspberry Pi STEP; community model.

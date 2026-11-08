@@ -1,0 +1,542 @@
+{
+  "fps_render": 24,
+  "frame_count": 963,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Unir las dos mitades del chasis",
+      "note": "Colocar tuercas cautivas y fijar la uni\u00f3n M4. Dejar desmontado el travesa\u00f1o de X216.",
+      "moves": {
+        "chassis": [
+          80,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 1,
+      "render_count": 32
+    },
+    {
+      "number": 2,
+      "title": "Introducir la sonda de conductividad",
+      "note": "Entrar desde atr\u00e1s por el canal axial y fijar con apoyos blandos. Chasis transparente solo para mostrar este acceso.",
+      "moves": {
+        "ec": [
+          240,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 3,
+      "first_frame": 33,
+      "render_count": 32
+    },
+    {
+      "number": 3,
+      "title": "Introducir la sonda de temperatura",
+      "note": "Entrar desde atr\u00e1s con el bloque de flujo premontado. Vista transparente para mostrar el acceso bajo el chasis.",
+      "moves": {
+        "temp": [
+          110,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 65,
+      "render_count": 32
+    },
+    {
+      "number": 4,
+      "title": "Fijar los apoyos \u00f3pticos",
+      "note": "Montar y comprobar los apoyos antes de colocar el cuarzo.",
+      "moves": {
+        "opt_support": [
+          0,
+          0,
+          75
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 97,
+      "render_count": 32
+    },
+    {
+      "number": 5,
+      "title": "Instalar el m\u00f3dulo \u00f3ptico premontado",
+      "note": "En banco: montar PiCam, AS7265x y ambos LED en el portador. Despu\u00e9s bajar el conjunto y fijarlo.",
+      "moves": {
+        "optics": [
+          0,
+          0,
+          100
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 129,
+      "render_count": 32
+    },
+    {
+      "number": 6,
+      "title": "Instalar la cubeta de flujo",
+      "note": "Apoyos blandos; no transmitir esfuerzos de las mangueras al cuarzo.",
+      "moves": {
+        "cell": [
+          0,
+          0,
+          80
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 161,
+      "render_count": 32
+    },
+    {
+      "number": 7,
+      "title": "Montar la c\u00e1mara auxiliar",
+      "note": "Orientar la lente hacia la futura tapa transparente frontal.",
+      "moves": {
+        "webcam": [
+          -100,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 193,
+      "render_count": 32
+    },
+    {
+      "number": 8,
+      "title": "Instalar la bomba completa",
+      "note": "Motor y cabezal premontados. La muestra se mide antes de pasar por la bomba.",
+      "moves": {
+        "pump": [
+          0,
+          0,
+          110
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 225,
+      "render_count": 32
+    },
+    {
+      "number": 9,
+      "title": "Fijar la interfaz Atlas en seco",
+      "note": "Premontar placa lateral y carrier; dejar acceso a tornillos y bridas.",
+      "moves": {
+        "atlas": [
+          0,
+          -95,
+          8
+        ]
+      },
+      "hold_seconds": 2.4,
+      "waypoints": {
+        "atlas": [
+          [
+            0,
+            -95,
+            8
+          ],
+          [
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "first_frame": 257,
+      "render_count": 48
+    },
+    {
+      "number": 10,
+      "title": "Colocar la cubierta \u00f3ptica",
+      "note": "Conectar CSI a la PiCam y sacar su extremo libre. Pasar tambi\u00e9n la manguera superior, a\u00fan sin conectar.",
+      "moves": {
+        "hood": [
+          0,
+          0,
+          80
+        ]
+      },
+      "hold_seconds": 3.2,
+      "first_frame": 305,
+      "render_count": 32
+    },
+    {
+      "number": 11,
+      "title": "Introducir las dos tuercas cautivas",
+      "note": "Deslizar las M3 en los alojamientos laterales del chasis, antes de cerrar el travesa\u00f1o.",
+      "moves": {
+        "bridge_nuts": [
+          -18,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 337,
+      "render_count": 32
+    },
+    {
+      "number": 12,
+      "title": "Asentar el travesa\u00f1o desmontable",
+      "note": "Apoyar ambos extremos en las m\u00e9nsulas del chasis; no cargar la cubierta \u00f3ptica.",
+      "moves": {
+        "bridge": [
+          0,
+          0,
+          65
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 369,
+      "render_count": 32
+    },
+    {
+      "number": 13,
+      "title": "Fijar el travesa\u00f1o con dos M3",
+      "note": "Tornillos avellanados M3 \u00d7 16; cabezas enrasadas y acceso libre antes de instalar la bandeja.",
+      "moves": {
+        "bridge_screws": [
+          0,
+          0,
+          45
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 401,
+      "render_count": 32
+    },
+    {
+      "number": 14,
+      "title": "Sujetar la bater\u00eda",
+      "note": "Mantenerla desconectada y preparar el cableado antes de cubrir el compartimento.",
+      "moves": {
+        "battery": [
+          0,
+          0,
+          110
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 433,
+      "render_count": 32
+    },
+    {
+      "number": 15,
+      "title": "Bajar la bandeja antes de la Raspberry",
+      "note": "Bandeja vac\u00eda y separadores; extremo trasero recortado para que entre sin chocar con el aro.",
+      "moves": {
+        "bare_tray": [
+          0,
+          0,
+          135
+        ]
+      },
+      "hold_seconds": 3.4,
+      "first_frame": 465,
+      "render_count": 32
+    },
+    {
+      "number": 16,
+      "title": "Montar la Raspberry junto a la PiCam",
+      "note": "Conectar la cinta CSI sin tensarla y fijar la Pi sobre la cubierta. Mantener libres sus puertos.",
+      "moves": {
+        "pi": [
+          0,
+          0,
+          65
+        ]
+      },
+      "hold_seconds": 3,
+      "first_frame": 497,
+      "render_count": 32
+    },
+    {
+      "number": 17,
+      "title": "Instalar PCB y m\u00f3dulos en la bandeja",
+      "note": "V8 todav\u00eda de estudio. Colocar las placas con el equipo sin alimentaci\u00f3n y sin forzar conectores.",
+      "moves": {
+        "pcb_modules": [
+          0,
+          0,
+          100
+        ]
+      },
+      "hold_seconds": 3,
+      "first_frame": 529,
+      "render_count": 32
+    },
+    {
+      "number": 18,
+      "title": "Colocar los retenedores laterales",
+      "note": "Entrar desde ambos lados, encajar las ranuras en el borde y fijar con M3.",
+      "moves": {
+        "clips_l": [
+          0,
+          -55,
+          0
+        ],
+        "clips_r": [
+          0,
+          55,
+          0
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 561,
+      "render_count": 32
+    },
+    {
+      "number": 19,
+      "title": "Preparar y apoyar la tapa trasera",
+      "note": "Premontar juntas, pasamuros y conector EN3 fuera del tubo; dejar la tapa accesible.",
+      "moves": {
+        "rear_cap": [
+          100,
+          0,
+          0
+        ],
+        "rear_gasket": [
+          100,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 593,
+      "render_count": 32
+    },
+    {
+      "number": 20,
+      "title": "Conectar las mangueras inferiores",
+      "note": "Con el tubo retirado, conectar sensores y pasamuros. Fijar rutas sin radios cerrados ni pellizcos.",
+      "moves": {
+        "hoses": [
+          0,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 3.2,
+      "first_frame": 625,
+      "render_count": 32
+    },
+    {
+      "number": 21,
+      "title": "Conectar cubeta y bomba por arriba",
+      "note": "Recuperar el extremo que se pas\u00f3 por la cubierta y conectarlo a la bomba. Revisar ambos extremos.",
+      "moves": {
+        "upper_hose": [
+          0,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 3.2,
+      "first_frame": 657,
+      "render_count": 32
+    },
+    {
+      "number": 22,
+      "title": "Revisar el conjunto todav\u00eda abierto",
+      "note": "Comprobar fijaciones, CSI, cables y circuito hidr\u00e1ulico. Validar la electr\u00f3nica antes de energizar.",
+      "moves": {},
+      "hold_seconds": 4.5,
+      "first_frame": 689,
+      "render_count": 1
+    },
+    {
+      "number": 23,
+      "title": "Deslizar el tubo desde el frente",
+      "note": "Guiarlo hasta la junta trasera sin rozar componentes; comprobar que ning\u00fan cable quede en el cierre.",
+      "moves": {
+        "tube": [
+          -440,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 3,
+      "first_frame": 690,
+      "render_count": 32
+    },
+    {
+      "number": 24,
+      "title": "Introducir las cuatro varillas desde atr\u00e1s",
+      "note": "Tuercas y arandelas exteriores traseras premontadas; todav\u00eda sin comprimir las tapas.",
+      "moves": {
+        "rods_rear_hardware": [
+          440,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 722,
+      "render_count": 32
+    },
+    {
+      "number": 25,
+      "title": "Colocar las arandelas interiores traseras",
+      "note": "Deslizarlas desde los extremos delanteros libres; no atraviesan los taladros de la tapa.",
+      "moves": {
+        "rear_inner_washers": [
+          -440,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 754,
+      "render_count": 32
+    },
+    {
+      "number": 26,
+      "title": "Colocar los limitadores de compresi\u00f3n",
+      "note": "Deslizarlos sobre las varillas desde delante hasta las arandelas traseras.",
+      "moves": {
+        "limiters": [
+          -440,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 786,
+      "render_count": 32
+    },
+    {
+      "number": 27,
+      "title": "Deslizar los dos conjuntos de lastre",
+      "note": "Primero el collar trasero, despu\u00e9s el delantero. Deslizar sobre tubo y limitadores antes de poner arandelas delanteras.",
+      "moves": {
+        "ballast_rear": [
+          -440,
+          0,
+          0
+        ],
+        "ballast_front": [
+          -210,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 3.4,
+      "waypoints": {
+        "ballast_rear": [
+          [
+            -440,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "ballast_front": [
+          [
+            -210,
+            0,
+            0
+          ],
+          [
+            -210,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "first_frame": 818,
+      "render_count": 48
+    },
+    {
+      "number": 28,
+      "title": "Colocar las arandelas interiores delanteras",
+      "note": "Presentarlas contra los extremos de los limitadores.",
+      "moves": {
+        "front_inner_washers": [
+          -70,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 2.4,
+      "first_frame": 866,
+      "render_count": 32
+    },
+    {
+      "number": 29,
+      "title": "Presentar junta y tapa frontal",
+      "note": "Junta en la ranura de la tapa; limpiar, alinear y evitar retorcerla durante el cierre.",
+      "moves": {
+        "front_cap": [
+          -100,
+          0,
+          0
+        ],
+        "front_gasket": [
+          -100,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 3,
+      "first_frame": 898,
+      "render_count": 32
+    },
+    {
+      "number": 30,
+      "title": "Cerrar alternando las diagonales",
+      "note": "Colocar arandelas y tuercas exteriores; apretar por etapas y comprobar compresi\u00f3n uniforme.",
+      "moves": {
+        "front_hardware": [
+          -75,
+          0,
+          0
+        ]
+      },
+      "hold_seconds": 3.4,
+      "first_frame": 930,
+      "render_count": 32
+    },
+    {
+      "number": 31,
+      "title": "Comprobar el montaje terminado",
+      "note": "Revisar fijaciones, visi\u00f3n de c\u00e1mara y lastre. El ensayo de estanqueidad se hace aparte, sin electr\u00f3nica.",
+      "moves": {},
+      "hold_seconds": 5,
+      "first_frame": 962,
+      "render_count": 1
+    }
+  ],
+  "limits": [
+    "Secuencia comprobada en CAD por muestras discretas; pendiente de ensayo f\u00edsico.",
+    "Travesa\u00f1o X216 desmontable y canal axial EC: revisi\u00f3n propuesta, original conservado.",
+    "Cables, bridas, \u00fatiles y parte de la torniller\u00eda no est\u00e1n modelados; se indican en r\u00f3tulos.",
+    "Mangueras mostradas por aparici\u00f3n; no se simula su flexi\u00f3n.",
+    "Juntas en geometr\u00eda de trabajo, sin simulaci\u00f3n el\u00e1stica.",
+    "PCB V8 de estudio: no fabricar ni energizar sin terminar su validaci\u00f3n."
+  ]
+}

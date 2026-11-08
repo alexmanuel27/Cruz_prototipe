@@ -1,0 +1,125 @@
+[
+  {
+    "code": "H3_TUBE_IN",
+    "name": "Entrada a temperatura - canal en travesano",
+    "group": "06",
+    "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+    "printed": false,
+    "bbox_mm": [
+      55.5,
+      65.0,
+      51.5
+    ],
+    "volume_cm3": 1.8739,
+    "centerline_points_mm": [
+      [
+        374,
+        -35,
+        35
+      ],
+      [
+        321,
+        -35,
+        35
+      ],
+      [
+        321,
+        25,
+        35
+      ],
+      [
+        321,
+        25,
+        -14
+      ]
+    ],
+    "bend_radii_mm": [
+      15.0,
+      15.0
+    ]
+  },
+  {
+    "code": "H3_TUBE_TEMP_EC",
+    "name": "Temperatura a conductividad - circuito completo",
+    "group": "06",
+    "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+    "printed": false,
+    "bbox_mm": [
+      49.0,
+      39.0,
+      31.0
+    ],
+    "volume_cm3": 1.3894,
+    "centerline_points_mm": [
+      [
+        321,
+        25,
+        -46
+      ],
+      [
+        321,
+        25,
+        -72
+      ],
+      [
+        365,
+        -9,
+        -72
+      ],
+      [
+        365,
+        -9,
+        -46
+      ],
+      [
+        345,
+        -9,
+        -46
+      ]
+    ],
+    "bend_radii_mm": [
+      15.0,
+      12.35,
+      12.35
+    ]
+  },
+  {
+    "code": "H3_TUBE_OUT",
+    "name": "Bomba a descarga - canal en travesano",
+    "group": "06",
+    "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+    "printed": false,
+    "bbox_mm": [
+      96.5,
+      8.0,
+      18.5
+    ],
+    "volume_cm3": 1.3033,
+    "centerline_points_mm": [
+      [
+        280,
+        32,
+        19
+      ],
+      [
+        280,
+        32,
+        35
+      ],
+      [
+        310,
+        35,
+        35
+      ],
+      [
+        374,
+        35,
+        35
+      ]
+    ],
+    "bend_radii_mm": [
+      15.0,
+      15.0
+    ]
+  }
+]

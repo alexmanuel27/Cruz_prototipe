@@ -1,0 +1,15 @@
+{
+  "revision": "M2-robust-frame-wet-sensors-2026-11-02",
+  "units": "mm",
+  "status": "Preliminary mechanical integration; purchased component envelopes need measurement before fabrication",
+  "body": {"od": 180, "id": 170, "length": 380},
+  "closure": {"cap_diameter": 230, "cap_thickness": 15, "gasket_free_thickness": 3, "gasket_compression": 0.15, "gasket_id": 170, "gasket_od": 180, "rod_count": 4, "rod_size": 8, "rod_radius": 101, "rod_cut_length": 436, "sleeve_od": 14, "sleeve_id": 9, "washer_thickness": 1.5},
+  "battery": {"length": 70, "width": 37.5, "height": 56, "center": [283, -28, -12], "basis": "CITYORK B0FQ583Q2J advertised dimensions, not measured"},
+  "pump": {"motor_width": 28, "motor_length": 51, "head_diameter": 50, "head_height": 15, "center": [269, 18, -9.5], "basis": "Provisional envelope, NOT a measured MS11HS5L410C-01 pump"},
+  "flow_cell": {"width": 12.5, "height": 40, "center": [126.5, 0, 0], "basis": "Provisional envelope, NOT a drawing of the purchased quartz cell"},
+  "tube_hose": {"id": 3, "od": 5},
+  "rear_ports": {"intake": [-35, 35], "discharge": [35, 35], "charge_data": [30, -30], "vent_reservation": [0, -45]},
+  "frame": {"outer_diameter": 168, "wall": 5, "split_x": 194, "shell_top_z": -18, "joint_screw_size": 4},
+  "wet_sensors": {"conductivity_chamber": {"x_start": 165, "x_end": 335, "y": 0, "z": -54, "od": 20, "id": 16}, "temperature_tee_center": [321, 12, -30], "status": "Concept: exact probe variant and all wet seals require physical verification"},
+  "print_bed": [250, 210, 210]
+}

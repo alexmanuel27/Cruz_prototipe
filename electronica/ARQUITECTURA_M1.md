@@ -1,3 +1,23 @@
+# Arquitectura eléctrica — revisión D52
+
+> **Actualización D53, 2 nov 2026:** este documento describe la arquitectura anterior con ESP32 y no es la vigente. Alex eliminó el ESP32; la Raspberry Pi controlará el instrumento. Véase [el borrador y sus pendientes](cross_v2_raspberry/README.md). Alex confirmó posteriormente que los DC/DC son DFRobot DFR1015; las condiciones de entrada y disipación están pendientes de comprobación.
+
+**30 de octubre de 2026.** Alex autoriza trabajar ahora en la electrónica y consolidar la compra. D44 queda superada para esta fase. La arquitectura vigente, conexiones funcionales y comprobaciones están en [Electronics V1](DISENO_ELECTRICO_V1.md); el texto antiguo al final se conserva como archivo.
+
+- Reutilizar **un A4988 y tres DC/DC de 5 A**, disponibles según Alex. Dos salidas de 5 V y una de 9 V. Los módulos de inventario admiten **7,5–30 V**, sujetos a comprobación de batería/cargador y carga térmica.
+- ESP32 Dev Module como supervisor, RTC DS3231 y sensores en la rama permanente. Rama de adquisición con corte positivo Pololu 2814: Pi 4, ambas cámaras, VMOT y alimentación óptica. Apagado final de Linux confirmado antes de cortar; evitar realimentación por UART con buffer Ioff.
+- **La halógena se sustituye por Nichia Optisolis NF2W757GT-F1, star PCB SKU 32724**, elegido por Alex. Propuesta LM317 a unos 62,5 mA desde 9 V. Azul elegido: RS 0283199 / ILH-XC01-S420-SC211-WIR200.; propuesta PLD333 a 333 mA. No dar por especificadas las otras fuentes a partir de la antigua hipótesis 4 V / 100 mA.
+- Conservar AS7265x de 18 canales y geometría de cruz: transmisión primero, fluorescencia después; bomba aguas abajo, detenida durante la lectura. Renovación nominal previa de 30 s y adquisición de fuentes de 5 s son ajustes iniciales por verificar.
+- Puerto EN3 confirmado D51; propuesta DFR0845 aislado y adaptador USB–RS485 en el ordenador. Relé de carga de dos polos; cargador/BMS originales. Pinout físico y cargador por verificar. Reserva de alimentación externa para futura boya, no conectada en V1.
+- DS18B20 y kit Atlas K1.0 reutilizados; sin sensor de profundidad. Añadir alarma de fuga interna; no confundirla con medida de humedad relativa.
+- Cuerpo acrílico horizontal Ø150/140 y 330 mm como referencia de encaje; cámara USB frontal. Ensayo de estanqueidad sin electrónica obligatorio antes de instalarla. No se registra resultado de ensayo en esta revisión.
+
+[Compra consolidada](../LISTA_COMPRA.md) · [Puerto y futura boya](PUERTO_SERVICIO_Y_BOYA.md) · [Presupuesto energético anterior](../docs/PRESUPUESTO_ENERGETICO.md), histórico y sin recalcular: no describe la nueva fuente blanca ni toda la electrónica actual.
+
+## Archivo: concepto anterior del 30 de septiembre
+
+**El texto siguiente conserva la arquitectura antigua de tres cajas y bomba Denash para trazabilidad. No es la selección vigente ni una instrucción de compra/fabricación.** Las dimensiones E03 y los pasacables entre cajas no deben trasladarse al tubo nuevo.
+
 # Cruz M1 — arquitectura eléctrica preliminar
 
 **30 de septiembre de 2026.** Ubicación física definida por el [CAD M1](../cad/README.md); esquemático con referencias y tensiones finales pendiente de medir los componentes el 20–23 de octubre. Este documento no autoriza energizar ni sumergir el conjunto.

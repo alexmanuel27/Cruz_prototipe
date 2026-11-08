@@ -1,0 +1,191 @@
+{
+  "duration_seconds": 130.5,
+  "chapters": [
+    {
+      "step": 1,
+      "start_seconds": 3.0,
+      "title": "Unir las dos mitades del chasis",
+      "note": "Colocar tuercas cautivas y fijar la uni\u00f3n M4. Dejar desmontado el travesa\u00f1o de X216."
+    },
+    {
+      "step": 2,
+      "start_seconds": 6.733,
+      "title": "Introducir la sonda de conductividad",
+      "note": "Entrar desde atr\u00e1s por el canal axial y fijar con apoyos blandos. Chasis transparente solo para mostrar este acceso."
+    },
+    {
+      "step": 3,
+      "start_seconds": 11.067,
+      "title": "Introducir la sonda de temperatura",
+      "note": "Entrar desde atr\u00e1s con el bloque de flujo premontado. Vista transparente para mostrar el acceso bajo el chasis."
+    },
+    {
+      "step": 4,
+      "start_seconds": 14.8,
+      "title": "Fijar los apoyos \u00f3pticos",
+      "note": "Montar y comprobar los apoyos antes de colocar el cuarzo."
+    },
+    {
+      "step": 5,
+      "start_seconds": 18.533,
+      "title": "Instalar el m\u00f3dulo \u00f3ptico premontado",
+      "note": "En banco: montar PiCam, AS7265x y ambos LED en el portador. Despu\u00e9s bajar el conjunto y fijarlo."
+    },
+    {
+      "step": 6,
+      "start_seconds": 22.267,
+      "title": "Instalar la cubeta de flujo",
+      "note": "Apoyos blandos; no transmitir esfuerzos de las mangueras al cuarzo."
+    },
+    {
+      "step": 7,
+      "start_seconds": 26.0,
+      "title": "Montar la c\u00e1mara auxiliar",
+      "note": "Orientar la lente hacia la futura tapa transparente frontal."
+    },
+    {
+      "step": 8,
+      "start_seconds": 29.733,
+      "title": "Instalar la bomba completa",
+      "note": "Motor y cabezal premontados. La muestra se mide antes de pasar por la bomba."
+    },
+    {
+      "step": 9,
+      "start_seconds": 33.467,
+      "title": "Fijar la interfaz Atlas en seco",
+      "note": "Premontar placa lateral y carrier; dejar acceso a tornillos y bridas."
+    },
+    {
+      "step": 10,
+      "start_seconds": 37.867,
+      "title": "Colocar la cubierta \u00f3ptica",
+      "note": "Conectar CSI a la PiCam y sacar su extremo libre. Pasar tambi\u00e9n la manguera superior, a\u00fan sin conectar."
+    },
+    {
+      "step": 11,
+      "start_seconds": 42.4,
+      "title": "Introducir las dos tuercas cautivas",
+      "note": "Deslizar las M3 en los alojamientos laterales del chasis, antes de cerrar el travesa\u00f1o."
+    },
+    {
+      "step": 12,
+      "start_seconds": 46.133,
+      "title": "Asentar el travesa\u00f1o desmontable",
+      "note": "Apoyar ambos extremos en las m\u00e9nsulas del chasis; no cargar la cubierta \u00f3ptica."
+    },
+    {
+      "step": 13,
+      "start_seconds": 49.867,
+      "title": "Fijar el travesa\u00f1o con dos M3",
+      "note": "Tornillos avellanados M3 \u00d7 16; cabezas enrasadas y acceso libre antes de instalar la bandeja."
+    },
+    {
+      "step": 14,
+      "start_seconds": 53.6,
+      "title": "Sujetar la bater\u00eda",
+      "note": "Mantenerla desconectada y preparar el cableado antes de cubrir el compartimento."
+    },
+    {
+      "step": 15,
+      "start_seconds": 57.333,
+      "title": "Bajar la bandeja antes de la Raspberry",
+      "note": "Bandeja vac\u00eda y separadores; extremo trasero recortado para que entre sin chocar con el aro."
+    },
+    {
+      "step": 16,
+      "start_seconds": 62.067,
+      "title": "Montar la Raspberry junto a la PiCam",
+      "note": "Conectar la cinta CSI sin tensarla y fijar la Pi sobre la cubierta. Mantener libres sus puertos."
+    },
+    {
+      "step": 17,
+      "start_seconds": 66.4,
+      "title": "Instalar PCB y m\u00f3dulos en la bandeja",
+      "note": "V8 todav\u00eda de estudio. Colocar las placas con el equipo sin alimentaci\u00f3n y sin forzar conectores."
+    },
+    {
+      "step": 18,
+      "start_seconds": 70.733,
+      "title": "Colocar los retenedores laterales",
+      "note": "Entrar desde ambos lados, encajar las ranuras en el borde y fijar con M3."
+    },
+    {
+      "step": 19,
+      "start_seconds": 74.467,
+      "title": "Preparar y apoyar la tapa trasera",
+      "note": "Premontar juntas, pasamuros y conector EN3 fuera del tubo; dejar la tapa accesible."
+    },
+    {
+      "step": 20,
+      "start_seconds": 78.2,
+      "title": "Conectar las mangueras inferiores",
+      "note": "Con el tubo retirado, conectar sensores y pasamuros. Fijar rutas sin radios cerrados ni pellizcos."
+    },
+    {
+      "step": 21,
+      "start_seconds": 82.733,
+      "title": "Conectar cubeta y bomba por arriba",
+      "note": "Recuperar el extremo que se pas\u00f3 por la cubierta y conectarlo a la bomba. Revisar ambos extremos."
+    },
+    {
+      "step": 22,
+      "start_seconds": 87.267,
+      "title": "Revisar el conjunto todav\u00eda abierto",
+      "note": "Comprobar fijaciones, CSI, cables y circuito hidr\u00e1ulico. Validar la electr\u00f3nica antes de energizar."
+    },
+    {
+      "step": 23,
+      "start_seconds": 91.767,
+      "title": "Deslizar el tubo desde el frente",
+      "note": "Guiarlo hasta la junta trasera sin rozar componentes; comprobar que ning\u00fan cable quede en el cierre."
+    },
+    {
+      "step": 24,
+      "start_seconds": 96.1,
+      "title": "Introducir las cuatro varillas desde atr\u00e1s",
+      "note": "Tuercas y arandelas exteriores traseras premontadas; todav\u00eda sin comprimir las tapas."
+    },
+    {
+      "step": 25,
+      "start_seconds": 99.833,
+      "title": "Colocar las arandelas interiores traseras",
+      "note": "Deslizarlas desde los extremos delanteros libres; no atraviesan los taladros de la tapa."
+    },
+    {
+      "step": 26,
+      "start_seconds": 103.567,
+      "title": "Colocar los limitadores de compresi\u00f3n",
+      "note": "Deslizarlos sobre las varillas desde delante hasta las arandelas traseras."
+    },
+    {
+      "step": 27,
+      "start_seconds": 107.3,
+      "title": "Deslizar los dos conjuntos de lastre",
+      "note": "Primero el collar trasero, despu\u00e9s el delantero. Deslizar sobre tubo y limitadores antes de poner arandelas delanteras."
+    },
+    {
+      "step": 28,
+      "start_seconds": 112.7,
+      "title": "Colocar las arandelas interiores delanteras",
+      "note": "Presentarlas contra los extremos de los limitadores."
+    },
+    {
+      "step": 29,
+      "start_seconds": 116.433,
+      "title": "Presentar junta y tapa frontal",
+      "note": "Junta en la ranura de la tapa; limpiar, alinear y evitar retorcerla durante el cierre."
+    },
+    {
+      "step": 30,
+      "start_seconds": 120.767,
+      "title": "Cerrar alternando las diagonales",
+      "note": "Colocar arandelas y tuercas exteriores; apretar por etapas y comprobar compresi\u00f3n uniforme."
+    },
+    {
+      "step": 31,
+      "start_seconds": 125.5,
+      "title": "Comprobar el montaje terminado",
+      "note": "Revisar fijaciones, visi\u00f3n de c\u00e1mara y lastre. El ensayo de estanqueidad se hace aparte, sin electr\u00f3nica."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-03",
+  "files": [
+    {
+      "path": "cad/componentes/atlas_conductividad/ENV-40-EC-K=1.STEP",
+      "bytes": 64915,
+      "sha256": "c2be54a3552e0e5e6fe62953058323bd6b44fc635ca08709a82bfea8bb99aed3"
+    },
+    {
+      "path": "cad/componentes/atlas_isolated_carrier/atlas_isccb_gen2.step",
+      "bytes": 3267799,
+      "sha256": "f6dbb198389f91b16544e86984020153ce760751a2ccaffa34f0a28e049db161"
+    },
+    {
+      "path": "cad/componentes/bluerobotics_wetlink_jpt/BR-107163-055_RevA.STEP",
+      "bytes": 712070,
+      "sha256": "6064e97372d62dd266ce005906858440ae834621e779e173bbfd0f255fd61975"
+    },
+    {
+      "path": "cad/componentes/bluerobotics_wetlink_jpt/WL-M10-NUT-PUBLIC.STEP",
+      "bytes": 1159976,
+      "sha256": "853c25600fa8d9d5c8488346d6685f2aeea4dad4ee52f149dec5dc2f9ea57ee1"
+    },
+    {
+      "path": "cad/componentes/moons_ms11hs5/MS11HS5P_familia_fabricante.stp",
+      "bytes": 645998,
+      "sha256": "dc01b7e18a461d211e40ee997f25c04c0a2ca40054b3c88417fab1d8b9989903"
+    },
+    {
+      "path": "cad/componentes/raspberry_pi4_community/Raspberry_Pi_4_Model_B_community.step",
+      "bytes": 17535443,
+      "sha256": "fd75897c59e79106ada16c3c744c212b92e60f1992b8b42349ddc2f2b3e90ce4"
+    },
+    {
+      "path": "electronica/cross_v8_raspberry/modelos_3d/Pololu_2814_fabricante.step",
+      "bytes": 3444429,
+      "sha256": "b5dd20cc25eb1c9b38ddb0afa0d90149adc5c50bbcdde0bf3a0379d23685ab99"
+    }
+  ]
+}

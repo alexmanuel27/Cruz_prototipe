@@ -1,0 +1,35 @@
+{
+  "caps": [
+    {
+      "component": "E02 FRONT acrylic cap; port details HOLD",
+      "inner_land_x_mm": -1.55,
+      "groove_floor_x_mm": -2.55,
+      "depth_mm": 1,
+      "id_mm": 168.8,
+      "od_mm": 181.2,
+      "cap_overall_thickness_mm": 16,
+      "compressed_gasket_thickness_mm": 2.55,
+      "land_to_tube_gap_mm": 1.55,
+      "volume_gain_cm3": 37.884465809639316
+    },
+    {
+      "component": "E03 REAR acrylic cap; port details HOLD",
+      "inner_land_x_mm": 381.55,
+      "groove_floor_x_mm": 382.55,
+      "depth_mm": 1,
+      "id_mm": 168.8,
+      "od_mm": 181.2,
+      "cap_overall_thickness_mm": 16,
+      "compressed_gasket_thickness_mm": 2.55,
+      "land_to_tube_gap_mm": 1.55,
+      "volume_gain_cm3": 36.09372658116659
+    }
+  ],
+  "unchanged_other_bodies": 183,
+  "tube_unchanged": true,
+  "body_count": 185,
+  "free_gasket_mm": 3,
+  "working_gasket_mm": 2.55,
+  "compression_percent": 15,
+  "status": "CAD geometry checked; physical sealing not tested"
+}

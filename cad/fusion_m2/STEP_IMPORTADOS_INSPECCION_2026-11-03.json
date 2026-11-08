@@ -1,0 +1,244 @@
+[
+  {
+    "name": "PI4_COMUNIDAD",
+    "bodies": 109,
+    "bbox_mm": [
+      -42.5,
+      -30.752069215775904,
+      -3.252069215775799,
+      46.490000000000045,
+      27.647930784224183,
+      16.647930784224172
+    ],
+    "children": [
+      [
+        "PCB, RPi4ModelB",
+        1
+      ],
+      [
+        "Broadcom BCM2711B0 CPU, RPi4ModelB",
+        2
+      ],
+      [
+        "2.54 mm DUPONT MALE PIN HEADER, POE, 2X2, RPi4ModelB",
+        5
+      ],
+      [
+        "2.54 mm DUPONT MALE PIN HEADER, IO, 2X20, RPi4ModelB",
+        41
+      ],
+      [
+        "Camera Connector, RPi4ModelB",
+        17
+      ],
+      [
+        "Microphone Plug, RPi4ModelB",
+        5
+      ],
+      [
+        "Display Connector, RPi4ModelB",
+        17
+      ],
+      [
+        "Gigabit Ethernet Port, RPi4ModelB",
+        1
+      ],
+      [
+        "Female Micro HDMI Connector, RPi4ModelB",
+        1
+      ],
+      [
+        "Female USB Type C Connector, RPi4ModelB",
+        1
+      ],
+      [
+        "2X USB3.0 PORTS, RPi4ModelB",
+        1
+      ],
+      [
+        "91D77 D9WHV 778K, 4 GB LPDDR4 SDRAM, RPi4ModelB",
+        1
+      ],
+      [
+        "Cypress CYW43455 Wireless Module Cover, RPi4ModelB",
+        1
+      ],
+      [
+        "SD Card Slot, RPi4ModelB",
+        10
+      ],
+      [
+        "VIA VL805 PCIe USB 3.0 controller, RPi4ModelB",
+        1
+      ],
+      [
+        "2X USB2.0 PORTS, RPi4ModelB",
+        1
+      ],
+      [
+        "Broadcom BCM54213PE Gigabit Ethernet Transceiver, RPi4ModelB",
+        1
+      ],
+      [
+        "MxL7704 Universal PMIC, RPi4ModelB",
+        1
+      ],
+      [
+        "Female Micro HDMI Connector, RPi4ModelB",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "JPT_OFICIAL",
+    "bodies": 2,
+    "bbox_mm": [
+      25.0,
+      -8.000000000000009,
+      -8.46893657635087,
+      64.00000000000001,
+      8.0,
+      8.46893657635087
+    ],
+    "children": [
+      [
+        "WLP-BULKHEAD-JPT_WLP-M10-BULKHEAD-5.5MM-PUBLIC",
+        1
+      ],
+      [
+        "WLP-PLUG_WLP-PLUG-5.5MM-LC-PUBLIC",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "TUERCA_JPT_OFICIAL",
+    "bodies": 1,
+    "bbox_mm": [
+      -4.0,
+      -7.999999999999997,
+      -8.193747284969081,
+      4.0,
+      7.999999999999999,
+      9.0
+    ],
+    "children": [
+      [
+        "WL-M10-NUT",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "ATLAS_CARRIER_OFICIAL",
+    "bodies": 35,
+    "bbox_mm": [
+      -64.16024497676847,
+      15.712235279392633,
+      -43.667266773179996,
+      -29.52297230461329,
+      38.30183527938965,
+      12.197228799318687
+    ],
+    "children": [
+      [
+        "standoff",
+        1
+      ],
+      [
+        "Board_Iso_carry_type-II.step",
+        1
+      ],
+      [
+        "hdr-1x5th_1.27_6x5.step",
+        5
+      ],
+      [
+        "User_Library-RO-0505.step",
+        1
+      ],
+      [
+        "soic-8_150mil.step",
+        9
+      ],
+      [
+        "hdrf-1x3t_2.54_8x3.step",
+        1
+      ],
+      [
+        "res_0402.step",
+        1
+      ],
+      [
+        "sot23.step",
+        4
+      ],
+      [
+        "hdrf-1x3t_2.54_8x3.step",
+        1
+      ],
+      [
+        "res_0402.step",
+        1
+      ],
+      [
+        "res_0402.step",
+        1
+      ],
+      [
+        "res_0402.step",
+        1
+      ],
+      [
+        "res_0402.step",
+        1
+      ],
+      [
+        "res_0402.step",
+        1
+      ],
+      [
+        "res_0402.step",
+        1
+      ],
+      [
+        "res_0402.step",
+        1
+      ],
+      [
+        "SMA edge mount",
+        1
+      ],
+      [
+        "standoff",
+        1
+      ],
+      [
+        "standoff",
+        1
+      ],
+      [
+        "standoff",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "POLOLU_2814_OFICIAL",
+    "bodies": 1,
+    "bbox_mm": [
+      0.0,
+      -0.8950000000000108,
+      0.0,
+      20.32,
+      22.86,
+      3.9647999999999994
+    ],
+    "children": [
+      [
+        "big-mosfet-slide-switch-with-reverse-voltage-protection",
+        1
+      ]
+    ]
+  }
+]

@@ -1,0 +1,286 @@
+ERC report (2026-11-02T16:41:16+0100, Encoding UTF8)
+
+***** Sheet /
+[pin_not_connected]: Pin not connected
+    ; error
+    @(544.83 mm, -73.66 mm): Symbol #PWR058 Pin 1 [Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(509.27 mm, 820.42 mm): Symbol U7 Pin 2 [VI, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(457.20 mm, 1140.46 mm): Symbol U2 Pin 3 [VI, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(459.74 mm, 1268.73 mm): Symbol #PWR001 Pin 1 [Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(601.98 mm, 1366.52 mm): Symbol #PWR055 Pin 1 [Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(594.36 mm, 1371.60 mm): Symbol #PWR054 Pin 1 [Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(594.36 mm, 1374.14 mm): Symbol #PWR056 Pin 1 [Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(601.98 mm, 1381.76 mm): Symbol #PWR057 Pin 1 [Power input, Line]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(455.93 mm, 57.15 mm): Symbol R2 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(457.20 mm, -68.58 mm): Symbol J4 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(455.93 mm, -113.03 mm): Symbol R22 [R]
+[global_label_dangling]: Global label not connected anywhere else in the schematic
+    ; warning
+    @(524.51 mm, -73.66 mm): Global Label '3V3_AON'
+[lib_symbol_mismatch]: Symbol '4013' doesn't match copy in library '4xxx'
+    ; warning
+    @(534.67 mm, -73.66 mm): Symbol U8 [4013]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(549.91 mm, 77.47 mm): Symbol R3 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(561.34 mm, -2.54 mm): Symbol J23 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(549.91 mm, -133.35 mm): Symbol R1 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(565.15 mm, -36.83 mm): Symbol J5 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(570.23 mm, -53.34 mm): Symbol R6 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(574.04 mm, 54.61 mm): Symbol J7 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'C' doesn't match copy in library 'Device'
+    ; warning
+    @(574.04 mm, 55.88 mm): Symbol C3 [C]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(574.04 mm, 63.50 mm): Symbol R9 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(577.85 mm, -26.67 mm): Symbol J25 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'C' doesn't match copy in library 'Device'
+    ; warning
+    @(589.28 mm, -36.83 mm): Symbol C5 [C]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(548.64 mm, -224.79 mm): Symbol R25 [R]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(580.39 mm, -180.34 mm): Symbol R14 [R]
+[lib_symbol_mismatch]: Symbol 'C' doesn't match copy in library 'Device'
+    ; warning
+    @(580.39 mm, -187.96 mm): Symbol C2 [C]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(619.76 mm, 78.74 mm): Symbol R23 [R]
+[lib_symbol_mismatch]: Symbol 'BSS138' doesn't match copy in library 'Transistor_FET'
+    ; warning
+    @(603.25 mm, -184.15 mm): Symbol Q3 [BSS138]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(627.38 mm, 69.85 mm): Symbol J26 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(631.19 mm, 64.77 mm): Symbol R20 [R]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(676.91 mm, -31.75 mm): Symbol R12 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(689.61 mm, -58.42 mm): Symbol J13 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(693.42 mm, -123.19 mm): Symbol R10 [R]
+[lib_symbol_mismatch]: Symbol 'C' doesn't match copy in library 'Device'
+    ; warning
+    @(718.82 mm, -26.67 mm): Symbol C6 [C]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(476.25 mm, 580.39 mm): Symbol R11 [R]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(589.28 mm, -544.83 mm): Symbol R15 [R]
+[lib_symbol_mismatch]: Symbol '1N5819' doesn't match copy in library 'Diode'
+    ; warning
+    @(698.50 mm, 480.06 mm): Symbol D6 [1N5819]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(698.50 mm, 480.06 mm): Symbol R24 [R]
+[lib_symbol_mismatch]: Symbol '1N5819' doesn't match copy in library 'Diode'
+    ; warning
+    @(698.50 mm, 487.68 mm): Symbol D7 [1N5819]
+[lib_symbol_mismatch]: Symbol 'AO3400A' doesn't match copy in library 'Transistor_FET'
+    ; warning
+    @(731.52 mm, 483.87 mm): Symbol Q6 [AO3400A]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(491.49 mm, 816.61 mm): Symbol R13 [R]
+[lib_symbol_mismatch]: Symbol 'C' doesn't match copy in library 'Device'
+    ; warning
+    @(491.49 mm, 816.61 mm): Symbol C4 [C]
+[lib_symbol_mismatch]: Symbol '1N4007' doesn't match copy in library 'Diode'
+    ; warning
+    @(491.49 mm, 824.23 mm): Symbol D1 [1N4007]
+[lib_symbol_mismatch]: Symbol 'MCP1700x-330xxTO' doesn't match copy in library 'Regulator_Linear'
+    ; warning
+    @(516.89 mm, 820.42 mm): Symbol U7 [MCP1700x-330xxTO]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(467.36 mm, 894.08 mm): Symbol R16 [R]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(581.66 mm, 862.33 mm): Symbol R21 [R]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(589.28 mm, 867.41 mm): Symbol R17 [R]
+[lib_symbol_mismatch]: Symbol 'Fuse' doesn't match copy in library 'Device'
+    ; warning
+    @(621.03 mm, 906.78 mm): Symbol F1 [Fuse]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(626.11 mm, 910.59 mm): Symbol J14 [Conn_01x02]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Cross'.
+    ; warning
+    @(648.97 mm, 913.13 mm): Symbol U4 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(648.97 mm, 913.13 mm): Symbol U4 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(718.82 mm, 875.03 mm): Symbol R18 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(487.68 mm, 1079.50 mm): Symbol J20 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol 'Conn_01x08' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(488.95 mm, 1108.71 mm): Symbol J18 [Conn_01x08]
+[lib_symbol_mismatch]: Symbol 'LM317_TO-220' doesn't match copy in library 'Regulator_Linear'
+    ; warning
+    @(464.82 mm, 1140.46 mm): Symbol U2 [LM317_TO-220]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(476.25 mm, 1140.46 mm): Symbol R4 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(469.90 mm, 1148.08 mm): Symbol J3 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol '1N4007' doesn't match copy in library 'Diode'
+    ; warning
+    @(514.35 mm, 1158.24 mm): Symbol D2 [1N4007]
+[lib_symbol_mismatch]: Symbol 'LTV-817' doesn't match copy in library 'Isolator'
+    ; warning
+    @(525.78 mm, 1160.78 mm): Symbol U3 [LTV-817]
+[lib_symbol_mismatch]: Symbol '1N5819' doesn't match copy in library 'Diode'
+    ; warning
+    @(544.83 mm, 1158.24 mm): Symbol D4 [1N5819]
+[lib_symbol_mismatch]: Symbol 'Conn_01x05' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(464.82 mm, 1203.96 mm): Symbol J9 [Conn_01x05]
+[lib_symbol_mismatch]: Symbol '2N3904' doesn't match copy in library 'Transistor_BJT'
+    ; warning
+    @(579.12 mm, 1160.78 mm): Symbol Q1 [2N3904]
+[lib_symbol_mismatch]: Symbol 'AO3400A' doesn't match copy in library 'Transistor_FET'
+    ; warning
+    @(557.53 mm, 1182.37 mm): Symbol Q7 [AO3400A]
+[lib_symbol_mismatch]: Symbol 'BSS138' doesn't match copy in library 'Transistor_FET'
+    ; warning
+    @(464.82 mm, 1223.01 mm): Symbol Q4 [BSS138]
+[lib_symbol_mismatch]: Symbol 'Conn_01x05' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(598.17 mm, 1182.37 mm): Symbol J24 [Conn_01x05]
+[multiple_net_names]: Both 3V3_AON and WAKE_N are attached to the same items; 3V3_AON will be used in the netlist
+    ; warning
+    @(524.51 mm, 820.42 mm): Global Label '3V3_AON'
+    @(593.09 mm, 1187.45 mm): Global Label 'WAKE_N'
+[lib_symbol_mismatch]: Symbol 'G2RL-2' doesn't match copy in library 'Relay'
+    ; warning
+    @(684.53 mm, 1140.46 mm): Symbol K1 [G2RL-2]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Cross'.
+    ; warning
+    @(566.42 mm, 1203.96 mm): Symbol U5 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(566.42 mm, 1203.96 mm): Symbol U5 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol 'Fuse' doesn't match copy in library 'Device'
+    ; warning
+    @(684.53 mm, 1151.89 mm): Symbol F2 [Fuse]
+[multiple_net_names]: Both BAT_SENSE and GND are attached to the same items; BAT_SENSE will be used in the netlist
+    ; warning
+    @(574.04 mm, 59.69 mm): Global Label 'BAT_SENSE'
+    @(459.74 mm, 1268.73 mm): Symbol #PWR001 Pin 1 [Power input, Line]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(455.93 mm, 1276.35 mm): Symbol R5 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(631.19 mm, 1203.96 mm): Symbol J2 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol '1N5819' doesn't match copy in library 'Diode'
+    ; warning
+    @(476.25 mm, 1276.35 mm): Symbol D8 [1N5819]
+[lib_symbol_mismatch]: Symbol 'Conn_02x20_Odd_Even' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(464.82 mm, 1281.43 mm): Symbol J1 [Conn_02x20_Odd_Even]
+[lib_symbol_mismatch]: Symbol 'AO3400A' doesn't match copy in library 'Transistor_FET'
+    ; warning
+    @(685.80 mm, 1182.37 mm): Symbol Q2 [AO3400A]
+[lib_symbol_mismatch]: Symbol 'C_Polarized' doesn't match copy in library 'Device'
+    ; warning
+    @(660.40 mm, 1197.61 mm): Symbol C1 [C_Polarized]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(660.40 mm, 1197.61 mm): Symbol R8 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(665.48 mm, 1201.42 mm): Symbol J11 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol '1N5819' doesn't match copy in library 'Diode'
+    ; warning
+    @(463.55 mm, 1294.13 mm): Symbol D5 [1N5819]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Cross'.
+    ; warning
+    @(684.53 mm, 1203.96 mm): Symbol U6 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(684.53 mm, 1203.96 mm): Symbol U6 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(538.48 mm, 1281.43 mm): Symbol J8 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol 'R' doesn't match copy in library 'Device'
+    ; warning
+    @(707.39 mm, 1203.96 mm): Symbol R19 [R]
+[lib_symbol_mismatch]: Symbol 'Conn_02x08_Counter_Clockwise' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(558.80 mm, 1281.43 mm): Symbol U1 [Conn_02x08_Counter_Clockwise]
+[lib_symbol_mismatch]: Symbol '2N3904' doesn't match copy in library 'Transistor_BJT'
+    ; warning
+    @(716.28 mm, 1203.96 mm): Symbol Q5 [2N3904]
+[lib_symbol_mismatch]: Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(599.44 mm, 1281.43 mm): Symbol J19 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(727.71 mm, 1223.01 mm): Symbol J6 [Conn_01x04]
+[lib_symbol_mismatch]: Symbol '4013' doesn't match copy in library '4xxx'
+    ; warning
+    @(619.76 mm, 1281.43 mm): Symbol U8 [4013]
+[lib_symbol_mismatch]: Symbol 'Conn_01x03' doesn't match copy in library 'Connector_Generic'
+    ; warning
+    @(702.31 mm, 1281.43 mm): Symbol J10 [Conn_01x03]
+[lib_symbol_mismatch]: Symbol '4013' doesn't match copy in library '4xxx'
+    ; warning
+    @(601.98 mm, 1374.14 mm): Symbol U8 [4013]
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(609.60 mm, 1371.60 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(609.60 mm, 1376.68 mm): No Connect
+
+ ** ERC messages: 93  Errors 8  Warnings 85

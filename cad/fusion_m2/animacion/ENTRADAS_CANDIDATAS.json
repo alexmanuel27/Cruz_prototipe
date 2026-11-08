@@ -1,0 +1,185 @@
+{
+  "tests": 179,
+  "results": [
+    {
+      "group": "sensors",
+      "delta_mm": [
+        240,
+        0,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "EC4_SONDA Atlas K1 oficial - punta mojada y cuerpo seco",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.3,
+        "cm3": 0.44314767852616554
+      }
+    },
+    {
+      "group": "sensors",
+      "delta_mm": [
+        -400,
+        0,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "H_TEMP_TEE Temperature flow tee POM; seal and fittings HOLD",
+        "stationary": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+        "fraction": 0.3,
+        "cm3": 1.0058843861914777
+      }
+    },
+    {
+      "group": "sensors",
+      "delta_mm": [
+        0,
+        0,
+        105
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "EC4_SONDA Atlas K1 oficial - punta mojada y cuerpo seco",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.1,
+        "cm3": 0.34648630648826656
+      }
+    },
+    {
+      "group": "optics",
+      "delta_mm": [
+        -300,
+        0,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "O03 MonoSpectro camera optics APPROX",
+        "stationary": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+        "fraction": 0.3,
+        "cm3": 2.9961371669424555
+      }
+    },
+    {
+      "group": "optics",
+      "delta_mm": [
+        350,
+        0,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "O03 MonoSpectro camera optics APPROX",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.5,
+        "cm3": 0.7006977480181533
+      }
+    },
+    {
+      "group": "optics",
+      "delta_mm": [
+        0,
+        0,
+        100
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "O03 MonoSpectro camera optics APPROX",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.3,
+        "cm3": 1.5999999999999956
+      }
+    },
+    {
+      "group": "hood_pi",
+      "delta_mm": [
+        -300,
+        0,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "P_HOOD_UPPER Opaque optical cover UPPER",
+        "stationary": "O04 Auxiliary camera APPROX; lens toward FRONT window",
+        "fraction": 0.3,
+        "cm3": 1.897716620594488
+      }
+    },
+    {
+      "group": "hood_pi",
+      "delta_mm": [
+        350,
+        0,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "P_HOOD_UPPER Opaque optical cover UPPER",
+        "stationary": "WLP-BULKHEAD-JPT_WLP-M10-BULKHEAD-5.5MM-PUBLIC",
+        "fraction": 0.1,
+        "cm3": 0.7281018155927075
+      }
+    },
+    {
+      "group": "hood_pi",
+      "delta_mm": [
+        0,
+        0,
+        80
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "P_HOOD_UPPER Opaque optical cover UPPER",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.7,
+        "cm3": 0.1599999999999996
+      }
+    },
+    {
+      "group": "tray",
+      "delta_mm": [
+        260,
+        0,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "P_TOP Removable electronics tray; slots for cable ties",
+        "stationary": "E03 REAR PMMA cap 10mm; gasket groove 3mm",
+        "fraction": 0.3,
+        "cm3": 1.334126766689582
+      }
+    },
+    {
+      "group": "tray",
+      "delta_mm": [
+        -400,
+        0,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "P_TOP Removable electronics tray; slots for cable ties",
+        "stationary": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+        "fraction": 0.1,
+        "cm3": 0.017966235797849745
+      }
+    },
+    {
+      "group": "tray",
+      "delta_mm": [
+        0,
+        0,
+        135
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "P_TOP Removable electronics tray; slots for cable ties",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.7,
+        "cm3": 0.2040216636309997
+      }
+    }
+  ]
+}

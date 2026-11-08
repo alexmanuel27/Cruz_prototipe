@@ -1,0 +1,47 @@
+[
+  {
+    "code": "H5_TEMP_EC",
+    "name": "Temperatura a punta conductividad - fuera de union",
+    "group": "06",
+    "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+    "printed": false,
+    "bbox_mm": [
+      120.5,
+      21.62,
+      25.5
+    ],
+    "volume_cm3": 1.8659,
+    "centerline_points_mm": [
+      [
+        321,
+        25,
+        -46
+      ],
+      [
+        321,
+        25,
+        -69
+      ],
+      [
+        250,
+        25,
+        -69
+      ],
+      [
+        205.5,
+        54,
+        -60
+      ],
+      [
+        205.5,
+        24,
+        -60
+      ]
+    ],
+    "bend_radii_mm": [
+      15.0,
+      15.0,
+      15.0
+    ]
+  }
+]

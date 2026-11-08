@@ -1,0 +1,6558 @@
+{
+  "date": "2026-11-02",
+  "document": "Cross_M2_horizontal_design",
+  "visible_bodies_checked": 195,
+  "intersections": [
+    {
+      "a": "R1 M8 A4 threaded tie rod; 436mm provisional cut",
+      "b": "N1F M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 0.12484060886834508,
+      "expected_simplified_thread": true
+    },
+    {
+      "a": "R1 M8 A4 threaded tie rod; 436mm provisional cut",
+      "b": "N1R M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 0.12484060886834542,
+      "expected_simplified_thread": true
+    },
+    {
+      "a": "R2 M8 A4 threaded tie rod; 436mm provisional cut",
+      "b": "N2F M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 0.12484060886834508,
+      "expected_simplified_thread": true
+    },
+    {
+      "a": "R2 M8 A4 threaded tie rod; 436mm provisional cut",
+      "b": "N2R M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 0.12484060886834542,
+      "expected_simplified_thread": true
+    },
+    {
+      "a": "R3 M8 A4 threaded tie rod; 436mm provisional cut",
+      "b": "N3F M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 0.12484060886834497,
+      "expected_simplified_thread": true
+    },
+    {
+      "a": "R3 M8 A4 threaded tie rod; 436mm provisional cut",
+      "b": "N3R M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 0.12484060886834542,
+      "expected_simplified_thread": true
+    },
+    {
+      "a": "R4 M8 A4 threaded tie rod; 436mm provisional cut",
+      "b": "N4F M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 0.12484060886834497,
+      "expected_simplified_thread": true
+    },
+    {
+      "a": "R4 M8 A4 threaded tie rod; 436mm provisional cut",
+      "b": "N4R M8 closed dome nut; verify usable blind thread",
+      "volume_cm3": 0.12484060886834542,
+      "expected_simplified_thread": true
+    }
+  ],
+  "visible_parts": [
+    {
+      "name": "E01 Acrylic tube OD180 ID170 L380 proposal",
+      "path": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E01 Acrylic tube OD180 ID170 L380 proposal:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -0.01,
+          -90.00999999999999,
+          -90.00999999999999
+        ],
+        [
+          380.01,
+          90.00999999999999,
+          90.00999999999999
+        ]
+      ]
+    },
+    {
+      "name": "E02 FRONT acrylic cap; port details HOLD",
+      "path": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E02 FRONT acrylic cap; port details HOLD:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -17.56,
+          -115.00999999999999,
+          -115.00999999999999
+        ],
+        [
+          -2.5400000000000023,
+          115.00999999999999,
+          115.00999999999999
+        ]
+      ]
+    },
+    {
+      "name": "E04 FRONT silicone gasket 3mm free / 2.55mm working",
+      "path": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E04 FRONT silicone gasket 3mm free / 2.55mm working:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -2.56,
+          -90.00999999999999,
+          -90.00999999999999
+        ],
+        [
+          0.010000000000000009,
+          90.00999999999999,
+          90.00999999999999
+        ]
+      ]
+    },
+    {
+      "name": "E03 REAR acrylic cap; port details HOLD",
+      "path": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E03 REAR acrylic cap; port details HOLD:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          382.5400000000001,
+          -115.00999999999999,
+          -115.00999999999999
+        ],
+        [
+          397.56,
+          115.00999999999999,
+          115.00999999999999
+        ]
+      ]
+    },
+    {
+      "name": "E05 REAR silicone gasket 3mm free / 2.55mm working",
+      "path": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E05 REAR silicone gasket 3mm free / 2.55mm working:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          379.99,
+          -90.00999999999999,
+          -90.00999999999999
+        ],
+        [
+          382.55999999999995,
+          90.00999999999999,
+          90.00999999999999
+        ]
+      ]
+    },
+    {
+      "name": "R1 M8 A4 threaded tie rod; 436mm provisional cut",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+R1 M8 A4 threaded tie rod; 436mm provisional cut:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -28.00999999999997,
+          67.4077848998413,
+          67.40778489984129
+        ],
+        [
+          408.00999999999993,
+          75.42778489984131,
+          75.4277848998413
+        ]
+      ]
+    },
+    {
+      "name": "S1 A4 compression limiter OD14 ID9 L382.1",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+S1 A4 compression limiter OD14 ID9 L382.1:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -1.0599999999999687,
+          64.4077848998413,
+          64.40778489984129
+        ],
+        [
+          381.06,
+          78.42778489984131,
+          78.4277848998413
+        ]
+      ]
+    },
+    {
+      "name": "W1FI M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+W1FI M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -2.56,
+          60.4077848998413,
+          60.40778489984128
+        ],
+        [
+          -1.0399999999999998,
+          82.42778489984131,
+          82.4277848998413
+        ]
+      ]
+    },
+    {
+      "name": "W1RI M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+W1RI M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          381.0400000000001,
+          60.4077848998413,
+          60.40778489984128
+        ],
+        [
+          382.56000000000006,
+          82.42778489984131,
+          82.4277848998413
+        ]
+      ]
+    },
+    {
+      "name": "W1FO M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+W1FO M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -19.06,
+          60.4077848998413,
+          60.40778489984128
+        ],
+        [
+          -17.540000000000003,
+          82.42778489984131,
+          82.4277848998413
+        ]
+      ]
+    },
+    {
+      "name": "W1RO M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+W1RO M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          397.53999999999996,
+          60.4077848998413,
+          60.40778489984128
+        ],
+        [
+          399.06,
+          82.42778489984131,
+          82.4277848998413
+        ]
+      ]
+    },
+    {
+      "name": "N1F M8 closed dome nut; verify usable blind thread",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+N1F M8 closed dome nut; verify usable blind thread:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -33.06,
+          64.9077848998413,
+          63.90223140037616
+        ],
+        [
+          -19.040000000000003,
+          77.92778489984131,
+          78.93333839930645
+        ]
+      ]
+    },
+    {
+      "name": "N1R M8 closed dome nut; verify usable blind thread",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+01_VARILLA_1_Y_FIJACIONES:1+N1R M8 closed dome nut; verify usable blind thread:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          399.04,
+          64.9077848998413,
+          63.90223140037616
+        ],
+        [
+          413.05999999999995,
+          77.92778489984131,
+          78.93333839930645
+        ]
+      ]
+    },
+    {
+      "name": "R2 M8 A4 threaded tie rod; 436mm provisional cut",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+R2 M8 A4 threaded tie rod; 436mm provisional cut:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -28.00999999999997,
+          -75.4277848998413,
+          67.4077848998413
+        ],
+        [
+          408.00999999999993,
+          -67.40778489984129,
+          75.42778489984131
+        ]
+      ]
+    },
+    {
+      "name": "S2 A4 compression limiter OD14 ID9 L382.1",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+S2 A4 compression limiter OD14 ID9 L382.1:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -1.0599999999999687,
+          -78.4277848998413,
+          64.4077848998413
+        ],
+        [
+          381.06,
+          -64.40778489984129,
+          78.42778489984131
+        ]
+      ]
+    },
+    {
+      "name": "W2FI M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+W2FI M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -2.56,
+          -82.4277848998413,
+          60.4077848998413
+        ],
+        [
+          -1.0399999999999998,
+          -60.40778489984128,
+          82.42778489984131
+        ]
+      ]
+    },
+    {
+      "name": "W2RI M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+W2RI M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          381.0400000000001,
+          -82.4277848998413,
+          60.4077848998413
+        ],
+        [
+          382.56000000000006,
+          -60.40778489984128,
+          82.42778489984131
+        ]
+      ]
+    },
+    {
+      "name": "W2FO M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+W2FO M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -19.06,
+          -82.4277848998413,
+          60.4077848998413
+        ],
+        [
+          -17.540000000000003,
+          -60.40778489984128,
+          82.42778489984131
+        ]
+      ]
+    },
+    {
+      "name": "W2RO M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+W2RO M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          397.53999999999996,
+          -82.4277848998413,
+          60.4077848998413
+        ],
+        [
+          399.06,
+          -60.40778489984128,
+          82.42778489984131
+        ]
+      ]
+    },
+    {
+      "name": "N2F M8 closed dome nut; verify usable blind thread",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+N2F M8 closed dome nut; verify usable blind thread:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -33.06,
+          -77.9277848998413,
+          63.90223140037617
+        ],
+        [
+          -19.040000000000003,
+          -64.90778489984129,
+          78.93333839930646
+        ]
+      ]
+    },
+    {
+      "name": "N2R M8 closed dome nut; verify usable blind thread",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+02_VARILLA_2_Y_FIJACIONES:1+N2R M8 closed dome nut; verify usable blind thread:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          399.04,
+          -77.9277848998413,
+          63.90223140037617
+        ],
+        [
+          413.05999999999995,
+          -64.90778489984129,
+          78.93333839930646
+        ]
+      ]
+    },
+    {
+      "name": "R3 M8 A4 threaded tie rod; 436mm provisional cut",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+R3 M8 A4 threaded tie rod; 436mm provisional cut:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -28.00999999999997,
+          -75.42778489984133,
+          -75.4277848998413
+        ],
+        [
+          408.00999999999993,
+          -67.40778489984132,
+          -67.40778489984129
+        ]
+      ]
+    },
+    {
+      "name": "S3 A4 compression limiter OD14 ID9 L382.1",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+S3 A4 compression limiter OD14 ID9 L382.1:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -1.0599999999999687,
+          -78.42778489984133,
+          -78.4277848998413
+        ],
+        [
+          381.06,
+          -64.40778489984132,
+          -64.40778489984129
+        ]
+      ]
+    },
+    {
+      "name": "W3FI M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+W3FI M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -2.56,
+          -82.42778489984131,
+          -82.4277848998413
+        ],
+        [
+          -1.0399999999999998,
+          -60.40778489984132,
+          -60.40778489984128
+        ]
+      ]
+    },
+    {
+      "name": "W3RI M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+W3RI M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          381.0400000000001,
+          -82.42778489984131,
+          -82.4277848998413
+        ],
+        [
+          382.56000000000006,
+          -60.40778489984132,
+          -60.40778489984128
+        ]
+      ]
+    },
+    {
+      "name": "W3FO M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+W3FO M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -19.06,
+          -82.42778489984131,
+          -82.4277848998413
+        ],
+        [
+          -17.540000000000003,
+          -60.40778489984132,
+          -60.40778489984128
+        ]
+      ]
+    },
+    {
+      "name": "W3RO M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+W3RO M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          397.53999999999996,
+          -82.42778489984131,
+          -82.4277848998413
+        ],
+        [
+          399.06,
+          -60.40778489984132,
+          -60.40778489984128
+        ]
+      ]
+    },
+    {
+      "name": "N3F M8 closed dome nut; verify usable blind thread",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+N3F M8 closed dome nut; verify usable blind thread:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -33.06,
+          -77.92778489984133,
+          -78.93333839930642
+        ],
+        [
+          -19.040000000000003,
+          -64.90778489984132,
+          -63.90223140037613
+        ]
+      ]
+    },
+    {
+      "name": "N3R M8 closed dome nut; verify usable blind thread",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+03_VARILLA_3_Y_FIJACIONES:1+N3R M8 closed dome nut; verify usable blind thread:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          399.04,
+          -77.92778489984133,
+          -78.93333839930642
+        ],
+        [
+          413.05999999999995,
+          -64.90778489984132,
+          -63.90223140037613
+        ]
+      ]
+    },
+    {
+      "name": "R4 M8 A4 threaded tie rod; 436mm provisional cut",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+R4 M8 A4 threaded tie rod; 436mm provisional cut:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -28.00999999999997,
+          67.40778489984127,
+          -75.42778489984133
+        ],
+        [
+          408.00999999999993,
+          75.42778489984128,
+          -67.40778489984132
+        ]
+      ]
+    },
+    {
+      "name": "S4 A4 compression limiter OD14 ID9 L382.1",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+S4 A4 compression limiter OD14 ID9 L382.1:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -1.0599999999999687,
+          64.40778489984127,
+          -78.42778489984133
+        ],
+        [
+          381.06,
+          78.42778489984128,
+          -64.40778489984132
+        ]
+      ]
+    },
+    {
+      "name": "W4FI M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+W4FI M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -2.56,
+          60.40778489984128,
+          -82.42778489984131
+        ],
+        [
+          -1.0399999999999998,
+          82.42778489984127,
+          -60.40778489984132
+        ]
+      ]
+    },
+    {
+      "name": "W4RI M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+W4RI M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          381.0400000000001,
+          60.40778489984128,
+          -82.42778489984131
+        ],
+        [
+          382.56000000000006,
+          82.42778489984127,
+          -60.40778489984132
+        ]
+      ]
+    },
+    {
+      "name": "W4FO M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+W4FO M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -19.06,
+          60.40778489984128,
+          -82.42778489984131
+        ],
+        [
+          -17.540000000000003,
+          82.42778489984127,
+          -60.40778489984132
+        ]
+      ]
+    },
+    {
+      "name": "W4RO M8 wide washer OD22 ID9",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+W4RO M8 wide washer OD22 ID9:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          397.53999999999996,
+          60.40778489984128,
+          -82.42778489984131
+        ],
+        [
+          399.06,
+          82.42778489984127,
+          -60.40778489984132
+        ]
+      ]
+    },
+    {
+      "name": "N4F M8 closed dome nut; verify usable blind thread",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+N4F M8 closed dome nut; verify usable blind thread:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -33.06,
+          64.90778489984127,
+          -78.93333839930648
+        ],
+        [
+          -19.040000000000003,
+          77.92778489984128,
+          -63.90223140037619
+        ]
+      ]
+    },
+    {
+      "name": "N4R M8 closed dome nut; verify usable blind thread",
+      "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1+04_VARILLA_4_Y_FIJACIONES:1+N4R M8 closed dome nut; verify usable blind thread:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          399.04,
+          64.90778489984127,
+          -78.93333839930648
+        ],
+        [
+          413.05999999999995,
+          77.92778489984128,
+          -63.90223140037619
+        ]
+      ]
+    },
+    {
+      "name": "P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+01_3D_CHASIS_Y_AROS:1+P_CHASSIS_FRONT Ribbed U chassis FRONT; M4 nut joint:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          -2.5599999999999996,
+          -84.60999999999999,
+          -84.60999999999999
+        ],
+        [
+          199.01,
+          84.60999999999999,
+          84.60999999999999
+        ]
+      ]
+    },
+    {
+      "name": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+01_3D_CHASIS_Y_AROS:1+P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          193.98999999999998,
+          -84.00999999999999,
+          -84.00999999999999
+        ],
+        [
+          381.01,
+          84.00999999999999,
+          84.00999999999999
+        ]
+      ]
+    },
+    {
+      "name": "P_TOP Removable electronics tray; slots for cable ties",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_TOP Removable electronics tray; slots for cable ties:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          196.48999999999998,
+          -52.010000000000005,
+          40.989999999999995
+        ],
+        [
+          375.01,
+          52.010000000000005,
+          59.41
+        ]
+      ]
+    },
+    {
+      "name": "P_T216_-28 Electronics tray spacer; attachment to shield",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T216_-28 Electronics tray spacer; attachment to shield:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          212.79,
+          -31.209999999999994,
+          38.99
+        ],
+        [
+          219.21000000000004,
+          -24.79,
+          41.01
+        ]
+      ]
+    },
+    {
+      "name": "P_T216_28 Electronics tray spacer; attachment to shield",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T216_28 Electronics tray spacer; attachment to shield:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          212.79,
+          24.79,
+          38.99
+        ],
+        [
+          219.21000000000004,
+          31.209999999999994,
+          41.01
+        ]
+      ]
+    },
+    {
+      "name": "P_T344_-28 Electronics tray spacer; attachment to shield",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T344_-28 Electronics tray spacer; attachment to shield:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          340.79,
+          -31.209999999999994,
+          38.99
+        ],
+        [
+          347.21,
+          -24.79,
+          41.01
+        ]
+      ]
+    },
+    {
+      "name": "P_T344_28 Electronics tray spacer; attachment to shield",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+02_3D_BANDEJAS_Y_SEPARADORES:1+P_T344_28 Electronics tray spacer; attachment to shield:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          340.79,
+          24.79,
+          38.99
+        ],
+        [
+          347.21,
+          31.209999999999994,
+          41.01
+        ]
+      ]
+    },
+    {
+      "name": "P_HOOD_UPPER Opaque optical cover UPPER",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_HOOD_UPPER Opaque optical cover UPPER:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          75.49,
+          -64.01,
+          -0.01
+        ],
+        [
+          240.51000000000002,
+          64.01,
+          66.80165942028438
+        ]
+      ]
+    },
+    {
+      "name": "P_OPT_A Optical saddle; contact based on approximate source",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_OPT_A Optical saddle; contact based on approximate source:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          108.99000000000001,
+          -25.009999999999998,
+          -40.51000000000001
+        ],
+        [
+          118.01342600917273,
+          25.009999999999998,
+          -8.486573990832845
+        ]
+      ]
+    },
+    {
+      "name": "P_OPT_B Optical saddle; contact based on approximate source",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+03_3D_SOPORTES_OPTICA_Y_CAMARA:1+P_OPT_B Optical saddle; contact based on approximate source:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          179.98999999999623,
+          -30.009999999999998,
+          -40.510000000000005
+        ],
+        [
+          200.0100000000034,
+          30.009999999999998,
+          -30.49
+        ]
+      ]
+    },
+    {
+      "name": "P_EZO_V2 Placa lateral - 2 tornillos M3 y 2 bridas",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_EZO_V2 Placa lateral - 2 tornillos M3 y 2 bridas:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          309.99,
+          -74.01,
+          -24.009999999999998
+        ],
+        [
+          374.01000000000005,
+          -69.99,
+          24.009999999999998
+        ]
+      ]
+    },
+    {
+      "name": "P_PCB_CLIP_216_L M3x25 - ranura para borde PCB",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_216_L M3x25 - ranura para borde PCB:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          209.98999999999998,
+          -52.010000000000005,
+          43.989999999999995
+        ],
+        [
+          222.01000000000005,
+          -32.795,
+          60.41
+        ]
+      ]
+    },
+    {
+      "name": "P_PCB_CLIP_216_R M3x25 - ranura para borde PCB",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_216_R M3x25 - ranura para borde PCB:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          209.98999999999998,
+          32.795,
+          43.989999999999995
+        ],
+        [
+          222.01000000000005,
+          52.010000000000005,
+          60.41
+        ]
+      ]
+    },
+    {
+      "name": "P_PCB_CLIP_344_L M3x25 - ranura para borde PCB",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_344_L M3x25 - ranura para borde PCB:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          337.99,
+          -52.010000000000005,
+          43.989999999999995
+        ],
+        [
+          350.01,
+          -32.795,
+          60.41
+        ]
+      ]
+    },
+    {
+      "name": "P_PCB_CLIP_344_R M3x25 - ranura para borde PCB",
+      "path": "M2_GENERATED:1+03_CHASIS_Y_SOPORTES:1+06_3D_FIJACIONES_REVISADAS:1+P_PCB_CLIP_344_R M3x25 - ranura para borde PCB:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          337.99,
+          32.795,
+          43.989999999999995
+        ],
+        [
+          350.01,
+          52.010000000000005,
+          60.41
+        ]
+      ]
+    },
+    {
+      "name": "O01 Optical carrier from original cross APPROX",
+      "path": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O01 Optical carrier from original cross APPROX:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          79.99000000000558,
+          -47.76015421310656,
+          -28.640041134713258
+        ],
+        [
+          149.00999999999976,
+          57.01,
+          24.803930566863727
+        ]
+      ]
+    },
+    {
+      "name": "O02 AS7265x 18-channel detector APPROX",
+      "path": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O02 AS7265x 18-channel detector APPROX:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          103.98999999999978,
+          54.48999999999999,
+          -19.930000000000266
+        ],
+        [
+          149.00999999999976,
+          59.00999999999999,
+          16.08999999999973
+        ]
+      ]
+    },
+    {
+      "name": "O03 MonoSpectro camera optics APPROX",
+      "path": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O03 MonoSpectro camera optics APPROX:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          135.990000000003,
+          -24.710152892087848,
+          -36.818343322860564
+        ],
+        [
+          235.51000000000997,
+          27.309847107926352,
+          30.90165667713951
+        ]
+      ]
+    },
+    {
+      "name": "O04 Auxiliary camera APPROX; lens toward FRONT window",
+      "path": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O04 Auxiliary camera APPROX; lens toward FRONT window:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          12.989999999999995,
+          -29.62386627607129,
+          -20.294264116737487
+        ],
+        [
+          73.01000000000003,
+          29.62386627607129,
+          36.2942641167375
+        ]
+      ]
+    },
+    {
+      "name": "O05 Quartz flow cell APPROX; vertical water ports",
+      "path": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O05 Quartz flow cell APPROX; vertical water ports:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          120.24000000000001,
+          -6.26,
+          -20.009999999999998
+        ],
+        [
+          132.76,
+          6.26,
+          20.009999999999998
+        ]
+      ]
+    },
+    {
+      "name": "O06 430nm excitation source facing AS7265x across cell",
+      "path": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O06 430nm excitation source facing AS7265x across cell:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          120.49000000000001,
+          -42.010000000000005,
+          -6.01
+        ],
+        [
+          132.51,
+          -37.99,
+          6.01
+        ]
+      ]
+    },
+    {
+      "name": "O07 White Optisolis source transmission axis +X",
+      "path": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1+O07 White Optisolis source transmission axis +X:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          74.49,
+          -8.01,
+          -8.01
+        ],
+        [
+          77.51,
+          8.01,
+          8.01
+        ]
+      ]
+    },
+    {
+      "name": "EL_RTC RTC module approximate",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_RTC RTC module approximate:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -6.661338147750939e-16,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          223.49,
+          15.990000000000002,
+          43.989999999999995
+        ],
+        [
+          258.51000000000005,
+          34.01,
+          54.01
+        ]
+      ]
+    },
+    {
+      "name": "EL_RS485 RS485 module approximate",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_RS485 RS485 module approximate:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -6.661338147750939e-16,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          219.98999999999998,
+          -33.51,
+          43.989999999999995
+        ],
+        [
+          260.01,
+          -16.490000000000002,
+          54.01
+        ]
+      ]
+    },
+    {
+      "name": "EL_LED_B Blue LED current regulator reserve",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_LED_B Blue LED current regulator reserve:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -6.661338147750939e-16,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          198.98999999999998,
+          14.990000000000002,
+          43.989999999999995
+        ],
+        [
+          219.01,
+          33.01,
+          54.01
+        ]
+      ]
+    },
+    {
+      "name": "EL_GATE Acquisition power switch reserve",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_GATE Acquisition power switch reserve:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        5.329070518200751e-15,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -6.661338147750939e-16,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          197.99,
+          -34.01,
+          43.989999999999995
+        ],
+        [
+          220.01000000000005,
+          -13.99,
+          54.01
+        ]
+      ]
+    },
+    {
+      "name": "EL_BAT CITYORK 24V 3Ah pack; advertised 70x37.5x56",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_BAT CITYORK 24V 3Ah pack; advertised 70x37.5x56:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          247.99,
+          -46.760000000000005,
+          -40.010000000000005
+        ],
+        [
+          318.01,
+          -9.239999999999998,
+          16.009999999999998
+        ]
+      ]
+    },
+    {
+      "name": "EL_PUMP_MOTOR MS11HS5L410C-01 motor APPROX",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_PUMP_MOTOR MS11HS5L410C-01 motor APPROX:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.4,
+        0.0,
+        0.0,
+        1.0,
+        -2.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          254.98999999999998,
+          17.99,
+          -55.00999999999999
+        ],
+        [
+          283.01,
+          46.01,
+          -3.99
+        ]
+      ]
+    },
+    {
+      "name": "EL_EN3 EN3P8MX 8pin charging and RS485; panel 4mm local",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_EN3 EN3P8MX 8pin charging and RS485; panel 4mm local:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          393.5400000000001,
+          19.69,
+          -40.31
+        ],
+        [
+          409.55999999999995,
+          40.31,
+          -19.690000000000005
+        ]
+      ]
+    },
+    {
+      "name": "EL_EZO Atlas isolated EZO carrier 56.2x32; 20mm height reserve",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+EL_EZO Atlas isolated EZO carrier 56.2x32; 20mm height reserve:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.6,
+        0.0,
+        0.0,
+        1.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          313.89000000000004,
+          -70.01,
+          -16.009999999999998
+        ],
+        [
+          370.11,
+          -49.989999999999995,
+          16.009999999999998
+        ]
+      ]
+    },
+    {
+      "name": "C_Disc_D5.0mm_W2.5mm_P5.00mm (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+C_Disc_D5.0mm_W2.5mm_P5.00mm (3):1",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        26.4545,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        -0.8095000000000003,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          263.28499999999997,
+          -8.355000000000004,
+          55.58500000000001
+        ],
+        [
+          265.805,
+          -2.835000000000003,
+          62.705
+        ]
+      ]
+    },
+    {
+      "name": "C_Disc_D5.0mm_W2.5mm_P5.00mm (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+C_Disc_D5.0mm_W2.5mm_P5.00mm (3):2",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        29.2545,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        -0.8095000000000003,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          291.28499999999997,
+          -8.355000000000004,
+          55.58500000000001
+        ],
+        [
+          293.805,
+          -2.835000000000003,
+          62.705
+        ]
+      ]
+    },
+    {
+      "name": "D_DO-41_SOD81_P10.16mm_Horizontal (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):1",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        32.7645,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        0.14449999999999985,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          326.275,
+          1.0349999999999984,
+          55.084999999999994
+        ],
+        [
+          329.015,
+          12.014999999999997,
+          60.815
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):1",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        35.954499999999996,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        -0.07150000000000079,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          358.28499999999997,
+          -1.025000000000008,
+          54.585
+        ],
+        [
+          360.80499999999995,
+          7.214999999999993,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "TO-92_Inline (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+TO-92_Inline (3):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        21.3504999,
+        0.0,
+        1.0,
+        0.0,
+        -0.47750000000000004,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          212.34999899999997,
+          -6.115,
+          55.084999999999994
+        ],
+        [
+          217.199999,
+          -2.3499999999999996,
+          64.905
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x04_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x04_P2.54mm_Vertical (3):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        27.281499999999998,
+        0.0,
+        1.0,
+        0.0,
+        0.8184999999999998,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          271.53499999999997,
+          -0.7150000000000034,
+          54.58499999999978
+        ],
+        [
+          274.09499999999997,
+          9.465,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "D_DO-41_SOD81_P10.16mm_Horizontal (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):2",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        33.164500000000004,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        0.14449999999999985,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          330.27500000000003,
+          1.0349999999999984,
+          55.084999999999994
+        ],
+        [
+          333.01500000000004,
+          12.014999999999997,
+          60.815
+        ]
+      ]
+    },
+    {
+      "name": "D_DO-41_SOD81_P10.16mm_Horizontal (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):3",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        20.2395,
+        0.0,
+        1.0,
+        0.0,
+        0.8354999999999997,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          201.98499999999999,
+          6.984999999999998,
+          55.084999999999994
+        ],
+        [
+          212.96499999999997,
+          9.724999999999998,
+          60.815
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):2",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        36.3545,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        -0.07150000000000079,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          362.285,
+          -1.025000000000008,
+          54.585
+        ],
+        [
+          364.805,
+          7.214999999999993,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x04_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x04_P2.54mm_Vertical (3):2",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        27.781499999999998,
+        0.0,
+        1.0,
+        0.0,
+        0.8184999999999998,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          276.53499999999997,
+          -0.7150000000000034,
+          54.58499999999978
+        ],
+        [
+          279.09499999999997,
+          9.465,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "D_DO-41_SOD81_P10.16mm_Horizontal (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):4",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        21.639499999999998,
+        0.0,
+        1.0,
+        0.0,
+        0.8354999999999997,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          215.98499999999999,
+          6.984999999999998,
+          55.084999999999994
+        ],
+        [
+          226.96499999999997,
+          9.724999999999998,
+          60.815
+        ]
+      ]
+    },
+    {
+      "name": "CP_Radial_D8.0mm_P3.50mm (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+CP_Radial_D8.0mm_P3.50mm (3):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        34.4547479,
+        0.0,
+        1.0,
+        0.0,
+        2.0703763,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          340.464340294833,
+          15.581024327915998,
+          55.58500000000001
+        ],
+        [
+          350.30910695773395,
+          25.826501672081,
+          65.605
+        ]
+      ]
+    },
+    {
+      "name": "DIP-14_W7.62mm",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+DIP-14_W7.62mm:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        32.7104999,
+        0.0,
+        1.0,
+        0.0,
+        3.0425,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          326.967999,
+          13.27,
+          54.28499999999997
+        ],
+        [
+          334.861999,
+          32.34,
+          61.285
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x04_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x04_P2.54mm_Vertical (3):3",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        28.2815,
+        0.0,
+        1.0,
+        0.0,
+        0.8184999999999998,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          281.535,
+          -0.7150000000000034,
+          54.58499999999978
+        ],
+        [
+          284.095,
+          9.465,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):3",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        20.209499899999997,
+        0.0,
+        1.0,
+        0.0,
+        0.44549999999999956,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          201.78499899999997,
+          3.194999999999996,
+          54.585
+        ],
+        [
+          210.02499899999998,
+          5.714999999999995,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "Fusible_5x20_envolvente_APROX (1)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+Fusible_5x20_envolvente_APROX (1):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        33.829499999999996,
+        0.0,
+        1.0,
+        0.0,
+        2.9055,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          336.98499999999996,
+          25.545,
+          57.584999999999994
+        ],
+        [
+          359.60499999999996,
+          32.565,
+          65.605
+        ]
+      ]
+    },
+    {
+      "name": "TO-220-3_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+TO-220-3_Vertical (3):1",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        34.5445,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        0.7164999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          342.275,
+          4.569999999999995,
+          47.83499999999992
+        ],
+        [
+          346.7500000000002,
+          14.839999999999996,
+          76.38
+        ]
+      ]
+    },
+    {
+      "name": "C_Disc_D5.0mm_W2.5mm_P5.00mm (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+C_Disc_D5.0mm_W2.5mm_P5.00mm (3):3",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        30.2095,
+        0.0,
+        1.0,
+        0.0,
+        -0.35450000000000026,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          301.835,
+          -4.805000000000002,
+          55.58500000000001
+        ],
+        [
+          307.35499999999996,
+          -2.285000000000003,
+          62.705
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):4",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        21.3095,
+        0.0,
+        1.0,
+        0.0,
+        0.44549999999999956,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          212.78500000000003,
+          3.194999999999996,
+          54.585
+        ],
+        [
+          221.02499999999998,
+          5.714999999999995,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x02_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        23.481499999999997,
+        0.0,
+        1.0,
+        0.0,
+        -0.38149999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          233.53499999999997,
+          -7.635,
+          54.58499999999978
+        ],
+        [
+          236.09499999999997,
+          -2.5349999999999993,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "C_Disc_D5.0mm_W2.5mm_P5.00mm (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+C_Disc_D5.0mm_W2.5mm_P5.00mm (3):4",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        35.7095,
+        0.0,
+        1.0,
+        0.0,
+        -0.45450000000000035,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          356.8349999999999,
+          -5.805000000000003,
+          55.58500000000001
+        ],
+        [
+          362.355,
+          -3.2850000000000037,
+          62.705
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):5",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        22.409499999999998,
+        0.0,
+        1.0,
+        0.0,
+        0.44549999999999956,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          223.785,
+          3.194999999999996,
+          54.585
+        ],
+        [
+          232.02499999999998,
+          5.714999999999995,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "D_DO-41_SOD81_P10.16mm_Horizontal (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):5",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        23.039499999999997,
+        0.0,
+        1.0,
+        0.0,
+        0.8354999999999997,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          229.98499999999996,
+          6.984999999999998,
+          55.084999999999994
+        ],
+        [
+          240.96499999999995,
+          9.724999999999998,
+          60.815
+        ]
+      ]
+    },
+    {
+      "name": "TO-92_Inline (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+TO-92_Inline (3):2",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        22.0505,
+        0.0,
+        1.0,
+        0.0,
+        -0.47750000000000004,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          219.35,
+          -6.115,
+          55.084999999999994
+        ],
+        [
+          224.2,
+          -2.3499999999999996,
+          64.905
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):6",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        23.5095,
+        0.0,
+        1.0,
+        0.0,
+        0.44549999999999956,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          234.785,
+          3.194999999999996,
+          54.585
+        ],
+        [
+          243.02499999999998,
+          5.714999999999995,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x02_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):2",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        23.981499999999997,
+        0.0,
+        1.0,
+        0.0,
+        -0.38149999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          238.53499999999997,
+          -7.635,
+          54.58499999999978
+        ],
+        [
+          241.09499999999997,
+          -2.5349999999999993,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_2x20_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_2x20_P2.54mm_Vertical (3):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        32.0815,
+        0.0,
+        1.0,
+        0.0,
+        3.0175,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          319.53499999999997,
+          -19.365000000000006,
+          54.58499999999756
+        ],
+        [
+          324.635,
+          31.455000000000002,
+          66.14500000000245
+        ]
+      ]
+    },
+    {
+      "name": "Pololu_A4988_referencia (1)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+Pololu_A4988_referencia (1):1",
+      "transform": [
+        -1.0,
+        1.224646799147e-16,
+        0.0,
+        31.7545,
+        -1.224646799147e-16,
+        -1.0,
+        0.0,
+        3.1705,
+        0.0,
+        0.0,
+        1.0,
+        6.6095,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          302.295,
+          11.375000000000002,
+          66.08499197469266
+        ],
+        [
+          317.555,
+          31.715,
+          69.475
+        ]
+      ]
+    },
+    {
+      "name": "PinSocket_1x08_P2.54mm_Vertical (1)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinSocket_1x08_P2.54mm_Vertical (1):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        30.3575,
+        0.0,
+        1.0,
+        0.0,
+        3.0435,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          302.295,
+          11.374999999999996,
+          54.484999999999964
+        ],
+        [
+          304.855,
+          31.715,
+          66.105
+        ]
+      ]
+    },
+    {
+      "name": "PinSocket_1x08_P2.54mm_Vertical (1)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinSocket_1x08_P2.54mm_Vertical (1):2",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        31.627499999999998,
+        0.0,
+        1.0,
+        0.0,
+        3.0435,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          314.995,
+          11.374999999999996,
+          54.484999999999964
+        ],
+        [
+          317.55499999999995,
+          31.715,
+          66.105
+        ]
+      ]
+    },
+    {
+      "name": "Disipador_A4988_9x9x5_APROX (1)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+Disipador_A4988_9x9x5_APROX (1):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        30.9925,
+        0.0,
+        1.0,
+        0.0,
+        2.1544999999999996,
+        0.0,
+        0.0,
+        1.0,
+        6.9094999999999995,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          305.41499999999996,
+          17.034999999999997,
+          69.085
+        ],
+        [
+          314.435,
+          26.054999999999996,
+          74.105
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):7",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        24.609499999999997,
+        0.0,
+        1.0,
+        0.0,
+        0.44549999999999956,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          245.78499999999997,
+          3.194999999999996,
+          54.585
+        ],
+        [
+          254.02499999999998,
+          5.714999999999995,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x02_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):3",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        24.481499999999997,
+        0.0,
+        1.0,
+        0.0,
+        -0.38149999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          243.53499999999997,
+          -7.635,
+          54.58499999999978
+        ],
+        [
+          246.09499999999997,
+          -2.5349999999999993,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):8",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        25.7095,
+        0.0,
+        1.0,
+        0.0,
+        0.44549999999999956,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          256.78499999999997,
+          3.194999999999996,
+          54.585
+        ],
+        [
+          265.025,
+          5.714999999999995,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "PinSocket_1x05_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinSocket_1x05_P2.54mm_Vertical (3):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        34.9845,
+        0.0,
+        1.0,
+        0.0,
+        1.2155,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          348.56499999999994,
+          0.7150000000000012,
+          54.484999999999964
+        ],
+        [
+          351.125,
+          13.435000000000002,
+          66.105
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):9",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        26.854499999999998,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        -0.2715000000000005,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          267.28499999999997,
+          -3.0250000000000057,
+          54.585
+        ],
+        [
+          269.805,
+          5.214999999999995,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):10",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        33.5095,
+        0.0,
+        1.0,
+        0.0,
+        0.14549999999999974,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          334.785,
+          0.1949999999999974,
+          54.585
+        ],
+        [
+          343.02500000000003,
+          2.714999999999997,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "KiCad_Omron_G2RL_DPDT (1)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+KiCad_Omron_G2RL_DPDT (1):1",
+      "transform": [
+        1.110223024625e-16,
+        1.0,
+        0.0,
+        29.0795,
+        -1.0,
+        1.110223024625e-16,
+        0.0,
+        2.9405,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          288.28499999999997,
+          2.8949999999999987,
+          54.085
+        ],
+        [
+          300.805,
+          31.715,
+          73.30499999999999
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x02_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):4",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        24.981499999999997,
+        0.0,
+        1.0,
+        0.0,
+        -0.38149999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          248.53499999999997,
+          -7.635,
+          54.58499999999978
+        ],
+        [
+          251.09499999999997,
+          -2.5349999999999993,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "D_DO-41_SOD81_P10.16mm_Horizontal (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):6",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        24.4395,
+        0.0,
+        1.0,
+        0.0,
+        0.8354999999999997,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          243.98499999999999,
+          6.984999999999998,
+          55.084999999999994
+        ],
+        [
+          254.96499999999997,
+          9.724999999999998,
+          60.815
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):11",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        20.209499899999997,
+        0.0,
+        1.0,
+        0.0,
+        0.04549999999999965,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          201.78499899999997,
+          -0.8050000000000035,
+          54.585
+        ],
+        [
+          210.02499899999998,
+          1.7149999999999965,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "SOT-23 (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+SOT-23 (2):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        32.7975,
+        0.0,
+        1.0,
+        0.0,
+        -0.6744999999999997,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          326.71500000000003,
+          -8.254999999999997,
+          57.584999999999994
+        ],
+        [
+          329.23499999999996,
+          -5.234999999999996,
+          58.80499999999999
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x02_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):5",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        25.481499999999997,
+        0.0,
+        1.0,
+        0.0,
+        -0.38149999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          253.53499999999997,
+          -7.635,
+          54.58499999999978
+        ],
+        [
+          256.09499999999997,
+          -2.5349999999999993,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x05_P2.54mm_Vertical",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x05_P2.54mm_Vertical:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        35.4815,
+        0.0,
+        1.0,
+        0.0,
+        1.2184999999999997,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          353.53499999999997,
+          0.7449999999999979,
+          54.58499999999756
+        ],
+        [
+          356.09499999999997,
+          13.464999999999998,
+          66.14500000000245
+        ]
+      ]
+    },
+    {
+      "name": "DFR1015_ENVELOPE_APROX",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+DFR1015_ENVELOPE_APROX:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        20.3345,
+        0.0,
+        1.0,
+        0.0,
+        2.7155,
+        0.0,
+        0.0,
+        1.0,
+        6.6095,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          201.36499999999998,
+          11.645000000000001,
+          66.085
+        ],
+        [
+          228.695,
+          31.665,
+          76.105
+        ]
+      ]
+    },
+    {
+      "name": "D_DO-41_SOD81_P10.16mm_Horizontal (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+D_DO-41_SOD81_P10.16mm_Horizontal (2):7",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        25.8395,
+        0.0,
+        1.0,
+        0.0,
+        0.8354999999999997,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          257.985,
+          6.984999999999998,
+          55.084999999999994
+        ],
+        [
+          268.965,
+          9.724999999999998,
+          60.815
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):12",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        21.3095,
+        0.0,
+        1.0,
+        0.0,
+        0.04549999999999965,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          212.78500000000003,
+          -0.8050000000000035,
+          54.585
+        ],
+        [
+          221.02499999999998,
+          1.7149999999999965,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):13",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        22.409499999999998,
+        0.0,
+        1.0,
+        0.0,
+        0.04549999999999965,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          223.785,
+          -0.8050000000000035,
+          54.585
+        ],
+        [
+          232.02499999999998,
+          1.7149999999999965,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):14",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        23.5095,
+        0.0,
+        1.0,
+        0.0,
+        0.04549999999999965,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          234.785,
+          -0.8050000000000035,
+          54.585
+        ],
+        [
+          243.02499999999998,
+          1.7149999999999965,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x02_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):6",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        25.981499999999997,
+        0.0,
+        1.0,
+        0.0,
+        -0.38149999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          258.53499999999997,
+          -7.635,
+          54.58499999999978
+        ],
+        [
+          261.09499999999997,
+          -2.5349999999999993,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "C_Disc_D5.0mm_W2.5mm_P5.00mm (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+C_Disc_D5.0mm_W2.5mm_P5.00mm (3):5",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        26.854499999999998,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        -1.1095000000000002,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          267.28499999999997,
+          -11.355000000000002,
+          55.58500000000001
+        ],
+        [
+          269.805,
+          -5.835000000000001,
+          62.705
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x02_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):7",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        27.281499999999998,
+        0.0,
+        1.0,
+        0.0,
+        -0.38149999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          271.53499999999997,
+          -7.635,
+          54.58499999999978
+        ],
+        [
+          274.09499999999997,
+          -2.5349999999999993,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "Fusible_5x20_envolvente_APROX (1)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+Fusible_5x20_envolvente_APROX (1):2",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        36.394499999999994,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        1.0704999999999996,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          360.43499999999995,
+          9.394999999999996,
+          57.584999999999994
+        ],
+        [
+          367.4549999999999,
+          32.015,
+          65.605
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x04_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x04_P2.54mm_Vertical (3):4",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        30.3815,
+        0.0,
+        1.0,
+        0.0,
+        0.8184999999999998,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          302.53499999999997,
+          -0.7150000000000034,
+          54.58499999999978
+        ],
+        [
+          305.09499999999997,
+          9.465,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x02_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):8",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        27.781499999999998,
+        0.0,
+        1.0,
+        0.0,
+        -0.38149999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          276.53499999999997,
+          -7.635,
+          54.58499999999978
+        ],
+        [
+          279.09499999999997,
+          -2.5349999999999993,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x03_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x03_P2.54mm_Vertical (3):1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        31.3815,
+        0.0,
+        1.0,
+        0.0,
+        0.8184999999999998,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          312.53499999999997,
+          1.8249999999999977,
+          54.58499999999978
+        ],
+        [
+          315.09499999999997,
+          9.464999999999998,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):15",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        24.609499999999997,
+        0.0,
+        1.0,
+        0.0,
+        0.04549999999999965,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          245.78499999999997,
+          -0.8050000000000035,
+          54.585
+        ],
+        [
+          254.02499999999998,
+          1.7149999999999965,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "DIP-4_W7.62mm (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+DIP-4_W7.62mm (2):1",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        35.3565,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        1.6284999999999998,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          352.35999999999996,
+          16.147999999999996,
+          54.28499999999997
+        ],
+        [
+          357.30999999999995,
+          24.041999999999998,
+          61.285
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):16",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        25.7095,
+        0.0,
+        1.0,
+        0.0,
+        0.04549999999999965,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          256.78499999999997,
+          -0.8050000000000035,
+          54.585
+        ],
+        [
+          265.025,
+          1.7149999999999965,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):17",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        28.7095,
+        0.0,
+        1.0,
+        0.0,
+        0.04549999999999965,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          286.78499999999997,
+          -0.8050000000000035,
+          54.585
+        ],
+        [
+          295.025,
+          1.7149999999999965,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x08_P2.54mm_Vertical",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x08_P2.54mm_Vertical:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        33.8815,
+        0.0,
+        1.0,
+        0.0,
+        2.3185000000000002,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          337.535,
+          4.125000000000001,
+          54.58499999999756
+        ],
+        [
+          340.095,
+          24.465000000000003,
+          66.14500000000245
+        ]
+      ]
+    },
+    {
+      "name": "SOT-23 (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+SOT-23 (2):2",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        33.2975,
+        0.0,
+        1.0,
+        0.0,
+        -0.6744999999999997,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          331.71500000000003,
+          -8.254999999999997,
+          57.584999999999994
+        ],
+        [
+          334.23499999999996,
+          -5.234999999999996,
+          58.80499999999999
+        ]
+      ]
+    },
+    {
+      "name": "DFR1015_ENVELOPE_APROX",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+DFR1015_ENVELOPE_APROX:2",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        23.234499999999997,
+        0.0,
+        1.0,
+        0.0,
+        2.7155,
+        0.0,
+        0.0,
+        1.0,
+        6.6095,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          230.36499999999995,
+          11.645000000000001,
+          66.085
+        ],
+        [
+          257.695,
+          31.665,
+          76.105
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):18",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        29.8545,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        -0.6715000000000004,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          297.285,
+          -7.025000000000005,
+          54.585
+        ],
+        [
+          299.805,
+          1.214999999999996,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):19",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        31.3545,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        -0.8715000000000006,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          312.285,
+          -9.025000000000006,
+          54.585
+        ],
+        [
+          314.805,
+          -0.7850000000000057,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x02_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):9",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        28.2815,
+        0.0,
+        1.0,
+        0.0,
+        -0.38149999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          281.535,
+          -7.635,
+          54.58499999999978
+        ],
+        [
+          284.095,
+          -2.5349999999999993,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):20",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        32.7095,
+        0.0,
+        1.0,
+        0.0,
+        -0.2545000000000006,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          326.78499999999997,
+          -3.805000000000006,
+          54.585
+        ],
+        [
+          335.025,
+          -1.2850000000000061,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "TO-92_Inline (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+TO-92_Inline (3):3",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        22.7505,
+        0.0,
+        1.0,
+        0.0,
+        -0.47750000000000004,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          226.34999999999997,
+          -6.115,
+          55.084999999999994
+        ],
+        [
+          231.2,
+          -2.3499999999999996,
+          64.905
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x04_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x04_P2.54mm_Vertical (3):5",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        30.8815,
+        0.0,
+        1.0,
+        0.0,
+        0.8184999999999998,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          307.53499999999997,
+          -0.7150000000000034,
+          54.58499999999978
+        ],
+        [
+          310.09499999999997,
+          9.465,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):21",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        33.8095,
+        0.0,
+        1.0,
+        0.0,
+        -0.2545000000000006,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          337.785,
+          -3.805000000000006,
+          54.585
+        ],
+        [
+          346.025,
+          -1.2850000000000061,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "SOT-23 (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+SOT-23 (2):3",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        33.7975,
+        0.0,
+        1.0,
+        0.0,
+        -0.6744999999999997,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          336.71500000000003,
+          -8.254999999999997,
+          57.584999999999994
+        ],
+        [
+          339.23499999999996,
+          -5.234999999999996,
+          58.80499999999999
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):22",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        34.954499999999996,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        -0.9715000000000003,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          348.28499999999997,
+          -10.025000000000002,
+          54.585
+        ],
+        [
+          350.80499999999995,
+          -1.7850000000000021,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):23",
+      "transform": [
+        1.110223024625e-16,
+        -1.0,
+        0.0,
+        35.3545,
+        1.0,
+        1.110223024625e-16,
+        0.0,
+        -0.9715000000000003,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          352.285,
+          -10.025000000000002,
+          54.585
+        ],
+        [
+          354.805,
+          -1.7850000000000021,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "SOT-23 (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+SOT-23 (2):4",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        34.2975,
+        0.0,
+        1.0,
+        0.0,
+        -0.6744999999999997,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          341.71500000000003,
+          -8.254999999999997,
+          57.584999999999994
+        ],
+        [
+          344.23499999999996,
+          -5.234999999999996,
+          58.80499999999999
+        ]
+      ]
+    },
+    {
+      "name": "SOT-23 (2)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+SOT-23 (2):5",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        20.2975,
+        0.0,
+        1.0,
+        0.0,
+        -0.7745000000000002,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          201.71499999999997,
+          -9.255000000000003,
+          57.584999999999994
+        ],
+        [
+          204.235,
+          -6.235000000000001,
+          58.80499999999999
+        ]
+      ]
+    },
+    {
+      "name": "DFR1015_ENVELOPE_APROX",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+DFR1015_ENVELOPE_APROX:3",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        26.1345,
+        0.0,
+        1.0,
+        0.0,
+        2.7155,
+        0.0,
+        0.0,
+        1.0,
+        6.6095,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          259.365,
+          11.645000000000001,
+          66.085
+        ],
+        [
+          286.695,
+          31.665,
+          76.105
+        ]
+      ]
+    },
+    {
+      "name": "PinHeader_1x02_P2.54mm_Vertical (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+PinHeader_1x02_P2.54mm_Vertical (3):10",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        28.7815,
+        0.0,
+        1.0,
+        0.0,
+        -0.38149999999999995,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          286.535,
+          -7.635,
+          54.58499999999978
+        ],
+        [
+          289.095,
+          -2.5349999999999993,
+          66.14500000000022
+        ]
+      ]
+    },
+    {
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3)",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (3):24",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        20.209499899999997,
+        0.0,
+        1.0,
+        0.0,
+        -0.35450000000000026,
+        0.0,
+        0.0,
+        1.0,
+        5.7595,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          201.78499899999997,
+          -4.805000000000002,
+          54.585
+        ],
+        [
+          210.02499899999998,
+          -2.285000000000003,
+          60.105000000000004
+        ]
+      ]
+    },
+    {
+      "name": "cross_v8_draft_PCB",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+PCB_V8_ESTUDIO_NO_FABRICAR:1+cross_v8_draft_PCB:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        19.9,
+        0.0,
+        1.0,
+        0.0,
+        3.4,
+        0.0,
+        0.0,
+        1.0,
+        5.6,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          198.98999999999998,
+          -34.01000000000001,
+          55.989999999999995
+        ],
+        [
+          369.01,
+          34.010000000000005,
+          57.519999999999996
+        ]
+      ]
+    },
+    {
+      "name": "EL_PI_PORTS Pi USB/Ethernet bodies approximate",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+01_RASPBERRY_PI_4_JUNTO_PICAM:1+EL_PI_PORTS Pi USB/Ethernet bodies approximate:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        8.8,
+        0.0,
+        1.0,
+        0.0,
+        3.2,
+        0.0,
+        0.0,
+        1.0,
+        9.45,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          117.98000000000002,
+          6.480000000000006,
+          43.579999999999984
+        ],
+        [
+          136.02,
+          58.010000000000005,
+          59.61999999999999
+        ]
+      ]
+    },
+    {
+      "name": "EL_PI_PLUG_SPACE Pi USB plug clearance; verify cable bend",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+01_RASPBERRY_PI_4_JUNTO_PICAM:1+EL_PI_PLUG_SPACE Pi USB plug clearance; verify cable bend:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        8.8,
+        0.0,
+        1.0,
+        0.0,
+        3.2,
+        0.0,
+        0.0,
+        1.0,
+        9.45,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          93.99000000000001,
+          3.9900000000000047,
+          41.98999999999999
+        ],
+        [
+          118.01,
+          60.00999999999999,
+          60.00999999999999
+        ]
+      ]
+    },
+    {
+      "name": "EL_PI Raspberry Pi 4 PCB reference; USB toward front",
+      "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1+01_RASPBERRY_PI_4_JUNTO_PICAM:1+EL_PI Raspberry Pi 4 PCB reference; USB toward front:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        8.8,
+        0.0,
+        1.0,
+        0.0,
+        3.2,
+        0.0,
+        0.0,
+        1.0,
+        9.45,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          117.99000000000001,
+          3.9900000000000047,
+          41.98999999999999
+        ],
+        [
+          203.01000000000002,
+          60.00999999999999,
+          50.61999999999999
+        ]
+      ]
+    },
+    {
+      "name": "H_INTAKE M10 WetLink JPT envelope intake",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+01_ENTRADA_Y_SALIDA:1+H_INTAKE M10 WetLink JPT envelope intake:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          377.5400000000001,
+          -44.010000000000005,
+          25.990000000000002
+        ],
+        [
+          419.55999999999995,
+          -25.990000000000002,
+          44.010000000000005
+        ]
+      ]
+    },
+    {
+      "name": "H_EXTERNAL_INTAKE Continuous silicone tube through intake; external cut end",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+01_ENTRADA_Y_SALIDA:1+H_EXTERNAL_INTAKE Continuous silicone tube through intake; external cut end:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          373.99000000000007,
+          -37.51,
+          32.49
+        ],
+        [
+          430.01,
+          -32.49,
+          37.51
+        ]
+      ]
+    },
+    {
+      "name": "H_DISCHARGE M10 WetLink JPT envelope discharge",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+01_ENTRADA_Y_SALIDA:1+H_DISCHARGE M10 WetLink JPT envelope discharge:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          377.5400000000001,
+          25.990000000000002,
+          25.990000000000002
+        ],
+        [
+          419.55999999999995,
+          44.010000000000005,
+          44.010000000000005
+        ]
+      ]
+    },
+    {
+      "name": "H_EXTERNAL_DISCHARGE Continuous silicone tube through discharge; external cut end",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+01_ENTRADA_Y_SALIDA:1+H_EXTERNAL_DISCHARGE Continuous silicone tube through discharge; external cut end:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          373.99000000000007,
+          32.49,
+          32.49
+        ],
+        [
+          430.01,
+          37.51,
+          37.51
+        ]
+      ]
+    },
+    {
+      "name": "H_TUBE_EC_CELL Conductivity cell -> optical cell lower port",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H_TUBE_EC_CELL Conductivity cell -> optical cell lower port:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          123.99000000000002,
+          -2.51,
+          -56.510000000000005
+        ],
+        [
+          155.01,
+          2.51,
+          -29.989999999999984
+        ]
+      ]
+    },
+    {
+      "name": "H2_TUBE_CELL_PUMP Cubeta a bomba - lateral libre de PCB",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H2_TUBE_CELL_PUMP Cubeta a bomba - lateral libre de PCB:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          123.99000000000001,
+          -44.50999999999993,
+          18.989999999999995
+        ],
+        [
+          260.50999999999993,
+          14.510000000000014,
+          64.50999999999998
+        ]
+      ]
+    },
+    {
+      "name": "H3_TUBE_IN Entrada a temperatura - canal en travesano",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H3_TUBE_IN Entrada a temperatura - canal en travesano:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          318.49,
+          -37.51,
+          -14.009999999999987
+        ],
+        [
+          374.01,
+          27.51000000000007,
+          37.50999999999999
+        ]
+      ]
+    },
+    {
+      "name": "H3_TUBE_TEMP_EC Temperatura a conductividad - circuito completo",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H3_TUBE_TEMP_EC Temperatura a conductividad - circuito completo:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          318.49,
+          -11.510000000000055,
+          -74.50999999999996
+        ],
+        [
+          367.51,
+          27.509999999999998,
+          -43.49000000000015
+        ]
+      ]
+    },
+    {
+      "name": "H3_TUBE_OUT Bomba a descarga - canal en travesano",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+02_MANGUERAS_INTERNAS:1+H3_TUBE_OUT Bomba a descarga - canal en travesano:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          277.49,
+          29.490000000000002,
+          18.990000000000002
+        ],
+        [
+          374.01000000000005,
+          37.51,
+          37.51
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_BODY Conductivity flow chamber PMMA OD20 ID16; seal design HOLD",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_BODY Conductivity flow chamber PMMA OD20 ID16; seal design HOLD:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          171.59000000000003,
+          -10.009999999999998,
+          -64.01
+        ],
+        [
+          328.40999999999997,
+          10.009999999999998,
+          -43.99
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_FRONT Machined wet end block; dimensions and O rings HOLD",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_FRONT Machined wet end block; dimensions and O rings HOLD:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          164.98999999999998,
+          -15.009999999999998,
+          -65.01
+        ],
+        [
+          171.01000000000002,
+          15.009999999999998,
+          -42.99
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_REAR Machined wet end block; dimensions and O rings HOLD",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_REAR Machined wet end block; dimensions and O rings HOLD:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          328.988575662027,
+          -15.009999999999998,
+          -65.01
+        ],
+        [
+          335.01,
+          15.009999999999998,
+          -42.99
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_SEAL_F Flat wet chamber seal; material/compression HOLD",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_SEAL_F Flat wet chamber seal; material/compression HOLD:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          170.99,
+          -10.009999999999998,
+          -64.01
+        ],
+        [
+          171.61000000000004,
+          10.009999999999998,
+          -43.99
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_SEAL_R Flat wet chamber seal; material/compression HOLD",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_SEAL_R Flat wet chamber seal; material/compression HOLD:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          328.39,
+          -10.009999999999998,
+          -64.01
+        ],
+        [
+          329.01,
+          10.009999999999998,
+          -43.99
+        ]
+      ]
+    },
+    {
+      "name": "ENV_EC Atlas K1 probe envelope; actual generation to verify",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+ENV_EC Atlas K1 probe envelope; actual generation to verify:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          175.99,
+          -6.01,
+          -60.010000000000005
+        ],
+        [
+          327.01,
+          6.01,
+          -47.99
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_OUT EC outlet 3mm bore; side facing optical cell",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_OUT EC outlet 3mm bore; side facing optical cell:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          154.99,
+          -3.01,
+          -57.010000000000005
+        ],
+        [
+          165.01000000000002,
+          3.01,
+          -50.99
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_IN EC inlet 3mm bore; rear end block",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_IN EC inlet 3mm bore; rear end block:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -1.8,
+        0.0,
+        0.0,
+        1.0,
+        0.4,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          334.99,
+          -12.010000000000002,
+          -49.01
+        ],
+        [
+          345.01,
+          -5.990000000000002,
+          -42.989999999999995
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_GLAND Wet gland for 2.6mm EC cable; model selection HOLD",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_GLAND Wet gland for 2.6mm EC cable; model selection HOLD:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          328.98999999999995,
+          -7.01,
+          -61.010000000000005
+        ],
+        [
+          343.00999999999993,
+          7.01,
+          -46.989999999999995
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_ROD_-12 M3 through rod for wet cassette end caps",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_ROD_-12 M3 through rod for wet cassette end caps:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          160.99,
+          -13.509999999999998,
+          -55.51000000000001
+        ],
+        [
+          339.01,
+          -10.490000000000002,
+          -52.489999999999995
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_NUT_-12_158.6 M3 nut; simplified outside envelope",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_NUT_-12_158.6 M3 nut; simplified outside envelope:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          158.59,
+          -15.11,
+          -57.11
+        ],
+        [
+          161.01000000000002,
+          -8.889999999999999,
+          -50.89
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_NUT_-12_339 M3 nut; simplified outside envelope",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_NUT_-12_339 M3 nut; simplified outside envelope:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          338.98999999999995,
+          -15.11,
+          -57.11
+        ],
+        [
+          341.40999999999997,
+          -8.889999999999999,
+          -50.89
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_ROD_12 M3 through rod for wet cassette end caps",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_ROD_12 M3 through rod for wet cassette end caps:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          160.99,
+          10.490000000000002,
+          -55.51000000000001
+        ],
+        [
+          339.01,
+          13.509999999999998,
+          -52.489999999999995
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_NUT_12_158.6 M3 nut; simplified outside envelope",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_NUT_12_158.6 M3 nut; simplified outside envelope:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          158.59,
+          8.889999999999999,
+          -57.11
+        ],
+        [
+          161.01000000000002,
+          15.11,
+          -50.89
+        ]
+      ]
+    },
+    {
+      "name": "H_EC_NUT_12_339 M3 nut; simplified outside envelope",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+H_EC_NUT_12_339 M3 nut; simplified outside envelope:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          338.98999999999995,
+          8.889999999999999,
+          -57.11
+        ],
+        [
+          341.40999999999997,
+          15.11,
+          -50.89
+        ]
+      ]
+    },
+    {
+      "name": "ESPUMA_180 Apoyo 2 mm - cortar espuma, NO imprimir",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+ESPUMA_180 Apoyo 2 mm - cortar espuma, NO imprimir:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          176.98999999999998,
+          -11.749583333333334,
+          -66.01
+        ],
+        [
+          183.01000000000002,
+          11.749583333333334,
+          -55.356093312149646
+        ]
+      ]
+    },
+    {
+      "name": "ESPUMA_300 Apoyo 2 mm - cortar espuma, NO imprimir",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+03_SENSOR_CONDUCTIVIDAD_Y_CELDA:1+ESPUMA_300 Apoyo 2 mm - cortar espuma, NO imprimir:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          296.99,
+          -11.749583333333334,
+          -66.01
+        ],
+        [
+          303.01,
+          11.749583333333334,
+          -55.356093312149646
+        ]
+      ]
+    },
+    {
+      "name": "H_TEMP_TEE Temperature flow tee POM; seal and fittings HOLD",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+04_SENSOR_TEMPERATURA_Y_TEE:1+H_TEMP_TEE Temperature flow tee POM; seal and fittings HOLD:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.3,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          311.99,
+          17.99,
+          -40.010000000000005
+        ],
+        [
+          330.01,
+          32.01,
+          -19.990000000000002
+        ]
+      ]
+    },
+    {
+      "name": "H_TEMP_IN Temperature tee 3mm bore port",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+04_SENSOR_TEMPERATURA_Y_TEE:1+H_TEMP_IN Temperature tee 3mm bore port:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.3,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          317.99,
+          21.99,
+          -20.009999999999998
+        ],
+        [
+          324.01,
+          28.01,
+          -13.99
+        ]
+      ]
+    },
+    {
+      "name": "H_TEMP_OUT Temperature tee 3mm bore port",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+04_SENSOR_TEMPERATURA_Y_TEE:1+H_TEMP_OUT Temperature tee 3mm bore port:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.3,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          317.99,
+          21.99,
+          -46.01
+        ],
+        [
+          324.01,
+          28.01,
+          -39.99
+        ]
+      ]
+    },
+    {
+      "name": "ENV_TEMP DS18B20 6x50 envelope; tip wet / cable dry",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+04_SENSOR_TEMPERATURA_Y_TEE:1+ENV_TEMP DS18B20 6x50 envelope; tip wet / cable dry:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.3,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          317.98999999999995,
+          21.99,
+          -33.01
+        ],
+        [
+          368.00999999999993,
+          28.01,
+          -26.990000000000002
+        ]
+      ]
+    },
+    {
+      "name": "H_TEMP_GLAND Compression gland around DS18B20 case; HOLD",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+04_SENSOR_TEMPERATURA_Y_TEE:1+H_TEMP_GLAND Compression gland around DS18B20 case; HOLD:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.3,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          329.99,
+          18.990000000000002,
+          -36.01
+        ],
+        [
+          340.01,
+          31.009999999999998,
+          -23.990000000000002
+        ]
+      ]
+    },
+    {
+      "name": "H_CELL_-1 Flow cell port APPROX",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+05_BOMBA_Y_PUERTOS_CUBETA:1+H_CELL_-1 Flow cell port APPROX:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          122.99000000000001,
+          -3.51,
+          -30.009999999999998
+        ],
+        [
+          130.01,
+          3.51,
+          -19.990000000000002
+        ]
+      ]
+    },
+    {
+      "name": "H_CELL_1 Flow cell port APPROX",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+05_BOMBA_Y_PUERTOS_CUBETA:1+H_CELL_1 Flow cell port APPROX:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          122.99000000000001,
+          -3.51,
+          19.990000000000002
+        ],
+        [
+          130.01,
+          3.51,
+          30.009999999999998
+        ]
+      ]
+    },
+    {
+      "name": "H_PUMP_HEAD Peristaltic head APPROX; downstream of cell",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+05_BOMBA_Y_PUERTOS_CUBETA:1+H_PUMP_HEAD Peristaltic head APPROX; downstream of cell:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.4,
+        0.0,
+        0.0,
+        1.0,
+        -2.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          243.98999999999998,
+          6.989999999999999,
+          -4.009999999999998
+        ],
+        [
+          294.01,
+          57.010000000000005,
+          11.01
+        ]
+      ]
+    },
+    {
+      "name": "H_PUMP_PORT_258 Pump nozzle reservation; actual orientation pending",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+05_BOMBA_Y_PUERTOS_CUBETA:1+H_PUMP_PORT_258 Pump nozzle reservation; actual orientation pending:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.4,
+        0.0,
+        0.0,
+        1.0,
+        -2.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          254.98999999999998,
+          8.989999999999998,
+          10.990000000000002
+        ],
+        [
+          261.01000000000005,
+          15.009999999999998,
+          19.009999999999998
+        ]
+      ]
+    },
+    {
+      "name": "H_PUMP_PORT_280 Pump nozzle reservation; actual orientation pending",
+      "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1+05_BOMBA_Y_PUERTOS_CUBETA:1+H_PUMP_PORT_280 Pump nozzle reservation; actual orientation pending:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.4,
+        0.0,
+        0.0,
+        1.0,
+        -2.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          276.99,
+          28.990000000000002,
+          10.990000000000002
+        ],
+        [
+          283.01,
+          35.01,
+          19.009999999999998
+        ]
+      ]
+    },
+    {
+      "name": "P_C40_LOWER Split external saddle collar",
+      "path": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C40_LOWER Split external saddle collar:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          29.990000000000002,
+          -105.00999999999999,
+          -100.00999999999999
+        ],
+        [
+          50.010000000000005,
+          105.00999999999999,
+          0.010000000000029985
+        ]
+      ]
+    },
+    {
+      "name": "P_C40_UPPER Split external saddle collar",
+      "path": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C40_UPPER Split external saddle collar:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          29.990000000000002,
+          -105.00999999999999,
+          -0.010000000000027646
+        ],
+        [
+          50.01000000000001,
+          105.00999999999999,
+          100.00999999999999
+        ]
+      ]
+    },
+    {
+      "name": "P_C335_LOWER Split external saddle collar",
+      "path": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C335_LOWER Split external saddle collar:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          324.99,
+          -105.00999999999999,
+          -100.00999999999999
+        ],
+        [
+          345.01,
+          105.00999999999999,
+          0.010000000000029985
+        ]
+      ]
+    },
+    {
+      "name": "P_C335_UPPER Split external saddle collar",
+      "path": "M2_GENERATED:1+07_LASTRE:1+01_3D_ABRAZADERAS_CANDIDATAS:1+P_C335_UPPER Split external saddle collar:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          324.99,
+          -105.00999999999999,
+          -0.010000000000027646
+        ],
+        [
+          345.01,
+          105.00999999999999,
+          100.00999999999999
+        ]
+      ]
+    },
+    {
+      "name": "B52 A4 3mm ballast eye plate; load test required",
+      "path": "M2_GENERATED:1+07_LASTRE:1+02_PLACAS_METALICAS_REFERENCIA:1+B52 A4 3mm ballast eye plate; load test required:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          50.489999999999995,
+          -90.00999999999999,
+          -110.00999999999999
+        ],
+        [
+          53.510000000000005,
+          90.00999999999999,
+          -59.989999999999995
+        ]
+      ]
+    },
+    {
+      "name": "B347 A4 3mm ballast eye plate; load test required",
+      "path": "M2_GENERATED:1+07_LASTRE:1+02_PLACAS_METALICAS_REFERENCIA:1+B347 A4 3mm ballast eye plate; load test required:1",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bbox_mm": [
+        [
+          345.49000000000007,
+          -90.00999999999999,
+          -110.00999999999999
+        ],
+        [
+          348.51,
+          90.00999999999999,
+          -59.989999999999995
+        ]
+      ]
+    }
+  ],
+  "unexpected_intersections": 0,
+  "limitations": [
+    "Only currently visible modeled solids; cable motion, real connectors, seals and hardware not fully represented.",
+    "PCB V8 is an unfinished engineering draft, not a fabrication release.",
+    "Hose radii: 15 mm on main routes; 12.35 mm on temp-to-EC loop; physical minimum to verify.",
+    "Raspberry and sensor board interfaces require physical check with actual CSI ribbon."
+  ]
+}

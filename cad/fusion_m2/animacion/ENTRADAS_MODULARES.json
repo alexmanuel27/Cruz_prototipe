@@ -1,0 +1,90 @@
+{
+  "tests": 36,
+  "results": [
+    {
+      "group": "as7265x",
+      "delta_mm": [
+        0,
+        0,
+        85
+      ],
+      "complete": true,
+      "hit": null
+    },
+    {
+      "group": "atlas",
+      "delta_mm": [
+        0,
+        95,
+        0
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "Board_Iso_carry_type-II.step",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.1,
+        "cm3": 0.0054655871533912615
+      }
+    },
+    {
+      "group": "pump",
+      "delta_mm": [
+        0,
+        0,
+        40
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "MS11HS5P",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.7,
+        "cm3": 0.0317853981633975
+      }
+    },
+    {
+      "group": "pump",
+      "delta_mm": [
+        0,
+        0,
+        20
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "MS11HS5P",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.5,
+        "cm3": 0.10471494940154256
+      }
+    },
+    {
+      "group": "pump",
+      "delta_mm": [
+        0,
+        0,
+        10
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "MS11HS5P",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.1,
+        "cm3": 0.12499365855994067
+      }
+    },
+    {
+      "group": "pump",
+      "delta_mm": [
+        0,
+        0,
+        5
+      ],
+      "complete": true,
+      "hit": {
+        "moving": "MS11HS5P",
+        "stationary": "P_CHASSIS_REAR Ribbed U chassis REAR; M4 nut joint",
+        "fraction": 0.1,
+        "cm3": 0.026388514013564186
+      }
+    }
+  ]
+}

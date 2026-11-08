@@ -1,0 +1,299 @@
+[
+  {
+    "path": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E01 Acrylic tube OD180 ID170 L380 proposal:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/31Qu02GQQybBOk6qkh5XnILsMDfI+VeQ7AHLQOwB1MwCAXSL+6DHrlJbCuOjEULFyp4QBxnoj+mlq+H++fj+9P36+35481fbkfhIrW4jmVtBYwYA7TzgrMh5NiTeCaRaZHLWcXT0RxS+gQd2aDPNqFxKm5eta19+Ui7uS6C6EagkRNimoGTGEutapi/ye6zNjyn6MRrNYRAERi8ZE3rHtT+/x2lCbEmCNoG9XDopAxdWb2n8dh+dfEDn+msSRcBAAA=",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      0,
+      0,
+      18
+    ]
+  },
+  {
+    "path": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E02 FRONT acrylic cap; port details HOLD:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/4WQsW2FMQiEJ4nkLhUS2GDsBbLA6yOBDUO8PdJmgOyRKTJIikhP8a8MEF0DxycEh4VLLVTwiOo4Ff05vXw/Pb6eP15+3m6vn+96v51JLa0X5RUyY8AaawF7DTgdgq3cVLcRCZd2kb2pKYqCNd/Ayyb4nhtmNcas0WfkxRG7KAfBcCHgYRvGFgGlJrX1zoJ2cdibJKaDduzAYgOGqJ2lkZXTU/Kf2512s8YJKs7AYQbnCQUP32yTEy2uLH4BDdvbyxcBAAA=",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      -8,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E04 FRONT silicone gasket 3mm free / 2.55mm working:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/32QvWnFMQzEJwm4SyWwvu0FssDrA7JlD/H2SJsBskemyCApAo/8Tfpwzen0Q4irRQoVLPUSUrsc/iVWvp8eX88fLz9vt9fPd7/frg0VtuIyl/bVYLY5QQYtuKYKMXciZSCqFD6ksYdXdQgeCTKjw8ie0CmkblrW1z4cylCXhdCGIkiLhJaq4MhKbCZa43Bd1HEZgSIFCDWGPsSgpmXnMOf0/39P2szRFZKsXhfQoVml42LnjMESp4tf5TF59xcBAAA=",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      -4,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E03 REAR acrylic cap; port details HOLD:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/4WQzWkDMAyFJyn41pPA+rPsBbpA7gXZsofIHr12gOyRKTpID4VQmwwQdNHPx3sP5SSJEqa8C6nuDp+bkn7fHj/vt4+/r8vn/duul32hxCWZjKltVhh1DJBOE/aUwccKpHBElcSHLGxuWQ2ce4AMb9CjBTRyyYtmaXMdDqWryUSoXRGkekANVTBkJS5FNPvhdPbFrAy9yXbOeSvXIJjqeXi1tXp9kV2pC+GRFtvZ2cGDEWwZ+ywxnOL84h8CM14LFwEAAA==",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      8,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "M2_GENERATED:1+01_CARCASA_Y_TAPAS:1+E05 REAR silicone gasket 3mm free / 2.55mm working:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/4WQwU3FMQiHJzHpzRMJUKB0ARd4dxNK2yHeHl4dwD2cwkE8mLzYfxzAcPkBH8kXsEjhQgVPEftJ9Dex8v30+Hr+ePl5u71+vrf77Wy4VCtNcmlfDumZIIMXnA4hck/iGUQqpV6k1RYNtUHUMUEyOozZJ3QOwc3L+toXRzK0ySLwoQTiMcGnKjSqytVMFOPiZCVRnRPC6+Gan4TXWapp19jB/7jXxDU4CDaZHiPr4IYbKHc4Hqeh1yfwF3c3vEMXAQAA",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      4,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "M2_GENERATED:1+02_VARILLAS_Y_CIERRES:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/31Puw0CMQydBCkdlSXbceJ4ARagR3Kc3BDsQcsA7MEUDEKBhLjT9eg171e8h0kSJ0q4gritjHanpvfh+zo+Tp/b+fK86/W8JpxyTSoxi80G0SJAOk9YFYLHMoiHExXZmzWrKxYFz32AhBv0YQOMXXDhWW0uW4+CRM0ZWCuBCAl0lgzTcvHcAl3r/01To/lEg9xDQFQMmjUFxTwcxZkrbx9/QpUpLO8AAAA=",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      0,
+      16,
+      0
+    ]
+  },
+  {
+    "path": "M2_GENERATED:1+04_OPTICA_REFERENCIAS:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/31Pu21DMQycJIC6VARIihLFBbKA+wB8JDWE90ibAbJHpsggKQIYeYZ745r7FXfYpHGjhieI18no4cz2+3L7ef16+/u4vH9/6vVyJtz6bCpRw2pBrAiQgwtOheCxkzidaMijObu64lDwfiRIuMGRlmDsgptrWu17z+hIrZmQ5RsE54SFlOCIWWSDxuDnm7ZhytYOzH2BaDjYiA4ddZf1McP2/eM/fzpepu8AAAA=",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      0,
+      0,
+      6
+    ]
+  },
+  {
+    "path": "M2_GENERATED:1+05_ELECTRONICA_REFERENCIAS:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/32PsQ1CMQxEJ0FKR2XJsf3jZAEWoEdy7GQI9qBlAPZgCgahQEIE0SM3vvOd9IxJEqWccE2murb8c0p67t6P/e3wuhxP96uej+tCiUtS8bG1UcGrO0inAUshmM/IFJbzJr9kYTXFTcG4B4hbgx4toJEJThqljfnN9arGEg2obAyiI0OvvBrqE6O4otT/TIYopXiDIYtEpjF0M4MIJfbRkev3Q/wA7rSsXO8AAAA=",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      0,
+      -13,
+      0
+    ]
+  },
+  {
+    "path": "M2_GENERATED:1+06_AGUA_Y_SENSORES:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/32PsQ1CMQxEJ0FKR2XJsRMnWYAFfo/kOM4Q7EHLAOzBFAxCgYQI0CM353sn+YwhBQox4JpIdan4cyQ8dq/7/np4nrfj7VJO2yIUWEJJ5rl5BatmkDo5rA1BbY5IQ2PM6ZcULlowF1DuA5Jpgz7agEaacJJL8/nJkc/BXieQsMBCFTplBuc0nXhmdP/fybWsUt6hfS9VFaiiDJKMidFt1M+H+AZr2faK7wAAAA==",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      0,
+      13,
+      0
+    ]
+  },
+  {
+    "path": "M2_GENERATED:1+07_LASTRE:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/31Puw1CMQycBCkdlSXbcX4LsAA9kuM4Q7AHLQOwB1MwCAUSIk+vR9fcr7jDIIEDBVwgrovR7uTwPnxfx8fpcztfnvdyPa+EQ8yhiHlqXsGqGUhnh6UQ1OYgHkqUZG/mWLRgKqCxDxDTBn20AY1VcLLn5nPrcU0zd46AlRiEbUDNSsCMsaTBrAn/b5rei8WaoFFSEHQHHUsaeUPMZtlk+/gDbG7uau8AAAA=",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      0,
+      0,
+      -11
+    ]
+  },
+  {
+    "path": "PCB_V8_ESTUDIO_NO_FABRICAR:1",
+    "token": "/v4BAAAARlJLZXkAH4sIAAAAAAAA/31OuQ0CQQysBMkZkSXb+14DNHA50q53XcT1QUoB9EEVFEKAdMIncuRkPs2YIIIAA/mxVEf8UzK8T/vr/Lh8buv1eS/b6o5AyFCizrTMilpVMXaZ6IywqQ2W0ZhT9KwnF7LRTBpa6oZxBsLeLCKHMnpNRdz+v5WGGRUm9OKjIWffsopz8lCuQaXp8fsX8dC3RscAAAA=",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "offset_cm": [
+      0,
+      0,
+      13
+    ]
+  }
+]

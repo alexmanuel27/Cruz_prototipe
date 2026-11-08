@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1580" viewBox="0 0 1700 1580" role="img"><title>ARCHIVO · distribución vertical</title><defs>
+<marker id="a-water" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#1396b8" stroke-width="1.5"/></marker>
+<marker id="a-red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#d75a62" stroke-width="1.5"/></marker>
+<marker id="a-amber" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#eaa33d" stroke-width="1.5"/></marker>
+<marker id="a-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#237dba" stroke-width="1.5"/></marker>
+<marker id="a-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,1 L7,4 L0,7" fill="none" stroke="#172b3a" stroke-width="1.5"/></marker>
+<linearGradient id="rainbow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#995cde"/><stop offset=".25" stop-color="#4493df"/><stop offset=".5" stop-color="#60b97d"/><stop offset=".75" stop-color="#f8d85d"/><stop offset="1" stop-color="#eb7063"/></linearGradient></defs>
+<rect width="1700" height="1580" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<text x="65" y="65" font-size="39" fill="#172b3a" font-weight="700" text-anchor="start">ARCHIVO · distribución vertical</text>
+<text x="65" y="105" font-size="23" fill="#5e7180" font-weight="400" text-anchor="start">Sustituida por PVC horizontal · revisión D45 · 21 oct 2026</text>
+<text x="65" y="163" font-size="28" fill="#172b3a" font-weight="700" text-anchor="start">A · Equipo vertical</text>
+<text x="65" y="199" font-size="21" fill="#5e7180" font-weight="400" text-anchor="start">Corte esquemático; los bloques son reservas de espacio.</text>
+<rect x="175" y="340.0" width="8" height="890" rx="0" fill="#acb9c2" stroke="#667786" stroke-width="2"/>
+<rect x="625" y="340.0" width="8" height="890" rx="0" fill="#acb9c2" stroke="#667786" stroke-width="2"/>
+<rect x="212.5" y="365.0" width="375" height="825" rx="0" fill="#f5fbfd" stroke="#1396b8" stroke-width="2"/>
+<rect x="225" y="365.0" width="350" height="825" rx="0" fill="#fbfdfe" stroke="#b9c9d3" stroke-width="2"/>
+<rect x="150" y="1190.0" width="500" height="25" rx="0" fill="#e8e1f3" stroke="#775aa5" stroke-width="2"/>
+<rect x="150" y="340.0" width="500" height="25" rx="0" fill="#e8e1f3" stroke="#775aa5" stroke-width="2"/>
+<polyline points="230,1152.5 570,1152.5" fill="none" stroke="#b9c9d3" stroke-width="1.2" stroke-dasharray="6 8"/>
+<polyline points="230,990.0 570,990.0" fill="none" stroke="#b9c9d3" stroke-width="1.2" stroke-dasharray="6 8"/>
+<polyline points="230,965.0 570,965.0" fill="none" stroke="#b9c9d3" stroke-width="1.2" stroke-dasharray="6 8"/>
+<polyline points="230,777.5 570,777.5" fill="none" stroke="#b9c9d3" stroke-width="1.2" stroke-dasharray="6 8"/>
+<polyline points="230,765.0 570,765.0" fill="none" stroke="#b9c9d3" stroke-width="1.2" stroke-dasharray="6 8"/>
+<polyline points="230,552.5 570,552.5" fill="none" stroke="#b9c9d3" stroke-width="1.2" stroke-dasharray="6 8"/>
+<polyline points="230,540.0 570,540.0" fill="none" stroke="#b9c9d3" stroke-width="1.2" stroke-dasharray="6 8"/>
+<polyline points="230,402.5 570,402.5" fill="none" stroke="#b9c9d3" stroke-width="1.2" stroke-dasharray="6 8"/>
+<rect x="257" y="402.5" width="9" height="750" rx="1" fill="#dbe4e9" stroke="#a1b1bb" stroke-width="2"/>
+<rect x="543" y="402.5" width="9" height="750" rx="1" fill="#dbe4e9" stroke="#a1b1bb" stroke-width="2"/>
+<rect x="300" y="996.0" width="200" height="150" rx="5" fill="#edf3e2" stroke="#82a251" stroke-width="2"/>
+<text x="400" y="1051.0" font-size="23" fill="#172b3a" font-weight="700" text-anchor="middle">BATERÍA</text>
+<text x="400" y="1085.0" font-size="22" fill="#172b3a" font-weight="400" text-anchor="middle">+ fusible</text>
+<text x="400" y="1116.0" font-size="20" fill="#5e7180" font-weight="400" text-anchor="middle">base elevada</text>
+<rect x="282" y="782.5" width="240" height="177" rx="3" fill="#eaf1f4" stroke="#7c8c97" stroke-width="2"/>
+<rect x="366" y="807.5" width="34" height="145" rx="1" fill="#def3f7" stroke="#1396b8" stroke-width="2"/>
+<polyline points="383,920.0 383,820.0" fill="none" stroke="#1396b8" stroke-width="3" marker-end="url(#a-water)"/>
+<rect x="291" y="870.0" width="65" height="38" rx="5" fill="#fae4c4" stroke="#eaa33d" stroke-width="2"/>
+<rect x="425" y="870.0" width="85" height="38" rx="5" fill="#d5dfe6" stroke="#60798d" stroke-width="2"/>
+<polyline points="351,890.0 430,890.0" fill="none" stroke="#eaa33d" stroke-width="3"/>
+<rect x="318" y="559.5" width="170" height="202" rx="5" fill="#e5f1e9" stroke="#41896a" stroke-width="2"/>
+<text x="401" y="600.5" font-size="23" fill="#172b3a" font-weight="700" text-anchor="middle">Pi + control</text>
+<text x="401" y="634.5" font-size="22" fill="#172b3a" font-weight="400" text-anchor="middle">DC/DC</text>
+<text x="401" y="664.5" font-size="22" fill="#172b3a" font-weight="400" text-anchor="middle">y drivers</text>
+<rect x="492" y="590.0" width="46" height="78" rx="5" fill="#d9e9f5" stroke="#237dba" stroke-width="2"/>
+<circle cx="532" cy="627.5" r="9" fill="#567e9c" stroke="#237dba" stroke-width="2"/>
+<polyline points="541,627.5 572,645.5 572,609.5 541,627.5" fill="none" stroke="#237dba" stroke-width="2"/>
+<text x="401" y="739.5" font-size="20" fill="#5e7180" font-weight="400" text-anchor="middle">ver sección C</text>
+<rect x="355" y="406.5" width="174" height="127" rx="5" fill="#fbebdc" stroke="#bb7333" stroke-width="2" stroke-dasharray="7 5"/>
+<circle cx="406" cy="467.5" r="38" fill="#fff9f3" stroke="#bb7333" stroke-width="2"/>
+<text x="406" y="475.5" font-size="27" fill="#bb7333" font-weight="700" text-anchor="middle">P</text>
+<text x="490" y="475.5" font-size="18" fill="#bb7333" font-weight="400" text-anchor="middle">motor</text>
+<rect x="262" y="305.0" width="22" height="60" rx="2" fill="#dcf0f6" stroke="#1396b8" stroke-width="2"/>
+<rect x="506" y="305.0" width="22" height="60" rx="2" fill="#dcf0f6" stroke="#1396b8" stroke-width="2"/>
+<text x="245" y="290.0" font-size="22" fill="#1396b8" font-weight="700" text-anchor="start">IN</text>
+<text x="493" y="290.0" font-size="22" fill="#1396b8" font-weight="700" text-anchor="start">OUT</text>
+<polyline points="273,355.0 273,945.0 383,945.0 383,925.0" fill="none" stroke="#1396b8" stroke-width="5" marker-end="url(#a-water)"/>
+<polyline points="383,812.5 383,782.5 548,782.5 548,467.5 445,467.5" fill="none" stroke="#1396b8" stroke-width="5" marker-end="url(#a-water)"/>
+<polyline points="445,435.0 517,435.0 517,316.0" fill="none" stroke="#1396b8" stroke-width="5" marker-end="url(#a-water)"/>
+<polyline points="278,965.0 278,1165.0" fill="none" stroke="#b9c9d3" stroke-width="1.8" stroke-dasharray="5 6"/>
+<polyline points="548,965.0 548,1165.0" fill="none" stroke="#b9c9d3" stroke-width="1.8" stroke-dasharray="5 6"/>
+<rect x="373" y="1160.0" width="55" height="18" rx="2" fill="#f5d7db" stroke="#d75a62" stroke-width="2"/>
+<text x="400" y="1176.0" font-size="14" fill="#d75a62" font-weight="400" text-anchor="middle">fuga</text>
+<polyline points="585,382.5 670,382.5" fill="none" stroke="#b9c9d3" stroke-width="1.7"/>
+<text x="685" y="378.5" font-size="21" fill="#775aa5" font-weight="700" text-anchor="start">Puertos de servicio</text>
+<text x="685" y="406.5" font-size="18" fill="#5e7180" font-weight="400" text-anchor="start">Agua ×2 · datos/carga · vent</text>
+<polyline points="585,477.5 670,477.5" fill="none" stroke="#b9c9d3" stroke-width="1.7"/>
+<text x="685" y="473.5" font-size="21" fill="#bb7333" font-weight="700" text-anchor="start">Bomba arriba</text>
+<text x="685" y="501.5" font-size="18" fill="#5e7180" font-weight="400" text-anchor="start">Reserva axial: 55 mm*</text>
+<polyline points="585,652.5 670,652.5" fill="none" stroke="#b9c9d3" stroke-width="1.7"/>
+<text x="685" y="648.5" font-size="21" fill="#41896a" font-weight="700" text-anchor="start">Electrónica + cámara USB</text>
+<text x="685" y="676.5" font-size="18" fill="#5e7180" font-weight="400" text-anchor="start">Miran a caras opuestas (C)</text>
+<polyline points="585,870.0 670,870.0" fill="none" stroke="#b9c9d3" stroke-width="1.7"/>
+<text x="685" y="866.0" font-size="21" fill="#1396b8" font-weight="700" text-anchor="start">Cubeta vertical + cruz</text>
+<text x="685" y="894.0" font-size="18" fill="#5e7180" font-weight="400" text-anchor="start">Flujo ascendente · resguardo opaco</text>
+<polyline points="585,1070.0 670,1070.0" fill="none" stroke="#b9c9d3" stroke-width="1.7"/>
+<text x="685" y="1066.0" font-size="21" fill="#6e8e3c" font-weight="700" text-anchor="start">Batería abajo</text>
+<text x="685" y="1094.0" font-size="18" fill="#5e7180" font-weight="400" text-anchor="start">Separada del canal hidráulico</text>
+<polyline points="585,1172.5 670,1172.5" fill="none" stroke="#b9c9d3" stroke-width="1.7"/>
+<text x="685" y="1168.5" font-size="21" fill="#d75a62" font-weight="700" text-anchor="start">Testigo de fuga</text>
+<text x="685" y="1196.5" font-size="18" fill="#5e7180" font-weight="400" text-anchor="start">Batería sobre bandeja elevada</text>
+<path d="M105,365.0 L105,1190.0" fill="none" stroke="#5e7180" stroke-width="1.7" marker-start="url(#a-ink)" marker-end="url(#a-ink)"/>
+<text x="55" y="790" font-size="22" fill="#5e7180" font-weight="400" text-anchor="start">330</text>
+<path d="M225,1255 L575,1255" fill="none" stroke="#5e7180" stroke-width="1.7" marker-start="url(#a-ink)" marker-end="url(#a-ink)"/>
+<text x="303" y="1290" font-size="22" fill="#5e7180" font-weight="400" text-anchor="start">Ø140 interior</text>
+<text x="65" y="1334" font-size="21" fill="#5e7180" font-weight="400" text-anchor="start">*Reserva provisional: medir bomba completa, racores y curvas de tubo.</text>
+<polyline points="1020,155 1020,1355" fill="none" stroke="#b9c9d3" stroke-width="1.5"/>
+<text x="1070" y="164" font-size="27" fill="#172b3a" font-weight="700" text-anchor="start">B · Cruz vista desde arriba</text>
+<text x="1070" y="198" font-size="21" fill="#5e7180" font-weight="400" text-anchor="start">Nivel óptico · z ≈ 128 mm</text>
+<circle cx="1350" cy="475" r="247.5" fill="#eef8fb" stroke="#1396b8" stroke-width="2"/>
+<circle cx="1350" cy="475" r="231.0" fill="#fff" stroke="#1396b8" stroke-width="2"/>
+<rect x="1138.8" y="443.65" width="66.0" height="62.699999999999996" rx="2" fill="#fae4c4" stroke="#eaa33d" stroke-width="2"/>
+<rect x="1256.775" y="454.375" width="41.25" height="41.25" rx="2" fill="#dff3f8" stroke="#1396b8" stroke-width="2"/>
+<rect x="1241.1" y="336.4" width="72.6" height="46.199999999999996" rx="2" fill="#dcece4" stroke="#41896a" stroke-width="2"/>
+<rect x="1247.7" y="564.1" width="59.4" height="52.8" rx="2" fill="#e5e8fc" stroke="#237dba" stroke-width="2"/>
+<polyline points="1208.1,475.0 1515.0,475.0" fill="none" stroke="#eaa33d" stroke-width="3"/>
+<polyline points="1317.0,445.0 1317.0,505.0" fill="none" stroke="#172b3a" stroke-width="6"/>
+<rect x="1508.4" y="437.05" width="66.0" height="75.89999999999999" rx="2" fill="#dfe6eb" stroke="#60788b" stroke-width="2"/>
+<rect x="1511.0" y="447.0" width="8" height="56" rx="0" fill="url(#rainbow)" stroke="#697d8b" stroke-width="2"/>
+<polyline points="1277.4,564.1 1277.4,496.45" fill="none" stroke="#237dba" stroke-width="4" marker-end="url(#a-blue)"/>
+<polyline points="1277.4,453.55 1277.4,385.9" fill="none" stroke="#d75a62" stroke-width="4" marker-end="url(#a-red)"/>
+<text x="1171.8" y="479.95" font-size="13" fill="#bb7333" font-weight="700" text-anchor="middle">Halógena</text>
+<text x="1390" y="287" font-size="20" fill="#5e7180" font-weight="700" text-anchor="start">Red/lente + OV9281</text>
+<polyline points="1538,300 1541.4,435.4" fill="none" stroke="#b9c9d3" stroke-width="2"/>
+<text x="1329.0" y="521" font-size="17" fill="#5e7180" font-weight="400" text-anchor="start">0,5 mm</text>
+<text x="1070" y="248" font-size="21" fill="#41896a" font-weight="700" text-anchor="start">AS7265x · receptor</text>
+<polyline points="1240,255 1277.4,336.4" fill="none" stroke="#b9c9d3" stroke-width="2"/>
+<text x="1070" y="730" font-size="21" fill="#237dba" font-weight="700" text-anchor="start">LED 430 nm → muestra</text>
+<polyline points="1245,710 1277.4,616.9" fill="none" stroke="#b9c9d3" stroke-width="2"/>
+<text x="1070" y="770" font-size="19" fill="#d75a62" font-weight="400" text-anchor="start">Rojo: emisión de la muestra hacia el sensor.</text>
+<text x="1070" y="806" font-size="19" fill="#eaa33d" font-weight="400" text-anchor="start">Ámbar: transmisión hasta la red/lente.</text>
+<path d="M1317.0,541 L1515.0,541" fill="none" stroke="#5e7180" stroke-width="1.7" marker-start="url(#a-ink)" marker-end="url(#a-ink)"/>
+<text x="1322.0" y="571" font-size="22" fill="#5e7180" font-weight="400" text-anchor="start">60 mm de referencia</text>
+<text x="1070" y="850" font-size="19" fill="#5e7180" font-weight="400" text-anchor="start">Se conservan 36° y gran angular del MonoSpectro.</text>
+<text x="1070" y="880" font-size="19" fill="#5e7180" font-weight="400" text-anchor="start">Envolventes compactas por medir; sin colimador.</text>
+<text x="1070" y="951" font-size="26" fill="#172b3a" font-weight="700" text-anchor="start">C · Cámara y placas, mismo nivel</text>
+<circle cx="1350" cy="1160" r="172.5" fill="#eef8fb" stroke="#1396b8" stroke-width="2"/>
+<circle cx="1350" cy="1160" r="161.0" fill="white" stroke="#1396b8" stroke-width="2"/>
+<rect x="1285.6" y="1040.4" width="128.79999999999998" height="64.39999999999999" rx="3" fill="#e0efe5" stroke="#41896a" stroke-width="2"/>
+<text x="1350" y="1080.4" font-size="18" fill="#41896a" font-weight="700" text-anchor="middle">Pi + cables</text>
+<rect x="1212.0" y="1125.5" width="50.599999999999994" height="69.0" rx="2" fill="#edf2e5" stroke="#819959" stroke-width="2"/>
+<rect x="1437.4" y="1125.5" width="50.599999999999994" height="69.0" rx="2" fill="#edf2e5" stroke="#819959" stroke-width="2"/>
+<text x="1350" y="1168" font-size="19" fill="#5e7180" font-weight="400" text-anchor="middle">espacio libre</text>
+<rect x="1304.0" y="1212.9" width="92.0" height="57.49999999999999" rx="3" fill="#dceaf6" stroke="#237dba" stroke-width="2"/>
+<circle cx="1350" cy="1275.0" r="12" fill="#638baa" stroke="#237dba" stroke-width="2"/>
+<polyline points="1350,1279.6 1316,1323.3 1384,1323.3 1350,1279.6" fill="none" stroke="#237dba" stroke-width="2"/>
+<text x="1070" y="1382" font-size="20" fill="#237dba" font-weight="400" text-anchor="start">Cámara auxiliar → exterior por pared transparente.</text>
+<text x="1070" y="1414" font-size="19" fill="#5e7180" font-weight="400" text-anchor="start">Soportes, placas y cableado: reservas por ajustar.</text>
+<polyline points="65,1450 1635,1450" fill="none" stroke="#b9c9d3" stroke-width="1.5"/>
+<text x="65" y="1490" font-size="23" fill="#172b3a" font-weight="700" text-anchor="start">RECORRIDO: toma → cubeta → bomba → descarga. Transmisión primero; fluorescencia después.</text>
+<text x="65" y="1530" font-size="21" fill="#5e7180" font-weight="400" text-anchor="start">Implantación propuesta · no demuestra encaje · espesores, juntas y taladros siguen pendientes.</text>
+</g></svg>

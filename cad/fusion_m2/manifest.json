@@ -1,0 +1,1766 @@
+{
+  "revision": "M2-robust-frame-wet-sensors-2026-11-02",
+  "document": "Cross_M2_horizontal_design",
+  "rod_count": 4,
+  "dome_nut_count": 8,
+  "washer_count": 16,
+  "gasket_working_mm": 2.55,
+  "compression_limiter_length_mm": 382.1,
+  "parts": [
+    {
+      "code": "E01",
+      "name": "Acrylic tube OD180 ID170 L380 proposal",
+      "group": "01",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        380.0,
+        180.0,
+        180.0
+      ],
+      "volume_cm3": 1044.5796
+    },
+    {
+      "code": "E02",
+      "name": "FRONT acrylic cap; port details HOLD",
+      "group": "01",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        15.0,
+        230.0,
+        230.0
+      ],
+      "volume_cm3": 619.3964
+    },
+    {
+      "code": "E04",
+      "name": "FRONT silicone gasket 3mm free / 2.55mm working",
+      "group": "01",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        2.55,
+        180.0,
+        180.0
+      ],
+      "volume_cm3": 7.0097
+    },
+    {
+      "code": "P01",
+      "name": "FRONT non sealing centering ring",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        13.0,
+        169.2,
+        169.2
+      ],
+      "volume_cm3": 62.5745
+    },
+    {
+      "code": "E03",
+      "name": "REAR acrylic cap; port details HOLD",
+      "group": "01",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        15.0,
+        230.0,
+        230.0
+      ],
+      "volume_cm3": 601.9906
+    },
+    {
+      "code": "E05",
+      "name": "REAR silicone gasket 3mm free / 2.55mm working",
+      "group": "01",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        2.55,
+        180.0,
+        180.0
+      ],
+      "volume_cm3": 7.0097
+    },
+    {
+      "code": "P02",
+      "name": "REAR non sealing centering ring",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        6.55,
+        169.2,
+        169.2
+      ],
+      "volume_cm3": 31.5279
+    },
+    {
+      "code": "R1",
+      "name": "M8 A4 threaded tie rod; 436mm provisional cut",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        436.0,
+        8.0,
+        8.0
+      ],
+      "volume_cm3": 21.9158
+    },
+    {
+      "code": "S1",
+      "name": "A4 compression limiter OD14 ID9 L382.1",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        382.1,
+        14.0,
+        14.0
+      ],
+      "volume_cm3": 34.5116
+    },
+    {
+      "code": "W1FI",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W1RI",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W1FO",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W1RO",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "N1F",
+      "name": "M8 closed dome nut; verify usable blind thread",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        14.0,
+        13.0,
+        15.011
+      ],
+      "volume_cm3": 1.3097
+    },
+    {
+      "code": "N1R",
+      "name": "M8 closed dome nut; verify usable blind thread",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        14.0,
+        13.0,
+        15.011
+      ],
+      "volume_cm3": 1.3097
+    },
+    {
+      "code": "R2",
+      "name": "M8 A4 threaded tie rod; 436mm provisional cut",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        436.0,
+        8.0,
+        8.0
+      ],
+      "volume_cm3": 21.9158
+    },
+    {
+      "code": "S2",
+      "name": "A4 compression limiter OD14 ID9 L382.1",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        382.1,
+        14.0,
+        14.0
+      ],
+      "volume_cm3": 34.5116
+    },
+    {
+      "code": "W2FI",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W2RI",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W2FO",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W2RO",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "N2F",
+      "name": "M8 closed dome nut; verify usable blind thread",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        14.0,
+        13.0,
+        15.011
+      ],
+      "volume_cm3": 1.3097
+    },
+    {
+      "code": "N2R",
+      "name": "M8 closed dome nut; verify usable blind thread",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        14.0,
+        13.0,
+        15.011
+      ],
+      "volume_cm3": 1.3097
+    },
+    {
+      "code": "R3",
+      "name": "M8 A4 threaded tie rod; 436mm provisional cut",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        436.0,
+        8.0,
+        8.0
+      ],
+      "volume_cm3": 21.9158
+    },
+    {
+      "code": "S3",
+      "name": "A4 compression limiter OD14 ID9 L382.1",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        382.1,
+        14.0,
+        14.0
+      ],
+      "volume_cm3": 34.5116
+    },
+    {
+      "code": "W3FI",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W3RI",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W3FO",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W3RO",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "N3F",
+      "name": "M8 closed dome nut; verify usable blind thread",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        14.0,
+        13.0,
+        15.011
+      ],
+      "volume_cm3": 1.3097
+    },
+    {
+      "code": "N3R",
+      "name": "M8 closed dome nut; verify usable blind thread",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        14.0,
+        13.0,
+        15.011
+      ],
+      "volume_cm3": 1.3097
+    },
+    {
+      "code": "R4",
+      "name": "M8 A4 threaded tie rod; 436mm provisional cut",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        436.0,
+        8.0,
+        8.0
+      ],
+      "volume_cm3": 21.9158
+    },
+    {
+      "code": "S4",
+      "name": "A4 compression limiter OD14 ID9 L382.1",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        382.1,
+        14.0,
+        14.0
+      ],
+      "volume_cm3": 34.5116
+    },
+    {
+      "code": "W4FI",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W4RI",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W4FO",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "W4RO",
+      "name": "M8 wide washer OD22 ID9",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        1.5,
+        22.0,
+        22.0
+      ],
+      "volume_cm3": 0.4748
+    },
+    {
+      "code": "N4F",
+      "name": "M8 closed dome nut; verify usable blind thread",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        14.0,
+        13.0,
+        15.011
+      ],
+      "volume_cm3": 1.3097
+    },
+    {
+      "code": "N4R",
+      "name": "M8 closed dome nut; verify usable blind thread",
+      "group": "02",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        14.0,
+        13.0,
+        15.011
+      ],
+      "volume_cm3": 1.3097
+    },
+    {
+      "code": "O01",
+      "name": "Optical carrier from original cross APPROX",
+      "group": "04",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        69.0,
+        104.75,
+        53.424
+      ],
+      "volume_cm3": 23.1163
+    },
+    {
+      "code": "O02",
+      "name": "AS7265x 18-channel detector APPROX",
+      "group": "04",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        45.0,
+        4.5,
+        36.0
+      ],
+      "volume_cm3": 3.9897
+    },
+    {
+      "code": "O03",
+      "name": "MonoSpectro camera optics APPROX",
+      "group": "04",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        99.5,
+        52.0,
+        67.7
+      ],
+      "volume_cm3": 334.4256
+    },
+    {
+      "code": "O04",
+      "name": "Auxiliary camera APPROX; lens toward FRONT window",
+      "group": "04",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        60.0,
+        59.228,
+        56.569
+      ],
+      "volume_cm3": 152.6503
+    },
+    {
+      "code": "O05",
+      "name": "Quartz flow cell APPROX; vertical water ports",
+      "group": "04",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        12.5,
+        12.5,
+        40.0
+      ],
+      "volume_cm3": 6.25
+    },
+    {
+      "code": "H_CELL_-1",
+      "name": "Flow cell port APPROX",
+      "group": "06",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        7.0,
+        7.0,
+        10.0
+      ],
+      "volume_cm3": 0.3848
+    },
+    {
+      "code": "H_CELL_1",
+      "name": "Flow cell port APPROX",
+      "group": "06",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        7.0,
+        7.0,
+        10.0
+      ],
+      "volume_cm3": 0.3848
+    },
+    {
+      "code": "O06",
+      "name": "430nm excitation source facing AS7265x across cell",
+      "group": "04",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        12.0,
+        4.0,
+        12.0
+      ],
+      "volume_cm3": 0.576
+    },
+    {
+      "code": "O07",
+      "name": "White Optisolis source transmission axis +X",
+      "group": "04",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        3.0,
+        16.0,
+        16.0
+      ],
+      "volume_cm3": 0.768
+    },
+    {
+      "code": "P_R11",
+      "name": "Structural side ledge; source of U chassis",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        357.0,
+        43.865,
+        10.0
+      ],
+      "volume_cm3": 145.061
+    },
+    {
+      "code": "P_R21",
+      "name": "Structural side ledge; source of U chassis",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        357.0,
+        43.865,
+        10.0
+      ],
+      "volume_cm3": 145.061
+    },
+    {
+      "code": "P_F1",
+      "name": "Removable internal frame end",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        4.0,
+        168.0,
+        168.0
+      ],
+      "volume_cm3": 43.9803
+    },
+    {
+      "code": "P_F2",
+      "name": "Removable internal frame end",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        4.0,
+        168.0,
+        168.0
+      ],
+      "volume_cm3": 44.0283
+    },
+    {
+      "code": "P_PI",
+      "name": "Raspberry Pi lower mounting tray",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        96.0,
+        90.0,
+        8.5
+      ],
+      "volume_cm3": 23.5892
+    },
+    {
+      "code": "EL_PI",
+      "name": "Raspberry Pi 4 PCB reference; USB toward front",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        85.0,
+        56.0,
+        1.6
+      ],
+      "volume_cm3": 7.616
+    },
+    {
+      "code": "EL_PI_PORTS",
+      "name": "Pi USB/Ethernet bodies approximate",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        22.0,
+        56.0,
+        18.0
+      ],
+      "volume_cm3": 22.176
+    },
+    {
+      "code": "EL_PI_PLUG_SPACE",
+      "name": "Pi USB plug clearance; verify cable bend",
+      "group": "05",
+      "status": "CLEARANCE_ENVELOPE",
+      "printed": false,
+      "bbox_mm": [
+        24.0,
+        56.0,
+        18.0
+      ],
+      "volume_cm3": 24.192
+    },
+    {
+      "code": "P_TOP",
+      "name": "Removable electronics tray; slots for cable ties",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        177.0,
+        70.0,
+        3.0
+      ],
+      "volume_cm3": 34.67
+    },
+    {
+      "code": "EL_ESP",
+      "name": "ESP32 dev module",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        55.0,
+        28.0,
+        8.0
+      ],
+      "volume_cm3": 12.32
+    },
+    {
+      "code": "EL_BUCK1",
+      "name": "5V buck Pi approx",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        27.0,
+        20.0,
+        10.0
+      ],
+      "volume_cm3": 5.4
+    },
+    {
+      "code": "EL_BUCK2",
+      "name": "5V buck standby approx",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        27.0,
+        20.0,
+        10.0
+      ],
+      "volume_cm3": 5.4
+    },
+    {
+      "code": "EL_BUCK3",
+      "name": "LED buck approx",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        27.0,
+        20.0,
+        10.0
+      ],
+      "volume_cm3": 5.4
+    },
+    {
+      "code": "EL_A4988",
+      "name": "A4988 approximate",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        20.0,
+        15.0,
+        10.0
+      ],
+      "volume_cm3": 3.0
+    },
+    {
+      "code": "EL_RTC",
+      "name": "RTC module approximate",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        35.0,
+        18.0,
+        10.0
+      ],
+      "volume_cm3": 6.3
+    },
+    {
+      "code": "EL_RS485",
+      "name": "RS485 module approximate",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        40.0,
+        17.0,
+        10.0
+      ],
+      "volume_cm3": 6.8
+    },
+    {
+      "code": "EL_RELAY",
+      "name": "Charge isolation relay approximate",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        29.0,
+        13.0,
+        18.0
+      ],
+      "volume_cm3": 6.786
+    },
+    {
+      "code": "EL_LED_W",
+      "name": "White LED current regulator reserve",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        20.0,
+        15.0,
+        10.0
+      ],
+      "volume_cm3": 3.0
+    },
+    {
+      "code": "EL_LED_B",
+      "name": "Blue LED current regulator reserve",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        20.0,
+        18.0,
+        10.0
+      ],
+      "volume_cm3": 3.6
+    },
+    {
+      "code": "EL_GATE",
+      "name": "Acquisition power switch reserve",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        22.0,
+        20.0,
+        10.0
+      ],
+      "volume_cm3": 4.4
+    },
+    {
+      "code": "P_T216_-28",
+      "name": "Electronics tray spacer; attachment to shield",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        6.4,
+        6.4,
+        2.0
+      ],
+      "volume_cm3": 0.0462
+    },
+    {
+      "code": "P_T216_28",
+      "name": "Electronics tray spacer; attachment to shield",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        6.4,
+        6.4,
+        2.0
+      ],
+      "volume_cm3": 0.0462
+    },
+    {
+      "code": "P_T344_-28",
+      "name": "Electronics tray spacer; attachment to shield",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        6.4,
+        6.4,
+        2.0
+      ],
+      "volume_cm3": 0.0462
+    },
+    {
+      "code": "P_T344_28",
+      "name": "Electronics tray spacer; attachment to shield",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        6.4,
+        6.4,
+        2.0
+      ],
+      "volume_cm3": 0.0462
+    },
+    {
+      "code": "EL_BAT",
+      "name": "CITYORK 24V 3Ah pack; advertised 70x37.5x56",
+      "group": "05",
+      "status": "ADVERTISED_NOT_MEASURED",
+      "printed": false,
+      "bbox_mm": [
+        70.0,
+        37.5,
+        56.0
+      ],
+      "volume_cm3": 147.0
+    },
+    {
+      "code": "P_BAT",
+      "name": "Removable battery cradle; two tie straps",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        78.0,
+        44.5,
+        20.0
+      ],
+      "volume_cm3": 17.6319
+    },
+    {
+      "code": "EL_PUMP_MOTOR",
+      "name": "MS11HS5L410C-01 motor APPROX",
+      "group": "05",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        28.0,
+        28.0,
+        51.0
+      ],
+      "volume_cm3": 39.984
+    },
+    {
+      "code": "H_PUMP_HEAD",
+      "name": "Peristaltic head APPROX; downstream of cell",
+      "group": "06",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        50.0,
+        50.0,
+        15.0
+      ],
+      "volume_cm3": 29.4524
+    },
+    {
+      "code": "P_PUMP",
+      "name": "Pump universal slotted bracket; measure mounting pattern",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        50.0,
+        47.0,
+        8.0
+      ],
+      "volume_cm3": 12.8239
+    },
+    {
+      "code": "P_CAM",
+      "name": "Forward camera cradle with strap adjustment",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        65.0,
+        92.0,
+        49.0
+      ],
+      "volume_cm3": 42.4799
+    },
+    {
+      "code": "P_HOOD_LOWER",
+      "name": "Opaque optical cover LOWER",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        165.0,
+        128.0,
+        44.0
+      ],
+      "volume_cm3": 90.1696
+    },
+    {
+      "code": "P_HOOD_UPPER",
+      "name": "Opaque optical cover UPPER",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        165.0,
+        128.0,
+        37.0
+      ],
+      "volume_cm3": 89.836
+    },
+    {
+      "code": "P_OPT_A",
+      "name": "Optical saddle; contact based on approximate source",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        9.0,
+        50.0,
+        32.0
+      ],
+      "volume_cm3": 13.5654
+    },
+    {
+      "code": "P_OPT_B",
+      "name": "Optical saddle; contact based on approximate source",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        20.0,
+        60.0,
+        10.0
+      ],
+      "volume_cm3": 5.3612
+    },
+    {
+      "code": "P_C40_LOWER",
+      "name": "Split external saddle collar",
+      "group": "07",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        20.0,
+        210.0,
+        100.0
+      ],
+      "volume_cm3": 58.5926
+    },
+    {
+      "code": "P_C40_UPPER",
+      "name": "Split external saddle collar",
+      "group": "07",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        20.0,
+        210.0,
+        100.0
+      ],
+      "volume_cm3": 59.2008
+    },
+    {
+      "code": "P_C335_LOWER",
+      "name": "Split external saddle collar",
+      "group": "07",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        20.0,
+        210.0,
+        100.0
+      ],
+      "volume_cm3": 58.5926
+    },
+    {
+      "code": "P_C335_UPPER",
+      "name": "Split external saddle collar",
+      "group": "07",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        20.0,
+        210.0,
+        100.0
+      ],
+      "volume_cm3": 59.2008
+    },
+    {
+      "code": "B52",
+      "name": "A4 3mm ballast eye plate; load test required",
+      "group": "07",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        3.0,
+        180.0,
+        50.0
+      ],
+      "volume_cm3": 16.7243
+    },
+    {
+      "code": "B347",
+      "name": "A4 3mm ballast eye plate; load test required",
+      "group": "07",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        3.0,
+        180.0,
+        50.0
+      ],
+      "volume_cm3": 16.7243
+    },
+    {
+      "code": "H_INTAKE",
+      "name": "M10 WetLink JPT envelope intake",
+      "group": "06",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        31.55,
+        18.0,
+        18.0
+      ],
+      "volume_cm3": 3.6556
+    },
+    {
+      "code": "H_EXTERNAL_INTAKE",
+      "name": "Continuous silicone tube through intake; external cut end",
+      "group": "06",
+      "status": "ROUTE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        56.0,
+        5.0,
+        5.0
+      ],
+      "volume_cm3": 0.7037
+    },
+    {
+      "code": "H_DISCHARGE",
+      "name": "M10 WetLink JPT envelope discharge",
+      "group": "06",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        31.55,
+        18.0,
+        18.0
+      ],
+      "volume_cm3": 3.6556
+    },
+    {
+      "code": "H_EXTERNAL_DISCHARGE",
+      "name": "Continuous silicone tube through discharge; external cut end",
+      "group": "06",
+      "status": "ROUTE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        56.0,
+        5.0,
+        5.0
+      ],
+      "volume_cm3": 0.7037
+    },
+    {
+      "code": "EL_EN3",
+      "name": "EN3P8MX 8pin charging and RS485; panel 4mm local",
+      "group": "05",
+      "status": "CATALOG_ENVELOPE",
+      "printed": false,
+      "bbox_mm": [
+        16.0,
+        20.6,
+        20.6
+      ],
+      "volume_cm3": 3.2972
+    },
+    {
+      "code": "H_PUMP_PORT_258",
+      "name": "Pump nozzle reservation; actual orientation pending",
+      "group": "06",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        6.0,
+        6.0,
+        8.0
+      ],
+      "volume_cm3": 0.1696
+    },
+    {
+      "code": "H_PUMP_PORT_280",
+      "name": "Pump nozzle reservation; actual orientation pending",
+      "group": "06",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        6.0,
+        6.0,
+        8.0
+      ],
+      "volume_cm3": 0.1696
+    },
+    {
+      "code": "H_TUBE_IN",
+      "name": "Intake -> temperature tee",
+      "group": "06",
+      "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+      "printed": false,
+      "bbox_mm": [
+        55.5,
+        52.0,
+        51.5
+      ],
+      "volume_cm3": 1.7106,
+      "centerline_points_mm": [
+        [
+          374,
+          -35,
+          35
+        ],
+        [
+          321,
+          -35,
+          35
+        ],
+        [
+          321,
+          12,
+          35
+        ],
+        [
+          321,
+          12,
+          -14
+        ]
+      ],
+      "bend_radii_mm": [
+        15.0,
+        15.0
+      ]
+    },
+    {
+      "code": "H_TUBE_EC_CELL",
+      "name": "Conductivity cell -> optical cell lower port",
+      "group": "06",
+      "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+      "printed": false,
+      "bbox_mm": [
+        31.0,
+        5.0,
+        26.5
+      ],
+      "volume_cm3": 0.5788,
+      "centerline_points_mm": [
+        [
+          155,
+          0,
+          -54
+        ],
+        [
+          126.5,
+          0,
+          -54
+        ],
+        [
+          126.5,
+          0,
+          -30
+        ]
+      ],
+      "bend_radii_mm": [
+        15.0
+      ]
+    },
+    {
+      "code": "H_TUBE_CELL_PUMP",
+      "name": "Upper optical cell -> pump intake",
+      "group": "06",
+      "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+      "printed": false,
+      "bbox_mm": [
+        136.5,
+        25.0,
+        37.611
+      ],
+      "volume_cm3": 2.3482,
+      "centerline_points_mm": [
+        [
+          126.5,
+          0,
+          30
+        ],
+        [
+          126.5,
+          0,
+          62
+        ],
+        [
+          155,
+          -20,
+          62
+        ],
+        [
+          220,
+          -20,
+          62
+        ],
+        [
+          258,
+          -2,
+          67
+        ],
+        [
+          258,
+          -2,
+          39
+        ]
+      ],
+      "bend_radii_mm": [
+        15.0,
+        15.0,
+        15.0,
+        15.0
+      ]
+    },
+    {
+      "code": "H_TUBE_OUT",
+      "name": "Pump discharge -> rear discharge",
+      "group": "06",
+      "status": "ROUTE_PROPOSAL_BEND_RADIUS_UNVERIFIED",
+      "printed": false,
+      "bbox_mm": [
+        96.5,
+        30.675,
+        32.175
+      ],
+      "volume_cm3": 1.5981,
+      "centerline_points_mm": [
+        [
+          280,
+          18,
+          39
+        ],
+        [
+          280,
+          18,
+          65
+        ],
+        [
+          310,
+          45,
+          58
+        ],
+        [
+          350,
+          35,
+          35
+        ],
+        [
+          374,
+          35,
+          35
+        ]
+      ],
+      "bend_radii_mm": [
+        15.0,
+        15.0,
+        15.0
+      ]
+    },
+    {
+      "code": "H_EC_BODY",
+      "name": "Conductivity flow chamber PMMA OD20 ID16; seal design HOLD",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        156.8,
+        20.0,
+        20.0
+      ],
+      "volume_cm3": 17.7337
+    },
+    {
+      "code": "H_EC_FRONT",
+      "name": "Machined wet end block; dimensions and O rings HOLD",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        6.0,
+        30.0,
+        22.0
+      ],
+      "volume_cm3": 3.2267
+    },
+    {
+      "code": "H_EC_REAR",
+      "name": "Machined wet end block; dimensions and O rings HOLD",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        6.0,
+        30.0,
+        22.0
+      ],
+      "volume_cm3": 2.9725
+    },
+    {
+      "code": "H_EC_SEAL_F",
+      "name": "Flat wet chamber seal; material/compression HOLD",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        0.6,
+        20.0,
+        20.0
+      ],
+      "volume_cm3": 0.0679
+    },
+    {
+      "code": "H_EC_SEAL_R",
+      "name": "Flat wet chamber seal; material/compression HOLD",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        0.6,
+        20.0,
+        20.0
+      ],
+      "volume_cm3": 0.0679
+    },
+    {
+      "code": "ENV_EC",
+      "name": "Atlas K1 probe envelope; actual generation to verify",
+      "group": "06",
+      "status": "CATALOG_ENVELOPE_VARIANT_PENDING",
+      "printed": false,
+      "bbox_mm": [
+        151.0,
+        12.0,
+        12.0
+      ],
+      "volume_cm3": 17.0777
+    },
+    {
+      "code": "H_EC_OUT",
+      "name": "EC outlet 3mm bore; side facing optical cell",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        10.0,
+        6.0,
+        6.0
+      ],
+      "volume_cm3": 0.2121
+    },
+    {
+      "code": "H_EC_IN",
+      "name": "EC inlet 3mm bore; rear end block",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        10.0,
+        6.0,
+        6.0
+      ],
+      "volume_cm3": 0.2121
+    },
+    {
+      "code": "H_EC_GLAND",
+      "name": "Wet gland for 2.6mm EC cable; model selection HOLD",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        14.0,
+        14.0,
+        14.0
+      ],
+      "volume_cm3": 1.2395
+    },
+    {
+      "code": "H_EC_ROD_-12",
+      "name": "M3 through rod for wet cassette end caps",
+      "group": "06",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        178.0,
+        3.0,
+        3.0
+      ],
+      "volume_cm3": 1.2582
+    },
+    {
+      "code": "H_EC_NUT_-12_158.6",
+      "name": "M3 nut; simplified outside envelope",
+      "group": "06",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        2.4,
+        6.2,
+        6.2
+      ],
+      "volume_cm3": 0.0555
+    },
+    {
+      "code": "H_EC_NUT_-12_339",
+      "name": "M3 nut; simplified outside envelope",
+      "group": "06",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        2.4,
+        6.2,
+        6.2
+      ],
+      "volume_cm3": 0.0555
+    },
+    {
+      "code": "H_EC_ROD_12",
+      "name": "M3 through rod for wet cassette end caps",
+      "group": "06",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        178.0,
+        3.0,
+        3.0
+      ],
+      "volume_cm3": 1.2582
+    },
+    {
+      "code": "H_EC_NUT_12_158.6",
+      "name": "M3 nut; simplified outside envelope",
+      "group": "06",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        2.4,
+        6.2,
+        6.2
+      ],
+      "volume_cm3": 0.0555
+    },
+    {
+      "code": "H_EC_NUT_12_339",
+      "name": "M3 nut; simplified outside envelope",
+      "group": "06",
+      "status": "DESIGN_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        2.4,
+        6.2,
+        6.2
+      ],
+      "volume_cm3": 0.0555
+    },
+    {
+      "code": "H_TEMP_TEE",
+      "name": "Temperature flow tee POM; seal and fittings HOLD",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        18.0,
+        14.0,
+        20.0
+      ],
+      "volume_cm3": 4.1427
+    },
+    {
+      "code": "H_TEMP_IN",
+      "name": "Temperature tee 3mm bore port",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volume_cm3": 0.1272
+    },
+    {
+      "code": "H_TEMP_OUT",
+      "name": "Temperature tee 3mm bore port",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volume_cm3": 0.1272
+    },
+    {
+      "code": "ENV_TEMP",
+      "name": "DS18B20 6x50 envelope; tip wet / cable dry",
+      "group": "06",
+      "status": "REFERENCE_APPROX",
+      "printed": false,
+      "bbox_mm": [
+        50.0,
+        6.0,
+        6.0
+      ],
+      "volume_cm3": 1.4137
+    },
+    {
+      "code": "H_TEMP_GLAND",
+      "name": "Compression gland around DS18B20 case; HOLD",
+      "group": "06",
+      "status": "WET_INTERFACE_PROPOSAL",
+      "printed": false,
+      "bbox_mm": [
+        10.0,
+        12.0,
+        12.0
+      ],
+      "volume_cm3": 0.8291
+    },
+    {
+      "code": "EL_EZO",
+      "name": "Atlas isolated EZO carrier 56.2x32; 20mm height reserve",
+      "group": "05",
+      "status": "CATALOG_XY_HEIGHT_PROVISIONAL",
+      "printed": false,
+      "bbox_mm": [
+        56.2,
+        20.0,
+        32.0
+      ],
+      "volume_cm3": 35.968
+    },
+    {
+      "code": "P_EZO",
+      "name": "Removable EZO mount; through bolts and nuts",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        64.0,
+        4.0,
+        68.0
+      ],
+      "volume_cm3": 12.2729
+    },
+    {
+      "code": "P_U_SOURCE",
+      "name": "U chassis 5mm shell with transverse ribs; build source",
+      "group": "03",
+      "status": "MERGED_SOURCE_DO_NOT_EXPORT",
+      "printed": false,
+      "bbox_mm": [
+        380.0,
+        168.0,
+        123.0
+      ],
+      "volume_cm3": 498.491
+    },
+    {
+      "code": "P_GUIDE_RETURN",
+      "name": "Open silicone hose guide; loose tie retention",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        8.0,
+        11.0,
+        29.792
+      ],
+      "volume_cm3": 1.6841
+    },
+    {
+      "code": "P_GUIDE_INTAKE",
+      "name": "Open silicone hose guide; loose tie retention",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        12.0,
+        17.5,
+        8.0
+      ],
+      "volume_cm3": 1.1274
+    },
+    {
+      "code": "P_CHASSIS_FRONT",
+      "name": "Ribbed U chassis FRONT; M4 nut joint",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        201.55,
+        169.2,
+        169.2
+      ],
+      "volume_cm3": 558.9452
+    },
+    {
+      "code": "P_CHASSIS_REAR",
+      "name": "Ribbed U chassis REAR; M4 nut joint",
+      "group": "03",
+      "status": "DESIGN_PROPOSAL",
+      "printed": true,
+      "bbox_mm": [
+        188.55,
+        169.2,
+        169.2
+      ],
+      "volume_cm3": 499.8541
+    }
+  ],
+  "status": "PRELIMINARY \u2014 interface dimensions and pressure tests pending"
+}

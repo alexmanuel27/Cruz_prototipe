@@ -1,0 +1,80 @@
+{
+  "document": "Cross_M2_horizontal_design",
+  "scope": "Approximate CAD envelopes only. No physical fit, electrical, optical or pressure validation.",
+  "parts_checked": 97,
+  "printed_parts": 27,
+  "rod_count": 4,
+  "closed_dome_nut_count": 8,
+  "printed_vs_component_intersections_cm3": [
+    [
+      "P_OPT_A",
+      "O05",
+      0.005113
+    ]
+  ],
+  "component_intersections_cm3": [],
+  "intentional_reference_contacts_cm3": [
+    [
+      "O01",
+      "O03",
+      0.000921,
+      "Original detector attachment or PCB under connector"
+    ],
+    [
+      "EL_PI",
+      "EL_PI_PORTS",
+      1.9712,
+      "Original detector attachment or PCB under connector"
+    ]
+  ],
+  "parts_outside_internal_envelope_cm3": [],
+  "disconnected_printed_bodies": [
+    [
+      "P_OPT_A",
+      2
+    ]
+  ],
+  "structural_intersections_cm3": [
+    [
+      "P_R11",
+      "P_CAM",
+      0.381829
+    ],
+    [
+      "P_R11",
+      "P_HOOD_LOWER",
+      0.043189
+    ],
+    [
+      "P_R12",
+      "P_BAT",
+      0.509208
+    ],
+    [
+      "P_R12",
+      "P_HOOD_LOWER",
+      0.049573
+    ],
+    [
+      "P_R21",
+      "P_CAM",
+      0.381829
+    ],
+    [
+      "P_R21",
+      "P_HOOD_LOWER",
+      0.043189
+    ],
+    [
+      "P_R22",
+      "P_PUMP",
+      0.46705
+    ],
+    [
+      "P_R22",
+      "P_HOOD_LOWER",
+      0.049573
+    ]
+  ],
+  "geometric_checks_pass": false
+}

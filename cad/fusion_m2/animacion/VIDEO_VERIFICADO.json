@@ -1,0 +1,18 @@
+{
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 24.0,
+  "duration": 130.5,
+  "chapters_including_overview": 32,
+  "assembly_steps": 31,
+  "full_decode": "passed",
+  "intro_final_mean_rgb_difference": [
+    0.013284264081790124,
+    0.01395218460648148,
+    0.01555447048611111
+  ],
+  "bytes": 3485516,
+  "collar_initial_axial_clearance_mm": 41.5
+}

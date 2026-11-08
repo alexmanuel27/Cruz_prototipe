@@ -1,3 +1,5 @@
+> **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [diseño eléctrico vigente](../electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
+
 # Análisis de detectores, óptica y operación in situ
 
 **26 de septiembre de 2026. Análisis previo al diseño; ningún ensayo nuevo realizado.**
@@ -113,26 +115,15 @@ El [manual de sellos de Parker](https://www.parker.com/content/dam/Parker-com/Li
 
 A 1 m, la sobrepresión de agua dulce es aproximadamente 9,8 kPa; a 2 m, 19,6 kPa. La cámara de muestra puede sufrir además depresión o presión de bomba. Hay que dimensionar esa diferencia y el caso de salida obstruida, incluso si la profundidad es pequeña.
 
-La lámpara de 10 W introduce carga térmica. Ejemplo de límite: 30 s entregan 300 J; si solo el 10 % llega a 5 mL de agua aislada, el aumento sería aproximadamente 1,4 °C. La fracción real se medirá. Disipar hacia la carcasa y minimizar tiempo encendido conservando estabilidad; medir fluorescencia antes y registrar calentamiento. No asumir que el agua exterior elimina instantáneamente el calor de una celda aislada.
+La lámpara de 10 W introduce carga térmica. Ejemplo de límite: 30 s entregan 300 J; si solo el 10 % llega a 5 mL de agua aislada, el aumento sería aproximadamente 1,4 °C. La fracción real se medirá. Disipar hacia la carcasa y minimizar tiempo encendido conservando estabilidad; mantener transmisión primero y fluorescencia después, registrando calentamiento. No asumir que el agua exterior elimina instantáneamente el calor de una celda aislada.
 
 ## 9. Autonomía y coste de mantener las fuentes
 
-Usar `E = Σ(P_estado × t_estado)` incluyendo esperas, arranque, bombeo y pérdidas. Medir en la entrada de batería. El consumo en reposo de la Pi puede dominar: **3 W supuestos continuos durante 72 h son 216 Wh**, antes de fuentes y bomba.
+**Actualización 21 oct:** Alex elige CITYORK 24 V / 3 Ah por precio y plazo, con BMS/cargador anunciados, y apagado ordenado de Pi con corte real entre ciclos. El ejemplo previo de bomba 3 W, lámpara 30 s y Pi 2 min queda sustituido por el [presupuesto acordado y fechado](../LISTA_COMPRA.md#7-presupuesto-energético-conservado): bomba 20 W / 30 s, halógena 10 W / 5 s, cinco LED de 0,4 W / 5 s cada uno, Pi/cámara 5 W / 90 s por ciclo de 15 min.
 
-Ejemplo de un modo con alimentación intermitente, para valorar si merece la complejidad:
+Subtotal: **88,8 Wh para 288 ciclos en 72 h**, antes de auxiliares. Con 72 Wh declarados, 20 % de reserva y 85 % de rendimiento supuesto aplicados una sola vez, resultan **39,7 h antes de auxiliares**. No se demuestra 72 h con este pack. Los tiempos, potencia efectiva, capacidad del pack y consumo del supervisor/AS7265x/reposos requieren medición.
 
-| Carga hipotética | Uso en 72 h | Energía |
-|---|---|---|
-| Pi y electrónica activa: 5 W | 2 min por ciclo ×288 | 48 Wh |
-| Supervisión en espera: 0,2 W | 62,4 h restantes | 12,48 Wh |
-| Lámpara: 10 W | 30 s ×288 | 24 Wh |
-| Bomba: 3 W | 30 s ×288 | 7,2 Wh |
-| LED 430 nm: 1 W eléctrico | 10 s ×288 | 0,8 Wh |
-| **Total ilustrativo** | Cálculo sin consumos adicionales | **92,48 Wh** |
-
-Con rendimiento supuesto de 85 %, fracción utilizable de batería de 80 % y reserva de 20 %, serían unos **163 Wh nominales**. Estos valores no seleccionan batería. Una Pi que tarda más en arrancar o una fuente que tarda más en estabilizar puede cambiar la decisión. Comparar batería mayor con Pi continua frente a apagado ordenado y despertar por ESP32/RTC. Cerrar el 20–23 de octubre con medidas; nunca cortar alimentación a una Pi mientras escribe.
-
-Conservar halógena y LED azul de 430 nm evita cambiar de instrumento a mitad del proyecto. La contrapartida puede ser una batería mayor y mayor gestión térmica; se acepta como coste a cuantificar, no como motivo para reemplazar fuentes sin acuerdo.
+Usar `E = Σ(P_estado × t_estado)` y medir a la entrada de batería, incluyendo arranque y pérdidas. La Pi debe terminar escritura y apagado antes del corte de alimentación; el driver de bomba y las fuentes deben quedar apagados entre ciclos. Conservar las fuentes acordadas y medir su estabilización sin imponer el tiempo supuesto de energía a una lectura óptica inestable.
 
 ## 10. Condición de cierre óptico del 12 de octubre
 
