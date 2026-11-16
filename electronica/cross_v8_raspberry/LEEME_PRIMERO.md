@@ -6,10 +6,9 @@ El proyecto continúa en desarrollo. El esquema y la placa sin rutear coinciden 
 
 - `cross_v8_draft.kicad_sch`: esquema con las conexiones accidentales de V7 corregidas. Componentes separados con etiquetas de red.
 - `cross_v8_draft.kicad_pcb`: colocación sin rutear, 170 × 68 mm. Las dimensiones de las huellas, conectores y módulos deben comprobarse.
-- `cross_v8_ruteo_experimental.kicad_pcb`: resultado de una prueba de autoruteo; usa pistas genéricas de aproximadamente 0,3 mm, **no dimensionadas para potencia**. No es una revisión de fabricación.
 - `modelos_3d/Pololu_2814_fabricante.step`: modelo oficial Pololu descargado de [recursos del fabricante](https://www.pololu.com/product/2814/resources); el módulo todavía no está colocado en la placa ni su huella y conexiones están definidas.
 - `REVISION_ERC.txt`, `REVISION_DRC_SIN_TRAZAR.txt`, `REVISION_DRC_EXPERIMENTAL.txt`: informes de KiCad del 2 de noviembre de 2026.
-- `generar_esquema_corregido.py` y `comprobar_redes.py`: instrumentos de desarrollo; las rutas absolutas a `/tmp` y al repositorio original deben adaptarse si se reutilizan.
+- `generar_esquema_corregido.py` y `comprobar_redes.py`: instrumentos históricos de desarrollo; el generador requiere restaurar V7 desde Git y adaptar las rutas antes de reutilizarlo.
 
 ## Resultados de revisión
 

@@ -1,6 +1,6 @@
 # Electronics V1 — technician review
 
-> **Actualización 2026-11-02:** Alex eliminó el ESP32; la Raspberry Pi será el controlador principal. Este documento conserva la propuesta anterior como antecedente y sus conexiones, lista de piezas y supervisión con ESP32 ya no definen el diseño actual. El borrador nuevo y sus limitaciones están en [cross_v2_raspberry](cross_v2_raspberry/README.md). La lista de compra debe revisarse al cerrar el nuevo circuito.
+> **Actualización 2026-11-02:** Alex eliminó el ESP32; la Raspberry Pi será el controlador principal. Este documento conserva la propuesta anterior como antecedente y sus conexiones, lista de piezas y supervisión con ESP32 ya no definen el diseño actual. El borrador nuevo y sus limitaciones están en [cross_v8_raspberry](cross_v8_raspberry/LEEME_PRIMERO.md). La lista de compra debe revisarse al cerrar el nuevo circuito.
 
 
 **30 October 2026 · D52 · proposed circuit, not yet bench validated.** Alex has authorised electronics selection and a consolidated purchasing list. The earlier purchasing deferral D44 is superseded. No components have been ordered or electrically tested by this update.
@@ -18,7 +18,7 @@ ARES_2025, sheet `Export`, rows 72 and 103 list 20 A4988 carriers and 20 buck co
 
 **Correction, 2 November:** Alex subsequently confirmed the stock buck is DFR1015. The manufacturer of that candidate recommends below 24 V input, although it states a 30 V range limit. The 28 V criterion below was an internal provisional assumption and is not manufacturer approval; do not approve the candidate for the battery until the actual device and full voltage are known.
 
-The [candidate buck](https://www.tinytronics.nl/en/power/voltage-converters/buck-(step-down)-converters/dc-dc-adjustable-step-down-buck-converter-5a-3.3v-5v-9v-12v) is specified for **7.5–30 V input**, not 36 V. Its 5 A marking is not evidence of stable 5 V delivery in a sealed enclosure. Verify the actual modules and temperature under the Pi/camera load. Alex later confirmed a 25.6 V charger and a single shared charge/discharge pair; see [V3 power revision](cross_v3_raspberry/ALIMENTACION_Y_CARGA.md).
+The [candidate buck](https://www.tinytronics.nl/en/power/voltage-converters/buck-(step-down)-converters/dc-dc-adjustable-step-down-buck-converter-5a-3.3v-5v-9v-12v) is specified for **7.5–30 V input**, not 36 V. Its 5 A marking is not evidence of stable 5 V delivery in a sealed enclosure. Verify the actual modules and temperature under the Pi/camera load. Alex later confirmed a 25.6 V charger and a single shared charge/discharge pair; see [V8 project and limitations](cross_v8_raspberry/LEEME_PRIMERO.md).
 
 ## 2. Power distribution
 

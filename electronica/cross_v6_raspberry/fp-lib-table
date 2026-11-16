@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "Cross")(type "KiCad")(uri "${KIPRJMOD}/Cross.pretty")(options "")(descr "Local engineering draft footprints"))
-)

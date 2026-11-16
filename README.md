@@ -2,6 +2,8 @@
 
 > **Autonomous Spectrophotometer and Fluorometer for Natural Water**
 
+**Project navigation:** Start with the [engineering index](docs/INDICE_PROYECTO.md) for the latest available design, evidence, purchasing files, and earlier revisions. The status sections below describe the concept as of 30 October; the index points to subsequent work and its limitations.
+
 Cruz integrates the previously separated MonoSpectro and fluorometer instruments into a single autonomous apparatus. By sharing a central sample chamber in a 4-arm cross geometry, it performs both transmission and fluorescence measurements in-situ.
 
 ## 🎯 Engineering Scope

@@ -1,6 +1,6 @@
 # Arquitectura eléctrica — revisión D52
 
-> **Actualización D53, 2 nov 2026:** este documento describe la arquitectura anterior con ESP32 y no es la vigente. Alex eliminó el ESP32; la Raspberry Pi controlará el instrumento. Véase [el borrador y sus pendientes](cross_v2_raspberry/README.md). Alex confirmó posteriormente que los DC/DC son DFRobot DFR1015; las condiciones de entrada y disipación están pendientes de comprobación.
+> **Actualización D53, 2 nov 2026:** este documento describe la arquitectura anterior con ESP32 y no es la vigente. Alex eliminó el ESP32; la Raspberry Pi controlará el instrumento. Véase [el borrador y sus pendientes](cross_v8_raspberry/LEEME_PRIMERO.md). Alex confirmó posteriormente que los DC/DC son DFRobot DFR1015; las condiciones de entrada y disipación están pendientes de comprobación.
 
 **30 de octubre de 2026.** Alex autoriza trabajar ahora en la electrónica y consolidar la compra. D44 queda superada para esta fase. La arquitectura vigente, conexiones funcionales y comprobaciones están en [Electronics V1](DISENO_ELECTRICO_V1.md); el texto antiguo al final se conserva como archivo.
 
