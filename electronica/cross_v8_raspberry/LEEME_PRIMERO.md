@@ -2,6 +2,8 @@
 
 El proyecto continúa en desarrollo. El esquema y la placa sin rutear coinciden eléctricamente en la comprobación de paridad de KiCad. Las 52 redes con más de un terminal del esquema exportado coinciden por nombre y por terminales con las redes previstas en la V7. Esta comprobación **no prueba que los circuitos sean adecuados ni seguros**.
 
+El 18 de noviembre de 2026 se organizó el esquema en nueve bloques funcionales. Las conexiones siguen representadas mediante etiquetas de red; la comparación de las 77 redes antes y después resultó idéntica. ERC de KiCad 9: 80 incidencias antes y después (77 discrepancias con biblioteca y 3 entradas de alimentación sin fuente identificada).
+
 ## Archivos
 
 - `cross_v8_draft.kicad_sch`: esquema con las conexiones accidentales de V7 corregidas. Componentes separados con etiquetas de red.
