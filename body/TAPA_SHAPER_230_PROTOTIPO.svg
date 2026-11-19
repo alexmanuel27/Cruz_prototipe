@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230mm" height="230mm" viewBox="0 0 230 230">
+  <title>Tapa común Ø230 mm para Shaper Origin</title>
+  <desc>Acrílico de 10 mm. Contorno Ø230 y cuatro agujeros pasantes Ø9 en PCD Ø202. Ranura de estudio Ø170.8–181.2 mm; profundidad de prueba 3.2 mm, a introducir en máquina. Ver LEEME.md antes de fresar la ranura.</desc>
+
+  <circle id="contorno" cx="115" cy="115" r="115" fill="#000000" stroke="#000000" stroke-width="0.1"/>
+
+  <path id="ranura-anular" fill="#808080" fill-rule="evenodd"
+        d="M 205.6 115 A 90.6 90.6 0 0 1 24.4 115 A 90.6 90.6 0 0 1 205.6 115 Z
+           M 200.4 115 A 85.4 85.4 0 0 0 29.6 115 A 85.4 85.4 0 0 0 200.4 115 Z"/>
+
+  <circle id="varilla-ne" cx="186.41778" cy="43.58222" r="4.5" fill="#ffffff" stroke="#000000" stroke-width="0.1"/>
+  <circle id="varilla-nw" cx="43.58222" cy="43.58222" r="4.5" fill="#ffffff" stroke="#000000" stroke-width="0.1"/>
+  <circle id="varilla-se" cx="186.41778" cy="186.41778" r="4.5" fill="#ffffff" stroke="#000000" stroke-width="0.1"/>
+  <circle id="varilla-sw" cx="43.58222" cy="186.41778" r="4.5" fill="#ffffff" stroke="#000000" stroke-width="0.1"/>
+</svg>
