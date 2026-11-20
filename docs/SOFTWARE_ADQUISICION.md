@@ -1,8 +1,12 @@
 # Adquisición y control de Cruz: revisión y primera iteración
 
-**20 de noviembre de 2026 · Propuesta de software, sin control de hardware habilitado.**
+**20 de noviembre de 2026 · Revisión y plan de pruebas, sin control de hardware habilitado.**
 
-La Raspberry Pi gobierna el instrumento. La primera entrega propuesta es un ciclo completo ejecutable con dispositivos simulados y almacenamiento real, seguido por la conexión gradual de los dispositivos cuando se cierre su revisión eléctrica. Aquí se documenta la revisión y el trabajo a ejecutar; todavía no se ha implementado ese programa. No se modifica mecánica, esquema, PCB ni software de los instrumentos anteriores.
+La Raspberry Pi gobierna el instrumento. **Prioridad posterior fijada por Alex:** seleccionar y probar los componentes reales, sus conexiones y funciones básicas; integrar después y trasladar al chat del PCB los resultados verificados. El ciclo simulado de §3 se conserva como propuesta posterior para probar integración y fallos, sin preceder a esas pruebas básicas. No se modifica mecánica, esquema, PCB ni software de los instrumentos anteriores.
+
+Alex dispone de una Raspberry Pi 5 y de la Pi 4 de MonoSpectro. Recomendación pendiente de ensayo: evaluar la Pi 5 con una tarjeta de sistema independiente y conservar la Pi 4 como referencia. Empezar por Pi 5 + OV9281, alimentación de banco conocida y V8 desconectada; comprobar detección, RAW, ajustes manuales y guardado. Después, verificar cada sensor y actuador por separado, revisando antes su interfaz eléctrica. No hay cambio definitivo de controlador ni incorporación del ESP32 aprobados todavía.
+
+La selección energética comparará energía por ciclo completo y espera, incluyendo convertidores y periféricos. Para la Pi 5 se evaluará el despertar por su RTC y el estado de bajo consumo documentados en la [guía oficial](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#real-time-clock-rtc). El ESP32 queda como candidato a supervisor si aporta una mejora medida; leer el AS7265x desde la Pi no requiere conservar el firmware ESP32. No se exportan todavía propuestas al chat del PCB.
 
 ## 1. Qué existe y qué reutilizar
 
@@ -48,7 +52,7 @@ Conexiones reservadas no equivalen a interfaces validadas. El documento V8 regis
 
 El [puerto de servicio](../electronica/PUERTO_SERVICIO_Y_BOYA.md) fija RS-485 como enlace y propone Modbus RTU, pero no hay mapa de registros, baud rate, dirección de equipo ni protocolo de archivos aprobado. RS-485 no proporciona por sí solo descarga de espectros/imágenes. Esa implementación queda después de medir el volumen de datos y cerrar electrónica. La extracción final será por el conector físico, con integridad y reanudación; no se sustituye por Wi-Fi.
 
-## 3. Primera iteración propuesta: ciclo reproducible sin actuadores reales
+## 3. Integración propuesta después de las pruebas básicas: ciclo simulado
 
 **Resultado de la entrega:** ejecutar un ciclo y una serie de ciclos sin red ni navegador, inspeccionar todos sus archivos y repetir el procesamiento a partir de originales. El modo simulado no importa bibliotecas GPIO/I²C/PiCam ni abre dispositivos. Todos sus datos y resultados se etiquetan `simulated`; nunca se mezclan con un despliegue real. No se ofrece todavía un modo hardware habilitable con un interruptor de configuración.
 
