@@ -116,3 +116,7 @@ Guardar originales en `docs/fotos/AAAA-MM-DD/` con nombres como `EST-01_junta_ta
 ## Verificación CAD del chasis interior R1 · 20 de noviembre de 2026
 
 Se revisaron las dos mitades del chasis para el tubo Ø172/180 × 380 mm. Se retiraron los bloques sueltos de la unión, se añadió acceso a dos tornillos M4 y se ajustaron los pasos de manguera. Ambas mitades pasan la comprobación de encaje CAD y la verificación de mallas STL cerradas. Las dos se laminaron por separado en PrusaSlicer 2.9.7 con soportes orgánicos y un perfil genérico de PETG, con una estimación conjunta de 972 g de filamento. La masa, el encaje y la secuencia de montaje se verificarán con las piezas impresas. [Montaje, archivos y resultados](../cad/fusion_m2/chasis_interior/README.md).
+
+## Chasis modular R2 · 20 de noviembre de 2026
+
+Se sustituyeron las dos mitades altas por dos bases planas, dos aros iguales, dos pletinas de empate y placas separadas para los módulos. Se guardó la v16 de Fusion. Pasaron la comprobación de interferencias de las piezas nuevas y la verificación de los ejes de los pasantes. Los 11 STL se laminaron por separado en MK3S+ con perfil Prusament ASA y soportes desactivados. La masa estimada de las 17 piezas, con borde de adhesión, es 238 g. Quedan pendientes el montaje real, la comprobación de luz lateral y el pesaje del conjunto. [Piezas y datos](../cad/fusion_m2/chasis_modular/README.md).

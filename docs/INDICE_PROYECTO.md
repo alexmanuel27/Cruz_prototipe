@@ -6,8 +6,8 @@
 | --- | --- |
 | Requisitos y decisiones | [Especificación funcional](../ESPECIFICACION.md) · [Registro de decisiones](../DECISIONES.md) |
 | Óptica y arquitectura | [Diseño óptico](DISENO_OPTICO.md) · [Análisis de arquitectura](ANALISIS_ARQUITECTURA.md) |
-| CAD mecánico | [Guía CAD](../cad/README.md) · [Montaje Fusion con chasis R1](../cad/fusion_m2/chasis_interior/CROSS_CHASIS_R1.f3d) |
-| Corte de tapas e impresión | [Tapa Shaper](../body/TAPA_SHAPER_230_PROTOTIPO.svg) · [Guía de mecanizado](../body/LEEME.md) · [Aro R3](../cad/fusion_m2/ARO_AMARRE_M8_REFORZADO_R3.stl) · [Chasis interior R1](../cad/fusion_m2/chasis_interior/README.md) |
+| CAD mecánico | [Guía CAD](../cad/README.md) · [Montaje Fusion con chasis modular R2](../cad/fusion_m2/chasis_modular/CROSS_CHASIS_R2_MODULAR.f3d) |
+| Corte de tapas e impresión | [Tapa Shaper](../body/TAPA_SHAPER_230_PROTOTIPO.svg) · [Guía de mecanizado](../body/LEEME.md) · [Aro R3](../cad/fusion_m2/ARO_AMARRE_M8_REFORZADO_R3.stl) · [Chasis modular R2](../cad/fusion_m2/chasis_modular/README.md) |
 | KiCad | [Proyecto V8](../electronica/cross_v8_raspberry/cross_v8_draft.kicad_pro) · [Estado y pendientes](../electronica/cross_v8_raspberry/LEEME_PRIMERO.md) |
 | Compras | [Lista fechada](../compras/LISTA_COMPRA.md) · [Excel para el técnico](../compras/Cruz_Shopping_List_EN_2026-10-30.xlsx) |
 

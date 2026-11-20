@@ -452,5 +452,82 @@
       "fastener_count": 2,
       "axis_clear": true
     }
-  ]
+  ],
+  "fusion_version": 16,
+  "approx_diameter_mm": 167,
+  "overall_length_mm": 374,
+  "slicing": {
+    "engine": "PrusaSlicer 2.9.6",
+    "printer": "Original Prusa i3 MK3S & MK3S+",
+    "bed_size_mm": [
+      250,
+      210,
+      210
+    ],
+    "process": "0.15mm SPEED @MK3",
+    "nozzle_mm": 0.4,
+    "filament": "Prusament ASA",
+    "perimeters": 4,
+    "infill_percent": 15,
+    "supports": false,
+    "brim_mm": 5,
+    "estimated_total_asa_g": 238.38,
+    "individual": [
+      {
+        "code": "01_BASE_DELANTERA",
+        "quantity": 1,
+        "estimated_asa_per_piece_g": 33.18
+      },
+      {
+        "code": "02_BASE_TRASERA",
+        "quantity": 1,
+        "estimated_asa_per_piece_g": 35.21
+      },
+      {
+        "code": "03_ARO",
+        "quantity": 2,
+        "estimated_asa_per_piece_g": 25.17
+      },
+      {
+        "code": "04_EMPATE",
+        "quantity": 2,
+        "estimated_asa_per_piece_g": 1.63
+      },
+      {
+        "code": "05_CAMARA",
+        "quantity": 1,
+        "estimated_asa_per_piece_g": 20.12
+      },
+      {
+        "code": "06_SEPARADOR_CAMARA",
+        "quantity": 4,
+        "estimated_asa_per_piece_g": 0.95
+      },
+      {
+        "code": "07_OPTICA",
+        "quantity": 1,
+        "estimated_asa_per_piece_g": 40.28
+      },
+      {
+        "code": "08_SERVICIOS",
+        "quantity": 1,
+        "estimated_asa_per_piece_g": 25.77
+      },
+      {
+        "code": "09_PUENTE_DELANTERO",
+        "quantity": 1,
+        "estimated_asa_per_piece_g": 12.15
+      },
+      {
+        "code": "10_PUENTE_TRASERO",
+        "quantity": 1,
+        "estimated_asa_per_piece_g": 11.97
+      },
+      {
+        "code": "11_ESCUADRA_ATLAS",
+        "quantity": 2,
+        "estimated_asa_per_piece_g": 1.15
+      }
+    ]
+  }
 }

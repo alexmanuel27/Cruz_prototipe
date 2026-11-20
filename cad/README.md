@@ -2,8 +2,8 @@
 
 | Archivo | Uso |
 | --- | --- |
-| [Montaje Fusion con chasis R1](fusion_m2/chasis_interior/CROSS_CHASIS_R1.f3d) | Montaje vigente de `Cross_M2_horizontal_design`. |
-| [Chasis interior R1](fusion_m2/chasis_interior/README.md) | Dos mitades imprimibles, sólidos STEP, unión M4 y guía de montaje. |
+| [Montaje Fusion v16 con chasis modular R2](fusion_m2/chasis_modular/CROSS_CHASIS_R2_MODULAR.f3d) | Montaje vigente de `Cross_M2_horizontal_design`. |
+| [Chasis modular R2](fusion_m2/chasis_modular/README.md) | Piezas planas numeradas, STL, STEP, tornillería, bridas y orden de montaje. |
 | [Aro de amarre R3](fusion_m2/ARO_AMARRE_M8_REFORZADO_R3.stl) | Geometría de 238 × 206 × 48 mm para imprimir los dos aros del primer ensayo. Las condiciones y los límites del estudio figuran en el [registro](../docs/REGISTRO_ENSAYOS.md#simulación-de-amarre-y-lastre--20-de-noviembre-de-2026). |
 | [Tapa común Shaper Origin](../body/TAPA_SHAPER_230_PROTOTIPO.svg) | SVG 1:1 para las dos tapas Ø230 × 10 mm. El [procedimiento](../body/LEEME.md) describe la ranura y los pasantes. |
 | [Componentes comerciales](componentes/MODELOS_3D.md) | Modelos STEP de catálogo y envolventes, con su procedencia y grado de confirmación. |

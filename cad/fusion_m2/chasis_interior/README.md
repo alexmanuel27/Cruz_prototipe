@@ -1,5 +1,7 @@
 # Chasis interior R1
 
+> Revisión histórica. La versión actual para fabricar es el [chasis modular R2](../chasis_modular/README.md).
+
 Chasis extraíble de **374 mm de largo y Ø167 mm máximo** para el tubo acrílico de **Ø172 mm interior × 380 mm**. La holgura radial nominal es de **2,5 mm**. Los dos extremos llevan bisel de entrada y alojamientos poco profundos para apoyos blandos opcionales. El espesor de estos apoyos se ajusta al medir el juego con ambas tapas cerradas.
 
 Guardado como **v14** de `Cross_M2_horizontal_design`. En Fusion, el chasis está en `M2_GENERATED → 03_CHASIS_Y_SOPORTES → 01_CHASIS_BASE_DESMONTABLE`. El montaje completo incluye el soporte óptico, la cubierta, la bandeja y las referencias de los módulos.
