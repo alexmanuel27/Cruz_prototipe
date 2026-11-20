@@ -1,0 +1,456 @@
+{
+  "ref_count": 280,
+  "parts": [
+    {
+      "code": "01_BASE_DELANTERA",
+      "label": "Base delantera",
+      "orientation": "z+",
+      "primary": true,
+      "bounds_mm": [
+        11.0,
+        -63.0,
+        -51.0,
+        193.0,
+        63.0,
+        -44.0
+      ],
+      "volume_cm3": 52.8129,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "stl": "01_BASE_DELANTERA.stl",
+      "print_dimensions_mm": [
+        182.0,
+        126.0,
+        7.0
+      ],
+      "facets": 1544,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "02_BASE_TRASERA",
+      "label": "Base trasera",
+      "orientation": "z+",
+      "primary": true,
+      "bounds_mm": [
+        195.0,
+        -65.0,
+        -51.0,
+        369.0,
+        63.0,
+        -44.0
+      ],
+      "volume_cm3": 52.9689,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "stl": "02_BASE_TRASERA.stl",
+      "print_dimensions_mm": [
+        174.0,
+        128.0,
+        7.0
+      ],
+      "facets": 2958,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "03_ARO",
+      "label": "Aro centrador delantero",
+      "orientation": "x+",
+      "primary": true,
+      "bounds_mm": [
+        3.0,
+        -83.5,
+        -83.5,
+        20.0,
+        83.5,
+        83.5
+      ],
+      "volume_cm3": 36.3951,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "tab_underside": "45 degree transition",
+      "stl": "03_ARO.stl",
+      "print_dimensions_mm": [
+        166.99,
+        166.99,
+        17.0
+      ],
+      "facets": 1752,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "03_ARO",
+      "label": "Aro centrador trasero",
+      "orientation": "x-",
+      "primary": false,
+      "bounds_mm": [
+        360.0,
+        -83.5,
+        -83.5,
+        377.0,
+        83.5,
+        83.5
+      ],
+      "volume_cm3": 36.3951,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "tab_underside": "45 degree transition"
+    },
+    {
+      "code": "04_EMPATE",
+      "label": "Pletina de empate izquierda",
+      "orientation": "z+",
+      "primary": true,
+      "bounds_mm": [
+        177.0,
+        -60.0,
+        -56.0,
+        207.8,
+        -48.0,
+        -51.0
+      ],
+      "volume_cm3": 1.6959,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "stl": "04_EMPATE.stl",
+      "print_dimensions_mm": [
+        30.8,
+        12.0,
+        5.0
+      ],
+      "facets": 992,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "04_EMPATE",
+      "label": "Pletina de empate derecha",
+      "orientation": "z+",
+      "primary": false,
+      "bounds_mm": [
+        177.0,
+        48.0,
+        -56.0,
+        207.8,
+        60.0,
+        -51.0
+      ],
+      "volume_cm3": 1.6959,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0
+    },
+    {
+      "code": "05_CAMARA",
+      "label": "Placa de camara frontal",
+      "orientation": "z+",
+      "primary": true,
+      "bounds_mm": [
+        12.5,
+        -59.5,
+        -26.0,
+        73.5,
+        59.5,
+        -21.5
+      ],
+      "volume_cm3": 31.9261,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "stl": "05_CAMARA.stl",
+      "print_dimensions_mm": [
+        61.0,
+        119.0,
+        4.5
+      ],
+      "facets": 684,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "06_SEPARADOR_CAMARA",
+      "label": "Separador 18 mm 1",
+      "orientation": "z+",
+      "primary": true,
+      "bounds_mm": [
+        24.9,
+        -58.1,
+        -44.0,
+        33.1,
+        -49.9,
+        -26.0
+      ],
+      "volume_cm3": 0.7872,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "stl": "06_SEPARADOR_CAMARA.stl",
+      "print_dimensions_mm": [
+        8.2,
+        8.2,
+        18.0
+      ],
+      "facets": 3080,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "06_SEPARADOR_CAMARA",
+      "label": "Separador 18 mm 2",
+      "orientation": "z+",
+      "primary": false,
+      "bounds_mm": [
+        24.9,
+        49.9,
+        -44.0,
+        33.1,
+        58.1,
+        -26.0
+      ],
+      "volume_cm3": 0.7872,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0
+    },
+    {
+      "code": "06_SEPARADOR_CAMARA",
+      "label": "Separador 18 mm 3",
+      "orientation": "z+",
+      "primary": false,
+      "bounds_mm": [
+        56.9,
+        -58.1,
+        -44.0,
+        65.1,
+        -49.9,
+        -26.0
+      ],
+      "volume_cm3": 0.7872,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0
+    },
+    {
+      "code": "06_SEPARADOR_CAMARA",
+      "label": "Separador 18 mm 4",
+      "orientation": "z+",
+      "primary": false,
+      "bounds_mm": [
+        56.9,
+        49.9,
+        -44.0,
+        65.1,
+        58.1,
+        -26.0
+      ],
+      "volume_cm3": 0.7872,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0
+    },
+    {
+      "code": "07_OPTICA",
+      "label": "Placa de optica",
+      "orientation": "z+",
+      "primary": true,
+      "bounds_mm": [
+        80.0,
+        -61.5,
+        -44.0,
+        224.0,
+        61.5,
+        -40.5
+      ],
+      "volume_cm3": 57.5891,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "fastener_clearance_mm": 10,
+      "stl": "07_OPTICA.stl",
+      "print_dimensions_mm": [
+        144.0,
+        123.0,
+        3.5
+      ],
+      "facets": 1592,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "08_SERVICIOS",
+      "label": "Placa de bateria, bomba y temperatura",
+      "orientation": "z+",
+      "primary": true,
+      "bounds_mm": [
+        242.0,
+        -60.0,
+        -44.0,
+        334.0,
+        60.0,
+        -40.0
+      ],
+      "volume_cm3": 37.8279,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "stl": "08_SERVICIOS.stl",
+      "print_dimensions_mm": [
+        92.0,
+        120.0,
+        4.0
+      ],
+      "facets": 1080,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "09_PUENTE_DELANTERO",
+      "label": "Puente delantero para bandeja PCB",
+      "orientation": "x+",
+      "primary": true,
+      "bounds_mm": [
+        212.0,
+        -75.8106,
+        -44.0,
+        220.0,
+        75.8106,
+        39.0
+      ],
+      "volume_cm3": 11.9882,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "stl": "09_PUENTE_DELANTERO.stl",
+      "print_dimensions_mm": [
+        151.62,
+        83.0,
+        8.0
+      ],
+      "facets": 1904,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "10_PUENTE_TRASERO",
+      "label": "Puente trasero para bandeja PCB",
+      "orientation": "x+",
+      "primary": true,
+      "bounds_mm": [
+        340.0,
+        -71.0,
+        -44.0,
+        348.0,
+        71.0,
+        39.0
+      ],
+      "volume_cm3": 12.3634,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "stl": "10_PUENTE_TRASERO.stl",
+      "print_dimensions_mm": [
+        142.0,
+        83.0,
+        8.0
+      ],
+      "facets": 1412,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "11_ESCUADRA_ATLAS",
+      "label": "Escuadra Atlas delantera",
+      "orientation": "x+",
+      "primary": true,
+      "bounds_mm": [
+        312.2,
+        -70.0,
+        -44.0,
+        319.8,
+        -60.25,
+        -16.0
+      ],
+      "volume_cm3": 0.9444,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0,
+      "stl": "11_ESCUADRA_ATLAS.stl",
+      "print_dimensions_mm": [
+        9.75,
+        28.0,
+        7.6
+      ],
+      "facets": 1072,
+      "mesh_connected_closed": true
+    },
+    {
+      "code": "11_ESCUADRA_ATLAS",
+      "label": "Escuadra Atlas trasera",
+      "orientation": "x+",
+      "primary": false,
+      "bounds_mm": [
+        364.2,
+        -70.0,
+        -44.0,
+        371.8,
+        -60.25,
+        -16.0
+      ],
+      "volume_cm3": 0.9444,
+      "solids": 1,
+      "reference_overlaps_mm3": [],
+      "part_overlaps_mm3": [],
+      "tube_mm3": 0.0
+    }
+  ],
+  "bolt_axis_checks": [
+    {
+      "joint": "Aros",
+      "fastener_count": 4,
+      "axis_clear": true
+    },
+    {
+      "joint": "Pletinas",
+      "fastener_count": 4,
+      "axis_clear": true
+    },
+    {
+      "joint": "Camara",
+      "fastener_count": 4,
+      "axis_clear": true
+    },
+    {
+      "joint": "Optica",
+      "fastener_count": 4,
+      "axis_clear": true
+    },
+    {
+      "joint": "Servicios",
+      "fastener_count": 4,
+      "axis_clear": true
+    },
+    {
+      "joint": "Puentes",
+      "fastener_count": 4,
+      "axis_clear": true
+    },
+    {
+      "joint": "Atlas",
+      "fastener_count": 2,
+      "axis_clear": true
+    }
+  ]
+}
