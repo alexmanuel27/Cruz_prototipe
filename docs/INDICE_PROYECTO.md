@@ -1,44 +1,27 @@
 # Índice del proyecto
 
-Punto de entrada para localizar la documentación de ingeniería y preparar una revisión del proyecto. Las fechas indican la revisión de los archivos, no la realización de ensayos físicos. Las decisiones y los resultados deben comprobarse en sus fuentes.
+## Trabajar en el prototipo
 
-## Alcance y decisiones
+| Área | Archivo de entrada |
+| --- | --- |
+| Requisitos y decisiones | [Especificación funcional](../ESPECIFICACION.md) · [Registro de decisiones](../DECISIONES.md) |
+| Óptica y arquitectura | [Diseño óptico](DISENO_OPTICO.md) · [Análisis de arquitectura](ANALISIS_ARQUITECTURA.md) |
+| CAD mecánico | [Guía CAD](../cad/README.md) · [Montaje Fusion con chasis R1](../cad/fusion_m2/chasis_interior/CROSS_CHASIS_R1.f3d) |
+| Corte de tapas e impresión | [Tapa Shaper](../body/TAPA_SHAPER_230_PROTOTIPO.svg) · [Guía de mecanizado](../body/LEEME.md) · [Aro R3](../cad/fusion_m2/ARO_AMARRE_M8_REFORZADO_R3.stl) · [Chasis interior R1](../cad/fusion_m2/chasis_interior/README.md) |
+| KiCad | [Proyecto V8](../electronica/cross_v8_raspberry/cross_v8_draft.kicad_pro) · [Estado y pendientes](../electronica/cross_v8_raspberry/LEEME_PRIMERO.md) |
+| Compras | [Lista fechada](../compras/LISTA_COMPRA.md) · [Excel para el técnico](../compras/Cruz_Shopping_List_EN_2026-10-30.xlsx) |
 
-- [Especificación funcional](../ESPECIFICACION.md): requisitos y funcionamiento previstos.
-- [Registro de decisiones](../DECISIONES.md): acuerdos, alternativas y cuestiones abiertas.
-- [Análisis de arquitectura](ANALISIS_ARQUITECTURA.md) y [diseño óptico](DISENO_OPTICO.md): fundamentos de la integración óptica y la celda.
-- [Plan de trabajo](PLAN_TRABAJO.md): calendario previsto; no evidencia de cumplimiento.
+El PCB V8 sigue sin rutear y tiene pendientes eléctricos. El cuerpo usa el tubo acrílico recibido de Ø180/172 × 380 mm. La simulación R3 está documentada. Los ensayos físicos de estanqueidad y carga siguen pendientes en el registro. El firmware unificado está pendiente de incorporar al repo.
 
-## Diseño mecánico y montaje
+## Validación y datos
 
-- [Implantación horizontal en acrílico](IMPLANTACION_ACRILICO_HORIZONTAL.md): concepto del cuerpo, cámara y lastre.
-- [Modelo Fusion de montaje accesible, 3 noviembre](../cad/fusion_m2/CROSS_MONTAJE_ACCESIBLE_2026-11-03.f3d): copia de revisión local. Comprobarla frente al documento guardado en Fusion antes de utilizarla para fabricar.
-- [Secuencia de montaje](../cad/fusion_m2/animacion/MONTAJE_PASO_A_PASO.md) y [vídeo de montaje](../cad/fusion_m2/animacion/CROSS_MONTAJE_ORDEN_REAL_2026-11-03.mp4): orden propuesto y acceso a piezas.
-- [Piezas impresas de la revisión](../cad/fusion_m2/PIEZAS_IMPRESAS_MONTAJE_2026-11-03.json): inventario de diseño, no orden de impresión.
-- [Tapas de 10 mm y preparación CNC](../cad/fusion_m2/TAPAS_CNC.md); [revisión de modelos comerciales](../cad/fusion_m2/REVISION_STEP_2026-11-03.md); [revisión de estanqueidad](REVISION_ESTANQUEIDAD_TUBO.md).
-- [CAD M1](../cad/README.md), [implantación anterior](IMPLANTACION_INTERIOR_V1.md) y [concepto de PVC](IMPLANTACION_PVC_HORIZONTAL.md): antecedentes, no el montaje actual.
+- [Registro de ensayos y fotografías](REGISTRO_ENSAYOS.md) · [validación y calibración](VALIDACION_Y_CALIBRACION.md) · [plan de trabajo](PLAN_TRABAJO.md).
+- [Estudio reproducible de amarre y lastre](REGISTRO_ENSAYOS.md#archivo-reproducible) · [cálculos, modelos y datos](../cad/fusion_m2/simulacion_amarre_2026-11-20/).
 
-## Electrónica y energía
+## Referencias de ingeniería
 
-- [PCB V8: leer primero](../electronica/cross_v8_raspberry/LEEME_PRIMERO.md): estado y limitaciones del diseño más reciente disponible. **La V8 no está lista para fabricar ni energizar.**
-- [Propuesta eléctrica V1](../electronica/DISENO_ELECTRICO_V1.md), [puerto de servicio](../electronica/PUERTO_SERVICIO_Y_BOYA.md) y [presupuesto energético](PRESUPUESTO_ENERGETICO.md): antecedentes de diseño; contrastar con las revisiones posteriores.
-- Las versiones anteriores de los proyectos KiCad se retiraron del árbol de trabajo; se pueden consultar en el historial de Git.
-
-## Ensayos, calibración y evidencia
-
-- [Registro de ensayos y fotografías](REGISTRO_ENSAYOS.md): plantillas y estado documentado; no confundir pruebas previstas con resultados.
-- [Validación y calibración](VALIDACION_Y_CALIBRACION.md): procedimientos y criterios propuestos.
-- Las comprobaciones JSON y las imágenes en `cad/fusion_m2/` documentan estudios digitales; no sustituyen el montaje físico ni el ensayo de estanqueidad.
-
-## Materiales y compras
-
-- [Lista de compra](../LISTA_COMPRA.md) y [hoja de cálculo para el técnico](../Cruz_Shopping_List_EN_2026-10-30.xlsx): versiones disponibles del 30 de octubre; verificar precios, disponibilidad y decisiones posteriores.
-- [Lista amplia de materiales](../LISTA_MATERIALES.md) y [antecedentes de compras](ANTECEDENTES_LISTA_COMPRA.md): históricos de consulta.
-
-## Imágenes y fuentes
-
-- [Dibujos y bocetos](drawings/) y [renders](renders/): ilustraciones de distintas etapas; comprobar su fecha y la arquitectura representada.
-- [Modelos de componentes](../cad/componentes/MODELOS_3D.md): procedencia y limitaciones de modelos 3D.
-- Los archivos conservados en `cad/fusion_m2/` incluyen copias anteriores y comprobaciones intermedias. Sus nombres describen la etapa; no asumir que una copia es una versión aprobada.
-
-No se identificó una carpeta `firmware/` en la raíz al preparar este índice. La ausencia de un archivo o de una prueba en este índice no demuestra que no exista fuera del repositorio.
+- [Puerto de carga/datos y futura boya](../electronica/PUERTO_SERVICIO_Y_BOYA.md).
+- [Pasamuros y revisión de ensuciamiento](ANTIFOULING_Y_PASAMUROS.md).
+- [Presupuesto energético del 30 de octubre](PRESUPUESTO_ENERGETICO.md), previo a los cambios de electrónica.
+- [Modelos 3D de componentes](../cad/componentes/MODELOS_3D.md).
+- [Archivo histórico](../archivo/README.md) con revisiones CAD, vídeo de montaje, dibujos de concepto y listas anteriores.

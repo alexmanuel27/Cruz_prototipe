@@ -1,8 +1,8 @@
-> **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [diseño eléctrico vigente](../electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
+> **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [propuesta eléctrica del 30 de octubre](../archivo/electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
 
 # Presupuesto energético conservado
 
-**Trasladado de la lista amplia el 30 de octubre de 2026; sin recalcular.** La [lista de compra vigente](../LISTA_COMPRA.md) contiene únicamente los faltantes definidos por Alex.
+**Trasladado de la lista amplia el 30 de octubre de 2026; sin recalcular.** La [lista de compra vigente](../compras/LISTA_COMPRA.md) contiene únicamente los faltantes definidos por Alex.
 
 
 **Conservado sin recalcular por indicación de Alex.** El presupuesto previo no incorpora todavía la cámara auxiliar USB E14; no se presenta como cálculo completo actualizado con esa cámara.

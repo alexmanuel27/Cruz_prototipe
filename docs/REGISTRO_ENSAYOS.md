@@ -17,6 +17,67 @@
 
 Los criterios se encuentran en [Validación y calibración](VALIDACION_Y_CALIBRACION.md). Una fecha prevista no es un resultado aprobado.
 
+## Simulación de amarre y lastre · 20 de noviembre de 2026
+
+Modelo Fusion `Cross_M2_horizontal_design` v13. El grupo `08_ESTUDIO_AMARRE` muestra los dos ramales superiores, los pesos inferiores, los vectores de fuerza y la postura perturbada a 15°. Los topes metálicos son envolventes para verificar espacio. El cálculo hidrostático y el FEM local se realizaron con la geometría exportada de Fusion.
+
+### Masa y lastre
+
+El cálculo usa el tubo real Ø172/180 × 380 mm, tapas Ø230 × 10 mm, cuatro tramos M8 con sus casquillos, y dos aros R3 de PETG macizo equivalente. Los volúmenes del CAD se combinaron con densidades y masas estimadas de piezas comerciales. La masa sin lastre calculada es **7,40 kg** con un rango de escenarios de **6,29–8,71 kg**. El volumen desplazado estanco es **11,64 L**. De los 7,40 kg, 1,98 kg corresponden al acrílico y tóricas, 1,96 kg a herrajes exteriores y topes, 1,14 kg a los aros, 0,91 kg al chasis y 1,42 kg a batería, bomba, óptica, electrónica y cableado. [Densidad de PMMA](https://www.plexiglas.de/en/contact) · [Ficha de PETG](https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf)
+
+| Montaje | Agua | Acero para flotabilidad neutra | Lastre de prueba | Tensión vertical total en el cabo |
+|---|---|---:|---:|---:|
+| 4 tramos M8 | Dulce, 1 000 kg/m³ | 4,86 kg | 6,0 kg | 9,7 N |
+| 4 tramos M8 | Mar, 1 025 kg/m³ | 5,21 kg | 6,5 kg | 11,0 N |
+| 2 tramos M8 opuestos | Dulce, 1 000 kg/m³ | 5,76 kg | 7,0 kg | 10,6 N |
+| 2 tramos M8 opuestos | Mar, 1 025 kg/m³ | 6,12 kg | 7,0 kg | 7,5 N |
+
+Con densidades en kg/L, el lastre de acero se calcula como `(densidad_agua × volumen_L − masa_equipo + margen_equivalente_kg) / (1 − densidad_agua / 7,85)`. Con cuatro tramos M8, conviene disponer de hasta 7,5 kg de lastre modular, para ajustar tras el pesaje del equipo. Dos tramos eliminan unos 0,90 kg de herraje y reducen el volumen desplazado unos 0,11 L. Las densidades son escenarios. La del agua de bahía depende de la salinidad y temperatura. [Densidad del agua en NOAA](https://www.nodc.noaa.gov/OC5/woa13/woa-info.html)
+
+En el escenario marino de cuatro tramos y 6,5 kg, el equilibrio horizontal requiere aproximadamente **3,46 kg delante y 3,04 kg detrás**. Un reparto 50/50 produce unos 4,3° de cabeceo en el modelo. Con el reparto corregido, una perturbación de balanceo de 15° produce **1,83 N·m** en sentido recuperador. Se supusieron ramales tensos y cargas verticales equivalentes aplicadas en las orejas. El cálculo es estático y depende de la distribución real de masas.
+
+### Iteraciones del aro
+
+Criterio del estudio estático de prototipo **≤6 MPa de von Mises y ≤1 mm de desplazamiento**. Se aplicaron **250 N a una oreja**, en el plano del aro y a 30° fuera del plano, con cuatro casquillos o dos opuestos como apoyo. Se usó un modelo elástico lineal isotrópico de PETG macizo equivalente, E = 1,2 GPa y ν = 0,36. El caso con topes aplica la componente axial en la franja de contacto de las caras. La geometría se malló con Gmsh y se resolvió localmente mediante elementos tetraédricos lineales. Se comprobaron reacciones y campo de deformación uniforme.
+
+| Iteración | Cambio | Pico más alto | Desplazamiento máximo | Dictamen |
+|---|---|---:|---:|---|
+| v12, 20 mm | Aro inicial | 19,60 MPa | 2,54 mm | Fuera de criterio |
+| R1, 40 mm | Mayor espesor y radio en la oreja | 6,12 MPa | 0,81 mm | Fuera de criterio |
+| R2, 46 mm | Resaltes de casquillo reforzados | 6,43 MPa | 0,73 mm | Fuera de criterio |
+| R3, 48 mm | Aro más ancho y radios de transición mayores | 4,79 MPa | 0,39 mm | Dentro del criterio |
+
+R3 pasó las mallas de 100 661 y 163 522 tetraedros. El caso de topes con caras planas de despeje, en la malla fina, dio **3,30 MPa y 0,392 mm**. Se comprobó el encaje CAD con el tubo, las tapas, las varillas, los casquillos y los ocho topes de referencia. El [STL R3](../cad/fusion_m2/ARO_AMARRE_M8_REFORZADO_R3.stl) mide **238 × 206 × 48 mm**. Su masa estimada es **0,57 kg por aro** en la hipótesis maciza.
+
+El dictamen permite avanzar a una prueba física del prototipo con lastre. Quedan pendientes el peso real, la resistencia de la impresión y de los topes sobre los casquillos, la estanqueidad y la respuesta a corriente, oleaje, fatiga y fluencia. El cálculo tampoco asigna una carga nominal de izado.
+
+### Relleno y material del primer aro R3
+
+Para la primera prueba de carga se propone imprimir el aro en PETG, plano y con 100 % de relleno. Es el ajuste de laminado más cercano al sólido continuo del FEM. Los perímetros, la orientación y la unión entre capas también afectan a la resistencia real. Para reducir masa, conviene conservar material sólido alrededor de los pasacabos, los casquillos y sus transiciones y repetir la comprobación de carga con el nuevo laminado. [Relleno y perímetros según Prusa](https://help.prusa3d.com/article/infill_42)
+
+Prusament publica una adhesión entre capas de 18 ± 4 MPa para su PETG y 11 ± 1 MPa para su ASA bajo el método del fabricante. El PETG se deforma poco al imprimir piezas grandes. El ASA tiene estabilidad UV y mayor temperatura de deflexión térmica, con más tendencia a deformarse en piezas grandes. Las fichas describen esos filamentos y probetas. La resistencia de los aros impresos, en especial bajo inmersión y carga sostenida, se comprobará con las piezas reales. [Ficha PETG](https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf) · [Ficha ASA](https://prusament.com/wp-content/uploads/2022/10/ASA_Prusament_TDS_2022_16_EN.pdf) · [Impresión con PETG](https://prusament.com/materials/prusament-petg/) · [Impresión con ASA](https://prusament.com/materials/prusament-asa/)
+
+### Archivo reproducible
+
+El [archivo de la simulación](../cad/fusion_m2/simulacion_amarre_2026-11-20/) incluye el montaje Fusion v13, los STEP exactos de v12/R1/R2/R3, los volúmenes y centros exportados de Fusion v12, las salidas originales JSON y los scripts. El cálculo hidrostático usa ese inventario y sustituye los aros por el volumen de cada revisión. Las salidas hidrostáticas intermedias R1 y R2 se regeneraron con sus volúmenes exportados. El archivo `resultados/campo_r3_250N_30grados.npz` contiene la malla, las fuerzas nodales, las restricciones, los desplazamientos y las tensiones del caso R3 con topes en D. El campo se regeneró desde el STEP archivado y se cotejó con el resumen original. Los índices de tetraedros y de grados de libertad comienzan en cero. Las seis componentes de tensión siguen el orden `xx, yy, zz, xy, yz, xz`.
+
+Desde la carpeta del archivo, con Python 3.14 y las versiones indicadas en `requirements.txt`, se pueden repetir los cálculos. Las salidas de los siguientes comandos se guardan aparte de las originales.
+
+```sh
+python -m pip install -r requirements.txt
+python hidro.py 448.606663 4 48 hidro_r3_4_repetido.json
+python hidro.py 448.606663 2 48 hidro_r3_2_repetido.json
+python fea.py geometria/aro_v12.step 4.2 20 fea_v12_repetido.json
+python fea.py geometria/aro_r1.step 4.2 40 fea_r1_repetido.json
+python fea.py geometria/aro_r2.step 3.1 46 fea_r2_repetido.json topes
+python fea.py geometria/aro_r3.step 4.2 48 fea_r3_gruesa_repetido.json topes
+python fea.py geometria/aro_r3.step 3.1 48 fea_r3_fina_repetido.json topes
+python fea.py geometria/aro_r3.step 3.1 48 fea_r3_topes_d_repetido.json topes_d campo_r3_repetido.npz
+shasum -a 256 -c SHA256SUMS
+```
+
+Para el futuro artículo, identificar estas cifras y figuras como resultados de simulación. Añadir al acta de carga las mediciones de la pieza impresa, lote de filamento, archivo de laminado, orientación, masa y condiciones de inmersión y carga.
+
 ## Plantilla del acta de cada ensayo
 
 Copiar esta estructura en `docs/ensayos/AAAA-MM-DD_ID.md` al ejecutar el trabajo:
@@ -51,3 +112,7 @@ Copiar esta estructura en `docs/ensayos/AAAA-MM-DD_ID.md` al ejecutar el trabajo
 | Campo | Lugar, fijación, profundidad, toma/descarga y estado al recuperar |
 
 Guardar originales en `docs/fotos/AAAA-MM-DD/` con nombres como `EST-01_junta_tapa_antes_01.jpg`. Conservar metadatos y relacionarlos con el acta. Un render CAD o una imagen ilustrativa no sustituye una fotografía de montaje. Los fallos también se fotografían.
+
+## Verificación CAD del chasis interior R1 · 20 de noviembre de 2026
+
+Se revisaron las dos mitades del chasis para el tubo Ø172/180 × 380 mm. Se retiraron los bloques sueltos de la unión, se añadió acceso a dos tornillos M4 y se ajustaron los pasos de manguera. Ambas mitades pasan la comprobación de encaje CAD y la verificación de mallas STL cerradas. Las dos se laminaron por separado en PrusaSlicer 2.9.7 con soportes orgánicos y un perfil genérico de PETG, con una estimación conjunta de 972 g de filamento. La masa, el encaje y la secuencia de montaje se verificarán con las piezas impresas. [Montaje, archivos y resultados](../cad/fusion_m2/chasis_interior/README.md).

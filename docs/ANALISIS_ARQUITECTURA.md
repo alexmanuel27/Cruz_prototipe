@@ -1,4 +1,4 @@
-> **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [diseño eléctrico vigente](../electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
+> **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [diseño eléctrico vigente](../archivo/electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
 
 # Análisis de detectores, óptica y operación in situ
 
@@ -119,7 +119,7 @@ La lámpara de 10 W introduce carga térmica. Ejemplo de límite: 30 s entregan 
 
 ## 9. Autonomía y coste de mantener las fuentes
 
-**Actualización 21 oct:** Alex elige CITYORK 24 V / 3 Ah por precio y plazo, con BMS/cargador anunciados, y apagado ordenado de Pi con corte real entre ciclos. El ejemplo previo de bomba 3 W, lámpara 30 s y Pi 2 min queda sustituido por el [presupuesto acordado y fechado](../LISTA_COMPRA.md#7-presupuesto-energético-conservado): bomba 20 W / 30 s, halógena 10 W / 5 s, cinco LED de 0,4 W / 5 s cada uno, Pi/cámara 5 W / 90 s por ciclo de 15 min.
+**Actualización 21 oct:** Alex elige CITYORK 24 V / 3 Ah por precio y plazo, con BMS/cargador anunciados, y apagado ordenado de Pi con corte real entre ciclos. El ejemplo previo de bomba 3 W, lámpara 30 s y Pi 2 min queda sustituido por el [presupuesto acordado y fechado](../compras/LISTA_COMPRA.md#7-presupuesto-energético-conservado): bomba 20 W / 30 s, halógena 10 W / 5 s, cinco LED de 0,4 W / 5 s cada uno, Pi/cámara 5 W / 90 s por ciclo de 15 min.
 
 Subtotal: **88,8 Wh para 288 ciclos en 72 h**, antes de auxiliares. Con 72 Wh declarados, 20 % de reserva y 85 % de rendimiento supuesto aplicados una sola vez, resultan **39,7 h antes de auxiliares**. No se demuestra 72 h con este pack. Los tiempos, potencia efectiva, capacidad del pack y consumo del supervisor/AS7265x/reposos requieren medición.
 

@@ -1,2 +1,14 @@
 __pycache__/
 *.pyc
+
+# Local desktop and KiCad state
+.DS_Store
+*.kicad_prl
+fp-info-cache
+/electronica/*/*-backups/
+
+# SKiDL session output
+/__init__.erc
+/__init__.log
+/skidl_REPL.erc
+/skidl_REPL.log

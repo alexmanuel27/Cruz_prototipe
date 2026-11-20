@@ -2,11 +2,11 @@
 
 **Actualizado el 30 de octubre de 2026, D52; conector D51.** Se mantiene un único conector de ocho contactos para carga, alimentación externa y RS-485, con previsión de futura boya. Alex pide macho, hembra y tapa con los contactos montados; no comprar pines por separado. El conjunto Bulgin Buccaneer 400 anterior se retira del pedido. Modbus RTU sigue siendo una propuesta; pinout, cable, módulos y gestión de fuentes no están cerrados.
 
-> **D52:** Alex autoriza ahora la electrónica. Se propone DFR0845 aislado, relé de carga de dos polos y detección de cable. Ver [Electronics V1](DISENO_ELECTRICO_V1.md). No hay pinout físico liberado; verificar el pack/cargador antes de soldar.
+> **D52:** Alex autoriza ahora la electrónica. Se propone DFR0845 aislado, relé de carga de dos polos y detección de cable. Ver [Electronics V1](../archivo/electronica/DISENO_ELECTRICO_V1.md). No hay pinout físico liberado; verificar el pack/cargador antes de soldar.
 
 ## Conector físico — confirmado D51
 
-**Switchcraft EN3 confirmado por Alex**, ocho contactos integrados para soldar, cierre de bayoneta y tapa estanca con anillo de bloqueo. Conjunto de compra en [LISTA_COMPRA, ítem 15](../LISTA_COMPRA.md#2-una-sola-propuesta-de-conector-completo--ítem-15); pendiente comprobar su montaje en la tapa y el ensayo del conjunto.
+**Switchcraft EN3 confirmado por Alex**, ocho contactos integrados para soldar, cierre de bayoneta y tapa estanca con anillo de bloqueo. Conjunto de compra en [LISTA_COMPRA, ítem 15](../compras/LISTA_COMPRA.md#2-una-sola-propuesta-de-conector-completo--ítem-15); pendiente comprobar su montaje en la tapa y el ensayo del conjunto.
 
 | Pieza | Referencia y enlace | Cantidad |
 |---|---|---:|

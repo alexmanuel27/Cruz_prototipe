@@ -72,7 +72,7 @@ Arrancar AUT-01 el 13 de noviembre permite terminar el 16 y reservar el 17–19 
 
 ## 5. Alícuotas de octubre y comparación de noviembre
 
-El [protocolo de campaña](../../campana-lagos-bruselas/PROTOCOLO_CONGELADO.md) prevé 15 matrices primarias y cinco duplicados de campo. Son planes, no muestras ya obtenidas. Los IDs y condiciones finales deben copiarse del registro real, sin reinterpretarlos.
+El [protocolo de campaña](../../campana-lagos-bruselas/protocolo/PROTOCOLO_CONGELADO.md) prevé 15 matrices primarias y cinco duplicados de campo. Son planes, no muestras ya obtenidas. Los IDs y condiciones finales deben copiarse del registro real, sin reinterpretarlos.
 
 **Dependencia crítica:** reservar el material durante la recogida del 5–9 de octubre. El hito C2.2 del 12–13 se usará para comprobar inventario y distribución, no para retrasar una preservación que el método exija el mismo día. Los plazos analíticos mandan sobre el calendario administrativo.
 

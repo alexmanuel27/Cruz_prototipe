@@ -2,7 +2,7 @@
 
 Revisión: **3 de noviembre de 2026**. Montaje: `Cross_M2_horizontal_design`.
 
-Los archivos del fabricante se conservan como referencias de terceros. «Oficial» identifica la procedencia del archivo; no acredita que la variante comprada sea idéntica. No se han escalado los modelos para hacerlos encajar. Ver [revisión del montaje](../fusion_m2/REVISION_STEP_2026-11-03.md).
+Los archivos del fabricante se conservan como referencias de terceros. «Oficial» identifica la procedencia del archivo; no acredita que la variante comprada sea idéntica. No se han escalado los modelos para hacerlos encajar. Ver [revisión del montaje](../../archivo/cad/fusion_m2/REVISION_STEP_2026-11-03.md).
 
 ## Modelos incorporados a Fusion
 

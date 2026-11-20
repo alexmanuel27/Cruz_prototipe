@@ -19,7 +19,7 @@ En paralelo, la campaña debe entregar material reservado, trazable y con conser
 | **5–9 oct · dependencia C2.1** | Campaña con MonoSpectro; separar y preservar reserva en cada jornada | Registro de IDs, volumen, estado, conservación y referencia; Cruz no sale |
 | **7–12 oct · X1.2** | OPT-01…07, comparación de geometrías y acta de cierre óptico | En curso. No pedidos ni impresión hasta este cierre |
 | 12–13 oct · dependencia C2.2 | Auditar reservas y distribución a proyectos | Preservación ya iniciada cuando lo exigía cada método |
-| **13–19 oct · X1.3** | Ajustar el [CAD M1 preliminar](../cad/README.md) a piezas medidas; cerrar celda, juntas, pasamuros, presión, apriete, limpieza, disipación y protocolo de estanqueidad | Geometría y componentes ópticos cerrados; revisión completa el 19 |
+| **13–19 oct · X1.3** | Ajustar el [CAD M1 preliminar](../archivo/cad/README.md) a piezas medidas; cerrar celda, juntas, pasamuros, presión, apriete, limpieza, disipación y protocolo de estanqueidad | Geometría y componentes ópticos cerrados; revisión completa el 19 |
 | **20–23 oct · X1.4** | Esquemáticos, drivers, protecciones, enlace Pi–ESP32, memoria, consumo real y BOM | Verificar arranque de lámpara/bomba, estabilidad de alimentación y capacidad para 72 h |
 | **26–29 oct · X2.1** | Impresión de soportes, mecanizado de interfaces, montaje sin electrónica e inspección dimensional | Juntas y pasamuros disponibles; fotos de cada interfaz antes de ocultarla |
 | **30 oct · X2.2** | Ensayo duro de estanqueidad, lastre y sin electrónica; acta APROBADO/FALLIDO | Si falla: rediseño y repetición antes de electrónica |

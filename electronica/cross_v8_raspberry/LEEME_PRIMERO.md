@@ -1,22 +1,23 @@
-# V8 — esquema corregido y ensayo de trazado. NO FABRICAR NI ENERGIZAR
+# PCB V8 · estado de trabajo
 
-El proyecto continúa en desarrollo. El esquema y la placa sin rutear coinciden eléctricamente en la comprobación de paridad de KiCad. Las 52 redes con más de un terminal del esquema exportado coinciden por nombre y por terminales con las redes previstas en la V7. Esta comprobación **no prueba que los circuitos sean adecuados ni seguros**.
+La V8 es el proyecto editable. El esquema está agrupado en nueve bloques funcionales. Abre el archivo de proyecto para cargar sus huellas y modelos STEP locales. **El PCB requiere completar el diseño y la revisión eléctrica antes de fabricarlo o energizarlo.**
 
-El 18 de noviembre de 2026 se organizó el esquema en nueve bloques funcionales. Las conexiones siguen representadas mediante etiquetas de red; la comparación de las 77 redes antes y después resultó idéntica. ERC de KiCad 9: 80 incidencias antes y después (77 discrepancias con biblioteca y 3 entradas de alimentación sin fuente identificada).
+## Archivos del proyecto
 
-## Archivos
+- [Proyecto KiCad](cross_v8_draft.kicad_pro).
+- [Esquema](cross_v8_draft.kicad_sch) y [placa sin rutear](cross_v8_draft.kicad_pcb), con un contorno de 170 × 68 mm. Las dimensiones de huellas y módulos siguen pendientes de validar.
+- [Huellas locales](Cross.pretty/) y [modelos 3D](modelos_3d/). El modelo oficial `Pololu_2814_fabricante.step` sirve de referencia para la huella y conexiones que faltan. [Recursos del fabricante](https://www.pololu.com/product/2814/resources).
+- [Informes, scripts y copias históricas](../../archivo/electronica/cross_v8_raspberry/). Los resultados de trazado experimental corresponden a otra revisión.
 
-- `cross_v8_draft.kicad_sch`: esquema con las conexiones accidentales de V7 corregidas. Componentes separados con etiquetas de red.
-- `cross_v8_draft.kicad_pcb`: colocación sin rutear, 170 × 68 mm. Las dimensiones de las huellas, conectores y módulos deben comprobarse.
-- `modelos_3d/Pololu_2814_fabricante.step`: modelo oficial Pololu descargado de [recursos del fabricante](https://www.pololu.com/product/2814/resources); el módulo todavía no está colocado en la placa ni su huella y conexiones están definidas.
-- `REVISION_ERC.txt`, `REVISION_DRC_SIN_TRAZAR.txt`, `REVISION_DRC_EXPERIMENTAL.txt`: informes de KiCad del 2 de noviembre de 2026.
-- `generar_esquema_corregido.py` y `comprobar_redes.py`: instrumentos históricos de desarrollo; el generador requiere restaurar V7 desde Git y adaptar las rutas antes de reutilizarlo.
+## Comprobación en KiCad 9.0.7 · 20 de noviembre de 2026
 
-## Resultados de revisión
+| Comprobación | Resultado |
+| --- | --- |
+| ERC | 77 avisos de discrepancia con biblioteca y 3 errores por entradas de alimentación de U2 y U7 sin fuente reconocida. |
+| DRC | 199 conexiones por rutear y 57 avisos de serigrafía. |
+| Paridad esquema–PCB | 0 diferencias. |
 
-- Esquema: 83 incidencias ERC, entre ellas 3 entradas de alimentación que KiCad no identifica como alimentadas porque las fuentes se representan con conectores pasivos. No se han marcado como resueltas con indicadores de alimentación ficticios; revisar fuente y retorno reales.
-- Placa sin rutear: 199 conexiones sin trazar, 57 avisos/incidencias DRC y cero diferencias de paridad con el esquema.
-- Placa con trazado experimental: 20 conexiones sin trazar y 77 incidencias, incluida una separación de cobre insuficiente al borde. Los recorridos de alimentación no están dimensionados. Es una prueba, no una placa completa.
+Para la revisión conjunta de alimentación y control, U7 pertenece a la alimentación permanente aunque figura dentro de Motor. La alimentación dedicada de 3,3 V para AS7265x, DS18B20 y Atlas es el ítem 23 acordado y está pendiente de implementar. En este borrador, J8, J9 y J10 siguen unidos a `3V3_PI`.
 
 ## Pendiente para terminar
 

@@ -1,4 +1,4 @@
-> **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [diseño eléctrico vigente](../electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
+> **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [propuesta eléctrica del 30 de octubre](../archivo/electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
 
 # Diseño Óptico Detallado: Cruz
 
