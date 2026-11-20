@@ -19,6 +19,8 @@ La V8 es el proyecto editable. El esquema está agrupado en nueve bloques funcio
 
 Para la revisión conjunta de alimentación y control, U7 pertenece a la alimentación permanente aunque figura dentro de Motor. La alimentación dedicada de 3,3 V para AS7265x, DS18B20 y Atlas es el ítem 23 acordado y está pendiente de implementar. En este borrador, J8, J9 y J10 siguen unidos a `3V3_PI`.
 
+La [revisión conjunta de 01 y 02](REVISION_01_02.md) conserva los 23 ítems, conexiones y estados para software; incluye la nueva comprobación ERC/DRC en copia. Alex transcribe batería 24 V/3 Ah, entrada 25,2 V, salida 22–25 V (5–8 A), cargador 25,2 V/2 A y motor 20 W. Sustituye el dato anterior de cargador 25,6 V; máximo medido y corriente por fase siguen pendientes. `HOLD_PI` alto solicita corte y una señal SET mantenida puede impedir apagar: revisar antes de cerrar el control.
+
 ## Pendiente para terminar
 
 1. Completar y validar el encendido magnético, la inicialización al conectar la batería, el reloj, el apagado ordenado y el modo apagado. El CD4013 no tiene garantizado el estado inicial; el firmware aún no existe. Un toque de imán y un corte de alimentación no están demostrados.

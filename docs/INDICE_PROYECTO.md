@@ -7,8 +7,9 @@
 | Requisitos y decisiones | [Especificación funcional](../ESPECIFICACION.md) · [Registro de decisiones](../DECISIONES.md) |
 | Óptica y arquitectura | [Diseño óptico](DISENO_OPTICO.md) · [Análisis de arquitectura](ANALISIS_ARQUITECTURA.md) |
 | CAD mecánico | [Guía CAD](../cad/README.md) |
-| Corte de tapas e impresión | [Tapa Shaper](../body/TAPA_SHAPER_230_PROTOTIPO.svg) · [Guía de mecanizado](../body/LEEME.md) · [Aro R3](../cad/fusion_m2/ARO_AMARRE_M8_REFORZADO_R3.stl) · [Chasis interior R3](../cad/fusion_m2/chasis_r3/README.md) |
+| Corte de tapas e impresión | [Tapa Shaper](../body/TAPA_SHAPER_230_PROTOTIPO.svg) · [Guía de mecanizado](../body/LEEME.md) · [Aro R3](../cad/fusion_m2/ARO_AMARRE_M8_REFORZADO_R3.stl) · [Chasis interior R5 para Prusa MINI](../cad/fusion_m2/chasis_r5/README.md) |
 | KiCad | [Proyecto V8](../electronica/cross_v8_raspberry/cross_v8_draft.kicad_pro) · [Estado y pendientes](../electronica/cross_v8_raspberry/LEEME_PRIMERO.md) |
+| Adquisición y control | [Software reutilizable, interfaces V8 y primera iteración propuesta](SOFTWARE_ADQUISICION.md) |
 | Compras | [Lista fechada](../compras/LISTA_COMPRA.md) · [Excel para el técnico](../compras/Cruz_Shopping_List_EN_2026-10-30.xlsx) |
 
 El PCB V8 sigue sin rutear y tiene pendientes eléctricos. El cuerpo usa el tubo acrílico recibido de Ø180/172 × 380 mm. La simulación R3 está documentada. Los ensayos físicos de estanqueidad y carga siguen pendientes en el registro. El firmware unificado está pendiente de incorporar al repo.
