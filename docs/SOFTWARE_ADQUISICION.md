@@ -1,5 +1,15 @@
 # Adquisición y control de Cruz: revisión y primera iteración
 
+## Pruebas de banco · 21 de noviembre de 2026
+
+- **Pi 5 y cámara:** Alex corrigió la orientación de la cinta; la OV9281 Arducam se detecta en CAM/DISP 1 con `camera_auto_detect=0` y `dtoverlay=ov9281,arducam`. `rpicam-still` guardó JPEG y DNG de 1280 × 800 con sensor RAW10; el JPEG muestra señal, con zonas blancas saturadas visualmente. DNG, linealidad, saturación real y calibración aún sin evaluar. Los archivos de prueba se guardaron temporalmente en la Pi.
+- **AS7265x:** Alex conectó el módulo a la Pi 5; bus I²C 1 y respuesta en `0x49`. El tipo leído fue `0x40` y el registro de selección `0x30` indicó presencia de los dos sensores asociados. Se obtuvieron crudos y valores calibrados de fabricante en 18 canales. La prueba inicial consultaba dos veces DATA_RDY: corregida en la copia temporal para tomar la primera señal de listo. Biblioteca SparkFun Python 2.0.0 con `smbus2`; prueba con 64× y registro de integración 49, ajustes predeterminados de la biblioteca, sin calibrar para Cruz. El LED azul externo no se activó; la biblioteca enciende brevemente y luego apaga su indicador interno.
+- **Respuesta a iluminación:** una lectura con el sensor tapado y otra con la luz del móvil; sin distancias ni espectro controlados. Todos los canales respondieron. Cuentas crudas, en orden 410, 435, 460, 485, 510, 535, 560, 585, 610, 645, 680, 705, 730, 760, 810, 860, 900 y 940 nm:
+  - Tapado: `0, 1, 0, 1, 0, 2, 1, 1, 6, 0, 1, 1, 0, 0, 0, 0, 0, 0`.
+  - Móvil: `38, 348, 331, 1008, 1406, 1135, 2617, 5012, 33624, 5595, 6514, 1525, 5284, 2776, 2654, 447, 127, 120`.
+- **Originales:** Alex indicó que los CSV con crudos y valores calibrados quedaron en `/home/alex/cruz-sensor-DR8T91/` de la Pi. `luz-ambiental.csv` corresponde a luz del móvil. No se han copiado ni verificado los archivos en el repo; la prueba Python y la biblioteca están en `/tmp/cruz-as7265x` de la Pi y son temporales. No hay medición de intensidad de fuente, réplicas, blanco, saturación, repetibilidad ni validación de fluorescencia. La respuesta óptica no demuestra concentraciones ni calibración del conjunto.
+- **Siguiente paso:** comprobar la lectura de temperatura DS18B20 o la conductividad Atlas según el material disponible, verificando módulo, terminales, alimentación y bus antes de cablear. Tras las pruebas se entregarán al chat de PCB únicamente interfaces y resultados comprobados.
+
 **20 de noviembre de 2026 · Revisión y plan de pruebas, sin control de hardware habilitado.**
 
 La Raspberry Pi gobierna el instrumento. **Prioridad posterior fijada por Alex:** seleccionar y probar los componentes reales, sus conexiones y funciones básicas; integrar después y trasladar al chat del PCB los resultados verificados. El ciclo simulado de §3 se conserva como propuesta posterior para probar integración y fallos, sin preceder a esas pruebas básicas. No se modifica mecánica, esquema, PCB ni software de los instrumentos anteriores.
