@@ -1,6 +1,6 @@
 # Cruz Prototype
 
-Cruz is an autonomous optical instrument for monitoring natural waters. It is being developed in lakes for eventual use in bays. A single quartz flow cell serves two optical paths. The instrument measures transmission from 420 to 780 nm first, then fluorescence under 430 nm excitation with the 18-channel AS7265x. A downstream peristaltic pump draws water through the cell. Temperature and conductivity are part of the design.
+Cruz is an autonomous optical instrument for monitoring natural waters. It is being developed in lakes for eventual use in bays. A single quartz flow cell serves a shared illumination arm with selectable LEDs, an inline camera for transmission, and an AS7265x at 90° for fluorescence. The transmission target is 420–780 nm; fluorescence includes nominal 430 nm excitation, with additional red and infrared sources to be tested. A downstream peristaltic pump draws water through the cell. Temperature and conductivity are part of the design.
 
 ## Project files
 

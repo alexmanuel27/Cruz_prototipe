@@ -10,8 +10,8 @@ Estados: **fijada por Alex**, **recomendación pendiente de ensayo**, **alternat
 |---|---|---|---|---|
 | D01 | Fijada por Alex | Repositorio exclusivamente de ingeniería de Cruz; entrega funcional el 1 dic | Artículo de Cruz queda para otro repositorio y periodo | Instrucción del 26 sep; P3 |
 | D02 | Fijada por Alex | Conservar los dos detectores y las fuentes originales | Detector único AS7265x pierde detalle espectral; cámara única no tiene sensibilidad suficiente según experiencia reportada | Análisis documental; verificar rendimiento conjunto en X1.2 |
-| D03 | Fijada por Alex | Compartir celda (cuarzo comprada) y alternar fuentes | Celda de cuarzo comprada y geometría fijada en 4 brazos. | OPT-06, cierre 12 oct |
-| D04 | Fijada por Alex | Mantener disposición colineal para excitación a 430 nm y detección fluorescente | La geometría en cruz de cuatro brazos acomoda esta disposición ya existente en el fluorómetro anterior | Confirmación de Alex |
+| D03 | Actualizada por D55 | Compartir celda de cuarzo y alternar fuentes | La geometría anterior de cuatro brazos se sustituye por un brazo de iluminación común y detección a 90° | OPT-06; D55, 21 nov |
+| D04 | Sustituida por D55 | La disposición colineal anterior deja paso a detección fluorescente a 90° | Alex adopta una geometría óptica en T | D55, 21 nov |
 | D05 | Fijada por Alex | Cambiar excitación a 430 nm | Fijada por Alex: LED azul de 430 nm | OPT-03/04 |
 | D06 | Fijada por Alex | Rendija confirmada en 0,5 mm de ancho y a 60 mm de la cámara | Eliminada la incertidumbre sobre la dimensión de 5 mm | Confirmación de Alex |
 | D07 | Fijada por Alex | Guardar 18 canales y señal de cámara original | Decisión: Guardar obligatoriamente el espectro crudo de cámara como intensidad por píxel antes de calibración/correcciones, además de los datos derivados. | Firmware existente; X3 y calibración |
@@ -108,13 +108,13 @@ La [lista vigente](compras/LISTA_COMPRA.md#1-compras-previstas) añade consumibl
 
 ## Acta de cierre de óptica
 
-**Estado actual: cerrado.**
-Geometría: 4 brazos (transmisión en un eje, fluorescencia colineal LED 430->muestra->AS7265x en otro).
+**Acta histórica; geometría sustituida por D55 y cierre óptico pendiente.**
+Geometría anterior: 4 brazos (transmisión en un eje, fluorescencia colineal LED 430->muestra->AS7265x en otro).
 Fuente fluorescencia: LED azul de 430 nm.
 Lente: Gran angular confirmada.
 Alcance: 420-780 nm.
 Celda: Flujo de cuarzo comprada.
-Filtro óptico: Eliminado del diseño base (señal en 435 nm es excitación, resto cero, 645 nm es fluorescencia).
+Filtro óptico: eliminado del diseño base anterior; las atribuciones de señal de la geometría anterior no están demostradas para la nueva disposición.
 
 ## Sensores y lastre — 30 de octubre de 2026
 
@@ -159,3 +159,15 @@ Se actualizan [diseño eléctrico V1](archivo/electronica/DISENO_ELECTRICO_V1.md
 ## D53 — Raspberry Pi como controlador principal (2026-11-02)
 
 Alex decidió retirar el ESP32 de este instrumento: la Raspberry Pi se ocupará de la adquisición y el control. Las placas reutilizadas se prevén enchufadas a la placa principal. Esta decisión sustituye las partes de D52 que asignan control o supervisión al ESP32; no valida aún el circuito de alimentación. El encendido autónomo programable, apagado seguro, carga, detección de fugas y huellas de los módulos siguen por diseñar y ensayar. Véase [el proyecto KiCad y su estado actual](electronica/cross_v8_raspberry/LEEME_PRIMERO.md).
+
+## D54 — Fuentes adicionales y ajuste del azul (2026-11-21)
+
+Alex quiere añadir a Cruz el [ILS ILH-PU01-PCRE-SC221-WIR200](https://befr.rs-online.com/web/p/leds/0861993), rojo con conversión por fósforo y longitud dominante declarada 620 nm, y el [Vishay TSHG6410](https://benl.rs-online.com/web/p/ir-leds/6997694), infrarrojo de pico 850 nm. Alex confirma que ambas serán fuentes de excitación adicionales con lectura del AS7265x. D55 sitúa las fuentes seleccionables en el brazo de iluminación común; su disposición detallada, secuencia, blancos y corrientes de trabajo aún no se han definido. No atribuirles una magnitud medida ni ampliar la cobertura validada de transmisión 420–780 nm por su presencia. Para el infrarrojo, la [ficha Vishay](https://www.vishay.com/docs/81870/tshg6410.pdf) indica límite continuo de 100 mA sujeto a condiciones térmicas; no es una consigna de operación.
+
+Alex dispone de un LM317, no tiene el PLD333 y no conoce todavía la corriente operativa del blanco. Informa que Daniela tiene un método con el LED azul ajustado a 120 mA y confirma que los 4 V son la tensión de la fuente de su circuito; verificar el LED exacto, cómo se regula o limita la corriente, el circuito y la estabilidad. Esta referencia de 120 mA desplaza la propuesta D52 de usar 333 mA para el azul. No consta que se haya aprobado o medido un driver definitivo para ninguna de las cuatro fuentes; la propuesta del blanco a 62,5 mA sigue siendo una hipótesis sin medición. No conectar un PLD333 de ajuste predeterminado de 333 mA al azul como si reprodujera el método de Daniela; tampoco aplicarlo a los otros LED por analogía. Los drivers, las secuencias y sus estados seguros se revisarán con la electrónica real antes de energizar. No se han realizado compras, cambios de esquema ni nuevos ensayos de LED en esta actualización.
+
+## D55 — Geometría óptica a 90° y brazo de iluminación común (2026-11-21)
+
+Alex decide mantener el nombre Cruz/Cross y pasar a geometría óptica en T: el brazo de iluminación común atraviesa la celda hacia la cámara de transmisión; el AS7265x observa la muestra a 90° del eje de iluminación. Alex aclara que el mismo brazo utiliza los LED blanco, azul, rojo e infrarrojo como fuentes seleccionables, no un único LED. La cámara y el sensor siguen compartiendo celda y Raspberry Pi. Esta decisión sustituye D04 y la geometría colineal del acta de cierre; no cambia la bomba aguas abajo ni convierte los resultados de los instrumentos anteriores en validación de Cruz.
+
+La disposición concreta y combinación de LED, su iluminación efectiva sobre la muestra, distancias, bloqueo de luz parásita, secuencia de los LED adicionales y blancos quedan pendientes de diseño y ensayo. El diseño previo eliminó el filtro de emisión; su validez a 90° debe comprobarse experimentalmente, sin adjudicar a ningún canal una señal pura por el mero ángulo. La transmisión 420–780 nm sigue siendo objetivo, no un rango validado en esta nueva geometría. Revisar montajes mecánicos y la electrónica en sus tareas propias; no se modificaron CAD ni PCB en esta decisión.

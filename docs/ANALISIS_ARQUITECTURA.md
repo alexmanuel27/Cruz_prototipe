@@ -1,5 +1,7 @@
 > **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [diseño eléctrico vigente](../archivo/electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
 
+> **Actualización D55, 21 nov 2026:** la geometría vigente es iluminación común con LED seleccionables, cámara en transmisión y AS7265x a 90°. Las referencias al diseño colineal previo son antecedentes, no una configuración validada.
+
 # Análisis de detectores, óptica y operación in situ
 
 **26 de septiembre de 2026. Análisis previo al diseño; ningún ensayo nuevo realizado.**
@@ -20,7 +22,7 @@ La complementariedad tiene fundamento, pero todavía no está demostrada la sens
 | [Calibración histórica](../../publication%20plan/Chlorophyll_Fluorometer/data_results/calibration.py) etiqueta clorofila en µg/mL | Trazar unidades y factores de extracción. µg/mL de extracto no equivale a µg/L de agua |
 | [MonoSpectro app.py](../../MonoSpectro/app.py): captura dentro del generador de vídeo; [script.js](../../MonoSpectro/static/script.js): blanco y absorbancia en navegador | Se necesita un servicio de adquisición autónomo y persistencia de blancos en el equipo |
 
-La excitación de 430 nm y la disposición colineal de fluorometría proceden de la descripción de Alex. El filtro óptico fue eliminado del diseño base. Se documentarán las referencias exactas en la BOM.
+La excitación de 430 nm procede de la descripción de Alex. La geometría colineal anterior se sustituyó por D55. El filtro óptico fue eliminado del diseño base anterior; comprobar el fondo en la geometría nueva.
 
 No había mapas `graphify-out/graph.json` en los tres repositorios técnicos consultados. El análisis se basó en los archivos citados, sin crear un grafo nuevo. Los borradores de los artículos se consultaron como antecedentes técnicos; no se modificaron.
 
@@ -39,29 +41,24 @@ En la cámara, número de píxeles, paso de muestreo y resolución óptica tampo
 
 La fluorescencia necesita fotones útiles y rechazo de excitación. Una respuesta de fábrica del AS7265x no garantiza sensibilidad suficiente a concentraciones de lago. Del mismo modo, «obturador global» no es una especificación de límite de detección de fluorescencia. Aquí la elección de dos detectores se apoya en las funciones requeridas y en la experiencia experimental comunicada por Alex, no en una comparación de sensibilidades que aún no está medida en la Cruz.
 
-## 4. Geometría fijada
+## 4. Geometría fijada por Alex · D55
 
-Si cada módulo ocupa un brazo de una cruz plana y cada brazo mira directamente al centro, la disposición literal es:
+La disposición óptica en T comparte el brazo de iluminación entre ambas modalidades:
 
 ```text
-                         LED azul 430 nm
+LED seleccionables ─────── MUESTRA ─────────── rendija/red/cámara
                                │
                                ▼
-Fuente visible ─────────── MUESTRA ─────────── rendija/red/cámara
-                               │
-                               ▼
-                       AS7265x (sin filtro)
+                         AS7265x a 90°
 ```
 
-Visible y cámara quedan en caras opuestas, como requiere transmisión directa. Por tanto los otros dos brazos también son opuestos: el detector de fluorescencia mira hacia el LED azul. La excitación y observación son colineales.
-
-Esta cruz literal de cuatro brazos conserva exactamente los cuatro componentes alrededor del centro. Dado que el fluorómetro anterior ya empleaba una disposición colineal entre el LED excitación y el detector de fluorescencia, esta geometría permite integrar perfectamente ambas funciones (transmisión en un eje, fluorescencia en el eje perpendicular) sin alterar la óptica existente. Es la opción definitiva acordada.
+El haz y la cámara están en el mismo eje; el AS7265x observa perpendicularmente. Los cuatro LED son seleccionables desde el brazo común; su colocación y el acoplamiento de cada uno quedan por diseñar. Las atribuciones previas de señal en geometría colineal no se trasladan como resultados de esta disposición.
 
 ## 5. La señal de clorofila debe verificarse de nuevo
 
 El firmware aplicaba una ecuación (ahora usaremos calibración independiente para clorofila en agua y extracto). Su pendiente respecto a intensidad es negativa. Eso no demuestra que el aparato mida mal, pero obliga a identificar si la señal procede de emisión, atenuación, dispersión o un régimen de autoabsorción. El blanco se guarda, pero no aparece en esa expresión; tampoco hay sustracción explícita del oscuro en el cálculo de clorofila.
 
-Para cerrar la óptica, usar la misma muestra con excitación apagada/encendida, blanco y serie de dilución sin filtro óptico bajo condiciones que eviten saturación. La observación previa es que 435 contiene excitación, los demás canales quedan en cero y 645 indica fluorescencia; registrar como evidencia anterior a reconfirmar en nueva celda. Conservar el canal 645 como salida central principal (según Alex) y registrar los 18 canales, explorando secundarios sin sustituir 645.
+Para cerrar la óptica, usar la misma muestra con excitación apagada/encendida, blanco y serie de dilución bajo condiciones que eviten saturación. Comprobar las contribuciones de excitación, dispersión y emisión en los 18 canales para cada fuente. Ninguna atribución previa de 435 o 645 nm se considera validada en la nueva celda.
 
 Mantener 430 nm es una restricción del proyecto. La referencia comercial [SeaOWL de Sea-Bird](https://www.seabird.com/news/seaowl-case-study) usa 470 nm para clorofila y 370 nm para fDOM: esto muestra que excitación y azul no son intercambiables para todas las matrices; no demuestra por sí solo que 430 nm sea inviable. La prueba decisiva es la relación señal/ruido con **agua natural no extraída**, en el rango requerido por la campaña.
 

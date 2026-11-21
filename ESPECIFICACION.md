@@ -2,6 +2,10 @@
 
 **Versión 0.4 · 30 de octubre de 2026 · Fuentes LED y electrónica D52.** El [índice del proyecto](docs/INDICE_PROYECTO.md) enlaza el diseño mecánico y eléctrico posterior.
 
+**Actualización de fuentes, 21 de noviembre de 2026:** Alex incorpora un LED rojo ILS ILH-PU01-PCRE-SC221-WIR200 (longitud dominante 620 nm) y un infrarrojo Vishay TSHG6410 (pico 850 nm). Serán excitaciones adicionales medidas por el AS7265x desde el brazo común; disposición detallada, secuencia, corrientes, drivers y verificación en Cruz están pendientes. Para el azul, Alex informa del ajuste de Daniela a 4 V y 120 mA: los 4 V corresponden a la fuente; falta identificar el circuito y cómo se regula la corriente. La propuesta antigua de 333 mA y PLD333 no es el ajuste aceptado. Ver [decisión D54](DECISIONES.md#d54--fuentes-adicionales-y-ajuste-del-azul-2026-11-21).
+
+**Geometría óptica actualizada, 21 de noviembre de 2026:** Alex adopta fluorescencia a **90°** y un brazo de iluminación común con LED seleccionables. La cámara observa la transmisión en el eje de iluminación; el AS7265x observa la celda perpendicularmente. Se conserva el nombre Cruz/Cross. Sustituye la geometría colineal anterior; montaje, distribución de LED y validación pendientes. Ver [D55](DECISIONES.md#d55--geometría-óptica-a-90-y-brazo-de-iluminación-común-2026-11-21).
+
 La Cruz integra el MonoSpectro y el fluorómetro en un aparato autónomo para agua natural, con la muestra en el centro. Este repositorio contiene ingeniería, fabricación, firmware y validación. El entregable del **1 de diciembre de 2026** es un prototipo operativo en banco y ensayado varias horas en un lago.
 
 Esta especificación precede al diseño. Los requisitos expresos de Alex se distinguen de las cifras propuestas para hacerlos verificables. No constituye una aprobación de la óptica, una certificación de estanqueidad ni resultados experimentales.
@@ -9,7 +13,7 @@ Esta especificación precede al diseño. Los requisitos expresos de Alex se dist
 ## 1. Requisitos fijados por Alex
 
 - Conservar los dos detectores: cámara monocroma para espectrofotometría y AS7265x de 18 canales para fluorescencia. En D52 Alex sustituye la halógena por el LED blanco Nichia Optisolis NF2W757GT-F1, star PCB SKU 32724, y fija el LED azul RS 0283199 para la excitación nominal de 430 nm.
-- Compartir la cámara de muestra y conservar el concepto físico de cruz. La geometría de rayos de cuatro brazos ya está fijada.
+- Compartir la cámara de muestra; usar una geometría óptica en T, con iluminación común, cámara en transmisión y AS7265x a 90°. El nombre del instrumento sigue siendo Cruz/Cross.
 - Operación in situ durante días, renovación de agua y almacenamiento autónomo para análisis posterior.
 - Diseñar juntas, ventanas, pasamuros y protección contra agua en octubre.
 - **30 de octubre: ensayo de estanqueidad con lastre y sin electrónica. Fecha dura.**
@@ -58,7 +62,7 @@ Registrar el rango natural de concentraciones, turbidez y temperatura de la camp
 
 1. Despertar o iniciar ciclo. Comprobar configuración, reloj, espacio, batería, sensores y ausencia de fuga. Registrar ID de ciclo antes de activar actuadores.
 2. Seleccionar agua del lago. Renovar el volumen completo entre la toma y la zona óptica. Detener bomba y esperar desaparición de burbujas y pulsaciones.
-3. Con ambas fuentes apagadas, medir oscuros de los dos detectores con sus ajustes de adquisición correspondientes.
+3. Con todas las fuentes apagadas, medir oscuros de los dos detectores con sus ajustes de adquisición correspondientes.
 4. Medir **transmisión primero**: encender exclusivamente la fuente visible original, esperar su estabilización, capturar réplicas y apagar.
 5. Medir **fluorescencia después**: encender exclusivamente el LED azul de 430 nm, aplicar la estabilización caracterizada y leer los 18 canales con ajustes conocidos. Apagar excitación y comprobar oscuro posterior si el ensayo óptico lo exige.
 6. Validar saturación, señal útil, estabilidad, blanco compatible, tiempos y temperatura. Conservar valores originales; los fallos producen datos marcados, nunca concentraciones inventadas ni ceros de sustitución.
@@ -85,7 +89,7 @@ Separar físicamente el circuito mojado de la electrónica y de las superficies 
 
 **D49: cuerpo acrílico y despliegue horizontal.** Alex descarta PVC y mantiene cámara hacia delante por la tapa, junta plana de silicona y pesos sobre varillas laterales. Se recuperan Ø150 exterior / Ø140 interior, pared 5 mm y tramo de 330 mm como referencia dimensional anterior del acrílico, pendiente del encaje horizontal. Tapas, apoyos, retención y puertos siguen por dimensionar; no recuperar automáticamente las tóricas ni los cuatro tirantes de D39. Ver [base mecánica actual](archivo/docs/IMPLANTACION_ACRILICO_HORIZONTAL.md) y [lista](compras/LISTA_COMPRA.md#1-compras-previstas).
 
-Añadir argollas para lastre y comprobar estabilidad horizontal. **Alex confirma el 30 oct pesos sujetos a varillas laterales exteriores.** Se proponen collares exteriores como apoyo que distribuya carga, con número, posiciones y fijación por dimensionar; no cargar la ventana acrílica ni asumir que esas varillas son los antiguos cuatro tirantes de cierre. Reorganizar bastidor, circuito mojado y ubicación de componentes según la gravedad real; conservar la geometría relativa de la cruz y bomba después de la muestra. Mantener la cubeta con flujo ascendente como propuesta a verificar.
+Añadir argollas para lastre y comprobar estabilidad horizontal. **Alex confirma el 30 oct pesos sujetos a varillas laterales exteriores.** Se proponen collares exteriores como apoyo que distribuya carga, con número, posiciones y fijación por dimensionar; no cargar la ventana acrílica ni asumir que esas varillas son los antiguos cuatro tirantes de cierre. Reorganizar bastidor, circuito mojado y ubicación de componentes según la gravedad real; adaptar la geometría óptica a D55 y mantener la bomba después de la muestra. Mantener la cubeta con flujo ascendente como propuesta a verificar.
 
 **D46/D50: sensores ambientales.** Mantener DS18B20 y kit Atlas K1.0 con las piezas disponibles, sin compra nueva en esta revisión. Objetivo de operación sin intervenciones durante la misión de días o pocas semanas; duración verificable por ensayo y comprobación al recuperar. **Alex descarta incorporar medición de profundidad en esta versión (D50).** No reservar un puerto de presión para un sensor retirado. Se conserva el objetivo mecánico de 1 m de inmersión; no representa una lectura del instrumento. Sin recálculo energético.
 
@@ -111,7 +115,7 @@ El 30 de octubre se ensaya la envolvente **final con todas sus interfaces**, las
 
 La adquisición funcionará sin navegador, Wi-Fi ni internet. Habrá **un único conector exterior para datos y carga**, opcionalmente desconectado durante funcionamiento autónomo y estanco con su tapón durante inmersión. Por él se programará, consultarán alarmas y descargarán datos/configuración al recuperar el equipo. Ocho contactos y dirección RS-485 aceptados; Switchcraft EN3 con contactos montados confirmado por Alex en D51. Montaje de panel, pinout, cable, transceptor y protocolo detallado pendientes. Modbus RTU se propone para lectura/configuración y se definirá exportación íntegra de archivos. No se prevé acceso inalámbrico.
 
-La bomba seleccionada es **MS11HS5L410C-01**, 24 V / 20 W según Alex, siempre aguas abajo de la celda. Se acepta apagar ordenadamente la Pi y cortar su alimentación entre ciclos mediante supervisor; el presupuesto supone 90 s activos, a verificar incluyendo arranque y escritura. La hipótesis energética anterior de cinco LED a 4 V / 100 mA durante 5 s no fija sus corrientes reales. D52 propone blanco a unos 62,5 mA y azul a 333 mA, ambos con regulación de corriente y activación independiente; las otras fuentes siguen por especificar. No se recalcula autonomía en esta revisión.
+La bomba seleccionada es **MS11HS5L410C-01**, 24 V / 20 W según Alex, siempre aguas abajo de la celda. Se acepta apagar ordenadamente la Pi y cortar su alimentación entre ciclos mediante supervisor; el presupuesto supone 90 s activos, a verificar incluyendo arranque y escritura. La hipótesis energética anterior de cinco LED a 4 V / 100 mA durante 5 s no fija sus corrientes reales. Para el blanco, 62,5 mA es una propuesta no medida; para el azul, el ajuste informado es 120 mA, con circuito y regulación de corriente por verificar según D54. Rojo e infrarrojo quedan añadidos con parámetros de operación y función pendientes. No se recalcula autonomía en esta revisión.
 
 Todo cambio de exposición, ganancia, integración, ROI, fuente o celda invalida los blancos incompatibles. El panel debe indicar con claridad medición válida, resultado fuera de calibración y señal sin calibrar. Una actualización de software no se ejecuta durante un ciclo de medida.
 

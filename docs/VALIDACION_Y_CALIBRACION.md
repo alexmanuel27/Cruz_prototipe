@@ -18,7 +18,7 @@ Realizar pruebas reversibles con material disponible, después de la revisión d
 | OPT-02 | Transmisión de blanco y patrones | Intensidad sin saturación, ≥10 repeticiones por condición, respuesta lineal de adquisición; CV de intensidad ≤2 % fuera del fondo |
 | OPT-03 | Naturaleza de señal del fluorómetro | Blanco, excitación a 430 nm apagado/encendido, diluciones y lectura de los 18 canales. Documentar por qué aumenta o disminuye cada señal; resolver la ecuación inversa de I645. Confirmar que 435 no satura y 645 responde con muestra fluorescente |
 | OPT-04 | Sensibilidad en agua natural | Mínimo bajo, medio y alto del dominio objetivo, más blanco; ≥10 lecturas por condición. SNR ≥10 en el nivel mínimo de trabajo y CV ≤5 % por encima de cuantificación |
-| OPT-05 | Validación de la geometría colineal heredada dentro de la nueva celda | Comprobar luz de excitación transmitida/dispersada, montaje sin filtro/rechazo de excitación, blanco, saturación e interferentes. Fondo del blanco ≤10 % de la señal neta del nivel bajo, sin saturación; repetir con interferentes |
+| OPT-05 | Validación de fluorescencia a 90° dentro de la nueva celda | Comprobar luz de excitación dispersada, rechazo de luz parásita, blanco, saturación e interferentes. Fondo del blanco ≤10 % de la señal neta del nivel bajo, sin saturación; repetir con interferentes |
 | OPT-06 | Interferencia entre modalidades | Secuencia única de operación: transmisión→fluorescencia, con renovación entre secuencias. Cambio ≤5 % en fluorescencia y ≤0,02 AU en transmisión respecto al control; registrar temperatura |
 | OPT-07 | Ventana, celda y materiales | Medir blanco con cada material y montaje completo (sin filtro); registrar transmisión a 430 nm/visible y autofluorescencia |
 
@@ -26,7 +26,7 @@ Definir SNR usando señal neta respecto al blanco y variabilidad de ciclos compl
 
 En OPT-02 comprobar además el contraste mínimo de absorbancia relevante para agua natural, ΔA, en bandas elegidas antes del ensayo. Objetivo de detección: desviación de ciclos completos ≤ΔA/3 y sesgo claramente menor que ΔA. Para cuantificar ese contraste se requiere margen mayor, inicialmente ruido ≤ΔA/10. Fijar ΔA con la pregunta de medida y las referencias, sin escogerlo retrospectivamente para que el prototipo apruebe. Los umbrales generales con colorantes no sustituyen esta prueba de señal débil.
 
-Si OPT-05 falla, revisar rechazo óptico, baffles/distancias dentro de la geometría colineal antes de reabrir la arquitectura.
+Si OPT-05 falla, revisar rechazo óptico, pantallas y distancias de la geometría a 90°; registrar el resultado antes de cambiar la arquitectura.
 
 ## 3. Estanqueidad del 30 de octubre
 

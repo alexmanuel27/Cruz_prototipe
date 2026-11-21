@@ -61,7 +61,7 @@ Retirados por Alex: **5–8, 10–11, 14, 22–26, 28–30 y 32–37**. El antig
 
 ## 5. Electrónica añadida — D52, 30 oct 2026
 
-**Propuesta para revisión del técnico**, con los dos LED elegidos por Alex. Precios unitarios en EUR **con IVA belga del 21 %**, consultados el 30 de octubre; no incluyen portes. TinyTronics ya muestra 21 %: no se vuelve a añadir. En DigiKey, RS y Ledrise se calcula desde el precio neto. El Pololu es Marketplace con envío separado.
+**Propuesta histórica del 30 de octubre para revisión del técnico.** Actualización del 21 de noviembre: Alex tiene un LM317, no tiene el PLD333, informa de un ajuste de Daniela de 4 V y 120 mA para el azul y quiere añadir rojo ILS RS 0861993 e infrarrojo Vishay RS 6997694. La propuesta azul a 333 mA no corresponde a ese ajuste; los LED rojo e IR serán excitaciones adicionales para el AS7265x; drivers, ubicación y secuencia están pendientes de revisión. Las filas y el subtotal se conservan como presupuesto histórico y no incluyen las nuevas fuentes. Ver [D54](../DECISIONES.md#d54--fuentes-adicionales-y-ajuste-del-azul-2026-11-21). Precios unitarios en EUR **con IVA belga del 21 %**, consultados el 30 de octubre; no incluyen portes. TinyTronics ya muestra 21 %: no se vuelve a añadir. En DigiKey, RS y Ledrise se calcula desde el precio neto. El Pololu es Marketplace con envío separado.
 
 | ID | Cantidad | Comprar | Enlace | EUR/u con IVA |
 |---|---:|---|---|---:|
@@ -91,11 +91,11 @@ Retirados por Alex: **5–8, 10–11, 14, 22–26, 28–30 y 32–37**. El antig
 
 - **Optisolis E01:** Alex confirma que hay que comprarlo. La ficha de Ledrise anuncia producción de 6–12 semanas y no se ha encontrado stock inmediato verificado del mismo conjunto 5000 K sobre estrella. Mantener la referencia presupuestada y dejar su pedido pendiente de resolver la entrega; no tratarla como entrega de una semana.
 - **Motor/convertidores:** Alex confirma A4988 y DC/DC de 5 A. Se asignan un A4988 y tres convertidores; quedan fuera de compra. El A4988 se aprueba para el montaje solo tras comprobar corriente por fase y temperatura. Los convertidores admiten 30 V de entrada: medir la carga completa del pack antes de conectarlos.
-- **E04/E06:** fuente blanca lineal a unos 62,5 mA desde 9 V, con dos resistencias de 10 Ω en serie. E03 es exclusivamente para el azul a 333 mA. No conectar el blanco al módulo azul ni reutilizar la hipótesis energética de 100 mA como especificación del LED.
+- **E04/E06:** fuente blanca lineal propuesta a unos 62,5 mA desde 9 V, con dos resistencias de 10 Ω en serie; corriente real no medida. E03 a 333 mA es propuesta histórica y no reproduce el ajuste de 120 mA informado para el azul. No conectar el blanco al módulo azul ni reutilizar la hipótesis energética de 100 mA como especificación del LED.
 - **E06 y E18–E20:** material de montaje no confirmado en inventario. Descontarlo si el técnico dispone de los mismos valores y tensiones; se incluye para que el pedido no omita pasivos necesarios. La placa de montaje, cables y disipador se preparan con material del taller previamente retirado del pedido por Alex.
 - **E12/E13/E15–E17:** propuesta de aislamiento de la carga mediante relé normalmente abierto de dos polos y detección de cable. Conservar el cargador y BMS originales. Fusibles provisionales de 3 A y 2 A; cotejar cargador, cables y BMS antes del cableado. Pinout EN3 todavía no liberado para soldar.
 - **RTC:** se propone DS3231 de 4 EUR; ARES también enumera DS1307, sin disponibilidad confirmada ni revisión de sus pull-ups. No se compra una segunda placa aisladora de conductividad: viene en el kit Atlas.
-- Solo hay referencias cerradas para blanco y azul. Los otros LED y las nuevas magnitudes futuras se incorporarán cuando estén definidos; no se compran módulos para corrientes desconocidas.
+- A 21/11 Alex ha elegido además las referencias del rojo e infrarrojo; serán excitaciones adicionales para el AS7265x, pero sus corrientes siguen sin definir y no constan compras. No se seleccionan drivers por corrientes desconocidas.
 
 ## 6. Documentos para el técnico
 

@@ -1,5 +1,7 @@
 > **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [propuesta eléctrica del 30 de octubre](../archivo/electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
 
+> **Actualización D55, 21 nov 2026:** geometría óptica en T: un brazo común con LED seleccionables, cámara en transmisión y AS7265x a 90°. Sustituye la geometría colineal anterior. Geometría detallada, integración y validación pendientes; no se han modificado CAD ni PCB.
+
 # Diseño Óptico Detallado: Cruz
 
 Este documento técnico define la geometría y los componentes ópticos del prototipo Cruz. El diseño está en curso y sirve como especificación base para el diseño mecánico y electrónico.
@@ -10,9 +12,9 @@ Este documento técnico define la geometría y los componentes ópticos del prot
 *   **Lente:** Gran angular (la utilizada y validada físicamente en el montaje de MonoSpectro).
 *   **Celda de Muestra:** Celda de flujo de cuarzo, comprada y compartida entre ambos caminos ópticos.
 *   **Fluorescencia (Excitación):** LED azul de 430 nm.
-*   **Fluorescencia (Detección):** Sensor AS7265x de 18 canales, usando el canal cercano a 645 nm como señal principal para clorofila. Se registrarán los 18 canales.
-*   **Filtros Ópticos:** Sin filtro de emisión (la señal en 435 nm es excitación pura, el resto será procesado, confiando en la selectividad del sensor de 18 canales).
-*   **Geometría:** 4 brazos radiales en configuración de cruz. La transmisión y la recepción de cámara en un eje, la excitación fluorescente (LED 430 nm) y detección AS7265x colineales en el otro eje perpendicular a la celda.
+*   **Fluorescencia (Detección):** Sensor AS7265x de 18 canales; se registrarán todos. Los canales útiles para cada excitación requieren validación en esta geometría.
+*   **Filtros Ópticos:** El diseño anterior eliminó el filtro de emisión; verificar luz de excitación y señal de fondo a 90° antes de considerar cerrado el diseño óptico. No atribuir pureza de fluorescencia por canal sin ensayo.
+*   **Geometría:** Un brazo común con LED blanco, azul, rojo e infrarrojo seleccionables ilumina la celda. La cámara observa transmisión en el eje del haz; el AS7265x observa a 90°.
 *   **Secuencia Óptica:** Primero medición de transmisión, luego fluorescencia.
 *   **Hidráulica:** Toma -> Celda de cuarzo (entrada por una cara, salida por otra) -> Bomba peristáltica sumergida -> Descarga.
 
@@ -21,15 +23,14 @@ Este documento técnico define la geometría y los componentes ópticos del prot
 ```mermaid
 flowchart TD
     subgraph Eje Transmisión
-    A[Fuente de Luz Blanca] -->|Luz incidente| C{Celda de Cuarzo}
+    A[Brazo común: LED seleccionables] -->|Luz incidente| C{Celda de Cuarzo}
     C -->|Luz transmitida, sin colimador| B[Rendija 0,5 mm]
     B --> G[Red + lente gran angular]
     G --> D[Cámara monocroma]
     end
 
     subgraph Eje Fluorescencia
-    E[LED 430 nm] -->|Excitación colineal| C
-    C -->|Emisión de Fluorescencia| F[Sensor AS7265x]
+    C -->|Observación a 90°| F[Sensor AS7265x]
     end
 ```
 
@@ -53,7 +54,7 @@ La distancia nominal de 60 mm pertenece al conjunto rendija–cámara heredado; 
 | OPT-02 | Transmisión de blanco y patrones | CV de intensidad ≤2 % fuera del fondo |
 | OPT-03 | Naturaleza de señal del fluorómetro | 435 no satura, 645 responde con muestra fluorescente |
 | OPT-04 | Sensibilidad en agua natural | SNR ≥10 en el nivel mínimo, CV ≤5 % sobre cuantificación |
-| OPT-05 | Validación de geometría colineal heredada en nueva celda | Fondo del blanco ≤10 % de la señal neta del nivel bajo |
+| OPT-05 | Validación de la geometría a 90° en la nueva celda | Fondo del blanco ≤10 % de la señal neta del nivel bajo |
 | OPT-06 | Interferencia entre modalidades | Cambio ≤5 % en fluorescencia y ≤0,02 AU en transmisión |
 | OPT-07 | Ventana, celda y materiales | Registrar transmisión a 430 nm/visible y autofluorescencia |
 
@@ -67,7 +68,7 @@ El diseño óptico se dará por cerrado y autorizará la fase de CAD final, comp
 | Dato / Decisión | Archivo Fuente / Ruta Local |
 |---|---|
 | Geometría, Rendija y Filtros | `/Users/alex/Nube /repos/Cruz_prototipe/ESPECIFICACION.md` |
-| Geometría 4 brazos | `/Users/alex/Nube /repos/Cruz_prototipe/DECISIONES.md` |
+| Geometría en T y brazo común | `/Users/alex/Nube /repos/Cruz_prototipe/DECISIONES.md` (D55) |
 | AS7265x y cálculo de clorofila | `/Users/alex/Nube /repos/Fluorometer/README.md` |
 | Firmware Fluorescencia (menciona LED 435 nm como antecedente; no cambia especificación Cruz de LED 430 nm) | `/Users/alex/Nube /repos/Fluorometer/Spectro18_V_Flu/Spectro18_V_Flu.ino` |
 | Fotos y Ensamblaje Original | `/Users/alex/Nube /repos/MonoSpectro/docs/images/cad_assembly.png` |
