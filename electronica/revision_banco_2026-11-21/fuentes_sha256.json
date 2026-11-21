@@ -1,0 +1,16 @@
+{
+  "antes": {
+    "cross_v8_draft.kicad_sch": "d2a346aeb1e3ee872ee54396d219a7cd4b42f6284495c0c0832b75d14ea90863",
+    "cross_v8_draft.kicad_pro": "599d3f03325e7b488c3df509c62a7c7422e71a2a7e4fbc116cd1dcad1745bcf4",
+    "cross_v8_draft.kicad_pcb": "1c81c5b83dc3ce8274b2ce2147d3c1f0fb1775d53a8852257a7018e004bbaf1a"
+  },
+  "despues": {
+    "cross_v8_draft.kicad_sch": "ccbacb88e5f917e300aeaf189742ff4c091fe0fe65014687cb2952f58f78c11d",
+    "cross_v8_draft.kicad_pcb": "e66401cc30d721184cef9b067c58c09b73ac9eea9ee769140a9a13af042dcb69",
+    "cross_v8_draft.kicad_pro": "599d3f03325e7b488c3df509c62a7c7422e71a2a7e4fbc116cd1dcad1745bcf4",
+    "Cross.kicad_sym": "25e97c4c68ce1340eab142e8cf457d4e39c255641fcd7e1d7d3b3807dce9cdfa",
+    "Cross.pretty/Atlas_EC_OEM_10pad.kicad_mod": "bac551b915a107a566097ce002bd6accb3e72691d6d36f102a0a9f0d7553695c",
+    "sym-lib-table": "0e9cf37c02fc2a77c22904b1ac90b0920a9625dc0824f64c223beb47b959493c"
+  },
+  "respaldo": "/Users/alex/.codex/backups/Cruz/2026-11-21_antes_banco"
+}

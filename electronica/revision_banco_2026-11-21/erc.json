@@ -1,0 +1,450 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-21T19:37:47+0100",
+    "kicad_version": "9.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/46c8a571-6577-4eec-95bb-8a1e096e71aa",
+            "violations": [
+                {
+                    "description": "Symbol 'Fuse' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol F2 [Fuse]",
+                            "pos": {
+                                "x": 0.381,
+                                "y": 0.9906
+                            },
+                            "uuid": "ca28ddcd-8ef6-5d51-abce-9da7a8ae6416"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'G2RL-2' doesn't match copy in library 'Relay'",
+                    "items": [
+                        {
+                            "description": "Symbol K1 [G2RL-2]",
+                            "pos": {
+                                "x": 0.8636,
+                                "y": 0.9906
+                            },
+                            "uuid": "d0559bf8-db6d-5882-ad90-3869b64cfb1b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '1N4007' doesn't match copy in library 'Diode'",
+                    "items": [
+                        {
+                            "description": "Symbol D1 [1N4007]",
+                            "pos": {
+                                "x": 0.381,
+                                "y": 1.3716
+                            },
+                            "uuid": "730dc923-5f42-5190-a58b-2dbed3a5d5b0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'AO3400A' doesn't match copy in library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q2 [AO3400A]",
+                            "pos": {
+                                "x": 1.3462,
+                                "y": 0.9906
+                            },
+                            "uuid": "7852643a-7934-5503-82c8-62f05e9bd38e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_01x08' doesn't match copy in library 'Connector_Generic'",
+                    "items": [
+                        {
+                            "description": "Symbol J18 [Conn_01x08]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 0.6096
+                            },
+                            "uuid": "2fd94e52-a636-5d93-89eb-64f41bd22b4e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'LTV-817' doesn't match copy in library 'Isolator'",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [LTV-817]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.3716
+                            },
+                            "uuid": "d29b9cd6-156c-5987-b6f9-a6a085b1d5a7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Fuse' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol F1 [Fuse]",
+                            "pos": {
+                                "x": 2.3114,
+                                "y": 0.6096
+                            },
+                            "uuid": "c8376089-30f9-5993-9f79-3ca96ebaa282"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '1N4007' doesn't match copy in library 'Diode'",
+                    "items": [
+                        {
+                            "description": "Symbol D2 [1N4007]",
+                            "pos": {
+                                "x": 2.3114,
+                                "y": 1.3716
+                            },
+                            "uuid": "06934a86-3c08-5320-b71c-96bf0d33127c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_01x05' doesn't match copy in library 'Connector_Generic'",
+                    "items": [
+                        {
+                            "description": "Symbol J24 [Conn_01x05]",
+                            "pos": {
+                                "x": 3.0607,
+                                "y": 2.3114
+                            },
+                            "uuid": "c10e053b-0c85-5c08-aa58-dbaddf920d68"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'MCP1700x-330xxTO' doesn't match copy in library 'Regulator_Linear'",
+                    "items": [
+                        {
+                            "description": "Symbol U7 [MCP1700x-330xxTO]",
+                            "pos": {
+                                "x": 4.1402,
+                                "y": 0.6604
+                            },
+                            "uuid": "ab236476-70f8-5542-a3ab-0bc4462af286"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'BSS138' doesn't match copy in library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q3 [BSS138]",
+                            "pos": {
+                                "x": 3.5433,
+                                "y": 2.3114
+                            },
+                            "uuid": "fc2a17e0-9b04-5028-8d2e-9de8184e1c9f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_02x08_Counter_Clockwise' doesn't match copy in library 'Connector_Generic'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [Conn_02x08_Counter_Clockwise]",
+                            "pos": {
+                                "x": 4.4704,
+                                "y": 0.6223
+                            },
+                            "uuid": "f8fce87b-acde-5341-b554-4e93a034d648"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'BSS138' doesn't match copy in library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q4 [BSS138]",
+                            "pos": {
+                                "x": 4.0259,
+                                "y": 2.3114
+                            },
+                            "uuid": "cc4e8343-4c03-5917-9689-4aee76b32c2b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'",
+                    "items": [
+                        {
+                            "description": "Symbol J2 [Conn_01x04]",
+                            "pos": {
+                                "x": 4.953,
+                                "y": 1.0033
+                            },
+                            "uuid": "5e0b731b-c654-5cf6-8847-00f2f042255c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Polarized' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C1 [C_Polarized]",
+                            "pos": {
+                                "x": 4.9276,
+                                "y": 1.27
+                            },
+                            "uuid": "b514d237-c153-5f6d-afe2-53badf97a864"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '4013' doesn't match copy in library '4xxx'",
+                    "items": [
+                        {
+                            "description": "Symbol U8 [4013]",
+                            "pos": {
+                                "x": 5.0419,
+                                "y": 2.286
+                            },
+                            "uuid": "47cd9cc0-ebad-566a-bfab-3f6226335dcf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_02x20_Odd_Even' doesn't match copy in library 'Connector_Generic'",
+                    "items": [
+                        {
+                            "description": "Symbol J1 [Conn_02x20_Odd_Even]",
+                            "pos": {
+                                "x": 5.7658,
+                                "y": 0.6477
+                            },
+                            "uuid": "d7608689-a7d2-514c-aa16-0f8bde5cf213"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '4013' doesn't match copy in library '4xxx'",
+                    "items": [
+                        {
+                            "description": "Symbol U8 [4013]",
+                            "pos": {
+                                "x": 5.0292,
+                                "y": 2.9337
+                            },
+                            "uuid": "fda006d2-b8e7-58cc-a66e-80e9e5519f83"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'",
+                    "items": [
+                        {
+                            "description": "Symbol J19 [Conn_01x04]",
+                            "pos": {
+                                "x": 5.6769,
+                                "y": 1.3208
+                            },
+                            "uuid": "661e5004-8f7f-57fe-a953-c6a2415115e8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '4013' doesn't match copy in library '4xxx'",
+                    "items": [
+                        {
+                            "description": "Symbol U8 [4013]",
+                            "pos": {
+                                "x": 5.5245,
+                                "y": 2.286
+                            },
+                            "uuid": "467ac60b-6365-5625-915f-b5766aa912a2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '1N5819' doesn't match copy in library 'Diode'",
+                    "items": [
+                        {
+                            "description": "Symbol D4 [1N5819]",
+                            "pos": {
+                                "x": 5.0292,
+                                "y": 3.3147
+                            },
+                            "uuid": "c682bab4-dac7-5b3c-8973-4e75b77a32cd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'",
+                    "items": [
+                        {
+                            "description": "Symbol J20 [Conn_01x04]",
+                            "pos": {
+                                "x": 6.0452,
+                                "y": 1.3335
+                            },
+                            "uuid": "92a551f9-3d9c-50b7-a35e-abc937e96df6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '1N5819' doesn't match copy in library 'Diode'",
+                    "items": [
+                        {
+                            "description": "Symbol D5 [1N5819]",
+                            "pos": {
+                                "x": 5.5118,
+                                "y": 3.3147
+                            },
+                            "uuid": "68f6c72b-a475-524d-bd7b-c1b998873b90"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'",
+                    "items": [
+                        {
+                            "description": "Symbol J6 [Conn_01x04]",
+                            "pos": {
+                                "x": 6.7818,
+                                "y": 0.635
+                            },
+                            "uuid": "0e3756c0-0751-5147-8013-57cbcb656651"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_01x04' doesn't match copy in library 'Connector_Generic'",
+                    "items": [
+                        {
+                            "description": "Symbol J8 [Conn_01x04]",
+                            "pos": {
+                                "x": 6.7818,
+                                "y": 1.016
+                            },
+                            "uuid": "18f973cb-a59f-57ca-8fcc-4553ee8b8f10"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '1N5819' doesn't match copy in library 'Diode'",
+                    "items": [
+                        {
+                            "description": "Symbol D6 [1N5819]",
+                            "pos": {
+                                "x": 6.7437,
+                                "y": 2.667
+                            },
+                            "uuid": "1a26254c-0960-55b1-8a30-c368e56e3140"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'AO3400A' doesn't match copy in library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q6 [AO3400A]",
+                            "pos": {
+                                "x": 7.2136,
+                                "y": 2.286
+                            },
+                            "uuid": "e1b2b674-b3d5-5a98-ba80-08b09ecb1a48"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '1N5819' doesn't match copy in library 'Diode'",
+                    "items": [
+                        {
+                            "description": "Symbol D7 [1N5819]",
+                            "pos": {
+                                "x": 7.2263,
+                                "y": 2.667
+                            },
+                            "uuid": "5944a6f0-ac26-5cb9-8315-1252c3b3bcdb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_01x03' doesn't match copy in library 'Connector_Generic'",
+                    "items": [
+                        {
+                            "description": "Symbol J10 [Conn_01x03]",
+                            "pos": {
+                                "x": 7.7216,
+                                "y": 0.9398
+                            },
+                            "uuid": "a30fad10-12ff-59b6-bb36-3528538f60aa"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        }
+    ],
+    "source": "cross_v8_draft.kicad_sch"
+}

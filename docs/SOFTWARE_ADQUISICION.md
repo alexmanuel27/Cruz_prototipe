@@ -1,5 +1,7 @@
 # Adquisición y control de Cruz: revisión y primera iteración
 
+**Interfaz eléctrica vigente desde la edición de PCB del 21 de noviembre:** [tabla BCM/pines, polaridades y estados de arranque](../electronica/cross_v8_raspberry/REVISION_BANCO_2026-11-21.md#tabla-vigente-para-software). Las cuatro fuentes son activas altas y requieren `OPT_ARM` en BCM21/pin 40. El programa de banco de tres LED conserva su cableado ensayado y no controla esa señal nueva. La rama propia de 3,3 V ya está dibujada; el aislamiento físico del EC-OEM sigue pendiente. No energizar V8 a partir de los ensayos separados.
+
 **Geometría actual, D55 y D56 · 21/11/2026:** iluminación compartida desde un brazo con halógena y LED azul, rojo e infrarrojo seleccionables; cámara en transmisión y AS7265x a 90°. Mantener transmisión primero y excitación azul después; orden, tiempos y datos derivados para las excitaciones adicionales pendientes de definir. El software debe identificar fuente y ajustes por lectura, guardar los 18 canales y originales, y mantener la exclusión de fuentes y apagado seguro. Esta decisión no valida la respuesta de fluorescencia ni cambia el PCB o el CAD.
 
 ## Conmutación de las fuentes en banco
@@ -179,9 +181,9 @@ La ecuación de firmware `−2,7924·ln(I645)+20,1264` no usa el blanco ni el os
 
 Para el controlador Python del AS7265x existe una opción del propio fabricante de la placa: [SparkFun Qwiic AS7265x](https://github.com/sparkfun/qwiic_as7265x_py/blob/master/qwiic_as7265x.py), con lecturas crudas y calibradas separadas. Es candidata, no dependencia instalada o validada aquí. Su `take_measurements()` puede volver por timeout sin excepción: no interpretar retorno como lectura nueva. Comprobar disponibilidad/frescura, errores de bus y plazo total. Usar adquisición sin los emisores integrados; la excitación externa es 430 nm. La [documentación oficial de Raspberry Pi](https://www.raspberrypi.com/documentation/accessories/camera-software.html) mantiene la pila moderna de cámara; el sensor OV9281 concreto y su soporte RAW se verificarán en la Pi real.
 
-## 2. Interfaces observadas en V8
+## 2. Instantánea de interfaces V8 anterior a la edición del 21 de noviembre
 
-Se exportó una netlist XML del **esquema guardado vigente**, no del archivo histórico: 75 componentes y 77 redes. Los siguientes números son **pines del símbolo J1 de 40 contactos**, no números BCM ni autorización de cableado. No se genera una configuración GPIO a partir de esta tabla. Ver [estado eléctrico V8](../electronica/cross_v8_raspberry/LEEME_PRIMERO.md).
+Esta tabla conserva la exportación anterior de 75 componentes y 77 redes; **ya no describe la rama de sensores ni las fuentes ópticas guardadas**. Para trabajar con la edición nueva, usar la [tabla eléctrica vigente](../electronica/cross_v8_raspberry/REVISION_BANCO_2026-11-21.md#tabla-vigente-para-software) y el [estado V8](../electronica/cross_v8_raspberry/LEEME_PRIMERO.md). Los números de la instantánea siguiente son pines físicos de J1, no BCM ni autorización de cableado.
 
 | Función | Conexión observada | Pendiente que bloquea su uso real |
 | --- | --- | --- |
