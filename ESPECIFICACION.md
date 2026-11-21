@@ -2,9 +2,9 @@
 
 **Versión 0.4 · 30 de octubre de 2026 · Fuentes LED y electrónica D52.** El [índice del proyecto](docs/INDICE_PROYECTO.md) enlaza el diseño mecánico y eléctrico posterior.
 
-**Actualización de fuentes, 21 de noviembre de 2026:** Alex incorpora un LED rojo ILS ILH-PU01-PCRE-SC221-WIR200 (longitud dominante 620 nm) y un infrarrojo Vishay TSHG6410 (pico 850 nm). Serán excitaciones adicionales medidas por el AS7265x desde el brazo común; disposición detallada, secuencia, corrientes, drivers y verificación en Cruz están pendientes. Para el azul, Alex informa del ajuste de Daniela a 4 V y 120 mA: los 4 V corresponden a la fuente; falta identificar el circuito y cómo se regula la corriente. La propuesta antigua de 333 mA y PLD333 no es el ajuste aceptado. Ver [decisión D54](DECISIONES.md#d54--fuentes-adicionales-y-ajuste-del-azul-2026-11-21).
+**Actualización de fuentes, 21 de noviembre de 2026:** Alex incorpora un LED rojo ILS ILH-PU01-PCRE-SC221-WIR200 (longitud dominante 620 nm) y un infrarrojo Vishay TSHG6410 (pico 850 nm) como excitaciones adicionales para el AS7265x. Su disposición, corrientes y secuencia quedan pendientes. El LED azul funciona a 110 mA medidos con LM317 en banco. Se conserva como referencia el ajuste de Daniela de 120 mA. Ver [D54](DECISIONES.md#d54--fuentes-adicionales-y-ajuste-del-azul-2026-11-21) y [D56](DECISIONES.md#d56--halógena-para-transmisión-2026-11-21).
 
-**Geometría óptica actualizada, 21 de noviembre de 2026:** Alex adopta fluorescencia a **90°** y un brazo de iluminación común con LED seleccionables. La cámara observa la transmisión en el eje de iluminación; el AS7265x observa la celda perpendicularmente. Se conserva el nombre Cruz/Cross. Sustituye la geometría colineal anterior; montaje, distribución de LED y validación pendientes. Ver [D55](DECISIONES.md#d55--geometría-óptica-a-90-y-brazo-de-iluminación-común-2026-11-21).
+**Geometría óptica actualizada, 21 de noviembre de 2026:** Alex adopta fluorescencia a **90°** y un brazo de iluminación común con fuentes seleccionables. La cámara observa la transmisión en el eje de iluminación; el AS7265x observa la celda perpendicularmente. Se conserva el nombre Cruz/Cross. Sustituye la geometría colineal anterior; montaje, distribución de fuentes y validación pendientes. Ver [D55](DECISIONES.md#d55--geometría-óptica-a-90-y-brazo-de-iluminación-común-2026-11-21).
 
 La Cruz integra el MonoSpectro y el fluorómetro en un aparato autónomo para agua natural, con la muestra en el centro. Este repositorio contiene ingeniería, fabricación, firmware y validación. El entregable del **1 de diciembre de 2026** es un prototipo operativo en banco y ensayado varias horas en un lago.
 
@@ -12,7 +12,7 @@ Esta especificación precede al diseño. Los requisitos expresos de Alex se dist
 
 ## 1. Requisitos fijados por Alex
 
-- Conservar los dos detectores: cámara monocroma para espectrofotometría y AS7265x de 18 canales para fluorescencia. En D52 Alex sustituye la halógena por el LED blanco Nichia Optisolis NF2W757GT-F1, star PCB SKU 32724, y fija el LED azul RS 0283199 para la excitación nominal de 430 nm.
+- Conservar los dos detectores: cámara monocroma para espectrofotometría y AS7265x de 18 canales para fluorescencia. Alex selecciona una [halógena para transmisión](DECISIONES.md#d56--halógena-para-transmisión-2026-11-21) y el LED azul RS 0283199 para la excitación nominal de 430 nm. El rojo y el infrarrojo son excitaciones adicionales.
 - Compartir la cámara de muestra; usar una geometría óptica en T, con iluminación común, cámara en transmisión y AS7265x a 90°. El nombre del instrumento sigue siendo Cruz/Cross.
 - Operación in situ durante días, renovación de agua y almacenamiento autónomo para análisis posterior.
 - Diseñar juntas, ventanas, pasamuros y protección contra agua en octubre.
@@ -46,7 +46,7 @@ Estas cifras son **objetivos de ingeniería**, fijados.
 | Parámetro | Propuesta inicial | Verificación |
 |---|---|---|
 | Medio | Ensayos iniciales en agua dulce; aplicación final en bahías, sin reactivos durante despliegue | Ensayo con matriz natural y retorno separado; compatibilidad salina pendiente |
-| Autonomía | Objetivo original 72 h; primer prototipo con CITYORK 24 V / 3 Ah por precio y plazo, sin promesa de 72 h | El cálculo anterior con halógena queda histórico tras D52; medir duración real con las fuentes y electrónica finales. Ver [presupuesto anterior](docs/PRESUPUESTO_ENERGETICO.md) |
+| Autonomía | Objetivo original 72 h; primer prototipo con CITYORK 24 V / 3 Ah por precio y plazo, sin promesa de 72 h | Medir duración real con la halógena, los tres LED y la electrónica final. Ver [presupuesto anterior](docs/PRESUPUESTO_ENERGETICO.md) |
 | Cadencia | Un ciclo cada 15 min; configurable, sujeto al tiempo mínimo validado | 288 ciclos previstos en 72 h |
 | Duración del ciclo | Objetivo ≤120 s desde renovación hasta guardado | Medir purga, estabilización de fuentes, lecturas y escritura |
 | Profundidad de servicio | Hasta 1 m de inmersión del conjunto | Ensayo hidráulico y de envolvente; registrar cota del punto más profundo |

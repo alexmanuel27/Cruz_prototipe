@@ -1,6 +1,6 @@
-> **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [diseño eléctrico vigente](../archivo/electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
+> **Actualización D56, 21 nov 2026:** Alex selecciona una [halógena](../DECISIONES.md#d56--halógena-para-transmisión-2026-11-21) para transmitir. La lámpara que Alex probó es de 12 V y 10 W. Quedan por medir arranque, estabilización y energía por ciclo.
 
-> **Actualización D55, 21 nov 2026:** la geometría vigente es iluminación común con LED seleccionables, cámara en transmisión y AS7265x a 90°. Las referencias al diseño colineal previo son antecedentes, no una configuración validada.
+> **Actualización D55, 21 nov 2026:** la geometría vigente es iluminación común con fuentes seleccionables, cámara en transmisión y AS7265x a 90°. Las referencias al diseño colineal previo son antecedentes, no una configuración validada.
 
 # Análisis de detectores, óptica y operación in situ
 
@@ -46,13 +46,13 @@ La fluorescencia necesita fotones útiles y rechazo de excitación. Una respuest
 La disposición óptica en T comparte el brazo de iluminación entre ambas modalidades:
 
 ```text
-LED seleccionables ─────── MUESTRA ─────────── rendija/red/cámara
+Fuentes seleccionables ─── MUESTRA ─────────── rendija/red/cámara
                                │
                                ▼
                          AS7265x a 90°
 ```
 
-El haz y la cámara están en el mismo eje; el AS7265x observa perpendicularmente. Los cuatro LED son seleccionables desde el brazo común; su colocación y el acoplamiento de cada uno quedan por diseñar. Las atribuciones previas de señal en geometría colineal no se trasladan como resultados de esta disposición.
+El haz y la cámara están en el mismo eje; el AS7265x observa perpendicularmente. La halógena y los tres LED son seleccionables desde el brazo común. Su colocación y acoplamiento quedan por diseñar. Las atribuciones previas de señal en geometría colineal no se trasladan como resultados de esta disposición.
 
 ## 5. La señal de clorofila debe verificarse de nuevo
 

@@ -1,6 +1,30 @@
 # Adquisición y control de Cruz: revisión y primera iteración
 
-**Geometría actual, D55 · 21/11/2026:** iluminación compartida desde un brazo con LED blanco, azul, rojo e infrarrojo seleccionables; cámara en transmisión y AS7265x a 90°. Mantener transmisión primero y excitación azul después; orden, tiempos y datos derivados para las excitaciones adicionales pendientes de definir. El software debe identificar fuente y ajustes por lectura, guardar los 18 canales y originales, y mantener la exclusión de fuentes y apagado seguro. Esta decisión no valida la respuesta de fluorescencia ni cambia el PCB o el CAD.
+**Geometría actual, D55 y D56 · 21/11/2026:** iluminación compartida desde un brazo con halógena y LED azul, rojo e infrarrojo seleccionables; cámara en transmisión y AS7265x a 90°. Mantener transmisión primero y excitación azul después; orden, tiempos y datos derivados para las excitaciones adicionales pendientes de definir. El software debe identificar fuente y ajustes por lectura, guardar los 18 canales y originales, y mantener la exclusión de fuentes y apagado seguro. Esta decisión no valida la respuesta de fluorescencia ni cambia el PCB o el CAD.
+
+## Conmutación de las fuentes en banco
+
+Alex probó la halógena de **12 V / 10 W** con la fuente de banco. También alimentó a 12 V el circuito del azul con LM317 y 10,4 Ω y reportó que se mantiene el ajuste de **110 mA**. Probar una línea de 12 V común:
+
+| Rama | Camino de potencia |
+| --- | --- |
+| Halógena | +12 V → lámpara → drenador del IRLZ44N → fuente del MOSFET → negativo del DC/DC |
+| Azul | +12 V → circuito LM317 existente → LED azul → drenador de otro IRLZ44N → fuente del MOSFET → negativo del DC/DC |
+
+El rojo y el infrarrojo pueden incorporarse a la línea con un limitador de corriente por canal, una vez comprobados. La halógena demanda 10 W / 12 V ≈ 0,83 A en régimen. El [filamento frío](https://www.ushio.com/files/catalog/qih/qih-lamp-characteristics.pdf) demanda más al arrancar. Probar el DC/DC real desde frío, verificar que la lámpara arranca y que los 12 V se recuperan y se mantienen. El pico real requiere instrumentación con resolución temporal suficiente. Medir cuánto tarda la luz en estabilizarse antes de fijar la espera para transmisión.
+
+Si los 12 V llegan directamente a IN del LM317, el aumento de 8 a 12 V agrega unos 0,44 W de calor a 110 mA. Medir temperatura y corriente con el tiempo de encendido previsto. Si hace falta reducir el calor, se puede conservar la línea de 12 V y bajar solo la entrada del LM317. [Cálculo térmico del LM317](https://www.ti.com/lit/ds/symlink/lm317.pdf#page=23).
+
+GPIO propuestos para la Pi 5 en un montaje separado de V8. Verificar disponibilidad en la Pi antes de cablear. La tabla de V8 más abajo describe otra interfaz.
+
+| Fuente | GPIO BCM | Pin físico | Activa en banco |
+| --- | --- | --- | --- |
+| Halógena | 22 | 15 | Alto |
+| Azul | 23 | 16 | Alto |
+| Rojo | 16 | 36 | Alto |
+| Infrarrojo | 20 | 38 | Alto |
+
+Probar primero el azul. El cátodo pasa al drenador del IRLZ44N y la fuente del MOSFET va al negativo del DC/DC. Usar un [74AHCT125](https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf) alimentado con los 5 V de la Pi para adaptar las cuatro señales de 3,3 V. Unir GND de Pi, adaptador y DC/DC, con el retorno de potencia directo al convertidor. Para el azul, llevar GPIO23 a 1A y llevar 1Y a la puerta a través de 470 Ω. Para la halógena, usar GPIO22, 2A y 2Y de la misma forma. Poner una resistencia de 10 kΩ a GND en cada entrada usada y unir su OE a GND. Poner 120 kΩ entre puerta y fuente y 100 nF de desacoplo entre VCC y GND del adaptador. Deshabilitar y fijar las entradas de los canales que aún no se usan. Verificar apagado en reposo, arranque y reinicio, VGS de al menos 4,5 V al encender y corriente del LED con el interruptor instalado. El [IRLZ44N](https://www.infineon.com/part/IRLZ44N) tiene resistencia de encendido garantizada a partir de la condición publicada de 4,5 V. Probar una fuente a la vez.
 
 ## Pruebas de banco · 21 de noviembre de 2026
 

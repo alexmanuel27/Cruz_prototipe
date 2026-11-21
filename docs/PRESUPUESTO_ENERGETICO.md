@@ -1,4 +1,4 @@
-> **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [propuesta eléctrica del 30 de octubre](../archivo/electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
+> **Actualización D56, 21 nov 2026:** Alex vuelve a seleccionar una [halógena para transmisión](../DECISIONES.md#d56--halógena-para-transmisión-2026-11-21). Los 10 W y 5 s de este presupuesto son valores históricos. Medir potencia, tiempo de estabilización y energía por ciclo para actualizar la autonomía.
 
 # Presupuesto energético conservado
 

@@ -4,6 +4,8 @@
 
 La Raspberry Pi recibe 5 V y gobierna el instrumento; sus GPIO trabajan a 3,3 V. Batería y bomba son de 24 V nominales. Se conserva la numeración de las 22 referencias discutidas con Alex y se añade el regulador de sensores como ítem 23. Es una lista de trabajo funcional: el título real del bloque 01 es «BATERIA, CARGA Y PROTECCION» y el del 02, «CONVERSION DE ALIMENTACION». El control magnético está dibujado en 08, el reloj en 07 y el bloqueo del piloto en 09.
 
+> **D56:** Alex elige una [halógena para transmisión](../../DECISIONES.md#d56--halógena-para-transmisión-2026-11-21). La tabla y las referencias reflejan la V8 guardada con su antiguo canal de LED blanco. La alimentación, corriente de arranque y conmutación de la lámpara deben verificarse en banco antes de revisar ese canal.
+
 ## Estado comprobado
 
 KiCad 9.0.7, comprobaciones sobre copia. [ERC](../revision_01_02_2026-11-20/erc.json), [DRC con paridad](../revision_01_02_2026-11-20/drc.json), [redes exportadas](../revision_01_02_2026-11-20/redes.xml) y [SHA256 de las fuentes](../revision_01_02_2026-11-20/fuentes_sha256.json).

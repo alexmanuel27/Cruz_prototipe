@@ -1,6 +1,6 @@
-> **Actualización D52, 30 oct 2026:** Alex sustituye la halógena por el Nichia Optisolis blanco. Las referencias y cálculos anteriores con halógena se conservan como antecedente; no describen la fuente ni el presupuesto final. Ver [propuesta eléctrica del 30 de octubre](../archivo/electronica/DISENO_ELECTRICO_V1.md). No se recalcula autonomía en esta revisión.
+> **Actualización D56, 21 nov 2026:** Alex selecciona una [lámpara halógena](../DECISIONES.md#d56--halógena-para-transmisión-2026-11-21) para transmisión. Alex confirmó 12 V y 10 W y comprobó el encendido con una fuente de banco. Quedan por medir la estabilización óptica y la temperatura en el montaje.
 
-> **Actualización D55, 21 nov 2026:** geometría óptica en T: un brazo común con LED seleccionables, cámara en transmisión y AS7265x a 90°. Sustituye la geometría colineal anterior. Geometría detallada, integración y validación pendientes; no se han modificado CAD ni PCB.
+> **Actualización D55, 21 nov 2026:** geometría óptica en T: un brazo común con fuentes seleccionables, cámara en transmisión y AS7265x a 90°. Sustituye la geometría colineal anterior. Geometría detallada, integración y validación pendientes; no se han modificado CAD ni PCB.
 
 # Diseño Óptico Detallado: Cruz
 
@@ -14,7 +14,7 @@ Este documento técnico define la geometría y los componentes ópticos del prot
 *   **Fluorescencia (Excitación):** LED azul de 430 nm.
 *   **Fluorescencia (Detección):** Sensor AS7265x de 18 canales; se registrarán todos. Los canales útiles para cada excitación requieren validación en esta geometría.
 *   **Filtros Ópticos:** El diseño anterior eliminó el filtro de emisión; verificar luz de excitación y señal de fondo a 90° antes de considerar cerrado el diseño óptico. No atribuir pureza de fluorescencia por canal sin ensayo.
-*   **Geometría:** Un brazo común con LED blanco, azul, rojo e infrarrojo seleccionables ilumina la celda. La cámara observa transmisión en el eje del haz; el AS7265x observa a 90°.
+*   **Geometría:** Un brazo común con halógena y LED azul, rojo e infrarrojo seleccionables ilumina la celda. La cámara observa transmisión en el eje del haz; el AS7265x observa a 90°.
 *   **Secuencia Óptica:** Primero medición de transmisión, luego fluorescencia.
 *   **Hidráulica:** Toma -> Celda de cuarzo (entrada por una cara, salida por otra) -> Bomba peristáltica sumergida -> Descarga.
 
@@ -23,7 +23,7 @@ Este documento técnico define la geometría y los componentes ópticos del prot
 ```mermaid
 flowchart TD
     subgraph Eje Transmisión
-    A[Brazo común: LED seleccionables] -->|Luz incidente| C{Celda de Cuarzo}
+    A[Brazo común: halógena y LED seleccionables] -->|Luz incidente| C{Celda de Cuarzo}
     C -->|Luz transmitida, sin colimador| B[Rendija 0,5 mm]
     B --> G[Red + lente gran angular]
     G --> D[Cámara monocroma]
