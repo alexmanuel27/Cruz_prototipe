@@ -71,6 +71,28 @@ ls -lh "$prueba"
 
 Si falla el modo predeterminado, elegir uno de los anunciados por la cámara antes de repetir. Comprobar en el JPEG detalle, foco y orientación. Después repetir a través de la tapa para comparar reflejos y nitidez. Alex confirmó enumeración USB como `32e6:9281 icSpring icspring camera`, con `/dev/video0` y `/dev/video1` en su propio bloque y el CSI por separado. `/dev/video0` expone captura MJPEG y anuncia modos de 640 × 480 a 3264 × 2448 a 30 fps. Alex capturó un JPEG de 3264 × 2448 (248 KiB) con FFmpeg en `/home/alex/cruz-webcam-4D5cIu/webcam.jpg`. Quedan pendientes revisión visual, captura a través de la tapa y cualquier prueba de vídeo sostenido. [Captura Video4Linux2 con FFmpeg](https://www.ffmpeg.org/ffmpeg-devices.html#video4linux2_002c-v4l2).
 
+### Conductividad Atlas K0.1
+
+La foto de Alex muestra una sonda Atlas K0.1 con cable sin conector y un módulo verde con dos filas de cinco contactos. El tamaño relativo y los tres integrados coinciden con el **Atlas EC-OEM**. Falta un adaptador de montaje. La [OEM Simple Development Board (OEM-SDB)](https://files.atlas-scientific.com/oem-dev-board.pdf) es el adaptador de banco del fabricante y se entrega sin ensamblar. Para integrar la medición en el instrumento, aislar alimentación y señales I²C. La portadora EZO de cinco pines es de otra familia.
+
+Confirmar la orientación con la [vista superior de Atlas](https://files.atlas-scientific.com/EC_oem_datasheet.pdf#page=7) antes de soldar. Mirando el lado de los chips, orientar el integrado rectangular abajo a la derecha. Alex propone soldar cables directamente para el ensayo. Fijar el módulo a una base aislante, soldar con la Pi desconectada y comprobar que no haya puentes ni corto entre VCC y GND. Cableado de banco:
+
+| EC-OEM | Conexión Pi 5 |
+| --- | --- |
+| 1 SDA | GPIO2, pin físico 3 |
+| 3 VCC | 3,3 V, pin físico 1 |
+| 6 GND | GND, pin físico 14 |
+| 8 SCL | GPIO3, pin físico 5 |
+
+Para la sonda, separar el vivo del coaxial y la malla. Llevar el vivo al pad 4 (PRB) y la malla al pad 5 (PRB G). No tender un puente de la malla a GND de la Pi. La primera prueba de comunicación se puede hacer con la sonda desconectada. INT y NC quedan libres. Mantener 3,3 V y bus de 100 kHz. Para identificar el circuito en la dirección predeterminada 0x64, enviar primero solo el puntero de registro y terminar la transacción. Leer en una segunda transacción:
+
+```sh
+sudo i2ctransfer -y 1 w1@0x64 0x00
+sudo i2ctransfer -y 1 r2@0x64
+```
+
+El primer byte esperado es 0x04 (EC). El segundo identifica el firmware. El OEM se lee por registros. Antes de calibrar, consultar K en 0x08–0x09 y confirmar que corresponde a la K0.1. Con el hardware actual quedan pendientes fijación, cable, comunicación y medición.
+
 ## Pruebas de banco · 21 de noviembre de 2026
 
 - **Pi 5 y cámara:** Alex corrigió la orientación de la cinta; la OV9281 Arducam se detecta en CAM/DISP 1 con `camera_auto_detect=0` y `dtoverlay=ov9281,arducam`. `rpicam-still` guardó JPEG y DNG de 1280 × 800 con sensor RAW10; el JPEG muestra señal, con zonas blancas saturadas visualmente. DNG, linealidad, saturación real y calibración aún sin evaluar. Los archivos de prueba se guardaron temporalmente en la Pi.
