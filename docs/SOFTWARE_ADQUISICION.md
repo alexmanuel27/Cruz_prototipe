@@ -91,7 +91,44 @@ sudo i2ctransfer -y 1 w1@0x64 0x00
 sudo i2ctransfer -y 1 r2@0x64
 ```
 
-El primer byte esperado es 0x04 (EC). El segundo identifica el firmware. El OEM se lee por registros. Antes de calibrar, consultar K en 0x08–0x09 y confirmar que corresponde a la K0.1. Con el hardware actual quedan pendientes fijación, cable, comunicación y medición.
+Alex obtuvo `0x04 0x05` en la Pi 5. El primer byte confirma el EC-OEM y el segundo es el valor del registro de versión. La comunicación I²C en 0x64 está comprobada. Alex comprobó la adquisición de tres muestras nuevas.
+
+Antes de medir, leer la constante K guardada:
+
+```sh
+sudo i2ctransfer -y 1 w1@0x64 0x08 &&
+sudo i2ctransfer -y 1 r2@0x64
+```
+
+Interpretar los dos bytes como entero sin signo, primero el byte alto, dividido por 100. Alex obtuvo `0x00 0x64`, que corresponde a K1.0. Para la sonda K0.1, escribir `0x00 0x0a` y verificar el resultado:
+
+```sh
+sudo i2ctransfer -y 1 w3@0x64 0x08 0x00 0x0a &&
+sudo i2ctransfer -y 1 w1@0x64 0x08 &&
+sudo i2ctransfer -y 1 r2@0x64
+```
+
+K permanece al apagar. Con la sonda conectada y sumergida en un vaso separado, borrar la marca de lectura anterior (0x07), activar la medida (0x06), esperar a que 0x07 sea 0x01 y leer cuatro bytes desde 0x18 en una transacción separada. Interpretar MSB primero y dividir por 100. Volver a hibernar con 0x06 = 0x00. Primera prueba funcional sin calibrar. [Registros del EC-OEM](https://files.atlas-scientific.com/EC_oem_datasheet.pdf#page=8).
+
+Resultados de Alex: `00 00 ee 56`, `00 00 ee 84`, `00 00 ee 8d`, equivalentes a 610,14, 610,60 y 610,69 µS/cm. Media 610,48 µS/cm, diferencia máximo–mínimo 0,55 µS/cm (≈0,09 % de la media). Las tres lecturas seguidas muestran estabilidad a corto plazo. Alex confirmó el ajuste K0.1 leyendo `0x00 0x0a`. Quedan por comprobar muestra, temperatura y exactitud frente a un patrón.
+
+## Traspaso al chat del PCB · pruebas de banco del 21 de noviembre de 2026
+
+Plataforma de banco: Raspberry Pi 5 con Trixie. D55 fija una geometría en T con iluminación común y AS7265x a 90°. D56 fija la halógena para transmisión. La tabla distingue resultados de banco y propuestas para revisar el esquema.
+
+| Elemento | Interfaz y resultado comprobados | Pendiente para el PCB o el ensayo integrado |
+| --- | --- | --- |
+| Cámara espectral OV9281 | FFC en CAM/DISP 1. La Pi guardó JPEG y DNG de 1280 × 800 con el sensor en modo RAW10. | Reservar acceso y espacio de la cinta. Calibración y respuesta óptica pendientes. |
+| Webcam del entorno O04 | USB icSpring 32e6:9281. Captura desde `/dev/video0`, JPEG de 3264 × 2448. | Reservar USB y ruta interior del cable hacia la tapa. Validar foco y reflejos a través del acrílico. El nodo Linux puede cambiar. |
+| AS7265x | Bus I²C 1, SDA GPIO2/pin físico 3 y SCL GPIO3/pin 5. Dirección 0x49. Los 18 canales respondieron a luz frente a tapado. | Verificar el bus con todos los periféricos y validar blancos, señal a 90° y rangos de exposición. |
+| Temperatura DS18B20 | 1-Wire por GPIO4/pin 7 a 3,3 V, pull-up previsto de 4,7 kΩ. Lecturas 20,875 y 32,750 °C con CRC correcto. | Comparar con una referencia y revisar orden de hilos y alimentación en el conector final. |
+| Conductividad Atlas EC-OEM + K0.1 | Módulo de diez pads. Bus I²C 1, 0x64. ID 0x04, versión 0x05. K0.1 confirmado por lectura. Tres lecturas consecutivas con media reportada de 610,48 µS/cm. | Incorporar huella OEM y aislamiento de alimentación e I²C si se conserva este módulo. Definir terminación del coaxial. Verificar con patrón y temperatura antes de usar los valores para salinidad. |
+| Bomba Kamoer y A4988 | Conjunto nominal 24 V/20 W, dos bobinas de 2,9 Ω, placa con R050. BCM17/18/27 (pines 11/12/13) para STEP, DIR y ENABLE activo bajo. Se obtuvieron 10 mL en 15,981 s con 9.333 pulsos a ~640 Hz programados. | Confirmar corriente por fase, margen de VMOT, apagado por defecto, temperatura y repetibilidad con la hidráulica real. Conservar configuración de banco como punto de partida. |
+| LED azul y naranja | Cada LED encendió en banco. Azul con LM317 a 110 mA medidos, ajuste conservado con 12 V de entrada al circuito. Naranja de 620 nm también reportado a 110 mA. | Verificar conmutación desde la Pi y disipación del LM317. |
+| LED infrarrojo y control de LED | El TSHG6410 de 850 nm encendió en banco. El script de GPIO se comprobó en simulación. | Propuesta para IR: 220 Ω / 1 W desde 12 V, ~48 mA. Comprobar esa corriente y el encendido desde la Pi. Para banco se propusieron BCM23/16/20 (pines 16/36/38), activos en alto, por 74AHCT125 a 5 V hacia tres IRLZ44N. La V8 guardada tiene lógica previa distinta para el azul. |
+| Halógena | 12 V / 10 W. Encendió con la fuente de banco. | Validar arranque en frío con el DC/DC, conmutación, tiempo de estabilización y temperatura antes de cerrar el dimensionado. El canal blanco de V8 estaba diseñado para un LED. |
+
+Los GPIO de banco son una referencia para revisión. La etapa de potencia y las conexiones definitivas siguen pendientes del chat del PCB.
 
 ## Pruebas de banco · 21 de noviembre de 2026
 
