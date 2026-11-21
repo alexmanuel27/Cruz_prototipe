@@ -48,7 +48,7 @@ sudo env GPIOZERO_PIN_FACTORY=lgpio python3 /tmp/cruz-leds.py naranja
 sudo env GPIOZERO_PIN_FACTORY=lgpio python3 /tmp/cruz-leds.py ir
 ```
 
-Cada comando enciende solo el canal indicado durante dos segundos y lo apaga al terminar o al recibir Ctrl+C o SIGTERM. Confirmar que el canal queda libre y apagado al salir. Los GPIO controlan la conmutación. La corriente depende del limitador físico. El ajuste del IR a unos 48 mA debe verificarse antes de darle alimentación para ejecutar su prueba.
+Alex confirmó el 21 de noviembre que probó la conmutación de los tres LED desde la Pi y funcionó bien. Cada comando está diseñado para encender solo el canal indicado durante dos segundos y apagarlo al terminar o recibir Ctrl+C o SIGTERM. Confirmar que el canal queda libre y apagado al salir. Los GPIO controlan la conmutación. La corriente depende del limitador físico. El ajuste del IR a unos 48 mA debe verificarse antes de darle alimentación para ejecutar su prueba.
 
 ### Webcam submarina USB (O04)
 
@@ -124,8 +124,8 @@ Plataforma de banco: Raspberry Pi 5 con Trixie. D55 fija una geometría en T con
 | Temperatura DS18B20 | 1-Wire por GPIO4/pin 7 a 3,3 V, pull-up previsto de 4,7 kΩ. Lecturas 20,875 y 32,750 °C con CRC correcto. | Comparar con una referencia y revisar orden de hilos y alimentación en el conector final. |
 | Conductividad Atlas EC-OEM + K0.1 | Módulo de diez pads. Bus I²C 1, 0x64. ID 0x04, versión 0x05. K0.1 confirmado por lectura. Tres lecturas consecutivas con media reportada de 610,48 µS/cm. | Incorporar huella OEM y aislamiento de alimentación e I²C si se conserva este módulo. Definir terminación del coaxial. Verificar con patrón y temperatura antes de usar los valores para salinidad. |
 | Bomba Kamoer y A4988 | Conjunto nominal 24 V/20 W, dos bobinas de 2,9 Ω, placa con R050. BCM17/18/27 (pines 11/12/13) para STEP, DIR y ENABLE activo bajo. Se obtuvieron 10 mL en 15,981 s con 9.333 pulsos a ~640 Hz programados. | Confirmar corriente por fase, margen de VMOT, apagado por defecto, temperatura y repetibilidad con la hidráulica real. Conservar configuración de banco como punto de partida. |
-| LED azul y naranja | Cada LED encendió en banco. Azul con LM317 a 110 mA medidos, ajuste conservado con 12 V de entrada al circuito. Naranja de 620 nm también reportado a 110 mA. | Verificar conmutación desde la Pi y disipación del LM317. |
-| LED infrarrojo y control de LED | El TSHG6410 de 850 nm encendió en banco. El script de GPIO se comprobó en simulación. | Propuesta para IR: 220 Ω / 1 W desde 12 V, ~48 mA. Comprobar esa corriente y el encendido desde la Pi. Para banco se propusieron BCM23/16/20 (pines 16/36/38), activos en alto, por 74AHCT125 a 5 V hacia tres IRLZ44N. La V8 guardada tiene lógica previa distinta para el azul. |
+| LED azul y naranja | Alex confirma que ambos conmutaron desde la Pi. Azul con LM317 a 110 mA medidos, ajuste conservado con 12 V de entrada al circuito. Naranja de 620 nm también reportado a 110 mA. | Comprobar disipación del LM317 y apagado durante el arranque y reinicio. |
+| LED infrarrojo y control de LED | Alex confirma que el TSHG6410 de 850 nm también conmutó desde la Pi. | Propuesta para IR: 220 Ω / 1 W desde 12 V, ~48 mA. Falta registrar la corriente con esa resistencia. Para banco se propusieron BCM23/16/20 (pines 16/36/38), activos en alto, por 74AHCT125 a 5 V hacia tres IRLZ44N. La V8 guardada tiene lógica previa distinta para el azul. |
 | Halógena | 12 V / 10 W. Encendió con la fuente de banco. | Validar arranque en frío con el DC/DC, conmutación, tiempo de estabilización y temperatura antes de cerrar el dimensionado. El canal blanco de V8 estaba diseñado para un LED. |
 
 Los GPIO de banco son una referencia para revisión. La etapa de potencia y las conexiones definitivas siguen pendientes del chat del PCB.
