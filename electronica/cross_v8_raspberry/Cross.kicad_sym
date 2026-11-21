@@ -963,4 +963,483 @@
 			)
 		)
 	)
+
+(symbol "R05CT05S"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "R05CT05S"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Cross:R05CT05S"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RECOM regulated isolated 5V to 3.3V; TRIM tied to isolated GND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R05CT05S_0_1"
+			(rectangle
+				(start -22.86 21.59)
+				(end 22.86 -21.59)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R05CT05S_1_1"
+			(pin input line
+				(at -25.4 17.78 0)
+				(length 2.54)
+				(name "CTRL"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -25.4 12.700000000000001 0)
+				(length 2.54)
+				(name "GND_IN"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -25.4 7.620000000000001 0)
+				(length 2.54)
+				(name "VIN_5V"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -25.4 2.540000000000001 0)
+				(length 2.54)
+				(name "SYNC"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -25.4 -2.539999999999999 0)
+				(length 2.54)
+				(name "SYNC_OK"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 -7.619999999999997 0)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 -12.7 0)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -25.4 -17.78 0)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 25.4 -17.78 180)
+				(length 2.54)
+				(name "GND_ISO"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -12.7 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -7.619999999999997 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 -2.539999999999999 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 25.4 2.540000000000001 180)
+				(length 2.54)
+				(name "TRIM"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 25.4 7.620000000000001 180)
+				(length 2.54)
+				(name "3V3_ISO"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 12.700000000000001 180)
+				(length 2.54)
+				(name "GND_ISO"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 25.4 17.78 180)
+				(length 2.54)
+				(name "GND_ISO"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+		)
+	)
+(symbol "R78HE5V_AON"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "R78HE5V_AON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Cross:R78HE5V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RECOM R-78HE5.0-0.3, 6.5-72V, 300mA, permanent supply"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R78HE5V_AON_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R78HE5V_AON_1_1"
+			(pin passive line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "5V_OUT"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.95 0.95)
+						)
+					)
+				)
+			)
+		)
+	)
 )
