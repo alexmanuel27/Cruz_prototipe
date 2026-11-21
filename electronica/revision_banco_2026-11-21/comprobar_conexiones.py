@@ -66,7 +66,23 @@ def main():
     assert nets["U12", "6"] != nets["U4", "2"]
     assert nets["U12", "5"] not in ("/GND", "/GND_EC_ISO")
     assert all(nets["U12", pin].startswith("unconnected-") for pin in ("2", "7", "9", "10"))
-    assert components["U13"].find("property[@name='exclude_from_board']") is not None
+    assert components["U13"].findtext("footprint") == "Cross:R05CT05S"
+    for ref, mapping in {
+        "U13": {"1": "3V3_PI", "2": "GND", "3": "5V_PI", "4": "GND",
+                "9": "GND_EC_ISO", "13": "GND_EC_ISO", "14": "3V3_EC_ISO",
+                "15": "GND_EC_ISO", "16": "GND_EC_ISO"},
+        "U15": {"1": "3V3_EC_ISO", "2": "SDA_EC_ISO", "3": "SCL_EC_ISO",
+                "4": "GND_EC_ISO", "5": "GND", "6": "SCL_SENS",
+                "7": "SDA_SENS", "8": "3V3_SENS"},
+        "U4": {"1": "VBAT_FUSED", "2": "GND", "3": "5V_AON"},
+        "U5": {"1": "VBAT_SW", "2": "GND", "3": "5V_PI", "4": "GND"},
+        "U6": {"1": "VBAT_SW", "2": "GND", "3": "12V_OPT", "4": "GND"},
+    }.items():
+        for pin, name in mapping.items():
+            assert nets[ref, pin] == "/" + name, (ref, pin, nets[ref, pin])
+    assert components["U15"].findtext("footprint") == "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    assert all("TerminalBlock_Phoenix" in components[ref].findtext("footprint")
+               for ref in ("U5", "U6", "J23"))
     assert components["J1"].findtext("footprint") == "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical"
     assert all(nets["J1", pin].startswith("unconnected-") for pin in ("2", "4"))
     print("OK: señales, cuatro canales activos altos, resistencias, rama de sensores y separación EC.")

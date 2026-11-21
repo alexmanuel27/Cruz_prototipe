@@ -2,6 +2,8 @@
 
 21 de noviembre de 2026 · Codex GPT-6 · Esquema y placa editados, sin energizar hardware.
 
+**Acta de la adaptación de banco, anterior al trazado.** Sus resultados ERC/DRC, inventario de convertidores y bloque virtual U13 describen aquella etapa. La [revisión de cierre vigente](CIERRE_PCB_2026-11-21.md) incorpora aislamiento físico, convertidores principales externos y PCB completamente trazado. La tabla de GPIO de esta acta sigue vigente.
+
 La V8 incorpora la plataforma de banco Pi 5, halógena de transmisión y tres LED de excitación conforme a D55/D56 y al [traspaso de banco](../../docs/SOFTWARE_ADQUISICION.md#traspaso-al-chat-del-pcb--pruebas-de-banco-del-21-de-noviembre-de-2026). La disposición óptica es en T: brazo común y AS7265x a 90°. Se conservan los ensayos como resultados comunicados por Alex; esta edición no añade una validación física del circuito integrado.
 
 ## Cambios en el esquema

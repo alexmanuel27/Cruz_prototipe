@@ -12,7 +12,7 @@
 | Adquisición y control | [Software reutilizable, interfaces V8 y primera iteración propuesta](SOFTWARE_ADQUISICION.md) |
 | Compras | [Lista fechada](../compras/LISTA_COMPRA.md) · [Excel para el técnico](../compras/Cruz_Shopping_List_EN_2026-10-30.xlsx) |
 
-El PCB V8 sigue sin rutear y tiene pendientes eléctricos. El cuerpo usa el tubo acrílico recibido de Ø180/172 × 380 mm. D55 cambia la óptica a un brazo de iluminación común y AS7265x a 90°; la integración en CAD está pendiente de revisar. La simulación R3 está documentada. Los ensayos físicos de estanqueidad y carga siguen pendientes en el registro. El firmware unificado está pendiente de incorporar al repo.
+El PCB V8 tiene colocación y trazado completos; su liberación eléctrica y mecánica sigue pendiente. El cuerpo usa el tubo acrílico recibido de Ø180/172 × 380 mm. D55 cambia la óptica a un brazo de iluminación común y AS7265x a 90°; la integración en CAD está pendiente de revisar. La simulación R3 está documentada. Los ensayos físicos de estanqueidad y carga siguen pendientes en el registro. El firmware unificado está pendiente de incorporar al repo.
 
 ## Validación y datos
 

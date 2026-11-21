@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/alex/Nube /repos/Cruz_prototipe/electronica/cross_v8_raspberry/cross_v8_draft.kicad_sch</source>
-    <date>2026-11-21T21:39:53+0100</date>
+    <date>2026-11-21T22:27:00+0100</date>
     <tool>Eeschema 9.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -37,16 +37,18 @@
       <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b514d237-c153-5f6d-afe2-53badf97a864</tstamps>
     </comp>
     <comp ref="C2">
       <value>100nF</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
@@ -60,11 +62,11 @@
     </comp>
     <comp ref="C3">
       <value>100nF</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
@@ -77,12 +79,12 @@
       <tstamps>299afff0-b6cf-50c0-a677-db76bcc001ee</tstamps>
     </comp>
     <comp ref="C4">
-      <value>1uF</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <value>2u2 X7R 16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
@@ -95,12 +97,12 @@
       <tstamps>6f9a1813-19d4-5d20-adea-8868e7232e30</tstamps>
     </comp>
     <comp ref="C5">
-      <value>1uF</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <value>2u2 X7R 16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
@@ -114,11 +116,11 @@
     </comp>
     <comp ref="C6">
       <value>100nF</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
@@ -413,6 +415,8 @@
       <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="D*DO?41*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>730dc923-5f42-5190-a58b-2dbed3a5d5b0</tstamps>
     </comp>
@@ -429,6 +433,8 @@
       <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="D*DO?41*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>06934a86-3c08-5320-b71c-96bf0d33127c</tstamps>
     </comp>
@@ -445,6 +451,8 @@
       <libsource lib="Diode" part="1N5819" description="40V 1A Schottky Barrier Rectifier Diode, DO-41"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="D*DO?41*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c682bab4-dac7-5b3c-8973-4e75b77a32cd</tstamps>
     </comp>
@@ -461,6 +469,8 @@
       <libsource lib="Diode" part="1N5819" description="40V 1A Schottky Barrier Rectifier Diode, DO-41"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="D*DO?41*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>68f6c72b-a475-524d-bd7b-c1b998873b90</tstamps>
     </comp>
@@ -477,6 +487,8 @@
       <libsource lib="Diode" part="1N5819" description="40V 1A Schottky Barrier Rectifier Diode, DO-41"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="D*DO?41*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1a26254c-0960-55b1-8a30-c368e56e3140</tstamps>
     </comp>
@@ -493,6 +505,8 @@
       <libsource lib="Diode" part="1N5819" description="40V 1A Schottky Barrier Rectifier Diode, DO-41"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="D*DO?41*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5944a6f0-ac26-5cb9-8315-1252c3b3bcdb</tstamps>
     </comp>
@@ -509,6 +523,8 @@
       <libsource lib="Device" part="Fuse" description="Fuse"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c8376089-30f9-5993-9f79-3ca96ebaa282</tstamps>
     </comp>
@@ -525,6 +541,8 @@
       <libsource lib="Device" part="Fuse" description="Fuse"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ca28ddcd-8ef6-5d51-abce-9da7a8ae6416</tstamps>
     </comp>
@@ -541,6 +559,8 @@
       <libsource lib="Connector_Generic" part="Conn_02x20_Odd_Even" description="Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_2x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d7608689-a7d2-514c-aa16-0f8bde5cf213</tstamps>
     </comp>
@@ -557,16 +577,18 @@
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5e0b731b-c654-5cf6-8847-00f2f042255c</tstamps>
     </comp>
     <comp ref="J3">
       <value>HALOGEN_12V_10W_INRUSH_TBD</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</footprint>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
         <field name="Datasheet">~</field>
         <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
       </fields>
@@ -580,11 +602,11 @@
     </comp>
     <comp ref="J4">
       <value>BLUE_LED_420_430nm</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</footprint>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
         <field name="Datasheet">~</field>
         <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
       </fields>
@@ -598,11 +620,11 @@
     </comp>
     <comp ref="J5">
       <value>ORANGE_LED_620nm</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</footprint>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
         <field name="Datasheet">~</field>
         <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
       </fields>
@@ -627,6 +649,8 @@
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>0e3756c0-0751-5147-8013-57cbcb656651</tstamps>
     </comp>
@@ -661,6 +685,8 @@
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>18f973cb-a59f-57ca-8fcc-4553ee8b8f10</tstamps>
     </comp>
@@ -677,16 +703,18 @@
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a30fad10-12ff-59b6-bb36-3528538f60aa</tstamps>
     </comp>
     <comp ref="J11">
       <value>INPUT_SWITCHED_BATTERY</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</footprint>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
         <field name="Datasheet">~</field>
         <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
       </fields>
@@ -700,11 +728,11 @@
     </comp>
     <comp ref="J13">
       <value>BATTERY_COMMON_PAIR</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</footprint>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
         <field name="Datasheet">~</field>
         <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
       </fields>
@@ -718,11 +746,11 @@
     </comp>
     <comp ref="J14">
       <value>TO_SWITCH_INPUT_FUSED</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</footprint>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
         <field name="Datasheet">~</field>
         <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
       </fields>
@@ -747,6 +775,8 @@
       <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>2fd94e52-a636-5d93-89eb-64f41bd22b4e</tstamps>
     </comp>
@@ -763,6 +793,8 @@
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>661e5004-8f7f-57fe-a953-c6a2415115e8</tstamps>
     </comp>
@@ -779,16 +811,18 @@
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>92a551f9-3d9c-50b7-a35e-abc937e96df6</tstamps>
     </comp>
     <comp ref="J23">
       <value>PI_5V_USBC_LEAD_VERIFY</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</footprint>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
         <field name="Datasheet">~</field>
         <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
       </fields>
@@ -813,6 +847,8 @@
       <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c10e053b-0c85-5c08-aa58-dbaddf920d68</tstamps>
     </comp>
@@ -854,11 +890,11 @@
     </comp>
     <comp ref="J27">
       <value>IR_TSHG6410_850nm</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</footprint>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.08mm_Horizontal</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
         <field name="Datasheet">~</field>
         <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
       </fields>
@@ -901,6 +937,8 @@
       <libsource lib="Relay" part="G2RL-2" description="General Purpose Low Profile Relay DPDT Through Hole, Omron G2RL series, 8A 250VAC"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="Dual Pole Relay Omron DPDT"/>
+      <property name="ki_fp_filters" value="Relay?DPDT?Omron?G2RL*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d0559bf8-db6d-5882-ad90-3869b64cfb1b</tstamps>
     </comp>
@@ -935,6 +973,8 @@
       <libsource lib="Transistor_FET" part="AO3400A" description="30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7852643a-7934-5503-82c8-62f05e9bd38e</tstamps>
     </comp>
@@ -951,6 +991,8 @@
       <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>fc2a17e0-9b04-5028-8d2e-9de8184e1c9f</tstamps>
     </comp>
@@ -967,6 +1009,8 @@
       <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>cc4e8343-4c03-5917-9689-4aee76b32c2b</tstamps>
     </comp>
@@ -1001,6 +1045,8 @@
       <libsource lib="Transistor_FET" part="AO3400A" description="30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e1b2b674-b3d5-5a98-ba80-08b09ecb1a48</tstamps>
     </comp>
@@ -1078,11 +1124,11 @@
     </comp>
     <comp ref="R1">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1096,11 +1142,11 @@
     </comp>
     <comp ref="R2">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1114,11 +1160,11 @@
     </comp>
     <comp ref="R3">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1150,11 +1196,11 @@
     </comp>
     <comp ref="R5">
       <value>470R</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1168,11 +1214,11 @@
     </comp>
     <comp ref="R6">
       <value>120k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1186,11 +1232,11 @@
     </comp>
     <comp ref="R8">
       <value>100k 1%</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1204,11 +1250,11 @@
     </comp>
     <comp ref="R9">
       <value>10k 1%</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1222,11 +1268,11 @@
     </comp>
     <comp ref="R10">
       <value>4k7</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1240,11 +1286,11 @@
     </comp>
     <comp ref="R11">
       <value>1k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1258,11 +1304,11 @@
     </comp>
     <comp ref="R12">
       <value>47k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1276,11 +1322,11 @@
     </comp>
     <comp ref="R13">
       <value>680R</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1294,11 +1340,11 @@
     </comp>
     <comp ref="R14">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1312,11 +1358,11 @@
     </comp>
     <comp ref="R15">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1330,11 +1376,11 @@
     </comp>
     <comp ref="R16">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1348,11 +1394,11 @@
     </comp>
     <comp ref="R17">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1366,11 +1412,11 @@
     </comp>
     <comp ref="R18">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1384,11 +1430,11 @@
     </comp>
     <comp ref="R19">
       <value>100k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1402,11 +1448,11 @@
     </comp>
     <comp ref="R20">
       <value>100k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1420,11 +1466,11 @@
     </comp>
     <comp ref="R21">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1438,11 +1484,11 @@
     </comp>
     <comp ref="R22">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1456,11 +1502,11 @@
     </comp>
     <comp ref="R23">
       <value>100k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1474,11 +1520,11 @@
     </comp>
     <comp ref="R24">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1492,11 +1538,11 @@
     </comp>
     <comp ref="R25">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1510,11 +1556,11 @@
     </comp>
     <comp ref="R26">
       <value>4k7 DNP_VERIFY_MODULE_PULLUPS</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1529,11 +1575,11 @@
     </comp>
     <comp ref="R27">
       <value>4k7 DNP_VERIFY_MODULE_PULLUPS</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1548,11 +1594,11 @@
     </comp>
     <comp ref="R28">
       <value>4k7 VERIFY_ISOLATOR</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1566,11 +1612,11 @@
     </comp>
     <comp ref="R29">
       <value>4k7 VERIFY_ISOLATOR</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1584,11 +1630,11 @@
     </comp>
     <comp ref="R30">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1602,11 +1648,11 @@
     </comp>
     <comp ref="R31">
       <value>1k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1620,11 +1666,11 @@
     </comp>
     <comp ref="R32">
       <value>47k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1638,11 +1684,11 @@
     </comp>
     <comp ref="R33">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1656,11 +1702,11 @@
     </comp>
     <comp ref="R34">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1674,11 +1720,11 @@
     </comp>
     <comp ref="R35">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1692,11 +1738,11 @@
     </comp>
     <comp ref="R36">
       <value>470R</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1710,11 +1756,11 @@
     </comp>
     <comp ref="R37">
       <value>120k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1728,11 +1774,11 @@
     </comp>
     <comp ref="R38">
       <value>470R</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1746,11 +1792,11 @@
     </comp>
     <comp ref="R39">
       <value>120k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1764,11 +1810,11 @@
     </comp>
     <comp ref="R40">
       <value>470R</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1782,11 +1828,11 @@
     </comp>
     <comp ref="R41">
       <value>120k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor</field>
       </fields>
@@ -1919,6 +1965,8 @@
       <libsource lib="Connector_Generic" part="Conn_02x08_Counter_Clockwise" description="Generic connector, double row, 02x08, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_2x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f8fce87b-acde-5341-b554-4e93a034d648</tstamps>
     </comp>
@@ -1953,16 +2001,19 @@
       <libsource lib="Isolator" part="LTV-817" description="DC Optocoupler, Vce 35V, CTR 50%, DIP-4"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="NPN DC Optocoupler"/>
+      <property name="ki_fp_filters" value="DIP*W7.62mm*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d29b9cd6-156c-5987-b6f9-a6a085b1d5a7</tstamps>
     </comp>
     <comp ref="U4">
       <value>R-78HE5.0-0.3_AON</value>
       <footprint>Cross:R78HE5V</footprint>
+      <datasheet>https://recom-power.com/pdf/Innoline/R-78HE-0.3.pdf</datasheet>
       <description>RECOM R-78HE5.0-0.3, 6.5-72V, 300mA, permanent supply</description>
       <fields>
         <field name="Footprint">Cross:R78HE5V</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://recom-power.com/pdf/Innoline/R-78HE-0.3.pdf</field>
         <field name="Description">RECOM R-78HE5.0-0.3, 6.5-72V, 300mA, permanent supply</field>
       </fields>
       <libsource lib="Cross" part="R78HE5V_AON" description="RECOM R-78HE5.0-0.3, 6.5-72V, 300mA, permanent supply"/>
@@ -1973,15 +2024,14 @@
     </comp>
     <comp ref="U5">
       <value>EXTERNAL_24V_TO_5V_PI</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.08mm_Horizontal</footprint>
-      <datasheet>https://www.dfrobot.com/product-2599.html</datasheet>
-      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal</footprint>
+      <description>Cable interface for external buck: 1 VIN+, 2 VIN-/GND, 3 VOUT+, 4 VOUT-/GND. Non-isolated common return.</description>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.08mm_Horizontal</field>
-        <field name="Datasheet">https://www.dfrobot.com/product-2599.html</field>
-        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cable interface for external buck: 1 VIN+, 2 VIN-/GND, 3 VOUT+, 4 VOUT-/GND. Non-isolated common return.</field>
       </fields>
-      <libsource lib="Cross" part="DFR1015_VERIFY" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="Cross" part="External_Buck_Wired" description="Cable interface for external buck: 1 VIN+, 2 VIN-/GND, 3 VOUT+, 4 VOUT-/GND. Non-isolated common return."/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1989,15 +2039,14 @@
     </comp>
     <comp ref="U6">
       <value>EXTERNAL_24V_TO_12V_OPT</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.08mm_Horizontal</footprint>
-      <datasheet>https://www.dfrobot.com/product-2599.html</datasheet>
-      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal</footprint>
+      <description>Cable interface for external buck: 1 VIN+, 2 VIN-/GND, 3 VOUT+, 4 VOUT-/GND. Non-isolated common return.</description>
       <fields>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.08mm_Horizontal</field>
-        <field name="Datasheet">https://www.dfrobot.com/product-2599.html</field>
-        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cable interface for external buck: 1 VIN+, 2 VIN-/GND, 3 VOUT+, 4 VOUT-/GND. Non-isolated common return.</field>
       </fields>
-      <libsource lib="Cross" part="DFR1015_VERIFY" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="Cross" part="External_Buck_Wired" description="Cable interface for external buck: 1 VIN+, 2 VIN-/GND, 3 VOUT+, 4 VOUT-/GND. Non-isolated common return."/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -2016,6 +2065,8 @@
       <libsource lib="Regulator_Linear" part="MCP1700x-330xxTO" description="250mA Low Quiscent Current LDO, 3.3V output, TO-92"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="regulator linear ldo"/>
+      <property name="ki_fp_filters" value="TO?92*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ab236476-70f8-5542-a3ab-0bc4462af286</tstamps>
     </comp>
@@ -2032,6 +2083,8 @@
       <libsource lib="4xxx" part="4013" description="Dual D  FlipFlop, Set &amp; reset"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="cross_v8_draft.kicad_sch"/>
+      <property name="ki_keywords" value="CMOS DFF"/>
+      <property name="ki_fp_filters" value="DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>fda006d2-b8e7-58cc-a66e-80e9e5519f83 47cd9cc0-ebad-566a-bfab-3f6226335dcf 467ac60b-6365-5625-915f-b5766aa912a2</tstamps>
     </comp>
@@ -2106,10 +2159,11 @@
     <comp ref="U13">
       <value>R05CT05S_3V3_ISOLATED</value>
       <footprint>Cross:R05CT05S</footprint>
+      <datasheet>https://recom-power.com/en/rec-p-R05CT05S-R.html</datasheet>
       <description>RECOM regulated isolated 5V to 3.3V; TRIM tied to isolated GND</description>
       <fields>
         <field name="Footprint">Cross:R05CT05S</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://recom-power.com/en/rec-p-R05CT05S-R.html</field>
         <field name="Description">RECOM regulated isolated 5V to 3.3V; TRIM tied to isolated GND</field>
       </fields>
       <libsource lib="Cross" part="R05CT05S" description="RECOM regulated isolated 5V to 3.3V; TRIM tied to isolated GND"/>
@@ -2159,6 +2213,11 @@
     <libpart lib="4xxx" part="4013">
       <description>Dual D  FlipFlop, Set &amp; reset</description>
       <docs>http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SOIC*3.9x9.9mm*P1.27mm*</fp>
+        <fp>TSSOP*4.4x5mm*P0.65mm*</fp>
+      </footprints>
       <fields>
         <field name="Reference">U</field>
         <field name="Value">4013</field>
@@ -2238,6 +2297,9 @@
     <libpart lib="Connector_Generic" part="Conn_01x03">
       <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
       <fields>
         <field name="Reference">J</field>
         <field name="Value">Conn_01x03</field>
@@ -2254,6 +2316,9 @@
     <libpart lib="Connector_Generic" part="Conn_01x04">
       <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
       <fields>
         <field name="Reference">J</field>
         <field name="Value">Conn_01x04</field>
@@ -2271,6 +2336,9 @@
     <libpart lib="Connector_Generic" part="Conn_01x05">
       <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
       <fields>
         <field name="Reference">J</field>
         <field name="Value">Conn_01x05</field>
@@ -2289,6 +2357,9 @@
     <libpart lib="Connector_Generic" part="Conn_01x08">
       <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
       <fields>
         <field name="Reference">J</field>
         <field name="Value">Conn_01x08</field>
@@ -2310,6 +2381,9 @@
     <libpart lib="Connector_Generic" part="Conn_02x08_Counter_Clockwise">
       <description>Generic connector, double row, 02x08, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
       <fields>
         <field name="Reference">J</field>
         <field name="Value">Conn_02x08_Counter_Clockwise</field>
@@ -2339,6 +2413,9 @@
     <libpart lib="Connector_Generic" part="Conn_02x20_Odd_Even">
       <description>Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
       <fields>
         <field name="Reference">J</field>
         <field name="Value">Conn_02x20_Odd_Even</field>
@@ -2412,15 +2489,14 @@
         <pin num="10" name="NC" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Cross" part="DFR1015_VERIFY">
-      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>https://www.dfrobot.com/product-2599.html</docs>
+    <libpart lib="Cross" part="External_Buck_Wired">
+      <description>Cable interface for external buck: 1 VIN+, 2 VIN-/GND, 3 VOUT+, 4 VOUT-/GND. Non-isolated common return.</description>
       <fields>
         <field name="Reference">J</field>
         <field name="Value">Conn_01x04</field>
         <field name="Footprint"/>
-        <field name="Datasheet">https://www.dfrobot.com/product-2599.html</field>
-        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cable interface for external buck: 1 VIN+, 2 VIN-/GND, 3 VOUT+, 4 VOUT-/GND. Non-isolated common return.</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
@@ -2431,11 +2507,12 @@
     </libpart>
     <libpart lib="Cross" part="R05CT05S">
       <description>RECOM regulated isolated 5V to 3.3V; TRIM tied to isolated GND</description>
+      <docs>https://recom-power.com/en/rec-p-R05CT05S-R.html</docs>
       <fields>
         <field name="Reference">U</field>
         <field name="Value">R05CT05S</field>
         <field name="Footprint">Cross:R05CT05S</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://recom-power.com/en/rec-p-R05CT05S-R.html</field>
         <field name="Description">RECOM regulated isolated 5V to 3.3V; TRIM tied to isolated GND</field>
       </fields>
       <pins>
@@ -2459,11 +2536,12 @@
     </libpart>
     <libpart lib="Cross" part="R78HE5V_AON">
       <description>RECOM R-78HE5.0-0.3, 6.5-72V, 300mA, permanent supply</description>
+      <docs>https://recom-power.com/pdf/Innoline/R-78HE-0.3.pdf</docs>
       <fields>
         <field name="Reference">U</field>
         <field name="Value">R78HE5V_AON</field>
         <field name="Footprint">Cross:R78HE5V</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://recom-power.com/pdf/Innoline/R-78HE-0.3.pdf</field>
         <field name="Description">RECOM R-78HE5.0-0.3, 6.5-72V, 300mA, permanent supply</field>
       </fields>
       <pins>
@@ -2520,6 +2598,9 @@
     <libpart lib="Device" part="C_Polarized">
       <description>Polarized capacitor</description>
       <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
       <fields>
         <field name="Reference">C</field>
         <field name="Value">C_Polarized</field>
@@ -2535,6 +2616,9 @@
     <libpart lib="Device" part="Fuse">
       <description>Fuse</description>
       <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
       <fields>
         <field name="Reference">F</field>
         <field name="Value">Fuse</field>
@@ -2568,12 +2652,17 @@
     <libpart lib="Diode" part="1N4007">
       <description>1000V 1A General Purpose Rectifier Diode, DO-41</description>
       <docs>http://www.vishay.com/docs/88503/1n4001.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+      </footprints>
       <fields>
         <field name="Reference">D</field>
         <field name="Value">1N4007</field>
-        <field name="Footprint"/>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
         <field name="Datasheet">http://www.vishay.com/docs/88503/1n4001.pdf</field>
         <field name="Description">1000V 1A General Purpose Rectifier Diode, DO-41</field>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
       </fields>
       <pins>
         <pin num="1" name="K" type="passive"/>
@@ -2583,10 +2672,13 @@
     <libpart lib="Diode" part="1N5819">
       <description>40V 1A Schottky Barrier Rectifier Diode, DO-41</description>
       <docs>http://www.vishay.com/docs/88525/1n5817.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+      </footprints>
       <fields>
         <field name="Reference">D</field>
         <field name="Value">1N5819</field>
-        <field name="Footprint"/>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
         <field name="Datasheet">http://www.vishay.com/docs/88525/1n5817.pdf</field>
         <field name="Description">40V 1A Schottky Barrier Rectifier Diode, DO-41</field>
       </fields>
@@ -2622,10 +2714,13 @@
     <libpart lib="Isolator" part="LTV-817">
       <description>DC Optocoupler, Vce 35V, CTR 50%, DIP-4</description>
       <docs>http://www.us.liteon.com/downloads/LTV-817-827-847.PDF</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
       <fields>
         <field name="Reference">U</field>
         <field name="Value">LTV-817</field>
-        <field name="Footprint"/>
+        <field name="Footprint">Package_DIP:DIP-4_W7.62mm</field>
         <field name="Datasheet">http://www.us.liteon.com/downloads/LTV-817-827-847.PDF</field>
         <field name="Description">DC Optocoupler, Vce 35V, CTR 50%, DIP-4</field>
       </fields>
@@ -2679,10 +2774,13 @@
     <libpart lib="Regulator_Linear" part="MCP1700x-330xxTO">
       <description>250mA Low Quiscent Current LDO, 3.3V output, TO-92</description>
       <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
       <fields>
         <field name="Reference">U</field>
         <field name="Value">MCP1700x-330xxTO</field>
-        <field name="Footprint"/>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
         <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf</field>
         <field name="Description">250mA Low Quiscent Current LDO, 3.3V output, TO-92</field>
       </fields>
@@ -2695,10 +2793,13 @@
     <libpart lib="Relay" part="G2RL-2">
       <description>General Purpose Low Profile Relay DPDT Through Hole, Omron G2RL series, 8A 250VAC</description>
       <docs>https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf</docs>
+      <footprints>
+        <fp>Relay?DPDT?Omron?G2RL*</fp>
+      </footprints>
       <fields>
         <field name="Reference">K</field>
         <field name="Value">G2RL-2</field>
-        <field name="Footprint"/>
+        <field name="Footprint">Relay_THT:Relay_DPDT_Omron_G2RL-2</field>
         <field name="Datasheet">https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf</field>
         <field name="Description">General Purpose Low Profile Relay DPDT Through Hole, Omron G2RL series, 8A 250VAC</field>
       </fields>
@@ -2737,10 +2838,13 @@
     <libpart lib="Transistor_FET" part="AO3400A">
       <description>30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23</description>
       <docs>http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
       <fields>
         <field name="Reference">Q</field>
         <field name="Value">AO3400A</field>
-        <field name="Footprint"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf</field>
         <field name="Description">30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23</field>
       </fields>
@@ -2753,10 +2857,13 @@
     <libpart lib="Transistor_FET" part="BSS138">
       <description>50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23</description>
       <docs>https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
       <fields>
         <field name="Reference">Q</field>
         <field name="Value">BSS138</field>
-        <field name="Footprint"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
         <field name="Description">50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23</field>
       </fields>
@@ -2822,7 +2929,7 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/3V3_AON" class="Default">
+    <net code="1" name="/3V3_AON" class="AuxPower">
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="J24" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -2835,7 +2942,7 @@
       <node ref="U7" pin="3" pinfunction="VO" pintype="power_out"/>
       <node ref="U8" pin="14" pinfunction="VDD" pintype="power_in"/>
     </net>
-    <net code="2" name="/3V3_EC_ISO" class="Default">
+    <net code="2" name="/3V3_EC_ISO" class="AuxPower">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="C14" pin="1" pintype="passive"/>
       <node ref="C18" pin="1" pintype="passive"/>
@@ -2846,7 +2953,7 @@
       <node ref="U13" pin="14" pinfunction="3V3_ISO" pintype="power_out"/>
       <node ref="U15" pin="1" pinfunction="VCC1" pintype="power_in"/>
     </net>
-    <net code="3" name="/3V3_PI" class="Default">
+    <net code="3" name="/3V3_PI" class="AuxPower">
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -2865,7 +2972,7 @@
       <node ref="U11" pin="14" pinfunction="VCC" pintype="power_in"/>
       <node ref="U13" pin="1" pinfunction="CTRL" pintype="input"/>
     </net>
-    <net code="4" name="/3V3_SENS" class="Default">
+    <net code="4" name="/3V3_SENS" class="AuxPower">
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="C9" pin="1" pintype="passive"/>
       <node ref="J10" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -2876,7 +2983,7 @@
       <node ref="U10" pin="5" pinfunction="VOUT" pintype="power_out"/>
       <node ref="U15" pin="8" pinfunction="VCC2" pintype="power_in"/>
     </net>
-    <net code="5" name="/5V_AON" class="Default">
+    <net code="5" name="/5V_AON" class="AuxPower">
       <node ref="C20" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
@@ -2885,7 +2992,7 @@
       <node ref="U4" pin="3" pinfunction="5V_OUT" pintype="power_out"/>
       <node ref="U7" pin="2" pinfunction="VI" pintype="power_in"/>
     </net>
-    <net code="6" name="/5V_PI" class="Default">
+    <net code="6" name="/5V_PI" class="AuxPower">
       <node ref="C15" pin="1" pintype="passive"/>
       <node ref="C16" pin="1" pintype="passive"/>
       <node ref="C7" pin="1" pintype="passive"/>
@@ -2897,7 +3004,7 @@
       <node ref="U5" pin="3" pinfunction="Pin_3" pintype="power_out"/>
       <node ref="U9" pin="14" pinfunction="VCC" pintype="power_in"/>
     </net>
-    <net code="7" name="/12V_OPT" class="Default">
+    <net code="7" name="/12V_OPT" class="Power12">
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -2947,15 +3054,15 @@
       <node ref="J1" pin="18" pinfunction="Pin_18" pintype="passive"/>
       <node ref="R11" pin="1" pintype="passive"/>
     </net>
-    <net code="16" name="/CHG_FUSED" class="Default">
+    <net code="16" name="/CHG_FUSED" class="Power24">
       <node ref="F2" pin="2" pintype="passive"/>
       <node ref="K1" pin="11" pintype="passive"/>
     </net>
-    <net code="17" name="/CHG_MINUS" class="Default">
+    <net code="17" name="/CHG_MINUS" class="Power24">
       <node ref="J18" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="K1" pin="24" pintype="passive"/>
     </net>
-    <net code="18" name="/CHG_PLUS" class="Default">
+    <net code="18" name="/CHG_PLUS" class="Power24">
       <node ref="J18" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="K1" pin="14" pintype="passive"/>
     </net>
@@ -2967,7 +3074,7 @@
       <node ref="J28" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U12" pin="5" pinfunction="PRBG" pintype="passive"/>
     </net>
-    <net code="21" name="/GND" class="Default">
+    <net code="21" name="/GND" class="AuxPower">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
@@ -3060,7 +3167,7 @@
       <node ref="U8" pin="9" pinfunction="D" pintype="input"/>
       <node ref="U9" pin="7" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="22" name="/GND_EC_ISO" class="Default">
+    <net code="22" name="/GND_EC_ISO" class="AuxPower">
       <node ref="C13" pin="2" pintype="passive"/>
       <node ref="C14" pin="2" pintype="passive"/>
       <node ref="C18" pin="2" pintype="passive"/>
@@ -3086,7 +3193,7 @@
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
     </net>
-    <net code="26" name="/HAL_LOW" class="Default">
+    <net code="26" name="/HAL_LOW" class="Power12">
       <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="Q1" pin="2" pinfunction="D" pintype="passive"/>
     </net>
@@ -3117,19 +3224,19 @@
       <node ref="J27" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="Q9" pin="2" pinfunction="D" pintype="passive"/>
     </net>
-    <net code="33" name="/M1A" class="Default">
+    <net code="33" name="/M1A" class="Motor">
       <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="U1" pin="12" pinfunction="Pin_12" pintype="passive"/>
     </net>
-    <net code="34" name="/M1B" class="Default">
+    <net code="34" name="/M1B" class="Motor">
       <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U1" pin="11" pinfunction="Pin_11" pintype="passive"/>
     </net>
-    <net code="35" name="/M2A" class="Default">
+    <net code="35" name="/M2A" class="Motor">
       <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="U1" pin="13" pinfunction="Pin_13" pintype="passive"/>
     </net>
-    <net code="36" name="/M2B" class="Default">
+    <net code="36" name="/M2B" class="Motor">
       <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="U1" pin="14" pinfunction="Pin_14" pintype="passive"/>
     </net>
@@ -3327,18 +3434,18 @@
       <node ref="J1" pin="8" pinfunction="Pin_8" pintype="passive"/>
       <node ref="J19" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="75" name="/VBAT_FUSED" class="Default">
+    <net code="75" name="/VBAT_FUSED" class="Power24">
       <node ref="C21" pin="1" pintype="passive"/>
       <node ref="F1" pin="2" pintype="passive"/>
       <node ref="J14" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="U4" pin="1" pinfunction="VIN" pintype="passive"/>
     </net>
-    <net code="76" name="/VBAT_RAW" class="Default">
+    <net code="76" name="/VBAT_RAW" class="Power24">
       <node ref="F1" pin="1" pintype="passive"/>
       <node ref="F2" pin="1" pintype="passive"/>
       <node ref="J13" pin="1" pinfunction="Pin_1" pintype="passive"/>
     </net>
-    <net code="77" name="/VBAT_SW" class="Default">
+    <net code="77" name="/VBAT_SW" class="Power24">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="J11" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>

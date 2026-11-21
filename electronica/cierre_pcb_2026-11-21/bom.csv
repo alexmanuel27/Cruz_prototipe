@@ -1,0 +1,74 @@
+Referencias,Cantidad,Valor,Huella,Estado
+R19 R20 R23,3,100k,Resistor_SMD:R_0805_2012Metric,Montar
+R8,1,100k 1%,Resistor_SMD:R_0805_2012Metric,Montar
+C2 C3 C6,3,100nF,Capacitor_SMD:C_0805_2012Metric,Montar
+C7 C10 C13,3,100nF X7R 10V,Capacitor_SMD:C_0805_2012Metric,Montar
+C16 C17 C18 C19,4,100nF X7R 16V,Capacitor_SMD:C_0805_2012Metric,Montar
+C11 C12,2,100nF X7R 25V,Capacitor_SMD:C_0805_2012Metric,Montar
+C1,1,100uF 50V,Capacitor_THT:CP_Radial_D8.0mm_P3.50mm,Montar
+R1 R2 R3 R14 R15 R16 R17 R18 R21 R22 R24 R25 R30 R33 R34 R35,16,10k,Resistor_SMD:R_0805_2012Metric,Montar
+R9,1,10k 1%,Resistor_SMD:R_0805_2012Metric,Montar
+R6 R37 R39 R41,4,120k,Resistor_SMD:R_0805_2012Metric,Montar
+D1,1,1N4007,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,Montar
+D2,1,1N4007_PILOT_REVERSE,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,Montar
+D4 D5,2,1N5819_REED,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,Montar
+R11 R31,2,1k,Resistor_SMD:R_0805_2012Metric,Montar
+C8 C9,2,1uF X7R 10V,Capacitor_SMD:C_0805_2012Metric,Montar
+R47,1,220R 1W CURRENT_TBD,Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal,Montar
+C14 C15 C20,3,22uF X7R 16V,Capacitor_SMD:C_1206_3216Metric,Montar
+R4 R42 R44 R45,4,26R 1% 0.25W,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,Montar
+Q10,1,2N3904_OPT_ARM,Package_TO_SOT_THT:TO-92_Inline,Montar
+Q5,1,2N3904_WAKE_INVERTER,Package_TO_SOT_THT:TO-92_Inline,Montar
+C4 C5,2,2u2 X7R 16V,Capacitor_SMD:C_0805_2012Metric,Montar
+R5 R36 R38 R40,4,470R,Resistor_SMD:R_0805_2012Metric,Montar
+R12 R32,2,47k,Resistor_SMD:R_0805_2012Metric,Montar
+R10,1,4k7,Resistor_SMD:R_0805_2012Metric,Montar
+R26 R27,2,4k7 DNP_VERIFY_MODULE_PULLUPS,Resistor_SMD:R_0805_2012Metric,DNP
+R28 R29,2,4k7 VERIFY_ISOLATOR,Resistor_SMD:R_0805_2012Metric,Montar
+C21,1,4u7 X7R 50V,Capacitor_SMD:C_1206_3216Metric,Montar
+R43 R46,2,52R 1% 0.25W,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,Montar
+R13,1,680R,Resistor_SMD:R_0805_2012Metric,Montar
+U1,1,A4988_CARRIER_VERIFY_PINOUT,Module:Pololu_Breakout-16_15.2x20.3mm,Montar
+J7,1,ADS1115_A0_VERIFY,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Montar
+J6,1,ADS1115_INTERFACE_VERIFY,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Montar
+Q2,1,AO3400A,Package_TO_SOT_SMD:SOT-23,Montar
+U10,1,AP2112K-3.3_THERMAL_TBD,Package_TO_SOT_SMD:SOT-23-5,Montar
+U12,1,ATLAS_EC_OEM_K0.1_0x64,Cross:Atlas_EC_OEM_10pad,Montar
+J13,1,BATTERY_COMMON_PAIR,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",Montar
+J4,1,BLUE_LED_420_430nm,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",Montar
+Q3 Q4,2,BSS138,Package_TO_SOT_SMD:SOT-23,Montar
+U8,1,CD4013_LATCH_PROVISIONAL,Package_DIP:DIP-14_W7.62mm,Montar
+J10,1,DS18B20,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,Montar
+J28,1,EC_COAX_LIVE_SHIELD_VERIFY,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Montar
+J18,1,EN3_8PIN_ASSIGNMENT_VERIFY,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,Montar
+U6,1,EXTERNAL_24V_TO_12V_OPT,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal",Montar
+U5,1,EXTERNAL_24V_TO_5V_PI,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal",Montar
+F1,1,F1_LOAD_RATING_TBD,Fuse:Fuseholder_Clip-5x20mm_Littelfuse_111_Inline_P20.00x5.00mm_D1.05mm_Horizontal,Montar
+F2,1,F2_CHARGE_RATING_TBD,Fuse:Fuseholder_Clip-5x20mm_Littelfuse_111_Inline_P20.00x5.00mm_D1.05mm_Horizontal,Montar
+K1,1,G2RL-2_DC5,Relay_THT:Relay_DPDT_Omron_G2RL-2,Montar
+J3,1,HALOGEN_12V_10W_INRUSH_TBD,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",Montar
+J8,1,I2C_AS7265X,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Montar
+J11,1,INPUT_SWITCHED_BATTERY,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",Montar
+Q1 Q7 Q8 Q9,4,IRLZ44N,Package_TO_SOT_THT:TO-220-3_Vertical,Montar
+J27,1,IR_TSHG6410_850nm,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",Montar
+U15,1,ISO1540D,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Montar
+U2,1,LM317_BLUE_THERMAL_TBD,Package_TO_SOT_THT:TO-220-3_Vertical,Montar
+U14,1,LM317_ORANGE_THERMAL_TBD,Package_TO_SOT_THT:TO-220-3_Vertical,Montar
+U3,1,LTV-817,Package_DIP:DIP-4_W7.62mm,Montar
+J25,1,MAGNETIC_REED_NORMALLY_OPEN,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Montar
+U7,1,MCP1700_3V3_AON,Package_TO_SOT_THT:TO-92_Inline,Montar
+J2,1,MOTOR_COILS_VERIFY,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Montar
+J5,1,ORANGE_LED_620nm,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",Montar
+Q6,1,PILOT_GATE_INHIBIT,Package_TO_SOT_SMD:SOT-23,Montar
+D6 D7,2,PILOT_SIGNAL,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,Montar
+J23,1,PI_5V_USBC_LEAD_VERIFY,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",Montar
+U4,1,R-78HE5.0-0.3_AON,Cross:R78HE5V,Montar
+U13,1,R05CT05S_3V3_ISOLATED,Cross:R05CT05S,Montar
+J1,1,RASPBERRY_PI_5_GPIO_3V3,Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical,Montar
+J20,1,RS485_DFR0845_BUS_ADAPTER,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Montar
+J19,1,RS485_DFR0845_UART_ADAPTER,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Montar
+J24,1,RTC_3V3_GND_SDA_SCL_INT_VERIFY,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,Montar
+U9,1,SN74AHCT125N,Package_DIP:DIP-14_W7.62mm,Montar
+U11,1,SN74CB3Q3125PW,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,Montar
+J26,1,SWITCH_MODULE_ON_CONTROL_VERIFY,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Montar
+J14,1,TO_SWITCH_INPUT_FUSED,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",Montar

@@ -1,0 +1,32 @@
+{
+  "identical": [
+    "4xxx:4013",
+    "Connector_Generic:Conn_01x02",
+    "Connector_Generic:Conn_01x03",
+    "Connector_Generic:Conn_01x04",
+    "Connector_Generic:Conn_01x05",
+    "Connector_Generic:Conn_01x08",
+    "Connector_Generic:Conn_02x08_Counter_Clockwise",
+    "Connector_Generic:Conn_02x20_Odd_Even",
+    "Device:C",
+    "Device:C_Polarized",
+    "Device:Fuse",
+    "Device:R",
+    "Diode:1N4007",
+    "Diode:1N5819",
+    "Isolator:LTV-817",
+    "Regulator_Linear:LM317_TO-220",
+    "Regulator_Linear:MCP1700x-330xxTO",
+    "Relay:G2RL-2",
+    "Transistor_BJT:2N3904",
+    "Transistor_FET:AO3400A",
+    "Transistor_FET:BSS138",
+    "power:GND",
+    "Regulator_Linear:AP2112K-3.3",
+    "74xx:74AHCT125",
+    "Transistor_FET:IRLZ44N",
+    "power:PWR_FLAG",
+    "Isolator:ISO1540"
+  ],
+  "preserved_different": []
+}

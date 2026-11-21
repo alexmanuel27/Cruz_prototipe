@@ -1,0 +1,61 @@
+{
+  "fecha_utc": "2026-11-21T21:28:21.267903+00:00",
+  "modelo": "Codex GPT-6",
+  "kicad": "9.0.7",
+  "huellas": 122,
+  "montar": 120,
+  "montar_inferior": 26,
+  "erc": {
+    "errores": 0,
+    "avisos": 0
+  },
+  "drc": {
+    "errores": 0,
+    "avisos": 0,
+    "sin_conectar": 0,
+    "paridad": 0
+  },
+  "comprobacion_redes": "correcta",
+  "hardware_ensayado": false,
+  "liberado_fabricacion": false,
+  "pendientes": [
+    "Fusibles, inversión y transitorios del bus motor",
+    "Corriente nominal por fase y ajuste A4988",
+    "Estado inicial CD4013, SET mantenido y apagado autónomo",
+    "Detector de fuga/watchdog no incorporados",
+    "DC/DC externos reales, USB-C y térmica del conjunto",
+    "Cotejo de huellas, fijación y encaje físico"
+  ],
+  "sha256": {
+    "electronica/cross_v8_raspberry/cross_v8_draft.kicad_sch": "35ede5c3cbd3189d8bf3d4ab741154cae87acbbc50dcc3f7588b4782a2245038",
+    "electronica/cross_v8_raspberry/cross_v8_draft.kicad_pcb": "5be360aa209e7e49d3b809d0fbb88a2c926d4c6dc893b50e29c56da17375da77",
+    "electronica/cross_v8_raspberry/cross_v8_draft.kicad_pro": "99d4aa6cf72661b48c99f4ea90681c1f2b6a253e756c507c015f5dd43521449f",
+    "electronica/cross_v8_raspberry/Cross.kicad_sym": "c25dd8f3712b77aa1d38523b9263bc776430bf7d997fa67deb5c0c95b9f9928a",
+    "electronica/cross_v8_raspberry/fp-lib-table": "8a92cba3864ff438f5ad40f56169671aed1f489e611c752f4690b5cbebc5d338",
+    "electronica/cross_v8_raspberry/sym-lib-table": "0e9cf37c02fc2a77c22904b1ac90b0920a9625dc0824f64c223beb47b959493c",
+    "electronica/cross_v8_raspberry/CIERRE_PCB_2026-11-21.md": "897ad9d29dbe19278394fc0cab8f478b2d7e1ef59e2f927d14013971bdfeeb4a",
+    "electronica/cross_v8_raspberry/LEEME_PRIMERO.md": "2efa5d309d436418d76e53a37671fcb4731af4ff1de8025cc4b89869339920c3",
+    "electronica/cross_v8_raspberry/Cross.pretty/Atlas_EC_OEM_10pad.kicad_mod": "bac551b915a107a566097ce002bd6accb3e72691d6d36f102a0a9f0d7553695c",
+    "electronica/cross_v8_raspberry/Cross.pretty/DFR1015_8pad_BORRADOR.kicad_mod": "fa35ae5ad4e4fa1ac5c4e6310575e1beff66b1a4c05a44c8f7d49a7837a3c48b",
+    "electronica/cross_v8_raspberry/Cross.pretty/R05CT05S.kicad_mod": "153c2c9e2f307a1a21ff120fd9a055cfdc3fb213197ebde15acea94e2a7a7add",
+    "electronica/cross_v8_raspberry/Cross.pretty/R78HE5V.kicad_mod": "f53f956d463be55f3f9030db9e08db5500a2a9689982a243eb5209481725f751",
+    "electronica/cierre_pcb_2026-11-21/LEEME.md": "bac68ac5b22953762a3fdad6000e2518f2d8d0ac4754d0728f7a88914ab14f33",
+    "electronica/cierre_pcb_2026-11-21/bibliotecas_comparadas.json": "5d0458b7e6dc0f03cf7c8f49f2cf59e008a488d12a3f5aaf472bdbf0d75342d7",
+    "electronica/cierre_pcb_2026-11-21/bom.csv": "f63e9c05e57fa00605a2e852a4fa1e48c4a4dbbdbcc1655ec8319e359fb5fd58",
+    "electronica/cierre_pcb_2026-11-21/conectores.csv": "ea1220fba9cd06f3e80f257498506848d94db1ab31398428d84bcfabfee0d0eb",
+    "electronica/cierre_pcb_2026-11-21/drc.json": "6a6a87d8eb3ba2721e2eea8d1148265258555e6d8dee5b48023a626b227be6a4",
+    "electronica/cierre_pcb_2026-11-21/erc.json": "79e7c39aa9ce21b526323ccdbea0d11182ce470585fefbcbd7744027a8dbf0d0",
+    "electronica/cierre_pcb_2026-11-21/placa_sin_componentes.step": "94bdd3269c6aa00e17bd72714139ef32ac2f1120da8efbd91ca7d0d579ac52e0",
+    "electronica/cierre_pcb_2026-11-21/posiciones.csv": "db921816c19b94a4fb27ad71e1de37c06f75883cfa194dc0fc1f082a4af30eed",
+    "electronica/cierre_pcb_2026-11-21/redes.xml": "c7a1f7c6f0c90e37d2db3876a670e31dd088d620fb4f01f83c9601c480fd4020",
+    "electronica/cierre_pcb_2026-11-21/vistas/cobre_inferior.png": "a78b7ebf1f86d43f576cadd5678caa819460a4134183c4ac0959bd42e9eb4794",
+    "electronica/cierre_pcb_2026-11-21/vistas/cobre_inferior.svg": "060f35b2ca1dfea370faf51b50b3f912d3c82d614ff6703b2a394f57fc4b10ed",
+    "electronica/cierre_pcb_2026-11-21/vistas/cobre_superior.png": "67c36b8b7dbfb5567520923bacf467ce9944f9b414101a3f7f59a103d14ba5f0",
+    "electronica/cierre_pcb_2026-11-21/vistas/cobre_superior.svg": "4c4d0622a25200763d69966c45b597b862efef11dc4f49506b6c6162d80ba9ac",
+    "electronica/cierre_pcb_2026-11-21/vistas/montaje_inferior.png": "8adfe8a737288bc0fe773dcc442c0967835a1bba22894e7e5ee84c94dfbf8177",
+    "electronica/cierre_pcb_2026-11-21/vistas/montaje_inferior.svg": "90093836cc293384dd8b48d85014b64470b55ee7a6cd4352c3c05f36fd22ad6c",
+    "electronica/cierre_pcb_2026-11-21/vistas/montaje_superior.png": "81232f6feffe4a7ac555b93d4bba77fd9b62bb7bdf48fa2a45fc12302cc3a51b",
+    "electronica/cierre_pcb_2026-11-21/vistas/montaje_superior.svg": "e67b4a0628e2adc75cd2c4571ec550e8f498f17907a04b7fa0d7b477403e0f93",
+    "electronica/revision_banco_2026-11-21/comprobar_conexiones.py": "4f8423194e3aa296b8b55b1d13501c09f0ea8c9709d4261704781be268aa4bb7"
+  }
+}

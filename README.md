@@ -19,6 +19,6 @@ Cruz is an autonomous optical instrument for monitoring natural waters. It is be
 
 The enclosure uses a horizontal clear acrylic tube with a 180 mm outer diameter, a 172 mm inner diameter and a length of 380 mm. Both Ø230 mm end caps use 10 mm acrylic. The auxiliary USB camera looks forward through the front cap. The rear cap service holes will be drilled to suit the actual fittings.
 
-The removable R5 chassis uses two flat-printed end frames and a bolted centre bridge. The optical cradle, cover and PCB tray are removable. All six parts fit the Original Prusa MINI. Fusion v13 documents the R3 attachment ring and ballast simulation. Physical load and leak tests are pending. KiCad V8 is the editable electronics draft. Routing and electrical review are pending. Purchase prices and quantities in the workbook are dated 30 October 2026.
+The removable R5 chassis uses two flat-printed end frames and a bolted centre bridge. The optical cradle, cover and PCB tray are removable. All six parts fit the Original Prusa MINI. Fusion v13 documents the R3 attachment ring and ballast simulation. Physical load and leak tests are pending. KiCad V8 is the editable electronics draft. Placement and routing are complete; electrical and mechanical release checks are pending. Purchase prices and quantities in the workbook are dated 30 October 2026.
 
 The [engineering index](docs/INDICE_PROYECTO.md) links to the detailed design, build and validation records.

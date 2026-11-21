@@ -1,5 +1,5 @@
 (kicad_symbol_lib (version 20241209) (generator "kicad_symbol_editor")
-(symbol "DFR1015_VERIFY"
+(symbol "External_Buck_Wired"
 		(pin_numbers
 			(hide yes)
 		)
@@ -34,7 +34,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.dfrobot.com/product-2599.html"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(effects
 				(font
@@ -43,7 +43,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Cable interface for external buck: 1 VIN+, 2 VIN-/GND, 3 VOUT+, 4 VOUT-/GND. Non-isolated common return."
 			(at 0 0 0)
 			(effects
 				(font
@@ -52,7 +52,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "DFR1015_VERIFY_1_1"
+		(symbol "External_Buck_Wired_1_1"
 			(rectangle
 				(start -1.27 3.81)
 				(end 1.27 -6.35)
@@ -998,7 +998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://recom-power.com/en/rec-p-R05CT05S-R.html"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1354,7 +1354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://recom-power.com/pdf/Innoline/R-78HE-0.3.pdf"
 			(at 0 0 0)
 			(effects
 				(font
