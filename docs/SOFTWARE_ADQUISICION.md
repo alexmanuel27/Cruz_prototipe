@@ -9,9 +9,13 @@ Alex probó la halógena de **12 V / 10 W** con la fuente de banco. También ali
 | Rama | Camino de potencia |
 | --- | --- |
 | Halógena | +12 V → lámpara → drenador del IRLZ44N → fuente del MOSFET → negativo del DC/DC |
-| Azul | +12 V → circuito LM317 existente → LED azul → drenador de otro IRLZ44N → fuente del MOSFET → negativo del DC/DC |
+| Azul | +12 V → LM317 (10,4 Ω entre OUT y ADJ) → LED azul → IRLZ44N → GND |
+| Naranja | +12 V → LM317 (10,4 Ω entre OUT y ADJ) → LED naranja → IRLZ44N → GND |
+| Infrarrojo | +12 V → 220 Ω / 1 W → LED TSHG6410 → IRLZ44N → GND |
 
-El rojo y el infrarrojo pueden incorporarse a la línea con un limitador de corriente por canal, una vez comprobados. La halógena demanda 10 W / 12 V ≈ 0,83 A en régimen. El [filamento frío](https://www.ushio.com/files/catalog/qih/qih-lamp-characteristics.pdf) demanda más al arrancar. Probar el DC/DC real desde frío, verificar que la lámpara arranca y que los 12 V se recuperan y se mantienen. El pico real requiere instrumentación con resolución temporal suficiente. Medir cuánto tarda la luz en estabilizarse antes de fijar la espera para transmisión.
+Alex comprobó que el naranja de 620 nm y el infrarrojo de 850 nm encienden en banco con DC/DC a 12 V y reportó aproximadamente 3 V y 110 mA. Falta identificar el punto de medida de esos 3 V. Los 110 mA del naranja quedan dentro del rango publicado por [ILS](https://docs.rs-online.com/c025/A700000015828598.pdf). Para el [Vishay TSHG6410](https://www.vishay.com/docs/81870/tshg6410.pdf), 110 mA excede el máximo continuo de 100 mA a 25 °C. Para el IR usar 220 Ω / 1 W en serie desde la línea regulada de 12 V. Con Vf alrededor de 1,5–1,6 V se esperan 47–48 mA y alrededor de 0,5 W de disipación en la resistencia. Azul y naranja conservan un LM317 por rama. Medir la corriente en serie y la tensión directamente entre las patas del IR antes de la prueba GPIO.
+
+La prueba de la halógena queda para más adelante. Demanda 10 W / 12 V ≈ 0,83 A en régimen. El [filamento frío](https://www.ushio.com/files/catalog/qih/qih-lamp-characteristics.pdf) demanda más al arrancar. Probar el DC/DC real desde frío, verificar que la lámpara arranca y que los 12 V se recuperan y se mantienen. El pico real requiere instrumentación con resolución temporal suficiente. Medir cuánto tarda la luz en estabilizarse antes de fijar la espera para transmisión.
 
 Si los 12 V llegan directamente a IN del LM317, el aumento de 8 a 12 V agrega unos 0,44 W de calor a 110 mA. Medir temperatura y corriente con el tiempo de encendido previsto. Si hace falta reducir el calor, se puede conservar la línea de 12 V y bajar solo la entrada del LM317. [Cálculo térmico del LM317](https://www.ti.com/lit/ds/symlink/lm317.pdf#page=23).
 
@@ -21,10 +25,51 @@ GPIO propuestos para la Pi 5 en un montaje separado de V8. Verificar disponibili
 | --- | --- | --- | --- |
 | Halógena | 22 | 15 | Alto |
 | Azul | 23 | 16 | Alto |
-| Rojo | 16 | 36 | Alto |
+| Naranja (rojo de 620 nm) | 16 | 36 | Alto |
 | Infrarrojo | 20 | 38 | Alto |
 
 Probar primero el azul. El cátodo pasa al drenador del IRLZ44N y la fuente del MOSFET va al negativo del DC/DC. Usar un [74AHCT125](https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf) alimentado con los 5 V de la Pi para adaptar las cuatro señales de 3,3 V. Unir GND de Pi, adaptador y DC/DC, con el retorno de potencia directo al convertidor. Para el azul, llevar GPIO23 a 1A y llevar 1Y a la puerta a través de 470 Ω. Para la halógena, usar GPIO22, 2A y 2Y de la misma forma. Poner una resistencia de 10 kΩ a GND en cada entrada usada y unir su OE a GND. Poner 120 kΩ entre puerta y fuente y 100 nF de desacoplo entre VCC y GND del adaptador. Deshabilitar y fijar las entradas de los canales que aún no se usan. Verificar apagado en reposo, arranque y reinicio, VGS de al menos 4,5 V al encender y corriente del LED con el interruptor instalado. El [IRLZ44N](https://www.infineon.com/part/IRLZ44N) tiene resistencia de encendido garantizada a partir de la condición publicada de 4,5 V. Probar una fuente a la vez.
+
+### Prueba de los tres LED desde la Pi
+
+Mantener la halógena apagada durante esta prueba. En cada rama, llevar el cátodo a su drenador IRLZ44N y la fuente del MOSFET al negativo del DC/DC. Mantener los 12 V comunes y un limitador de corriente por rama. La tierra de la Pi y la del convertidor se unen, con retorno de potencia directo al convertidor.
+
+| LED | GPIO BCM / pin físico Pi | Entrada / salida del 74AHCT125 de 14 pines | OE a GND |
+| --- | --- | --- | --- |
+| Azul | GPIO23 / 16 | 1A (2) / 1Y (3) | 1OE (1) |
+| Naranja | GPIO16 / 36 | 3A (9) / 3Y (8) | 3OE (10) |
+| IR | GPIO20 / 38 | 4A (12) / 4Y (11) | 4OE (13) |
+
+Usar la misma adaptación de nivel, desacoplo y resistencias que en el azul. Comprobar primero las tres puertas con la alimentación de los LED apagada. Dejar las entradas sin usar en GND y sus OE en 5 V si no hay nada conectado a esos canales. En la Pi, comprobar que los tres GPIO estén libres con `pinctrl get 23,16,20`. Copiar [leds_cruz.py](../software/pruebas/leds_cruz.py) a `/tmp/cruz-leds.py` en la Pi y ejecutar un LED por vez:
+
+```sh
+sudo env GPIOZERO_PIN_FACTORY=lgpio python3 /tmp/cruz-leds.py azul
+sudo env GPIOZERO_PIN_FACTORY=lgpio python3 /tmp/cruz-leds.py naranja
+sudo env GPIOZERO_PIN_FACTORY=lgpio python3 /tmp/cruz-leds.py ir
+```
+
+Cada comando enciende solo el canal indicado durante dos segundos y lo apaga al terminar o al recibir Ctrl+C o SIGTERM. Confirmar que el canal queda libre y apagado al salir. Los GPIO controlan la conmutación. La corriente depende del limitador físico. El ajuste del IR a unos 48 mA debe verificarse antes de darle alimentación para ejecutar su prueba.
+
+### Webcam submarina USB (O04)
+
+Alex indica que es la última cámara por probar en esta ronda. Ensayar en seco con la cámara en el interior, orientada hacia la tapa acrílica. Verificar los modos que anuncia la propia cámara y anotar la resolución realmente capturada.
+
+```sh
+lsusb
+v4l2-ctl --list-devices
+```
+
+Elegir el nodo de captura del bloque USB de la webcam. Cuando exista un enlace inequívoco bajo `/dev/v4l/by-id/`, se puede usar ese nombre estable. Algunas cámaras exponen también un nodo de metadatos. Confirmar formatos antes de capturar. Sustituir `/dev/videoN` por el nodo real.
+
+```sh
+cam=/dev/videoN
+v4l2-ctl -d "$cam" --list-formats-ext
+prueba=$(mktemp -d "$HOME/cruz-webcam-XXXXXX")
+timeout 15s ffmpeg -hide_banner -nostdin -f v4l2 -i "$cam" -ss 1 -frames:v 1 -update 1 "$prueba/webcam.jpg"
+ls -lh "$prueba"
+```
+
+Si falla el modo predeterminado, elegir uno de los anunciados por la cámara antes de repetir. Comprobar en el JPEG detalle, foco y orientación. Después repetir a través de la tapa para comparar reflejos y nitidez. Alex confirmó enumeración USB como `32e6:9281 icSpring icspring camera`, con `/dev/video0` y `/dev/video1` en su propio bloque y el CSI por separado. `/dev/video0` expone captura MJPEG y anuncia modos de 640 × 480 a 3264 × 2448 a 30 fps. Alex capturó un JPEG de 3264 × 2448 (248 KiB) con FFmpeg en `/home/alex/cruz-webcam-4D5cIu/webcam.jpg`. Quedan pendientes revisión visual, captura a través de la tapa y cualquier prueba de vídeo sostenido. [Captura Video4Linux2 con FFmpeg](https://www.ffmpeg.org/ffmpeg-devices.html#video4linux2_002c-v4l2).
 
 ## Pruebas de banco · 21 de noviembre de 2026
 
