@@ -31,6 +31,12 @@ def main():
         (node.get("ref"), node.get("pin")): net.get("name")
         for net in original.findall("nets/net") for node in net.findall("node")
     }
+    # Alex alimenta sensores desde la Pi y retira el regulador U10.
+    assert "U10" not in components
+    original_nets = {
+        pin: "/3V3_PI" if name == "/3V3_SENS" else name
+        for pin, name in original_nets.items() if pin[0] != "U10"
+    }
     # Al quitar etiquetas internas, KiCad asigna nombres automáticos a esas redes.
     # La identidad eléctrica se comprueba mediante el conjunto completo de pines.
     current_groups = {}
@@ -50,11 +56,10 @@ def main():
         ("J1", "40"): "OPT_ARM", ("J1", "37"): "HOLD_PI",
         ("J1", "11"): "M_STEP", ("J1", "12"): "M_DIR",
         ("J1", "13"): "M_ENABLE_N", ("J1", "7"): "TEMP_1WIRE",
-        ("U6", "3"): "12V_OPT", ("U10", "1"): "5V_PI",
-        ("U10", "3"): "3V3_PI", ("U10", "5"): "3V3_SENS",
-        ("J8", "1"): "3V3_SENS", ("J8", "3"): "SDA_SENS",
-        ("J8", "4"): "SCL_SENS", ("J10", "1"): "3V3_SENS",
-        ("J10", "3"): "TEMP_SENS", ("R10", "2"): "3V3_SENS",
+        ("U6", "3"): "12V_OPT",
+        ("J8", "1"): "3V3_PI", ("J8", "3"): "SDA_SENS",
+        ("J8", "4"): "SCL_SENS", ("J10", "1"): "3V3_PI",
+        ("J10", "3"): "TEMP_SENS", ("R10", "2"): "3V3_PI",
         ("U11", "14"): "3V3_PI", ("U11", "2"): "SDA",
         ("U11", "3"): "SDA_SENS", ("U11", "5"): "SCL",
         ("U11", "6"): "SCL_SENS", ("U11", "9"): "TEMP_1WIRE",
@@ -94,13 +99,16 @@ def main():
                 "15": "GND_EC_ISO", "16": "GND_EC_ISO"},
         "U15": {"1": "3V3_EC_ISO", "2": "SDA_EC_ISO", "3": "SCL_EC_ISO",
                 "4": "GND_EC_ISO", "5": "GND", "6": "SCL_SENS",
-                "7": "SDA_SENS", "8": "3V3_SENS"},
+                "7": "SDA_SENS", "8": "3V3_PI"},
         "U4": {"1": "VBAT_FUSED", "2": "GND", "3": "5V_AON"},
         "U5": {"1": "VBAT_SW", "2": "GND", "3": "5V_PI", "4": "GND"},
         "U6": {"1": "VBAT_SW", "2": "GND", "3": "12V_OPT", "4": "GND"},
     }.items():
         for pin, name in mapping.items():
             assert nets[ref, pin] == "/" + name, (ref, pin, nets[ref, pin])
+    assert nets["J8", "1"] == nets["J10", "1"] == nets["J1", "1"]
+    assert nets["U12", "3"] != nets["J8", "1"] != nets["U7", "3"]
+    assert len(nets) == 404
     assert components["U15"].findtext("footprint") == "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
     assert all("TerminalBlock_Phoenix" in components[ref].findtext("footprint")
                for ref in ("U5", "U6", "J23"))
@@ -114,7 +122,7 @@ def main():
     assert not re.search(r'"Reference" "W\d+"', board)
     assert "__WIRE_" not in board
     assert components["U11"].findtext("value") == "SN74CBTLV3125D"
-    print("OK: 409 conexiones originales, sin puentes W y PCB sin pistas/vías/zonas.")
+    print("OK: 404 pines; sensores desde Pi; EC aislado; sin puentes ni trazado.")
 
 
 if __name__ == "__main__":

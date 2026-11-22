@@ -205,3 +205,13 @@ Alex rechaza el resultado con puentes y pide eliminar todas las pistas/vías, re
 ## D60 · Conexiones internas dibujadas en el esquema (22/11/2026)
 
 Alex pide líneas de conexión entre componentes del mismo bloque y etiquetas únicamente para conexiones a otro bloque. Se aplica a los once bloques: 377 etiquetas se reducen a 105, una por red y bloque que comparte esa red con otro bloque. Las 409 conexiones de pines son idénticas; 39 redes internas sin etiqueta reciben nombres automáticos de KiCad, sincronizados en la PCB. ERC y paridad sin incidencias. La PCB permanece sin trazado.
+
+
+## D61 · Equilibrio entre líneas y etiquetas (22/11/2026)
+
+Alex aclara D60: no quiere retirar todas las etiquetas internas; quiere un esquema equilibrado y legible. Se conservan líneas locales entre componentes relacionados y se usan etiquetas para alimentación/masa compartida, señales largas y enlaces entre bloques, evitando grandes recorridos y cruces. Revisión vigente con 216 etiquetas y las mismas 409 conexiones originales; ERC y paridad sin incidencias. La PCB sigue sin trazado.
+
+
+## D62 · Símbolos de alimentación y sensores desde Raspberry (22/11/2026)
+
+Alex elige el GND triangular que añadió en R12 y pide usar símbolos de alimentación con nombres simples (5V y 3V3). Se reemplazan las etiquetas de masa y tensión por símbolos; sus rótulos visibles se simplifican manteniendo distintas las redes permanente, Pi y EC aislada. Alex confirma su prueba desde los 3V3 de Raspberry y autoriza retirar el regulador separado U10: J8/J10, R10 y la alimentación de sensores/entrada del aislador pasan a 3V3_PI. C8/C9 se conservan como desacoplos. El EC conserva R05CT05S/ISO1540D y su masa aislada; el reloj conserva 3V3_AON. Verificados los 404 pines restantes y esquema–PCB sin diferencias; 121 posiciones y 298 conexiones por trazar. Esta edición no representa un ensayo físico del conjunto.

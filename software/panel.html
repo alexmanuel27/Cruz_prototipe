@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cruz · Monitor</title>
+<style>
+  :root { color-scheme:light; font-family:system-ui,sans-serif; color:#172c3b; background:#edf2f3; --line:#d2dce0; --navy:#0a3442; --teal:#08766c }
+  * { box-sizing:border-box }
+  body { margin:0 }
+  main { max-width:1120px; margin:auto; padding:24px clamp(14px,4vw,36px) 48px }
+  header { background:var(--navy); color:white; padding:26px 0 }
+  header div { max-width:1120px; margin:auto; padding:0 clamp(14px,4vw,36px); display:flex; align-items:center; gap:16px; flex-wrap:wrap }
+  h1,h2,p { margin:0 }
+  h1 { font-size:clamp(24px,4vw,32px); font-weight:650 }
+  h2 { font-size:18px }
+  #modo { padding:5px 10px; border:1px solid #96b7bd; border-radius:4px; font-size:14px }
+  #modo[data-simulado="true"] { background:#ffedc8; color:#634000; border-color:#ffedc8 }
+  .estado { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:16px }
+  .lecturas { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr)); gap:14px }
+  article, section { background:white; border:1px solid var(--line); border-radius:8px; padding:16px }
+  section { margin-top:14px }
+  .valor { font-variant-numeric:tabular-nums; font-size:clamp(27px,5vw,39px); margin:6px 0; font-weight:650 }
+  .unidad, .nota, #hora, #reloj { color:#425d68; font-size:14px; font-weight:400 }
+  .grafico { display:block; height:108px; width:100%; color:var(--teal); margin-top:9px; border-bottom:1px solid var(--line) }
+  form { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin-top:12px }
+  #optica .lecturas { margin-top:12px }
+  input[type="number"] { width:105px; min-height:40px; font:inherit; margin-left:4px; padding:5px }
+  button, .boton { font:inherit; color:white; background:var(--navy); border:1px solid var(--navy); border-radius:5px; padding:8px 12px; min-height:40px; text-decoration:none; cursor:pointer }
+  button:disabled { opacity:.55; cursor:default }
+  button.secundario, .boton { background:white; color:var(--navy) }
+  :focus-visible { outline:3px solid #0b7db0; outline-offset:2px }
+  #mensaje, #fallo { white-space:pre-line; overflow-wrap:anywhere }
+  #mensaje { margin-top:8px; color:var(--teal) }
+  #mensaje[data-error], #fallo { color:#903524 }
+  #fallo:not(:empty) { margin-bottom:12px }
+  .cabecera { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px }
+  .tabla { overflow-x:auto }
+  table { border-collapse:collapse; width:100%; margin-top:10px; text-align:left; white-space:nowrap; font-variant-numeric:tabular-nums }
+  td,th { padding:9px 8px; border-bottom:1px solid var(--line) }
+  th { color:#425d68; font-weight:550; font-size:14px }
+  a { color:var(--navy) }
+  #reloj { margin-top:12px }
+</style>
+<body>
+<header><div><h1>Cruz · Monitor</h1><span id="modo">Conectando</span></div></header>
+<main>
+  <div class="estado"><strong id="estado" aria-live="polite">Cargando lecturas…</strong><span id="hora"></span></div>
+  <p id="fallo" role="alert"></p>
+  <div class="lecturas">
+    <article>
+      <h2>Temperatura</h2>
+      <p class="valor"><span id="temperatura">—</span> <span class="unidad">°C</span></p>
+      <svg id="grafico-temperatura" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Historial de temperatura"></svg>
+      <p id="rango-temperatura" class="nota"></p>
+    </article>
+    <article>
+      <h2>Conductividad</h2>
+      <p class="valor"><span id="conductividad">—</span> <span class="unidad">µS/cm</span></p>
+      <svg id="grafico-conductividad" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Historial de conductividad"></svg>
+      <p id="rango-conductividad" class="nota"></p>
+    </article>
+  </div>
+  <section aria-labelledby="config-titulo">
+    <h2 id="config-titulo">Medición</h2>
+    <form id="config">
+      <label>Intervalo (s) <input id="intervalo" type="number" required step="1" min="1" max="86400"></label>
+      <label><input id="automatico" type="checkbox"> Medición automática</label>
+      <button id="guardar" type="submit" disabled>Guardar</button>
+      <button id="medir" class="secundario" type="button" disabled>Medir ahora</button>
+    </form>
+    <p id="mensaje" role="status"></p>
+  </section>
+  <section id="optica" aria-labelledby="optica-titulo" hidden>
+    <h2 id="optica-titulo">Óptica simulada del último ciclo</h2>
+    <div class="lecturas">
+      <div>
+        <p>Transmisión · cuentas por píxel</p>
+        <svg id="grafico-transmision" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Cuentas simuladas de transmisión por píxel"></svg>
+        <p id="rango-transmision" class="nota"></p>
+      </div>
+      <div>
+        <p>AS7265x con luz azul · cuentas por canal</p>
+        <svg id="grafico-azul" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Cuentas simuladas de los 18 canales con luz azul"></svg>
+        <p id="rango-azul" class="nota"></p>
+      </div>
+    </div>
+  </section>
+  <section aria-labelledby="historial-titulo">
+    <div class="cabecera"><h2 id="historial-titulo">Historial reciente</h2><a class="boton" href="/exportar.csv">Descargar CSV</a></div>
+    <div class="tabla" tabindex="0" aria-label="Historial desplazable">
+      <table>
+        <thead><tr><th>Inicio UTC</th><th>°C</th><th>µS/cm</th><th>Estado</th><th>Originales</th></tr></thead>
+        <tbody id="historial"><tr><td colspan="5">Sin ciclos guardados.</td></tr></tbody>
+      </table>
+    </div>
+    <p id="reloj">Hora del sistema en UTC. Sin verificar contra el RTC.</p>
+  </section>
+</main>
+<script>
+  const el = id => document.getElementById(id);
+  const estados = {en_curso: "En curso", completo: "Completo", parcial: "Parcial", fallido: "Fallido", interrumpido: "Interrumpido"};
+  const numero = new Intl.NumberFormat("es", { maximumFractionDigits: 3 });
+  const valor = n => n == null ? "—" : numero.format(n);
+  const fecha = s => s ? s.slice(0, 19).replace("T", " ") : "—";
+  let editando = false, refrescando = false, ocupada = false, historialAnterior;
+
+  function grafico(clave, puntos, etiqueta, posiciones = puntos.map((_, i) => i)) {
+    const validos = puntos.filter(Number.isFinite);
+    const svg = el("grafico-" + clave);
+    svg.replaceChildren();
+    const rango = el("rango-" + clave);
+    if (!validos.length) {
+      rango.textContent = "Sin lecturas guardadas";
+      return;
+    }
+    const min = Math.min(...validos), max = Math.max(...validos);
+    let trazado = "", inicio = true;
+    const ns = "http://www.w3.org/2000/svg";
+    for (const [i, n] of puntos.entries()) {
+      if (!Number.isFinite(n)) { inicio = true; continue; }
+      const x = 5 + 390 * (posiciones[i] - posiciones[0]) / Math.max(1, posiciones.at(-1) - posiciones[0]);
+      const y = max === min ? 52 : 92 - 80 * (n - min) / (max - min);
+      trazado += (inicio ? "M" : "L") + x + "," + y + " ";
+      const punto = document.createElementNS(ns, "circle");
+      punto.setAttribute("cx", x);
+      punto.setAttribute("cy", y);
+      punto.setAttribute("r", "2.4");
+      punto.setAttribute("fill", "currentColor");
+      svg.append(punto);
+      inicio = false;
+    }
+    const linea = document.createElementNS(ns, "path");
+    linea.setAttribute("d", trazado);
+    linea.setAttribute("fill", "none");
+    linea.setAttribute("stroke", "currentColor");
+    linea.setAttribute("stroke-width", "2");
+    linea.setAttribute("vector-effect", "non-scaling-stroke");
+    svg.prepend(linea);
+    rango.textContent = etiqueta + " · " + valor(min) + " a " + valor(max);
+  }
+
+  function mostrar(e) {
+    el("modo").textContent = e.modo === "simulado" ? "Datos simulados" : "Sensores de banco";
+    el("modo").dataset.simulado = e.modo === "simulado";
+    el("estado").textContent = e.error ? "Adquisición detenida" : e.midiendo || e.pendiente ? "Midiendo…" :
+      e.config.automatico ? "Próximo ciclo en " + e.en_s + " s" : "Medición automática en pausa";
+    if (!editando) {
+      el("intervalo").value = e.config.intervalo_s;
+      el("automatico").checked = e.config.automatico;
+    }
+    el("intervalo").min = e.modo === "simulado" ? 1 : 10;
+    el("guardar").disabled = ocupada;
+    el("medir").disabled = ocupada || Boolean(e.midiendo || e.pendiente || e.error);
+    const ultimo = e.ciclos.find(c => c.estado !== "en_curso");
+    el("hora").textContent = ultimo ? "Último ciclo · " + fecha(ultimo.inicio_utc) + " UTC" : "";
+    for (const clave of ["temperatura", "conductividad"]) {
+      el(clave).textContent = valor(ultimo?.[clave]);
+    }
+    el("fallo").textContent = e.error || Object.values(ultimo?.errores || {}).join("\n") ||
+      (ultimo?.estado === "interrumpido" ? "El último ciclo quedó interrumpido." : "");
+    const firma = e.ciclos.map(c => c.id + ":" + c.estado).join(",");
+    if (firma === historialAnterior) return;
+    historialAnterior = firma;
+    const ordenados = e.ciclos.slice().reverse();
+    for (const clave of ["temperatura", "conductividad"]) {
+      grafico(clave, ordenados.map(c => c[clave]), ordenados.length === 1 ? "Último ciclo" : "Últimos " + ordenados.length + " ciclos");
+    }
+    el("optica").hidden = !e.optica;
+    if (e.optica) {
+      const pixeles = e.optica.camara.transmision_por_pixel;
+      const canales = e.optica.as7265x.canales;
+      grafico("transmision", pixeles, "Píxeles 0–" + (pixeles.length - 1));
+      grafico("azul", canales.map(c => c.azul_crudo), "410–940 nm nominales", canales.map(c => c.nm_nominal));
+    }
+    const tabla = el("historial");
+    tabla.replaceChildren();
+    if (!e.ciclos.length) {
+      const celda = tabla.insertRow().insertCell();
+      celda.colSpan = 5;
+      celda.textContent = "Sin ciclos guardados.";
+    }
+    for (const ciclo of e.ciclos) {
+      const fila = tabla.insertRow();
+      for (const texto of [fecha(ciclo.inicio_utc), valor(ciclo.temperatura), valor(ciclo.conductividad), estados[ciclo.estado]]) {
+        fila.insertCell().textContent = texto;
+      }
+      const enlace = document.createElement("a");
+      enlace.href = "/api/ciclos/" + ciclo.id;
+      enlace.textContent = "JSON";
+      enlace.setAttribute("aria-label", "Datos originales del ciclo " + ciclo.id);
+      fila.insertCell().append(enlace);
+    }
+  }
+
+  async function actualizar() {
+    if (refrescando) return;
+    refrescando = true;
+    try {
+      const r = await fetch("/api/estado");
+      if (!r.ok) throw Error();
+      mostrar(await r.json());
+    } catch {
+      el("estado").textContent = "Sin conexión con el monitor";
+      el("guardar").disabled = el("medir").disabled = true;
+    } finally {
+      refrescando = false;
+    }
+  }
+
+  async function enviar(ruta, datos, mensaje) {
+    ocupada = true;
+    el("guardar").disabled = el("medir").disabled = true;
+    try {
+      const r = await fetch(ruta, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(datos)});
+      if (!r.ok) throw Error((await r.json()).error);
+      el("mensaje").removeAttribute("data-error");
+      el("mensaje").textContent = mensaje;
+      if (ruta === "/api/config") editando = false;
+    } catch (error) {
+      el("mensaje").setAttribute("data-error", "");
+      el("mensaje").textContent = error.message || "No se pudo completar la operación.";
+    } finally {
+      ocupada = false;
+      await actualizar();
+    }
+  }
+
+  el("config").addEventListener("input", () => { editando = true; });
+  el("config").addEventListener("submit", ev => {
+    ev.preventDefault();
+    enviar("/api/config", {intervalo_s: el("intervalo").valueAsNumber, automatico: el("automatico").checked}, "Configuración guardada.");
+  });
+  el("medir").addEventListener("click", () => enviar("/api/medir", {}, "Medición solicitada."));
+  actualizar();
+  setInterval(actualizar, 2000);
+</script>
+</body>
+</html>

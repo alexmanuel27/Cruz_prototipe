@@ -2,7 +2,7 @@
 
 21 de noviembre de 2026 · Codex GPT-6 · Esquema y placa editados, sin energizar hardware.
 
-**Acta de la adaptación de banco, anterior al trazado.** Sus resultados ERC/DRC, inventario de convertidores y bloque virtual U13 describen aquella etapa. La [revisión de cierre vigente](CIERRE_PCB_2026-11-21.md) incorpora aislamiento físico, convertidores principales externos y PCB completamente trazado. La tabla de GPIO de esta acta sigue vigente.
+**Acta histórica de la adaptación de banco.** El [estado vigente](LEEME_PRIMERO.md) del 22/11 conserva el aislamiento EC, retira U10 y alimenta los sensores desde los 3V3 de Raspberry por decisión de Alex. La PCB está sin rutear. La tabla de GPIO sigue vigente; los datos de U10 y de la rama dedicada describen la revisión anterior.
 
 La V8 incorpora la plataforma de banco Pi 5, halógena de transmisión y tres LED de excitación conforme a D55/D56 y al [traspaso de banco](../../docs/SOFTWARE_ADQUISICION.md#traspaso-al-chat-del-pcb--pruebas-de-banco-del-21-de-noviembre-de-2026). La disposición óptica es en T: brazo común y AS7265x a 90°. Se conservan los ensayos como resultados comunicados por Alex; esta edición no añade una validación física del circuito integrado.
 
@@ -57,7 +57,7 @@ BCM y pin físico no son intercambiables. Las señales descritas son las guardad
 | Señal | BCM | Pin físico J1 | Estado eléctrico |
 | --- | ---: | ---: | --- |
 | SDA / SCL | 2 / 3 | 3 / 5 | I²C 1, 3,3 V; sensores tras U11. AS7265x 0x49, EC-OEM 0x64 tras aislamiento pendiente. |
-| TEMP_1WIRE | 4 | 7 | DS18B20 tras U11; pull-up R10 a 3V3_SENS. |
+| TEMP_1WIRE | 4 | 7 | DS18B20 tras U11; pull-up R10 a 3V3_PI (actualizado el 22/11). |
 | M_STEP / M_DIR | 17 / 18 | 11 / 12 | Paso/dirección conservados. R2/R3 a GND. |
 | M_ENABLE_N | 27 | 13 | **Bajo habilita**; R1 de 10 kΩ mantiene deshabilitado con la lógica alimentada. |
 | HAL_EN | 22 | 15 | **Alto enciende** la halógena si OPT_ARM=1. Sustituye WHITE_EN. |

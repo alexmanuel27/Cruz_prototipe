@@ -1,6 +1,8 @@
 # Adquisición y control de Cruz: revisión y primera iteración
 
-**Interfaz eléctrica vigente:** [tabla BCM/pines, polaridades y estados de arranque](../electronica/cross_v8_raspberry/REVISION_BANCO_2026-11-21.md#tabla-vigente-para-software). Las cuatro fuentes son activas altas y requieren `OPT_ARM` en BCM21/pin 40. El programa de banco de tres LED conserva su cableado ensayado y no controla esa señal nueva. La rama propia de 3,3 V ya está dibujada; el aislamiento físico del EC-OEM está incorporado en el diseño mediante R05CT05S e ISO1540D, pendiente de montaje y ensayo. [Cierre y pendientes eléctricos de PCB](../electronica/cross_v8_raspberry/CIERRE_PCB_2026-11-21.md). [Estado de PCB del 22/11](../electronica/cross_v8_raspberry/LEEME_PRIMERO.md): sin trazado ni puentes W, esquema reorganizado y GPIO conservados; U11 SN74CBTLV3125D SOIC para señales de 3,3 V. No energizar V8 a partir de los ensayos separados.
+**Monitor local · 22/11/2026.** La [primera versión](../software/README.md) incluye adquisición periódica, almacenamiento por ciclo, configuración local de la cadencia, vistas del último ciclo e historial, y exportación CSV/JSON. El modo simulado cubre el recorrido óptico sintético. El modo ambiental integra DS18B20 y Atlas EC-OEM K0.1 a partir de las pruebas de banco, pendiente de verificación en la Pi. La hora se toma del sistema y se marca como no verificada. La lectura óptica real, los actuadores, el RTC y el corte de alimentación quedan para la integración.
+
+**Interfaz eléctrica vigente:** [tabla BCM/pines, polaridades y estados de arranque](../electronica/cross_v8_raspberry/REVISION_BANCO_2026-11-21.md#tabla-vigente-para-software). Las cuatro fuentes son activas altas y requieren `OPT_ARM` en BCM21/pin 40. El programa de banco de tres LED conserva su cableado ensayado y no controla esa señal nueva. Alex confirmó que probó los sensores desde los 3V3 de la Raspberry y eligió esa alimentación: se retiró U10 del diseño; el aislamiento físico del EC-OEM está incorporado en el diseño mediante R05CT05S e ISO1540D, pendiente de montaje y ensayo. [Cierre y pendientes eléctricos de PCB](../electronica/cross_v8_raspberry/CIERRE_PCB_2026-11-21.md). [Estado de PCB del 22/11](../electronica/cross_v8_raspberry/LEEME_PRIMERO.md): sin trazado ni puentes W, esquema reorganizado y GPIO conservados; U11 SN74CBTLV3125D SOIC para señales de 3,3 V. No energizar V8 a partir de los ensayos separados.
 
 **Geometría actual, D55 y D56 · 21/11/2026:** iluminación compartida desde un brazo con halógena y LED azul, rojo e infrarrojo seleccionables; cámara en transmisión y AS7265x a 90°. Mantener transmisión primero y excitación azul después; orden, tiempos y datos derivados para las excitaciones adicionales pendientes de definir. El software debe identificar fuente y ajustes por lectura, guardar los 18 canales y originales, y mantener la exclusión de fuentes y apagado seguro. Esta decisión no valida la respuesta de fluorescencia ni cambia el PCB o el CAD.
 
@@ -207,19 +209,19 @@ Conexiones reservadas no equivalen a interfaces validadas. El documento V8 regis
 
 El [puerto de servicio](../electronica/PUERTO_SERVICIO_Y_BOYA.md) fija RS-485 como enlace y propone Modbus RTU, pero no hay mapa de registros, baud rate, dirección de equipo ni protocolo de archivos aprobado. RS-485 no proporciona por sí solo descarga de espectros/imágenes. Esa implementación queda después de medir el volumen de datos y cerrar electrónica. La extracción final será por el conector físico, con integridad y reanudación; no se sustituye por Wi-Fi.
 
-## 3. Integración propuesta después de las pruebas básicas: ciclo simulado
+## 3. Plan de integración y criterios de validación
 
-**Resultado de la entrega:** ejecutar un ciclo y una serie de ciclos sin red ni navegador, inspeccionar todos sus archivos y repetir el procesamiento a partir de originales. El modo simulado no importa bibliotecas GPIO/I²C/PiCam ni abre dispositivos. Todos sus datos y resultados se etiquetan `simulated`; nunca se mezclan con un despliegue real. No se ofrece todavía un modo hardware habilitable con un interruptor de configuración.
+La primera versión implementa ciclo autónomo, seguimiento de fallos, almacenamiento y panel. El escenario simulado nunca abre dispositivos y sus datos están separados de los ambientales. El modo explícito `--sensors` consulta únicamente al DS18B20 y al Atlas. Los apartados siguientes conservan el plan y los criterios para completar adquisición óptica, procesamiento, calibración, archivos RAW y control de actuadores.
 
-### Alcance mínimo en el repo de ingeniería
+### Archivos y alcance
 
-- `software/cruz.py`: entrada de terminal, secuencia y almacenamiento. Funciones simples de adquisición simulada; ningún framework, servidor ni panel web.
-- `software/processing.py`: eje píxel–λ, transmitancia/absorbancia, resta de oscuro y blanco multicanal, validaciones de calidad. NumPy para espectros cuando se incorpore el código de cámara; JSON, CSV, tiempos, IDs y archivos con biblioteca estándar.
-- `software/config/`: ejemplo de operación y calibración **sintética**; blanco/oscuro de referencia sintéticos separados. Sin coeficientes de instrumentos anteriores ni números GPIO reales.
-- `software/tests/`: pruebas pequeñas de ecuaciones, secuencia, referencias incompatibles, fallos y recuperación. Fixtures de 18 canales y espectro de cámara conocidos.
+- `software/cruz.py`: entrada de terminal, cadencia, SQLite y API del panel local. `software/adquisicion.py` contiene los modos de adquisición y `software/panel.html` la interfaz.
+- Procesamiento pendiente: eje píxel–λ, transmitancia, absorbancia, resta de oscuro y blanco multicanal, y validaciones de calidad.
+- `software/config/`: ejemplo de cadencia y estado automático. La configuración de calibración y las referencias separadas se definirán durante la integración óptica.
+- `software/tests/`: comprobaciones de almacenamiento, reinicio, exclusión de ciclos, fallo parcial y lectura de registros Atlas. Las pruebas de ecuaciones y referencias llegarán con su implementación.
 - `software/README.md`: instalación, comandos, formato y límites. Si se incorporan dependencias, declaración mínima de versiones verificadas; Picamera2 solo en fase Pi, desde el sistema compatible.
 
-Esos archivos son el alcance de la implementación siguiente; no existen todavía. Al incorporarlos, enlazar desde el índice del proyecto y registrar las pruebas en el registro. No requiere cambiar callers de Cruz porque aún no hay aplicación. Los dos precursores quedan como referencia de solo lectura.
+Los dos precursores quedan como referencia de solo lectura.
 
 ### Secuencia que debe ejecutar
 
@@ -275,7 +277,7 @@ No se borran datos tras exportar. El manifiesto permitirá comprobar una futura 
 5. Interrupción durante cada fase de escritura y reinicio: datos previos intactos, ciclo interrumpido identificable y siguiente ID distinto. Simular disco lleno y segunda instancia, con rechazo seguro. Una prueba de proceso no demuestra resistencia a corte físico de energía.
 6. Serie acelerada de 24 ciclos simulados sin superposición y con un fallo inyectado; exportación CSV/JSON recargable y recomputación de resultados desde originales y referencias. Registrar tamaño por ciclo, disponibilidad y todos los fallos. No contar esta serie como validación del instrumento o de su autonomía.
 
-Comandos objetivo de la entrega, **aún no disponibles**:
+Comandos disponibles para la primera versión:
 
 ```sh
 python3 -m unittest discover -s software/tests
@@ -293,7 +295,7 @@ python3 software/cruz.py --simulate --cycles 1 --config software/config/operatio
 
 Para D, propuesta a cerrar: Modbus RTU para consulta/estado/configuración y una operación de lectura por bloques de archivos con identificador, tamaño, offset e integridad, compatible con reanudación. No fijar registros, velocidad, direcciones, tamaño de bloque ni pines sin comprobar la electrónica real. La Pi apagada no sirve archivos: la sesión de servicio requiere un despertar y alimentación mantenida verificados.
 
-El núcleo simulado permite avanzar ahora, pero no cumple por sí solo el despliegue autónomo: faltan drivers reales, supervisión independiente, fuga/batería, servicio físico, calibración y ensayo integrado. Se omiten en esta iteración web, Wi-Fi, OTA, radio, modelos nuevos de clorofila, cámara auxiliar y rediseño mecánico.
+El monitor actual permite probar cadencia y persistencia. El despliegue autónomo aún requiere captura óptica real, actuadores, supervisión independiente, fuga/batería, servicio físico, calibración y ensayo integrado. El panel se ofrece localmente y se puede consultar por túnel SSH. La interfaz final por el conector físico queda pendiente.
 
 ## 5. Evidencia de esta revisión
 

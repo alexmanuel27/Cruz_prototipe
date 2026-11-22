@@ -9,10 +9,10 @@
 | CAD mecánico | [Guía CAD](../cad/README.md) |
 | Corte de tapas e impresión | [Tapa Shaper](../body/TAPA_SHAPER_230_PROTOTIPO.svg) · [Guía de mecanizado](../body/LEEME.md) · [Aro R3](../cad/fusion_m2/ARO_AMARRE_M8_REFORZADO_R3.stl) · [Chasis interior R5 para Prusa MINI](../cad/fusion_m2/chasis_r5/README.md) |
 | KiCad | [Proyecto V8](../electronica/cross_v8_raspberry/cross_v8_draft.kicad_pro) · [Estado y pendientes](../electronica/cross_v8_raspberry/LEEME_PRIMERO.md) |
-| Adquisición y control | [Software reutilizable, interfaces V8 y primera iteración propuesta](SOFTWARE_ADQUISICION.md) |
+| Adquisición y control | [Monitor local y puesta en marcha](../software/README.md) · [Pruebas de banco e interfaces V8](SOFTWARE_ADQUISICION.md) |
 | Compras | [Lista fechada](../compras/LISTA_COMPRA.md) · [Excel para el técnico](../compras/Cruz_Shopping_List_EN_2026-10-30.xlsx) |
 
-El PCB V8 vigente está sin trazado, sin zonas de cobre y sin puentes W; conserva su contorno de 132 × 102 mm y 301 conexiones pendientes. El esquema está reorganizado por bloques. El requisito de pistas en una cara para Bantam sigue pendiente de resolver. El cuerpo usa el tubo acrílico recibido de Ø180/172 × 380 mm. D55 cambia la óptica a un brazo de iluminación común y AS7265x a 90°; la integración en CAD está pendiente de revisar. La simulación R3 está documentada. Los ensayos físicos de estanqueidad y carga siguen pendientes en el registro. El firmware unificado está pendiente de incorporar al repo.
+El PCB V8 vigente está sin trazado, sin zonas de cobre y sin puentes W; conserva su contorno de 132 × 102 mm y 298 conexiones pendientes. El esquema está reorganizado por bloques. El requisito de pistas en una cara para Bantam sigue pendiente de resolver. El cuerpo usa el tubo acrílico recibido de Ø180/172 × 380 mm. D55 cambia la óptica a un brazo de iluminación común y AS7265x a 90°; la integración en CAD está pendiente de revisar. La simulación R3 está documentada. Los ensayos físicos de estanqueidad y carga siguen pendientes en el registro. El monitor local ya ejecuta ciclos y guarda sus resultados en simulación. El modo ambiental de banco queda por ejecutar en la Pi.
 
 ## Validación y datos
 

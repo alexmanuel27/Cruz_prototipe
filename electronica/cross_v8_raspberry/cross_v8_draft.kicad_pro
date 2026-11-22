@@ -577,15 +577,7 @@
       },
       {
         "netclass": "Power24",
-        "pattern": "/VBAT_RAW__WIRE_*"
-      },
-      {
-        "netclass": "Power24",
         "pattern": "/VBAT_FUSED"
-      },
-      {
-        "netclass": "Power24",
-        "pattern": "/VBAT_FUSED__WIRE_*"
       },
       {
         "netclass": "Power24",
@@ -593,143 +585,67 @@
       },
       {
         "netclass": "Power24",
-        "pattern": "/VBAT_SW__WIRE_*"
-      },
-      {
-        "netclass": "Power24",
         "pattern": "/CHG_PLUS"
       },
       {
         "netclass": "Power24",
-        "pattern": "/CHG_PLUS__WIRE_*"
+        "pattern": "Net-(J18-Pin_2)"
       },
       {
         "netclass": "Power24",
-        "pattern": "/CHG_MINUS"
-      },
-      {
-        "netclass": "Power24",
-        "pattern": "/CHG_MINUS__WIRE_*"
-      },
-      {
-        "netclass": "Power24",
-        "pattern": "/CHG_FUSED"
-      },
-      {
-        "netclass": "Power24",
-        "pattern": "/CHG_FUSED__WIRE_*"
+        "pattern": "Net-(F2-Pad2)"
       },
       {
         "netclass": "Power12",
-        "pattern": "/12V_OPT"
+        "pattern": "12V_OPT"
       },
       {
         "netclass": "Power12",
-        "pattern": "/12V_OPT__WIRE_*"
-      },
-      {
-        "netclass": "Power12",
-        "pattern": "/HAL_LOW"
-      },
-      {
-        "netclass": "Power12",
-        "pattern": "/HAL_LOW__WIRE_*"
+        "pattern": "Net-(J3-Pin_2)"
       },
       {
         "netclass": "Motor",
-        "pattern": "/M1A"
+        "pattern": "Net-(J2-Pin_1)"
       },
       {
         "netclass": "Motor",
-        "pattern": "/M1A__WIRE_*"
+        "pattern": "Net-(J2-Pin_2)"
       },
       {
         "netclass": "Motor",
-        "pattern": "/M1B"
+        "pattern": "Net-(J2-Pin_3)"
       },
       {
         "netclass": "Motor",
-        "pattern": "/M1B__WIRE_*"
-      },
-      {
-        "netclass": "Motor",
-        "pattern": "/M2A"
-      },
-      {
-        "netclass": "Motor",
-        "pattern": "/M2A__WIRE_*"
-      },
-      {
-        "netclass": "Motor",
-        "pattern": "/M2B"
-      },
-      {
-        "netclass": "Motor",
-        "pattern": "/M2B__WIRE_*"
+        "pattern": "Net-(J2-Pin_4)"
       },
       {
         "netclass": "AuxPower",
-        "pattern": "/5V_PI"
+        "pattern": "5V_PI"
       },
       {
         "netclass": "AuxPower",
-        "pattern": "/5V_PI__WIRE_*"
+        "pattern": "5V_AON"
       },
       {
         "netclass": "AuxPower",
-        "pattern": "/5V_AON"
+        "pattern": "3V3_PI"
       },
       {
         "netclass": "AuxPower",
-        "pattern": "/5V_AON__WIRE_*"
+        "pattern": "3V3_EC_ISO"
       },
       {
         "netclass": "AuxPower",
-        "pattern": "/3V3_SENS"
-      },
-      {
-        "netclass": "AuxPower",
-        "pattern": "/3V3_SENS__WIRE_*"
-      },
-      {
-        "netclass": "AuxPower",
-        "pattern": "/3V3_EC_ISO"
-      },
-      {
-        "netclass": "AuxPower",
-        "pattern": "/3V3_EC_ISO__WIRE_*"
-      },
-      {
-        "netclass": "AuxPower",
-        "pattern": "/3V3_PI"
-      },
-      {
-        "netclass": "AuxPower",
-        "pattern": "/3V3_PI__WIRE_*"
-      },
-      {
-        "netclass": "AuxPower",
-        "pattern": "/3V3_AON"
-      },
-      {
-        "netclass": "AuxPower",
-        "pattern": "/3V3_AON__WIRE_*"
+        "pattern": "3V3_AON"
       },
       {
         "netclass": "Ground",
-        "pattern": "/GND"
+        "pattern": "GND"
       },
       {
         "netclass": "Ground",
-        "pattern": "/GND__WIRE_*"
-      },
-      {
-        "netclass": "Ground",
-        "pattern": "/GND_EC_ISO"
-      },
-      {
-        "netclass": "Ground",
-        "pattern": "/GND_EC_ISO__WIRE_*"
+        "pattern": "GND_EC_ISO"
       }
     ]
   },
