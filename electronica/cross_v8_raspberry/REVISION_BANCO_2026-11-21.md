@@ -2,7 +2,7 @@
 
 21 de noviembre de 2026 · Codex GPT-6 · Esquema y placa editados, sin energizar hardware.
 
-**Acta histórica de la adaptación de banco.** El [estado vigente](LEEME_PRIMERO.md) del 22/11 conserva el aislamiento EC, retira U10 y alimenta los sensores desde los 3V3 de Raspberry por decisión de Alex. La PCB está sin rutear. La tabla de GPIO sigue vigente; los datos de U10 y de la rama dedicada describen la revisión anterior.
+**Acta histórica de la adaptación de banco.** El [estado vigente](LEEME_PRIMERO.md) del 22/11 usa mando óptico directo, EC desde los 3V3 y el I²C de la Raspberry, y DS3231 para el despertar. La tabla de GPIO refleja el diseño actual. Los demás apartados describen el diseño histórico.
 
 La V8 incorpora la plataforma de banco Pi 5, halógena de transmisión y tres LED de excitación conforme a D55/D56 y al [traspaso de banco](../../docs/SOFTWARE_ADQUISICION.md#traspaso-al-chat-del-pcb--pruebas-de-banco-del-21-de-noviembre-de-2026). La disposición óptica es en T: brazo común y AS7265x a 90°. Se conservan los ensayos como resultados comunicados por Alex; esta edición no añade una validación física del circuito integrado.
 
@@ -56,26 +56,24 @@ BCM y pin físico no son intercambiables. Las señales descritas son las guardad
 
 | Señal | BCM | Pin físico J1 | Estado eléctrico |
 | --- | ---: | ---: | --- |
-| SDA / SCL | 2 / 3 | 3 / 5 | I²C 1, 3,3 V; sensores tras U11. AS7265x 0x49, EC-OEM 0x64 tras aislamiento pendiente. |
-| TEMP_1WIRE | 4 | 7 | DS18B20 tras U11; pull-up R10 a 3V3_PI (actualizado el 22/11). |
+| SDA / SCL | 2 / 3 | 3 / 5 | I²C 1 compartido a 3,3 V. AS7265x 0x49 y EC-OEM 0x64. |
+| TEMP_1WIRE | 4 | 7 | DS18B20 directo con pull-up R10 a 3V3_PI. |
 | M_STEP / M_DIR | 17 / 18 | 11 / 12 | Paso/dirección conservados. R2/R3 a GND. |
 | M_ENABLE_N | 27 | 13 | **Bajo habilita**; R1 de 10 kΩ mantiene deshabilitado con la lógica alimentada. |
-| HAL_EN | 22 | 15 | **Alto enciende** la halógena si OPT_ARM=1. Sustituye WHITE_EN. |
-| BLUE_EN | 23 | 16 | **Alto enciende** el azul si OPT_ARM=1. Eliminada la inversión de V8 anterior. |
-| ORANGE_EN | 16 | 36 | **Alto enciende** naranja si OPT_ARM=1. GPIO de banco conservado. |
-| IR_EN | 20 | 38 | **Alto enciende** IR si OPT_ARM=1. GPIO de banco conservado. |
-| OPT_ARM | 21 | 40 | **Alto habilita** las cuatro salidas del buffer. Bajo/flotante inhibe mediante Q10 y R30. Nueva señal de V8. |
-| CHARGE_CTRL | 24 | 18 | Alto solicita relé de carga, sujeto al bloqueo del piloto. Sin cambios. |
-| PILOT_SENSE | 25 | 22 | Bajo detecta piloto; verificar umbrales. Sin cambios. |
+| HAL_EN | 22 | 15 | **Alto enciende** la halógena. Sustituye WHITE_EN. |
+| BLUE_EN | 23 | 16 | **Alto enciende** el azul. Eliminada la inversión de V8 anterior. |
+| ORANGE_EN | 16 | 36 | **Alto enciende** naranja. GPIO de banco conservado. |
+| IR_EN | 20 | 38 | **Alto enciende** IR. GPIO de banco conservado. |
+| Libre | 21 | 40 | Sin conexión. |
+| Libre | 24 | 18 | Sin conexión. La carga queda a cargo del gestor externo. |
+| PILOT_SENSE | 25 | 22 | Bajo detecta piloto en el contacto previsto de J18.8. Verificar umbrales. El piloto queda como lectura y deja de despertar el equipo. |
 | SW_SENSE | 5 | 29 | Bajo detecta imán. Sin cambios. |
-| HOLD_PI | 26 | 37 | **Alto solicita corte**, llega a RESET de U8. No es una señal de mantener alimentación. |
+| HOLD_PI | 26 | 37 | **Alto solicita corte**, a través de U16 hacia RESET de U8 a 5 V. No es una señal de mantener alimentación. |
 | UART_TX / UART_RX | 14 / 15 | 8 / 10 | RS-485 mediante DFR0845; puerto Linux y consola por verificar para Pi 5. |
 
-Secuencia prevista: iniciar OPT_ARM=0 y las cuatro órdenes a 0; configurar bomba deshabilitada; habilitar OPT_ARM solo al estar listo. Entre fuentes, poner todas a cero antes de seleccionar la siguiente y respetar la estabilización medida. Al apagar, desarmar y desactivar bomba, cerrar archivos, programar/liberar RTC y emitir HOLD_PI únicamente en la etapa final del apagado.
+Al arrancar, configurar los cuatro GPIO de luz a cero y mantener la bomba deshabilitada. Los pull-downs de puerta fijan el apagado mientras el GPIO está en alta impedancia. Entre fuentes, poner todas a cero antes de seleccionar la siguiente. Al apagar, apagar luces y bomba, cerrar archivos, programar el DS3231 y emitir HOLD_PI en la etapa final.
 
-Con GPIO flotantes, los pull-downs fijan entradas y puertas; R30 eleva OE y Q10 queda apagado. Si la Pi pierde 3V3_PI, U10 se deshabilita y descarga su salida y U11 ofrece desconexión Ioff de las señales de sensores. Esto es una revisión de esquema basada en fichas, **no un ensayo de rampas**: comprobar arranque, reset, brownout, caída relativa de 12/5/3,3 V, tensión en puertas y corriente hacia la Pi apagada. USB externo, ADC y otras interfaces también requieren revisar alimentación parásita; U11 no protege por sí solo todos los puertos del instrumento. [SN74CB3Q3125](https://www.ti.com/lit/ds/symlink/sn74cb3q3125.pdf), [SN74AHCT125](https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf)
-
-El programa de banco `software/pruebas/leds_cruz.py` corresponde al cableado ensayado de tres canales; no configura OPT_ARM ni controla la halógena. Se conserva sin modificar como evidencia de ese ensayo. No usarlo como controlador final de esta PCB. El 74AHCT125 debe ser la variante AHCT; no sustituirlo por AHC a 5 V suponiendo los mismos umbrales.
+El programa de banco de tres LED conserva su alcance de ensayo. Queda verificar arranque en frío de la halógena, calentamiento del IRLZ44N con puerta a 3,3 V, lectura estable de EC y despertar por INT/SQW en el conjunto.
 
 El encendido magnético y el RTC externos conservan sus pendientes: U8 no dispone de un reset inicial definido; un SET mantenido por imán, piloto o alarma puede impedir el corte. Tampoco hay un watchdog externo o detector de fuga que desconecte potencia con Linux bloqueado. Esta revisión no declara resueltos esos fallos.
 

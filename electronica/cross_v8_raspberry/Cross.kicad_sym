@@ -503,7 +503,7 @@
 			)
 		)
 	)
-(symbol "Atlas_EC_OEM"
+	(symbol "Atlas_EC_OEM"
 		(pin_names
 			(offset 1.016)
 		)
@@ -546,7 +546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Atlas EC-OEM ten contacts; 0x64; K0.1; INT unused"
+		(property "Description" "Atlas EC-OEM, I2C 0x64, supply and I2C from Raspberry Pi"
 			(at 0 0 0)
 			(effects
 				(font
@@ -608,7 +608,7 @@
 			(pin power_in line
 				(at -12.7 0.0 0)
 				(length 2.54)
-				(name "VCC_ISO"
+				(name "VCC"
 					(effects
 						(font
 							(size 0.95 0.95)
@@ -662,7 +662,7 @@
 			(pin power_in line
 				(at 12.7 -10.16 180)
 				(length 2.54)
-				(name "GND_ISO"
+				(name "GND"
 					(effects
 						(font
 							(size 0.95 0.95)

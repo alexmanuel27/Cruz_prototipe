@@ -573,27 +573,15 @@
     "netclass_patterns": [
       {
         "netclass": "Power24",
-        "pattern": "/VBAT_RAW"
+        "pattern": "/SYS_IN"
       },
       {
         "netclass": "Power24",
-        "pattern": "/VBAT_FUSED"
+        "pattern": "/SYS_FUSED"
       },
       {
         "netclass": "Power24",
-        "pattern": "/VBAT_SW"
-      },
-      {
-        "netclass": "Power24",
-        "pattern": "/CHG_PLUS"
-      },
-      {
-        "netclass": "Power24",
-        "pattern": "Net-(J18-Pin_2)"
-      },
-      {
-        "netclass": "Power24",
-        "pattern": "Net-(F2-Pad2)"
+        "pattern": "/SYS_SW"
       },
       {
         "netclass": "Power12",
@@ -632,20 +620,8 @@
         "pattern": "3V3_PI"
       },
       {
-        "netclass": "AuxPower",
-        "pattern": "3V3_EC_ISO"
-      },
-      {
-        "netclass": "AuxPower",
-        "pattern": "3V3_AON"
-      },
-      {
         "netclass": "Ground",
         "pattern": "GND"
-      },
-      {
-        "netclass": "Ground",
-        "pattern": "GND_EC_ISO"
       }
     ]
   },

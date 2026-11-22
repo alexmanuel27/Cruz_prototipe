@@ -215,3 +215,15 @@ Alex aclara D60: no quiere retirar todas las etiquetas internas; quiere un esque
 ## D62 · Símbolos de alimentación y sensores desde Raspberry (22/11/2026)
 
 Alex elige el GND triangular que añadió en R12 y pide usar símbolos de alimentación con nombres simples (5V y 3V3). Se reemplazan las etiquetas de masa y tensión por símbolos; sus rótulos visibles se simplifican manteniendo distintas las redes permanente, Pi y EC aislada. Alex confirma su prueba desde los 3V3 de Raspberry y autoriza retirar el regulador separado U10: J8/J10, R10 y la alimentación de sensores/entrada del aislador pasan a 3V3_PI. C8/C9 se conservan como desacoplos. El EC conserva R05CT05S/ISO1540D y su masa aislada; el reloj conserva 3V3_AON. Verificados los 404 pines restantes y esquema–PCB sin diferencias; 121 posiciones y 298 conexiones por trazar. Esta edición no representa un ensayo físico del conjunto.
+
+
+## D63 · Alimentación externa durante carga (22/11/2026)
+
+Alex quiere que Cruz funcione mientras carga y que la gestión solar futura se conecte externamente. J13 pasa a ser entrada SYS del gestor comercial, con batería y entrada de fuente gestionadas fuera de la PCB. Se retiran K1, su mando y F2. F1 queda para dimensionar en la entrada SYS. El pin 18 queda libre y el 22 permite leer el piloto sin asociarlo al despertar. BMS interno del CITYORK B0FQ583Q2J por confirmar y gestor sin seleccionar. Verificar la corriente de carga autorizada y la potencia, tensión y continuidad de SYS.
+
+Se retira U7. La Pi alimenta los 3V3 del lado común. U8 y el reloj permanente pasan a 5 V de U4, con adaptación de la orden de corte mediante U16. J24 requiere verificar un módulo RTC apto para 5 V antes de conectarlo. U13 suministra los 3V3 aislados del EC. Verificados ERC y paridad de KiCad. Quedan 281 conexiones por trazar y la prueba física de arranque, corte y funcionamiento durante carga.
+
+
+## D64 · Mando óptico directo, EC compartido y alarma del DS3231 (22/11/2026)
+
+Alex confirma mando de los IRLZ44N desde un ESP32 a 3,3 V y pide retirar búferes y habilitación general. Se retira U9 y el pin físico 40 queda libre. Los GPIO 15, 16, 36 y 38 mandan cada puerta a través de 470 Ω y conservan sus pull-downs. Se retira U11 y el EC-OEM comparte 3V3, GND e I²C con la Pi, retirando U13/U15. PRB/PRBG siguen conectados a la sonda. Alex confirma INT/SQW en su DS3231, previsto en J24.5. U16 adapta el RESET de apagado al circuito de 5 V permanente. ERC y concordancia con PCB sin incidencias, 95 posiciones y 219 conexiones por trazar. Pendientes halógena en frío, lecturas EC en el montaje y despertar por alarma.

@@ -31,12 +31,34 @@ def main():
         (node.get("ref"), node.get("pin")): net.get("name")
         for net in original.findall("nets/net") for node in net.findall("node")
     }
-    # Alex alimenta sensores desde la Pi y retira el regulador U10.
-    assert "U10" not in components
-    original_nets = {
-        pin: "/3V3_PI" if name == "/3V3_SENS" else name
-        for pin, name in original_nets.items() if pin[0] != "U10"
+    removed = {
+        "U10", "U7", "K1", "F2", "Q2", "Q6", "R11", "R12", "D1", "D6",
+        "U9", "Q10", "R30", "R31", "R32", "C7", "R25", "R33", "R34", "R35",
+        "U11", "C10", "U13", "U15", "C13", "C14", "C17", "R28", "R29",
     }
+    assert removed.isdisjoint(components)
+    renamed = {
+        "/3V3_SENS": "/3V3_PI", "/3V3_AON": "/5V_AON",
+        "/VBAT_RAW": "/SYS_IN", "/VBAT_FUSED": "/SYS_FUSED", "/VBAT_SW": "/SYS_SW",
+        "/HAL_BUF": "/HAL_EN", "/BLUE_BUF": "/BLUE_EN",
+        "/ORANGE_BUF": "/ORANGE_EN", "/IR_BUF": "/IR_EN",
+        "/SDA_SENS": "/SDA", "/SDA_EC_ISO": "/SDA",
+        "/SCL_SENS": "/SCL", "/SCL_EC_ISO": "/SCL",
+        "/TEMP_SENS": "/TEMP_1WIRE", "/3V3_EC_ISO": "/3V3_PI", "/GND_EC_ISO": "/GND",
+    }
+    original_nets = {
+        pin: renamed.get(name, name)
+        for pin, name in original_nets.items() if pin[0] not in removed
+    }
+    for pin in (("J1", "18"), ("J1", "40"), ("J18", "1"), ("J18", "2")):
+        assert nets[pin].startswith("unconnected-")
+        original_nets[pin] = nets[pin]
+    original_nets.update({
+        ("U8", "4"): "/RESET_5V",
+        ("U16", "1"): "/GND", ("U16", "2"): "/HOLD_PI",
+        ("U16", "3"): "/GND", ("U16", "4"): "/RESET_5V",
+        ("U16", "5"): "/5V_AON", ("C22", "1"): "/5V_AON", ("C22", "2"): "/GND",
+    })
     # Al quitar etiquetas internas, KiCad asigna nombres automáticos a esas redes.
     # La identidad eléctrica se comprueba mediante el conjunto completo de pines.
     current_groups = {}
@@ -53,31 +75,25 @@ def main():
     expected = {
         ("J1", "15"): "HAL_EN", ("J1", "16"): "BLUE_EN",
         ("J1", "36"): "ORANGE_EN", ("J1", "38"): "IR_EN",
-        ("J1", "40"): "OPT_ARM", ("J1", "37"): "HOLD_PI",
+        ("R5", "1"): "HAL_EN", ("R36", "1"): "BLUE_EN",
+        ("R38", "1"): "ORANGE_EN", ("R40", "1"): "IR_EN",
+        ("J1", "37"): "HOLD_PI", ("J24", "5"): "WAKE_N",
         ("J1", "11"): "M_STEP", ("J1", "12"): "M_DIR",
         ("J1", "13"): "M_ENABLE_N", ("J1", "7"): "TEMP_1WIRE",
-        ("U6", "3"): "12V_OPT",
-        ("J8", "1"): "3V3_PI", ("J8", "3"): "SDA_SENS",
-        ("J8", "4"): "SCL_SENS", ("J10", "1"): "3V3_PI",
-        ("J10", "3"): "TEMP_SENS", ("R10", "2"): "3V3_PI",
-        ("U11", "14"): "3V3_PI", ("U11", "2"): "SDA",
-        ("U11", "3"): "SDA_SENS", ("U11", "5"): "SCL",
-        ("U11", "6"): "SCL_SENS", ("U11", "9"): "TEMP_1WIRE",
-        ("U11", "8"): "TEMP_SENS", ("U12", "1"): "SDA_EC_ISO",
-        ("U12", "3"): "3V3_EC_ISO", ("U12", "6"): "GND_EC_ISO",
-        ("U12", "8"): "SCL_EC_ISO", ("U12", "4"): "EC_PROBE",
+        ("J8", "1"): "3V3_PI", ("J8", "3"): "SDA", ("J8", "4"): "SCL",
+        ("J10", "1"): "3V3_PI", ("J10", "3"): "TEMP_1WIRE", ("R10", "2"): "3V3_PI",
+        ("U12", "1"): "SDA", ("U12", "3"): "3V3_PI", ("U12", "6"): "GND",
+        ("U12", "8"): "SCL", ("U12", "4"): "EC_PROBE",
         ("U12", "5"): "EC_PROBE_RETURN", ("J28", "1"): "EC_PROBE",
         ("J28", "2"): "EC_PROBE_RETURN", ("R47", "1"): "12V_OPT",
-        ("R47", "2"): "IR_A", ("U9", "14"): "5V_PI",
-        ("U9", "2"): "HAL_EN", ("U9", "5"): "BLUE_EN",
-        ("U9", "9"): "ORANGE_EN", ("U9", "12"): "IR_EN",
-        ("Q10", "3"): "OPT_OE_N", ("R30", "1"): "5V_PI",
-        ("R30", "2"): "OPT_OE_N", ("R32", "2"): "GND",
+        ("R47", "2"): "IR_A",
     }
     for pin, name in expected.items():
         assert nets.get(pin) == "/" + name, (pin, nets.get(pin), name)
-    for pin in ("1", "4", "10", "13"):
-        assert nets["U9", pin] == "/OPT_OE_N"
+    for gate, pulldown, channel in (("R5", "R6", "HAL"), ("R36", "R37", "BLUE"),
+                                    ("R38", "R39", "ORANGE"), ("R40", "R41", "IR")):
+        assert nets[gate, "2"] == nets[pulldown, "1"] == f"/{channel}_GATE"
+        assert nets[pulldown, "2"] == "/GND"
     for ref, prefix in (("Q1", "HAL"), ("Q7", "BLUE"), ("Q8", "ORANGE"), ("Q9", "IR")):
         assert [nets[ref, str(pin)] for pin in (1, 2, 3)] == [
             f"/{prefix}_GATE", f"/{prefix}_LOW", "/GND",
@@ -89,27 +105,28 @@ def main():
         resistance = 1 / sum(1 / float(components[ref].findtext("value").split("R")[0]) for ref in refs)
         assert abs(resistance - 10.4) < 0.001
     assert {"J9", "D8"}.isdisjoint(components)
-    assert nets["U12", "6"] != nets["U4", "2"]
+    assert nets["U12", "6"] == nets["U4", "2"]
     assert nets["U12", "5"] not in ("/GND", "/GND_EC_ISO")
     assert all(nets["U12", pin].startswith("unconnected-") for pin in ("2", "7", "9", "10"))
-    assert components["U13"].findtext("footprint") == "Cross:R05CT05S"
     for ref, mapping in {
-        "U13": {"1": "3V3_PI", "2": "GND", "3": "5V_PI", "4": "GND",
-                "9": "GND_EC_ISO", "13": "GND_EC_ISO", "14": "3V3_EC_ISO",
-                "15": "GND_EC_ISO", "16": "GND_EC_ISO"},
-        "U15": {"1": "3V3_EC_ISO", "2": "SDA_EC_ISO", "3": "SCL_EC_ISO",
-                "4": "GND_EC_ISO", "5": "GND", "6": "SCL_SENS",
-                "7": "SDA_SENS", "8": "3V3_PI"},
-        "U4": {"1": "VBAT_FUSED", "2": "GND", "3": "5V_AON"},
-        "U5": {"1": "VBAT_SW", "2": "GND", "3": "5V_PI", "4": "GND"},
-        "U6": {"1": "VBAT_SW", "2": "GND", "3": "12V_OPT", "4": "GND"},
+        "U4": {"1": "SYS_FUSED", "2": "GND", "3": "5V_AON"},
+        "U5": {"1": "SYS_SW", "2": "GND", "3": "5V_PI", "4": "GND"},
+        "U6": {"1": "SYS_SW", "2": "GND", "3": "12V_OPT", "4": "GND"},
     }.items():
         for pin, name in mapping.items():
             assert nets[ref, pin] == "/" + name, (ref, pin, nets[ref, pin])
     assert nets["J8", "1"] == nets["J10", "1"] == nets["J1", "1"]
-    assert nets["U12", "3"] != nets["J8", "1"] != nets["U7", "3"]
-    assert len(nets) == 404
-    assert components["U15"].findtext("footprint") == "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    assert nets["U12", "3"] == nets["J8", "1"]
+    assert nets["U12", "1"] == nets["J8", "3"] == nets["J1", "3"]
+    assert nets["U12", "8"] == nets["J8", "4"] == nets["J1", "5"]
+    assert "DS3231" in components["J24"].findtext("value")
+    assert nets["J24", "1"] == nets["U8", "14"] == "/5V_AON"
+    assert nets["J13", "1"] == nets["F1", "1"] == "/SYS_IN"
+    assert nets["J14", "1"] == nets["F1", "2"] == "/SYS_FUSED"
+    assert nets["J11", "1"] == nets["U1", "16"] == "/SYS_SW"
+    assert nets["J1", "22"] == "/PILOT_SENSE"
+    assert "3V3_AON" not in {name.lstrip("/") for name in nets.values()}
+    assert len(components) == 95
     assert all("TerminalBlock_Phoenix" in components[ref].findtext("footprint")
                for ref in ("U5", "U6", "J23"))
     assert components["J1"].findtext("footprint") in (
@@ -121,8 +138,7 @@ def main():
     assert not re.search(r'^\t\((segment|via|arc|zone)\b', board, re.MULTILINE)
     assert not re.search(r'"Reference" "W\d+"', board)
     assert "__WIRE_" not in board
-    assert components["U11"].findtext("value") == "SN74CBTLV3125D"
-    print("OK: 404 pines; sensores desde Pi; EC aislado; sin puentes ni trazado.")
+    print("OK: GPIO de luz directos, pin 40 libre, EC en I²C común y alarma RTC en J24.")
 
 
 if __name__ == "__main__":
