@@ -12,7 +12,7 @@
 | Adquisición y control | [Monitor local y puesta en marcha](../software/README.md) · [Pruebas de banco e interfaces V8](SOFTWARE_ADQUISICION.md) |
 | Compras | [Lista fechada](../compras/LISTA_COMPRA.md) · [Excel para el técnico](../compras/Cruz_Shopping_List_EN_2026-10-30.xlsx) |
 
-El PCB V8 vigente está sin trazado, sin zonas de cobre y sin puentes W; conserva su contorno de 132 × 102 mm y 219 conexiones pendientes. El esquema está reorganizado por bloques. El requisito de pistas en una cara para Bantam sigue pendiente de resolver. El cuerpo usa el tubo acrílico recibido de Ø180/172 × 380 mm. D55 cambia la óptica a un brazo de iluminación común y AS7265x a 90°; la integración en CAD está pendiente de revisar. La simulación R3 está documentada. Los ensayos físicos de estanqueidad y carga siguen pendientes en el registro. El monitor local ya ejecuta ciclos y guarda sus resultados en simulación. El modo ambiental de banco queda por ejecutar en la Pi.
+El PCB V8 vigente está sin trazado, sin zonas de cobre y sin puentes W; conserva su contorno de 132 × 102 mm y 209 conexiones pendientes. El esquema está reorganizado por bloques. El requisito de pistas en una cara para Bantam sigue pendiente de resolver. El cuerpo usa el tubo acrílico recibido de Ø180/172 × 380 mm. D55 cambia la óptica a un brazo de iluminación común y AS7265x a 90°; la integración en CAD está pendiente de revisar. La simulación R3 está documentada. Los ensayos físicos de estanqueidad y carga siguen pendientes en el registro. El monitor local ya ejecuta ciclos y guarda sus resultados en simulación. El modo ambiental de banco queda por ejecutar en la Pi.
 
 ## Validación y datos
 

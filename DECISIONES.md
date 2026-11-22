@@ -227,3 +227,10 @@ Se retira U7. La Pi alimenta los 3V3 del lado común. U8 y el reloj permanente p
 ## D64 · Mando óptico directo, EC compartido y alarma del DS3231 (22/11/2026)
 
 Alex confirma mando de los IRLZ44N desde un ESP32 a 3,3 V y pide retirar búferes y habilitación general. Se retira U9 y el pin físico 40 queda libre. Los GPIO 15, 16, 36 y 38 mandan cada puerta a través de 470 Ω y conservan sus pull-downs. Se retira U11 y el EC-OEM comparte 3V3, GND e I²C con la Pi, retirando U13/U15. PRB/PRBG siguen conectados a la sonda. Alex confirma INT/SQW en su DS3231, previsto en J24.5. U16 adapta el RESET de apagado al circuito de 5 V permanente. ERC y concordancia con PCB sin incidencias, 95 posiciones y 219 conexiones por trazar. Pendientes halógena en frío, lecturas EC en el montaje y despertar por alarma.
+
+
+## D65 · Pulsador de cinco segundos y esquema compacto (22/11/2026)
+
+Alex sustituye el reed por un pulsador momentáneo normalmente abierto en J25. U17 (ATtiny1604) en 5V_AON mide cinco segundos tanto para encender como para solicitar el apagado. U17 exige liberar el botón tras cada orden. Mantiene el Pololu activo hasta la confirmación de Linux en J1.37 y admite una alarma nueva del DS3231. Se retiran U8, Q5 y la red de diodos del reed. Firmware, configuración y prueba de lógica en `software/encendido/`. El ensayo físico y la grabación en placa quedan pendientes.
+
+El esquema se reduce a ocho bloques y se agrupan conductividad, sonda y sensores. Se acercan EC y sonda al área de sensores de la PCB. ERC y concordancia sin incidencias, 91 posiciones y 209 conexiones por trazar.

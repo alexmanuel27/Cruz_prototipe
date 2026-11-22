@@ -2,7 +2,7 @@
 
 21 de noviembre de 2026 · Codex GPT-6 · Esquema y placa editados, sin energizar hardware.
 
-**Acta histórica de la adaptación de banco.** El [estado vigente](LEEME_PRIMERO.md) del 22/11 usa mando óptico directo, EC desde los 3V3 y el I²C de la Raspberry, y DS3231 para el despertar. La tabla de GPIO refleja el diseño actual. Los demás apartados describen el diseño histórico.
+**Acta histórica de la adaptación de banco.** El [estado vigente](LEEME_PRIMERO.md) del 22/11 usa mando óptico directo, EC desde los 3V3 y el I²C de la Raspberry, y DS3231 y pulsador de 5 s para el encendido. La tabla de GPIO refleja el diseño actual. Los demás apartados describen el diseño histórico.
 
 La V8 incorpora la plataforma de banco Pi 5, halógena de transmisión y tres LED de excitación conforme a D55/D56 y al [traspaso de banco](../../docs/SOFTWARE_ADQUISICION.md#traspaso-al-chat-del-pcb--pruebas-de-banco-del-21-de-noviembre-de-2026). La disposición óptica es en T: brazo común y AS7265x a 90°. Se conservan los ensayos como resultados comunicados por Alex; esta edición no añade una validación física del circuito integrado.
 
@@ -67,15 +67,15 @@ BCM y pin físico no son intercambiables. Las señales descritas son las guardad
 | Libre | 21 | 40 | Sin conexión. |
 | Libre | 24 | 18 | Sin conexión. La carga queda a cargo del gestor externo. |
 | PILOT_SENSE | 25 | 22 | Bajo detecta piloto en el contacto previsto de J18.8. Verificar umbrales. El piloto queda como lectura y deja de despertar el equipo. |
-| SW_SENSE | 5 | 29 | Bajo detecta imán. Sin cambios. |
-| HOLD_PI | 26 | 37 | **Alto solicita corte**, a través de U16 hacia RESET de U8 a 5 V. No es una señal de mantener alimentación. |
+| SHUTDOWN_REQ_N | 5 | 29 | Pulso bajo de U17 tras 5 s en J25, con el equipo encendido. Inicia apagado en Pi OS. |
+| POWER_OFF_ACK | 26 | 37 | Alto cuando Linux termina el apagado. U16 lleva la confirmación a U17 a 5 V. |
 | UART_TX / UART_RX | 14 / 15 | 8 / 10 | RS-485 mediante DFR0845; puerto Linux y consola por verificar para Pi 5. |
 
-Al arrancar, configurar los cuatro GPIO de luz a cero y mantener la bomba deshabilitada. Los pull-downs de puerta fijan el apagado mientras el GPIO está en alta impedancia. Entre fuentes, poner todas a cero antes de seleccionar la siguiente. Al apagar, apagar luces y bomba, cerrar archivos, programar el DS3231 y emitir HOLD_PI en la etapa final.
+Al arrancar, configurar los cuatro GPIO de luz a cero y mantener la bomba deshabilitada. Los pull-downs de puerta fijan el apagado mientras el GPIO está en alta impedancia. Entre fuentes, poner todas a cero antes de seleccionar la siguiente. Al apagar, apagar luces y bomba, cerrar archivos, programar el DS3231. La opción `gpio-poweroff` emite la confirmación en la etapa final.
 
 El programa de banco de tres LED conserva su alcance de ensayo. Queda verificar arranque en frío de la halógena, calentamiento del IRLZ44N con puerta a 3,3 V, lectura estable de EC y despertar por INT/SQW en el conjunto.
 
-El encendido magnético y el RTC externos conservan sus pendientes: U8 no dispone de un reset inicial definido; un SET mantenido por imán, piloto o alarma puede impedir el corte. Tampoco hay un watchdog externo o detector de fuga que desconecte potencia con Linux bloqueado. Esta revisión no declara resueltos esos fallos.
+U17 arranca con la salida de potencia deshabilitada y espera una pulsación de 5 s o una nueva alarma. Una pulsación o alarma sostenida queda consumida hasta liberarse. Si Linux se bloquea y no confirma el apagado, U17 mantiene la alimentación. Queda el ensayo del conjunto. [Firmware y configuración](../../software/encendido/README.md).
 
 ## Cinta GPIO y reservas de cámaras
 

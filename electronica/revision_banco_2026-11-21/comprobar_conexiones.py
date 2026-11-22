@@ -35,6 +35,7 @@ def main():
         "U10", "U7", "K1", "F2", "Q2", "Q6", "R11", "R12", "D1", "D6",
         "U9", "Q10", "R30", "R31", "R32", "C7", "R25", "R33", "R34", "R35",
         "U11", "C10", "U13", "U15", "C13", "C14", "C17", "R28", "R29",
+        "D4", "D5", "Q5", "R18", "R19", "U8",
     }
     assert removed.isdisjoint(components)
     renamed = {
@@ -45,6 +46,7 @@ def main():
         "/SDA_SENS": "/SDA", "/SDA_EC_ISO": "/SDA",
         "/SCL_SENS": "/SCL", "/SCL_EC_ISO": "/SCL",
         "/TEMP_SENS": "/TEMP_1WIRE", "/3V3_EC_ISO": "/3V3_PI", "/GND_EC_ISO": "/GND",
+        "/MAG_N": "/BUTTON_N", "/SW_SENSE": "/SHUTDOWN_REQ_N", "/HOLD_PI": "/POWER_OFF_ACK",
     }
     original_nets = {
         pin: renamed.get(name, name)
@@ -54,11 +56,23 @@ def main():
         assert nets[pin].startswith("unconnected-")
         original_nets[pin] = nets[pin]
     original_nets.update({
-        ("U8", "4"): "/RESET_5V",
-        ("U16", "1"): "/GND", ("U16", "2"): "/HOLD_PI",
-        ("U16", "3"): "/GND", ("U16", "4"): "/RESET_5V",
+        ("U16", "1"): "/GND", ("U16", "2"): "/POWER_OFF_ACK",
+        ("U16", "3"): "/GND", ("U16", "4"): "/CUT_ACK_5V",
         ("U16", "5"): "/5V_AON", ("C22", "1"): "/5V_AON", ("C22", "2"): "/GND",
     })
+    supervisor_pins = {
+        "U17": {
+            "1": "5V_AON", "14": "GND", "10": "UPDI", "11": "BUTTON_N",
+            "12": "WAKE_N", "13": "POWER_ON", "2": "SHUTDOWN_REQ_N", "3": "CUT_ACK_5V",
+        },
+        "J29": {"1": "5V_AON", "2": "UPDI", "3": "GND"},
+    }
+    for ref, pins in supervisor_pins.items():
+        for pin, name in pins.items():
+            original_nets[ref, pin] = "/" + name
+    for pin in ("4", "5", "6", "7", "8", "9"):
+        assert nets["U17", pin].startswith("unconnected-")
+        original_nets["U17", pin] = nets["U17", pin]
     # Al quitar etiquetas internas, KiCad asigna nombres automáticos a esas redes.
     # La identidad eléctrica se comprueba mediante el conjunto completo de pines.
     current_groups = {}
@@ -77,7 +91,8 @@ def main():
         ("J1", "36"): "ORANGE_EN", ("J1", "38"): "IR_EN",
         ("R5", "1"): "HAL_EN", ("R36", "1"): "BLUE_EN",
         ("R38", "1"): "ORANGE_EN", ("R40", "1"): "IR_EN",
-        ("J1", "37"): "HOLD_PI", ("J24", "5"): "WAKE_N",
+        ("J1", "37"): "POWER_OFF_ACK", ("J24", "5"): "WAKE_N",
+        ("J1", "29"): "SHUTDOWN_REQ_N", ("J25", "1"): "BUTTON_N",
         ("J1", "11"): "M_STEP", ("J1", "12"): "M_DIR",
         ("J1", "13"): "M_ENABLE_N", ("J1", "7"): "TEMP_1WIRE",
         ("J8", "1"): "3V3_PI", ("J8", "3"): "SDA", ("J8", "4"): "SCL",
@@ -120,13 +135,16 @@ def main():
     assert nets["U12", "1"] == nets["J8", "3"] == nets["J1", "3"]
     assert nets["U12", "8"] == nets["J8", "4"] == nets["J1", "5"]
     assert "DS3231" in components["J24"].findtext("value")
-    assert nets["J24", "1"] == nets["U8", "14"] == "/5V_AON"
+    assert nets["J24", "1"] == nets["U17", "1"] == "/5V_AON"
+    assert nets["J25", "2"] == "/GND"
+    assert nets["J26", "1"] == nets["U17", "13"] == "/POWER_ON"
+    assert nets["U16", "4"] == nets["U17", "3"] == "/CUT_ACK_5V"
     assert nets["J13", "1"] == nets["F1", "1"] == "/SYS_IN"
     assert nets["J14", "1"] == nets["F1", "2"] == "/SYS_FUSED"
     assert nets["J11", "1"] == nets["U1", "16"] == "/SYS_SW"
     assert nets["J1", "22"] == "/PILOT_SENSE"
     assert "3V3_AON" not in {name.lstrip("/") for name in nets.values()}
-    assert len(components) == 95
+    assert len(components) == 91
     assert all("TerminalBlock_Phoenix" in components[ref].findtext("footprint")
                for ref in ("U5", "U6", "J23"))
     assert components["J1"].findtext("footprint") in (
@@ -138,7 +156,7 @@ def main():
     assert not re.search(r'^\t\((segment|via|arc|zone)\b', board, re.MULTILINE)
     assert not re.search(r'"Reference" "W\d+"', board)
     assert "__WIRE_" not in board
-    print("OK: GPIO de luz directos, pin 40 libre, EC en I²C común y alarma RTC en J24.")
+    print("OK: pulsador, supervisor, GPIO de apagado, alarma RTC, mando óptico e I²C.")
 
 
 if __name__ == "__main__":
