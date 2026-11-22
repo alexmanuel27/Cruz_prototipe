@@ -209,6 +209,12 @@ Conexiones reservadas no equivalen a interfaces validadas. El documento V8 regis
 
 El [puerto de servicio](../electronica/PUERTO_SERVICIO_Y_BOYA.md) fija RS-485 como enlace y propone Modbus RTU, pero no hay mapa de registros, baud rate, dirección de equipo ni protocolo de archivos aprobado. RS-485 no proporciona por sí solo descarga de espectros/imágenes. Esa implementación queda después de medir el volumen de datos y cerrar electrónica. La extracción final será por el conector físico, con integridad y reanudación; no se sustituye por Wi-Fi.
 
+### Comparación con los instrumentos de origen · 22 de noviembre
+
+MonoSpectro parte de ROI (100,300)–(1100,420), exposición manual de 50 ms, ganancia 11 y preferencia por RAW10. Conserva las referencias de oscuro y blanco asociadas al ROI y a la exposición/ganancia. El fluorómetro toma 10 lecturas por adquisición, guarda oscuridad y blanco para los 18 canales y prevé enfriamiento de 60 s tras tres adquisiciones iluminadas. No fija explícitamente ganancia o integración en el firmware revisado.
+
+Estos ajustes son antecedentes para diseñar la captura real de Cruz. La geometría, corriente del LED y sensores han cambiado y requieren validar parámetros y blancos propios. El monitor aún no controla la óptica real. El panel en inglés permite guardar exposición, ganancia, ROI, formato, réplicas y enfriamiento como ajustes preparatorios. Los guarda en cada ciclo sin aplicarlos todavía al hardware. Una gráfica muestra transmisión o fluorescencia con intervalo seleccionable. Al elegir fluorescencia se puede seleccionar la fuente azul, naranja o IR. Solo se simula el azul. La tabla y CSV conservan los 18 canales.
+
 ## 3. Plan de integración y criterios de validación
 
 La primera versión implementa ciclo autónomo, seguimiento de fallos, almacenamiento y panel. El escenario simulado nunca abre dispositivos y sus datos están separados de los ambientales. El modo explícito `--sensors` consulta únicamente al DS18B20 y al Atlas. Los apartados siguientes conservan el plan y los criterios para completar adquisición óptica, procesamiento, calibración, archivos RAW y control de actuadores.

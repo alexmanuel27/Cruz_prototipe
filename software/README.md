@@ -1,6 +1,10 @@
 # Monitor local de Cruz
 
-Primera versión para Python 3.11 o posterior en macOS o Raspberry Pi OS. El monitor programa los ciclos aunque se cierre el navegador. Guarda cada ciclo y los ajustes usados en SQLite. El panel permite configurar el intervalo, pausar la adquisición automática, pedir una medición y consultar el historial. Se actualiza cada dos segundos y ofrece un CSV del historial y los datos originales en JSON por ciclo.
+Monitor para Python 3.11 o posterior en macOS o Raspberry Pi OS. Programa los ciclos aunque se cierre el navegador y guarda cada ciclo con sus ajustes en SQLite. El panel en inglés se actualiza cada dos segundos y se adapta a pantallas de escritorio y móvil.
+
+- **Monitor** muestra temperatura, conductividad y el espectro del último ciclo. Desde aquí se configura el intervalo, se pausa la adquisición automática o se solicita una medición.
+- **Optical settings** reúne los ajustes de cámara y fluorómetro.
+- **History** muestra las mediciones recientes, con el historial en CSV y los datos originales de cada ciclo en JSON.
 
 ## Probar en el Mac
 
@@ -48,6 +52,19 @@ systemctl --user enable --now cruz.service
 ```
 
 Para entrar al panel más tarde basta volver a abrir el túnel. Para consultar el servicio, usa `systemctl --user status cruz.service`. Para detenerlo, usa `systemctl --user stop cruz.service`.
+
+## Revisión de MonoSpectro y fluorómetro
+
+- MonoSpectro configura la OV9281 en modo manual con exposición inicial de 50 ms, ganancia 11 y ROI de (100, 300) a (1100, 420). Prefiere RAW10 y guarda los metadatos de captura. Sus blancos, oscuros y calibraciones dependen del ROI, la exposición y la ganancia.
+- El fluorómetro usa 10 lecturas por medición y conserva referencias oscuras y blancas de 18 canales. Su refrigeración programada es de 60 s después de tres mediciones iluminadas. No configura explícitamente ganancia ni integración en el firmware revisado.
+- Estos valores describen los instrumentos anteriores. En Cruz siguen pendientes las capturas reales, el ajuste óptico, las referencias, la secuencia de iluminación y la evaluación de los tiempos. No se copian calibraciones ni fórmulas de concentración como si fueran válidas para la nueva geometría.
+- El panel muestra los 18 canales simulados y descarga el espectro del último ciclo simulado en CSV. El archivo identifica el modo y conserva oscuro y luz azul por canal. Las lecturas reales del AS7265x aún no están integradas.
+
+## Ajustes ópticos en el panel
+
+El panel permite guardar exposición, ganancia, formato y ROI de cámara, además de réplicas, enfriamiento, ganancia e integración del AS7265x. Los valores iniciales de cámara y enfriamiento proceden de los instrumentos anteriores. Cada ciclo guarda una copia de los ajustes seleccionados. Estos controles son preparatorios y aún no modifican capturas ni las curvas simuladas.
+
+La gráfica única permite elegir transmisión o fluorómetro. En fluorómetro aparece la selección de fuente azul, naranja o infrarroja. La simulación solo contiene lecturas para azul y lo indica para las otras fuentes. El intervalo de visualización se elige en píxeles para transmisión y en nm para fluorescencia. El CSV conserva todos los canales y los datos originales. Los controles de captura de oscuro, blanco y calibración aparecen deshabilitados hasta integrar la captura real.
 
 ## Qué queda registrado
 

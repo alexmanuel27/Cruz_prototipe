@@ -41,17 +41,17 @@ def simulada(ciclo):
 def ds18b20():
     sondas = sorted(Path("/sys/bus/w1/devices").glob("28-*/w1_slave"))
     if len(sondas) != 1:
-        raise ValueError(f"Se esperaba un DS18B20 y se encontraron {len(sondas)}")
+        raise ValueError(f"Expected one DS18B20, found {len(sondas)}")
     archivo = sondas[0]
     crudo = subprocess.run(
         ["cat", str(archivo)], check=True, capture_output=True, text=True, timeout=3,
     ).stdout
     lineas = crudo.splitlines()
     if len(lineas) != 2 or not lineas[0].endswith(" YES"):
-        raise ValueError("CRC del DS18B20 incorrecto")
+        raise ValueError("DS18B20 CRC check failed")
     encontrado = re.search(r"\bt=(-?\d+)\b", lineas[1])
     if encontrado is None:
-        raise ValueError("El DS18B20 no devolvió temperatura")
+        raise ValueError("DS18B20 did not return a temperature")
     return {
         "valor": int(encontrado[1]) / 1000, "unidad": "°C",
         "id": archivo.parent.name, "crudo": crudo,
@@ -70,7 +70,7 @@ def atlas_ec_oem():
         transferir("w1@0x64", hex(registro))
         datos = bytes(int(b, 16) for b in transferir(f"r{cantidad}@0x64").split())
         if len(datos) != cantidad:
-            raise ValueError(f"Respuesta incompleta del Atlas en {registro:#04x}")
+            raise ValueError(f"Incomplete response from Atlas at {registro:#04x}")
         return datos
 
     def escribir(registro, valor):
@@ -78,20 +78,20 @@ def atlas_ec_oem():
 
     identidad, firmware = leer(0x00, 2)
     if identidad != 0x04:
-        raise ValueError(f"0x64 respondió con ID {identidad:#04x}, se esperaba EC-OEM")
+        raise ValueError(f"0x64 returned ID {identidad:#04x}, expected EC-OEM")
     k = int.from_bytes(leer(0x08, 2), "big")
     if k != 10:
-        raise ValueError(f"El Atlas guarda K{k / 100:g}; la sonda de banco es K0.1")
+        raise ValueError(f"Atlas is configured for K{k / 100:g}; the bench probe is K0.1")
     estado_anterior = leer(0x06, 1)[0]
     if estado_anterior not in (0, 1):
-        raise ValueError(f"Modo del Atlas inesperado: {estado_anterior:#04x}")
+        raise ValueError(f"Unexpected Atlas mode: {estado_anterior:#04x}")
     try:
         escribir(0x07, 0)
         escribir(0x06, 1)
         limite = time.monotonic() + 2.5
         while leer(0x07, 1) != b"\x01":
             if time.monotonic() >= limite:
-                raise TimeoutError("El Atlas no entregó una lectura nueva")
+                raise TimeoutError("Atlas did not deliver a new reading")
             time.sleep(0.1)
         crudo = leer(0x14, 8)
     finally:

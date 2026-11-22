@@ -1,116 +1,330 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Cruz · Monitor</title>
 <style>
-  :root { color-scheme:light; font-family:system-ui,sans-serif; color:#172c3b; background:#edf2f3; --line:#d2dce0; --navy:#0a3442; --teal:#08766c }
-  * { box-sizing:border-box }
-  body { margin:0 }
-  main { max-width:1120px; margin:auto; padding:24px clamp(14px,4vw,36px) 48px }
-  header { background:var(--navy); color:white; padding:26px 0 }
-  header div { max-width:1120px; margin:auto; padding:0 clamp(14px,4vw,36px); display:flex; align-items:center; gap:16px; flex-wrap:wrap }
-  h1,h2,p { margin:0 }
-  h1 { font-size:clamp(24px,4vw,32px); font-weight:650 }
-  h2 { font-size:18px }
-  #modo { padding:5px 10px; border:1px solid #96b7bd; border-radius:4px; font-size:14px }
-  #modo[data-simulado="true"] { background:#ffedc8; color:#634000; border-color:#ffedc8 }
-  .estado { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:16px }
-  .lecturas { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr)); gap:14px }
-  article, section { background:white; border:1px solid var(--line); border-radius:8px; padding:16px }
-  section { margin-top:14px }
-  .valor { font-variant-numeric:tabular-nums; font-size:clamp(27px,5vw,39px); margin:6px 0; font-weight:650 }
-  .unidad, .nota, #hora, #reloj { color:#425d68; font-size:14px; font-weight:400 }
-  .grafico { display:block; height:108px; width:100%; color:var(--teal); margin-top:9px; border-bottom:1px solid var(--line) }
-  form { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin-top:12px }
-  #optica .lecturas { margin-top:12px }
-  input[type="number"] { width:105px; min-height:40px; font:inherit; margin-left:4px; padding:5px }
-  button, .boton { font:inherit; color:white; background:var(--navy); border:1px solid var(--navy); border-radius:5px; padding:8px 12px; min-height:40px; text-decoration:none; cursor:pointer }
-  button:disabled { opacity:.55; cursor:default }
-  button.secundario, .boton { background:white; color:var(--navy) }
-  :focus-visible { outline:3px solid #0b7db0; outline-offset:2px }
-  #mensaje, #fallo { white-space:pre-line; overflow-wrap:anywhere }
-  #mensaje { margin-top:8px; color:var(--teal) }
-  #mensaje[data-error], #fallo { color:#903524 }
-  #fallo:not(:empty) { margin-bottom:12px }
-  .cabecera { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px }
-  .tabla { overflow-x:auto }
-  table { border-collapse:collapse; width:100%; margin-top:10px; text-align:left; white-space:nowrap; font-variant-numeric:tabular-nums }
-  td,th { padding:9px 8px; border-bottom:1px solid var(--line) }
-  th { color:#425d68; font-weight:550; font-size:14px }
-  a { color:var(--navy) }
-  #reloj { margin-top:12px }
+  :root {
+    color-scheme: light;
+    font-family: system-ui, sans-serif;
+    color: #122f3c;
+    background: #eff4f5;
+    --ink: #122f3c;
+    --muted: #4c636e;
+    --navy: #102f3b;
+    --teal: #086e64;
+    --line: #d8e3e6;
+    --surface: #fff;
+    --wash: #f5f8f9;
+  }
+  * { box-sizing: border-box }
+  [hidden] { display: none !important }
+  body { margin: 0 }
+  .wrap { max-width: 1256px; margin: auto; padding-inline: clamp(16px, 4vw, 36px) }
+  h1, h2, p { margin: 0 }
+  h1 { font-size: clamp(28px, 4vw, 39px); line-height: 1.16; letter-spacing: -.04em }
+  h2 { font-size: 19px; letter-spacing: -.02em }
+  a { color: var(--teal); text-underline-offset: 3px }
+  :focus-visible { outline: 3px solid #0079ab; outline-offset: 3px }
+  .nota { color: var(--muted); font-size: 14px; line-height: 1.5 }
+  .topbar { background: var(--navy); color: white }
+  .topbar .wrap { display: flex; align-items: center; gap: 36px; min-height: 68px }
+  .brand { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 720; letter-spacing: -.035em }
+  .brand-mark { width: 25px; height: 25px; border-radius: 7px; background: #a7e7d5; position: relative }
+  .brand-mark::before, .brand-mark::after { content: ""; position: absolute; background: var(--navy); border-radius: 2px }
+  .brand-mark::before { inset: 6px 11px }
+  .brand-mark::after { inset: 11px 6px }
+  nav { display: flex; gap: 6px }
+  nav a { color: #dce7eb; text-decoration: none; font-size: 14px; font-weight: 590; padding: 10px 14px; border-radius: 7px }
+  nav a:hover, nav a[aria-current="page"] { background: #244854; color: white }
+  #modo { margin-left: auto; border: 1px solid #567580; border-radius: 999px; padding: 6px 11px; font-size: 12px; font-weight: 650; white-space: nowrap }
+  #modo[data-simulado="true"] { background: #ffe9b8; color: #553b08; border-color: #ffe9b8 }
+  #modo[data-offline] { background: #ffded3; color: #722d19; border-color: #ffded3 }
+
+  main.wrap { padding-block: 32px 56px }
+  .page-head { margin-bottom: 22px }
+  .page-head h1 + p { margin-top: 6px }
+  .card { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: clamp(15px, 2vw, 24px); box-shadow: 0 2px 4px #122f3c08 }
+  .lecturas { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; margin-bottom: 16px }
+  .metric { display: grid; grid-template-columns: 1fr minmax(70px, 36%); align-items: center; gap: 4px 16px; --accent: #a64426 }
+  .metric + .metric { --accent: var(--teal) }
+  .metric h2 { font-size: 14px; letter-spacing: 0; color: var(--accent) }
+  .valor { font-variant-numeric: tabular-nums; font-size: clamp(26px, 3.5vw, 38px); line-height: 1.1; font-weight: 690; letter-spacing: -.045em; margin-top: 7px }
+  .unidad { color: var(--muted); font-size: 14px; font-weight: 500; letter-spacing: 0; white-space: nowrap }
+  .metric .nota { grid-column: 1 / -1; font-size: 12px }
+  .grafico { display: block; width: 100%; color: var(--accent, var(--teal)) }
+  .metric svg { height: 42px; background: var(--wash); border-radius: 5px }
+  .monitor-grid { display: grid; grid-template-columns: minmax(0,2.35fr) minmax(260px,1fr); gap: 16px; align-items: start }
+  .cabecera { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px }
+  .cabecera .nota { margin-top: 4px }
+
+  label { color: var(--ink); font-size: 13px; font-weight: 620 }
+  input, select, button { font: inherit }
+  input[type="number"], select { width: 100%; min-width: 0; min-height: 42px; border: 1px solid #b7c8cf; border-radius: 7px; background: white; color: var(--ink); padding: 8px 10px }
+  button, .boton { display: inline-flex; justify-content: center; align-items: center; gap: 6px; min-height: 42px; padding: 8px 14px; border: 1px solid var(--teal); border-radius: 7px; background: var(--teal); color: white; text-decoration: none; font-size: 14px; font-weight: 620; cursor: pointer }
+  button:not(:disabled):hover, .boton:hover { background: #07594f; border-color: #07594f }
+  button.secundario, .boton { background: white; border-color: #b7c8cf; color: var(--ink) }
+  button.secundario:not(:disabled):hover, .boton:hover { background: #eaf4f2; border-color: #96beb7 }
+  button:disabled { opacity: .58; cursor: default }
+  input[type="checkbox"] { margin: 0; width: 17px; height: 17px; flex: 0 0 17px; accent-color: var(--teal) }
+  .check { display: flex; align-items: center; gap: 9px; min-height: 28px }
+  .settings-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,155px),1fr)); gap: 12px }
+  .settings-grid label, .field { display: grid; gap: 6px; min-width: 0 }
+
+  .spectrum-tools { display: grid; grid-template-columns: minmax(0,1.35fr) minmax(0,1fr) minmax(0,1.05fr); gap: 12px; align-items: end; margin-top: 18px }
+  .spectrum-tools:has(#source-control[hidden]) { grid-template-columns: minmax(0,1fr) minmax(0,.72fr) }
+  .range { display: flex; gap: 8px; padding: 0; margin: 0; min-width: 0; border: 0 }
+  .range label { flex: 1; min-width: 0 }
+  #range-error:not(:empty) { margin-top: 10px }
+  .plot { margin-top: 16px; min-width: 0; --accent: var(--teal) }
+  .plot[data-view="fluorescence"] { --accent: #4b5ab4 }
+  .plot-frame { position: relative; border: 1px solid var(--line); border-radius: 9px; background: var(--wash); min-height: 210px }
+  .plot-frame .grafico { height: 210px; border-radius: 8px; background: repeating-linear-gradient(to top, #dfe9eb 0 1px, transparent 1px 25%), repeating-linear-gradient(to right, #e9f0f2 0 1px, transparent 1px 12.5%) }
+  #chart-empty { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; text-align: center }
+  #axis-ticks:not(:empty) { position: relative; margin: 7px 1.25% 0; height: 15px; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 11px }
+  #axis-ticks span { position: absolute; transform: translateX(-50%) }
+  #axis-ticks span:first-child { transform: none }
+  #axis-ticks span:last-child { transform: translateX(-100%) }
+  .plot-caption { display: flex; gap: 8px; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: 8px }
+  .plot-caption .nota { font-size: 12px }
+  #axis-unit { font-weight: 650 }
+  details { margin-top: 15px; border-top: 1px solid var(--line) }
+  summary { cursor: pointer; padding: 12px 0 0; font-size: 14px; font-weight: 640; color: var(--teal) }
+  details > .cabecera { margin-top: 12px }
+
+  .status { display: flex; align-items: center; gap: 8px; margin-top: 10px; color: var(--muted); font-size: 14px }
+  .status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #778e97; flex: 0 0 8px }
+  .status[data-state="active"]::before { background: #128679 }
+  .status[data-state="error"]::before { background: #b84e33 }
+  #config { display: grid; gap: 12px; margin-top: 18px }
+  #config .field small { color: var(--muted); font-weight: 400 }
+  #guardar { justify-self: start }
+  .measure-action { border-top: 1px solid var(--line); padding-top: 16px; margin-top: 16px }
+  #medir { width: 100% }
+  .feedback:not(:empty) { margin-top: 10px; color: var(--teal) }
+  .feedback[data-error], #range-error, #fallo { color: #963820 }
+  #fallo:not(:empty) { margin-bottom: 14px; padding: 12px 14px; border: 1px solid #eccbbf; border-radius: 8px; background: #fff2eb }
+  .feedback, #fallo { white-space: pre-line; overflow-wrap: anywhere }
+
+  #optical-config { display: grid; gap: 14px }
+  #optical-config fieldset { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px clamp(14px,2vw,24px) 20px; margin: 0; min-width: 0 }
+  #optical-config legend { padding: 0 6px; font-weight: 670 }
+  #optical-config .nota { margin-block: 9px }
+  #optical-config .settings-grid + .settings-grid, #optical-config .check + .settings-grid { margin-top: 12px }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+  .actions .feedback:not(:empty) { margin: 0 }
+  .tabla { overflow-x: auto; margin-top: 12px }
+  table { border-collapse: collapse; width: 100%; text-align: left; white-space: nowrap; font-size: 14px; font-variant-numeric: tabular-nums }
+  td, th { padding: 11px 12px; border-bottom: 1px solid var(--line) }
+  th { background: var(--wash); color: var(--muted); font-weight: 640 }
+  tbody tr:hover { background: #f5faf9 }
+  .cycle-status { display: inline-block; padding: 3px 8px; border-radius: 999px; background: #edf2f4; color: #435e68; font-size: 12px; font-weight: 620 }
+  .cycle-status[data-status="completo"] { background: #e1f4ed; color: #145b4e }
+  .cycle-status[data-status="parcial"] { background: #fff0cb; color: #684900 }
+  .cycle-status[data-status="fallido"], .cycle-status[data-status="interrumpido"] { background: #ffebe4; color: #87341e }
+  #reloj { margin-top: 14px }
+
+  @media (max-width: 850px) {
+    .monitor-grid { grid-template-columns: minmax(0,1fr) }
+  }
+  @media (max-width: 570px) {
+    .topbar .wrap { min-height: 0; padding-block: 10px; flex-wrap: wrap; column-gap: 8px; row-gap: 9px }
+    .topbar nav { order: 1; width: 100%; gap: 2px }
+    .topbar nav a { padding-inline: 11px }
+    main.wrap { padding-block: 22px 32px }
+    .page-head { margin-bottom: 16px }
+    .lecturas { gap: 8px }
+    .metric { grid-template-columns: 1fr; gap: 7px; padding: 12px }
+    .metric svg { height: 28px }
+    input[type="number"], select { min-height: 44px; font-size: 16px }
+    .spectrum-tools, .spectrum-tools:has(#source-control[hidden]) { grid-template-columns: minmax(0,1fr) }
+    .plot-frame { min-height: 162px }
+    .plot-frame .grafico { height: 162px }
+  }
 </style>
 <body>
-<header><div><h1>Cruz · Monitor</h1><span id="modo">Conectando</span></div></header>
-<main>
-  <div class="estado"><strong id="estado" aria-live="polite">Cargando lecturas…</strong><span id="hora"></span></div>
-  <p id="fallo" role="alert"></p>
-  <div class="lecturas">
-    <article>
-      <h2>Temperatura</h2>
-      <p class="valor"><span id="temperatura">—</span> <span class="unidad">°C</span></p>
-      <svg id="grafico-temperatura" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Historial de temperatura"></svg>
-      <p id="rango-temperatura" class="nota"></p>
-    </article>
-    <article>
-      <h2>Conductividad</h2>
-      <p class="valor"><span id="conductividad">—</span> <span class="unidad">µS/cm</span></p>
-      <svg id="grafico-conductividad" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Historial de conductividad"></svg>
-      <p id="rango-conductividad" class="nota"></p>
-    </article>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span>Cruz</div>
+    <nav aria-label="Main navigation">
+      <a href="#monitor" aria-current="page">Monitor</a>
+      <a href="#settings">Optical settings</a>
+      <a href="#history">History</a>
+    </nav>
+    <span id="modo">Connecting</span>
   </div>
-  <section aria-labelledby="config-titulo">
-    <h2 id="config-titulo">Medición</h2>
-    <form id="config">
-      <label>Intervalo (s) <input id="intervalo" type="number" required step="1" min="1" max="86400"></label>
-      <label><input id="automatico" type="checkbox"> Medición automática</label>
-      <button id="guardar" type="submit" disabled>Guardar</button>
-      <button id="medir" class="secundario" type="button" disabled>Medir ahora</button>
-    </form>
-    <p id="mensaje" role="status"></p>
-  </section>
-  <section id="optica" aria-labelledby="optica-titulo" hidden>
-    <h2 id="optica-titulo">Óptica simulada del último ciclo</h2>
+</header>
+<main class="wrap">
+  <section id="monitor" aria-labelledby="monitor-title">
+    <div class="page-head">
+      <h1 id="monitor-title">Live measurements</h1>
+      <p id="hora" class="nota">Waiting for the first measurement.</p>
+    </div>
+    <p id="fallo" class="nota" role="alert"></p>
     <div class="lecturas">
-      <div>
-        <p>Transmisión · cuentas por píxel</p>
-        <svg id="grafico-transmision" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Cuentas simuladas de transmisión por píxel"></svg>
-        <p id="rango-transmision" class="nota"></p>
-      </div>
-      <div>
-        <p>AS7265x con luz azul · cuentas por canal</p>
-        <svg id="grafico-azul" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Cuentas simuladas de los 18 canales con luz azul"></svg>
-        <p id="rango-azul" class="nota"></p>
-      </div>
+      <article class="card metric">
+        <div><h2>Temperature</h2><p class="valor"><span id="temperatura">—</span> <span class="unidad">°C</span></p></div>
+        <svg id="grafico-temperatura" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Temperature history"></svg>
+        <p id="rango-temperatura" class="nota"></p>
+      </article>
+      <article class="card metric">
+        <div><h2>Conductivity</h2><p class="valor"><span id="conductividad">—</span> <span class="unidad">µS/cm</span></p></div>
+        <svg id="grafico-conductividad" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Conductivity history"></svg>
+        <p id="rango-conductividad" class="nota"></p>
+      </article>
+    </div>
+    <div class="monitor-grid">
+      <section id="optica" class="card" aria-labelledby="optica-titulo">
+        <h2 id="optica-titulo">Optical spectrum</h2>
+        <div id="optical-tools" class="spectrum-tools" hidden>
+          <div class="field">
+            <label for="optical-view">Display</label>
+            <select id="optical-view">
+              <option value="transmission">Transmission</option>
+              <option value="fluorescence">Fluorometer</option>
+            </select>
+          </div>
+          <div id="source-control" class="field" hidden>
+            <label for="light-source">Light source</label>
+            <select id="light-source">
+              <option value="blue">Blue · 420–430 nm</option>
+              <option value="orange">Orange · 620 nm</option>
+              <option value="infrared">Infrared · 850 nm</option>
+            </select>
+          </div>
+          <fieldset class="range" aria-label="Displayed interval">
+            <label class="field"><span id="range-min-label">From (pixel)</span><input id="range-min" type="number" step="1" value="0"></label>
+            <label class="field"><span id="range-max-label">To (pixel)</span><input id="range-max" type="number" step="1" value="127"></label>
+          </fieldset>
+        </div>
+        <p id="range-error" role="status" class="nota"></p>
+        <div id="spectrum-plot" class="plot">
+          <div class="plot-frame">
+            <svg id="grafico-spectrum" class="grafico" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Simulated optical spectrum" aria-describedby="rango-spectrum" hidden></svg>
+            <p id="chart-empty" class="nota" role="status">Waiting for an optical measurement.</p>
+          </div>
+          <div id="axis-ticks" aria-hidden="true"></div>
+          <div class="plot-caption">
+            <p id="axis-unit" class="nota"></p>
+            <p id="rango-spectrum" class="nota"></p>
+          </div>
+        </div>
+        <details id="spectrum-details" hidden>
+          <summary>View all 18 channels</summary>
+          <div class="cabecera"><p class="nota">Raw counts from the latest simulated cycle.</p><a id="descargar-espectro" class="boton" href="#">Download spectrum CSV</a></div>
+          <div class="tabla" tabindex="0" aria-label="Scrollable spectrum">
+            <table>
+              <thead><tr><th scope="col">Wavelength (nm)</th><th scope="col">Channel</th><th scope="col">Dark</th><th scope="col">Blue</th></tr></thead>
+              <tbody id="canales"></tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+      <section class="card" aria-labelledby="config-titulo">
+        <h2 id="config-titulo">Acquisition</h2>
+        <div class="status"><span id="estado">Connecting to monitor…</span></div>
+        <form id="config">
+          <label class="field">Measurement interval (s)<input id="intervalo" type="number" required step="1" min="1" max="86400"></label>
+          <label class="check"><input id="automatico" type="checkbox"> Automatic measurements</label>
+          <button id="guardar" class="secundario" type="submit" disabled>Save schedule</button>
+        </form>
+        <div class="measure-action">
+          <button id="medir" type="button" disabled>Measure now</button>
+        </div>
+        <p id="mensaje" class="nota feedback" role="status"></p>
+      </section>
     </div>
   </section>
-  <section aria-labelledby="historial-titulo">
-    <div class="cabecera"><h2 id="historial-titulo">Historial reciente</h2><a class="boton" href="/exportar.csv">Descargar CSV</a></div>
-    <div class="tabla" tabindex="0" aria-label="Historial desplazable">
-      <table>
-        <thead><tr><th>Inicio UTC</th><th>°C</th><th>µS/cm</th><th>Estado</th><th>Originales</th></tr></thead>
-        <tbody id="historial"><tr><td colspan="5">Sin ciclos guardados.</td></tr></tbody>
-      </table>
+  <section id="settings" aria-labelledby="opt-settings-title" hidden>
+    <div class="page-head">
+      <h1 id="opt-settings-title">Optical settings</h1>
+      <p class="nota">These values are saved with each measurement. Optical hardware integration is pending.</p>
     </div>
-    <p id="reloj">Hora del sistema en UTC. Sin verificar contra el RTC.</p>
+    <form id="optical-config">
+      <fieldset>
+        <legend>Transmission camera</legend>
+        <div class="settings-grid">
+          <label>Exposure (ms)<input id="exposure_ms" type="number" min="0.01" max="200" step="0.01" required></label>
+          <label>Analogue gain<input id="analogue_gain" type="number" min="1" max="16" step="0.1" required></label>
+          <div class="field"><label for="pixel_format">Capture format</label><select id="pixel_format"><option value="raw10">RAW10</option><option value="processed8">Processed 8-bit</option></select></div>
+        </div>
+        <p class="nota">Region of interest · 1280 × 800 frame</p>
+        <div class="settings-grid">
+          <label>Left X<input id="x1" type="number" min="0" max="1280" step="1" required></label>
+          <label>Top Y<input id="y1" type="number" min="0" max="800" step="1" required></label>
+          <label>Right X<input id="x2" type="number" min="0" max="1280" step="1" required></label>
+          <label>Bottom Y<input id="y2" type="number" min="0" max="800" step="1" required></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Fluorescence · AS7265x</legend>
+        <label class="check"><input id="cooldown_enabled" type="checkbox"> Enable cooldown</label>
+        <div class="settings-grid">
+          <label>Readings per measurement<input id="replicates" type="number" min="1" max="100" step="1" required></label>
+          <label>Cooldown after (cycles)<input id="cooldown_after" type="number" min="1" max="100" step="1" required></label>
+          <label>Cooldown duration (s)<input id="cooldown_seconds" type="number" min="0" max="3600" step="1" required></label>
+          <div class="field"><label for="as7265x_gain">Sensor gain</label><select id="as7265x_gain"><option value="">Not set</option><option value="1">1×</option><option value="3.7">3.7×</option><option value="16">16×</option><option value="64">64×</option></select></div>
+          <label>Integration register (0–255)<input id="as7265x_integration" type="number" min="0" max="255" step="1" placeholder="Not set"></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>References and calibration</legend>
+        <p class="nota">Dark and white references and wavelength calibration require optical hardware integration.</p>
+        <div class="actions">
+          <button type="button" class="secundario" disabled>Capture dark</button>
+          <button type="button" class="secundario" disabled>Capture white</button>
+          <button type="button" class="secundario" disabled>Calibrate wavelengths</button>
+        </div>
+      </fieldset>
+      <div class="actions">
+        <button id="save-optical" type="submit" disabled>Save optical settings</button>
+        <p id="optical-message" class="nota feedback" role="status"></p>
+      </div>
+    </form>
+  </section>
+  <section id="history" aria-labelledby="historial-titulo" hidden>
+    <div class="page-head cabecera"><h1 id="historial-titulo">Measurement history</h1><a class="boton" href="/exportar.csv">Download CSV</a></div>
+    <div class="card">
+      <div class="tabla" tabindex="0" aria-label="Scrollable measurement history">
+        <table>
+          <thead><tr><th scope="col">Start time (UTC)</th><th scope="col">Temperature (°C)</th><th scope="col">Conductivity (µS/cm)</th><th scope="col">Status</th><th scope="col">Raw data</th></tr></thead>
+          <tbody id="historial"><tr><td colspan="5">No measurements yet.</td></tr></tbody>
+        </table>
+      </div>
+      <p id="reloj" class="nota">System time in UTC. RTC has not been verified.</p>
+    </div>
   </section>
 </main>
 <script>
   const el = id => document.getElementById(id);
-  const estados = {en_curso: "En curso", completo: "Completo", parcial: "Parcial", fallido: "Fallido", interrumpido: "Interrumpido"};
-  const numero = new Intl.NumberFormat("es", { maximumFractionDigits: 3 });
+  const estados = {en_curso: "In progress", completo: "Complete", parcial: "Partial", fallido: "Failed", interrumpido: "Interrupted"};
+  const numero = new Intl.NumberFormat("en", { maximumFractionDigits: 3 });
   const valor = n => n == null ? "—" : numero.format(n);
   const fecha = s => s ? s.slice(0, 19).replace("T", " ") : "—";
-  let editando = false, refrescando = false, ocupada = false, historialAnterior;
+  let editando = false, editandoOptica = false, refrescando = false, ocupada = false, historialAnterior, ultimaOptica;
+  const limites = {transmission: [0, 127], fluorescence: [410, 940]};
+  const rangos = {...limites};
 
-  function grafico(clave, puntos, etiqueta, posiciones = puntos.map((_, i) => i)) {
+  const navegacion = document.querySelectorAll("nav a");
+  function mostrarVista() {
+    const vista = Array.from(navegacion).find(enlace => enlace.hash === location.hash) || navegacion[0];
+    for (const enlace of navegacion) {
+      const activa = enlace === vista;
+      el(enlace.hash.slice(1)).hidden = !activa;
+      if (activa) enlace.setAttribute("aria-current", "page");
+      else enlace.removeAttribute("aria-current");
+    }
+  }
+  window.addEventListener("hashchange", mostrarVista);
+  mostrarVista();
+
+  function grafico(clave, puntos, etiqueta, posiciones = puntos.map((_, i) => i), dominio = [posiciones[0], posiciones.at(-1)]) {
     const validos = puntos.filter(Number.isFinite);
     const svg = el("grafico-" + clave);
     svg.replaceChildren();
     const rango = el("rango-" + clave);
     if (!validos.length) {
-      rango.textContent = "Sin lecturas guardadas";
+      rango.textContent = "No measurements yet";
       return;
     }
     const min = Math.min(...validos), max = Math.max(...validos);
@@ -118,15 +332,17 @@
     const ns = "http://www.w3.org/2000/svg";
     for (const [i, n] of puntos.entries()) {
       if (!Number.isFinite(n)) { inicio = true; continue; }
-      const x = 5 + 390 * (posiciones[i] - posiciones[0]) / Math.max(1, posiciones.at(-1) - posiciones[0]);
+      const x = dominio[0] === dominio[1] ? 200 : 5 + 390 * (posiciones[i] - dominio[0]) / (dominio[1] - dominio[0]);
       const y = max === min ? 52 : 92 - 80 * (n - min) / (max - min);
       trazado += (inicio ? "M" : "L") + x + "," + y + " ";
-      const punto = document.createElementNS(ns, "circle");
-      punto.setAttribute("cx", x);
-      punto.setAttribute("cy", y);
-      punto.setAttribute("r", "2.4");
-      punto.setAttribute("fill", "currentColor");
-      svg.append(punto);
+      if (puntos.length <= 24 || validos.length === 1) {
+        const punto = document.createElementNS(ns, "circle");
+        punto.setAttribute("cx", x);
+        punto.setAttribute("cy", y);
+        punto.setAttribute("r", "1.9");
+        punto.setAttribute("fill", "currentColor");
+        svg.append(punto);
+      }
       inicio = false;
     }
     const linea = document.createElementNS(ns, "path");
@@ -136,58 +352,138 @@
     linea.setAttribute("stroke-width", "2");
     linea.setAttribute("vector-effect", "non-scaling-stroke");
     svg.prepend(linea);
-    rango.textContent = etiqueta + " · " + valor(min) + " a " + valor(max);
+    rango.textContent = etiqueta + " · " + valor(min) + " to " + valor(max);
+  }
+
+  function mostrarEspectro() {
+    const modo = el("optical-view").value;
+    const fluo = modo === "fluorescence";
+    const azul = el("light-source").value === "blue";
+    el("source-control").hidden = !fluo;
+    el("spectrum-details").hidden = !fluo || !azul;
+    el("spectrum-plot").dataset.view = modo;
+    const minimo = el("range-min").valueAsNumber, maximo = el("range-max").valueAsNumber;
+    const [inicio, fin] = limites[modo];
+    const valido = Number.isInteger(minimo) && Number.isInteger(maximo) && minimo >= inicio && maximo <= fin && minimo < maximo;
+    el("range-error").textContent = valido ? "" : "Enter two whole numbers between " + inicio + " and " + fin + ", with From below To.";
+    if (valido) rangos[modo] = [minimo, maximo];
+    if (!valido || (fluo && !azul)) {
+      vaciarEspectro(valido ? "No simulated readings for this light source." : "Adjust the displayed interval to see the spectrum.");
+      return;
+    }
+
+    const datos = fluo ?
+      ultimaOptica.as7265x.canales.map(c => [c.nm_nominal, c.azul_crudo]) :
+      ultimaOptica.camara.transmision_por_pixel.map((v, i) => [i, v]);
+    const recorte = datos.filter(([x]) => x >= minimo && x <= maximo);
+    if (!recorte.length) {
+      vaciarEspectro("No wavelengths in this interval.");
+      return;
+    }
+
+    const unidad = fluo ? "Nominal wavelength (nm)" : "Sensor pixel";
+    el("grafico-spectrum").setAttribute("aria-label", (fluo ? "Fluorescence" : "Transmission") + ", interval " + minimo + " to " + maximo + ". " + unidad);
+    grafico("spectrum", recorte.map(([, y]) => y), "Counts", recorte.map(([x]) => x), [minimo, maximo]);
+    el("grafico-spectrum").removeAttribute("hidden");
+    el("chart-empty").hidden = true;
+    el("axis-unit").textContent = unidad;
+    const divisiones = Math.min(4, maximo - minimo);
+    const marcas = [];
+    for (let i = 0; i <= divisiones; i++) {
+      const marca = document.createElement("span");
+      const marcaX = Math.round(minimo + i * (maximo - minimo) / divisiones);
+      marca.textContent = valor(marcaX);
+      marca.style.left = 100 * (marcaX - minimo) / (maximo - minimo) + "%";
+      marcas.push(marca);
+    }
+    el("axis-ticks").replaceChildren(...marcas);
+  }
+
+  function vaciarEspectro(mensaje) {
+    el("grafico-spectrum").setAttribute("hidden", "");
+    el("chart-empty").hidden = false;
+    el("chart-empty").textContent = mensaje;
+    el("axis-ticks").replaceChildren();
+    el("axis-unit").textContent = "";
+    el("rango-spectrum").textContent = "";
   }
 
   function mostrar(e) {
-    el("modo").textContent = e.modo === "simulado" ? "Datos simulados" : "Sensores de banco";
+    el("modo").textContent = e.modo === "simulado" ? "Simulated data" : "Bench sensors";
     el("modo").dataset.simulado = e.modo === "simulado";
-    el("estado").textContent = e.error ? "Adquisición detenida" : e.midiendo || e.pendiente ? "Midiendo…" :
-      e.config.automatico ? "Próximo ciclo en " + e.en_s + " s" : "Medición automática en pausa";
+    el("modo").removeAttribute("data-offline");
+    el("estado").textContent = e.error ? "Acquisition stopped" : e.midiendo || e.pendiente ? "Measuring…" :
+      e.config.automatico ? "Next cycle in " + e.en_s + " s" : "Automatic measurements paused";
+    el("estado").parentElement.dataset.state = e.error ? "error" : e.config.automatico || e.midiendo || e.pendiente ? "active" : "paused";
     if (!editando) {
       el("intervalo").value = e.config.intervalo_s;
       el("automatico").checked = e.config.automatico;
     }
+    if (!editandoOptica) {
+      const ajustes = e.ajustes_opticos;
+      for (const nombre of ["exposure_ms", "analogue_gain", "pixel_format", "replicates", "cooldown_after", "cooldown_seconds", "as7265x_gain", "as7265x_integration"]) {
+        el(nombre).value = ajustes[nombre] ?? "";
+      }
+      for (const nombre of ["x1", "y1", "x2", "y2"]) el(nombre).value = ajustes.roi[nombre];
+      el("cooldown_enabled").checked = ajustes.cooldown_enabled;
+    }
     el("intervalo").min = e.modo === "simulado" ? 1 : 10;
     el("guardar").disabled = ocupada;
+    el("save-optical").disabled = ocupada;
     el("medir").disabled = ocupada || Boolean(e.midiendo || e.pendiente || e.error);
     const ultimo = e.ciclos.find(c => c.estado !== "en_curso");
-    el("hora").textContent = ultimo ? "Último ciclo · " + fecha(ultimo.inicio_utc) + " UTC" : "";
+    el("hora").textContent = ultimo ? "Latest cycle · " + fecha(ultimo.inicio_utc) + " UTC" : "Waiting for the first measurement.";
     for (const clave of ["temperatura", "conductividad"]) {
       el(clave).textContent = valor(ultimo?.[clave]);
     }
     el("fallo").textContent = e.error || Object.values(ultimo?.errores || {}).join("\n") ||
-      (ultimo?.estado === "interrumpido" ? "El último ciclo quedó interrumpido." : "");
+      (ultimo?.estado === "interrumpido" ? "The last cycle was interrupted." : "");
     const firma = e.ciclos.map(c => c.id + ":" + c.estado).join(",");
     if (firma === historialAnterior) return;
     historialAnterior = firma;
     const ordenados = e.ciclos.slice().reverse();
     for (const clave of ["temperatura", "conductividad"]) {
-      grafico(clave, ordenados.map(c => c[clave]), ordenados.length === 1 ? "Último ciclo" : "Últimos " + ordenados.length + " ciclos");
+      grafico(clave, ordenados.map(c => c[clave]), ordenados.length === 1 ? "Last cycle" : "Last " + ordenados.length + " cycles");
     }
-    el("optica").hidden = !e.optica;
+    el("optical-tools").hidden = !e.optica;
+    ultimaOptica = e.optica;
     if (e.optica) {
-      const pixeles = e.optica.camara.transmision_por_pixel;
       const canales = e.optica.as7265x.canales;
-      grafico("transmision", pixeles, "Píxeles 0–" + (pixeles.length - 1));
-      grafico("azul", canales.map(c => c.azul_crudo), "410–940 nm nominales", canales.map(c => c.nm_nominal));
+      mostrarEspectro();
+      const tablaCanales = el("canales");
+      tablaCanales.replaceChildren();
+      for (const canal of canales) {
+        const fila = tablaCanales.insertRow();
+        for (const campo of [canal.nm_nominal, canal.canal, canal.oscuro_crudo, canal.azul_crudo]) {
+          fila.insertCell().textContent = campo;
+        }
+      }
+      el("descargar-espectro").href = "/espectro/" + ultimo.id;
+    } else {
+      el("spectrum-details").hidden = true;
+      vaciarEspectro(e.modo === "simulado" ? "Waiting for the first optical measurement." : "Optical capture is unavailable in bench sensor mode.");
     }
     const tabla = el("historial");
     tabla.replaceChildren();
     if (!e.ciclos.length) {
       const celda = tabla.insertRow().insertCell();
       celda.colSpan = 5;
-      celda.textContent = "Sin ciclos guardados.";
+      celda.textContent = "No measurements yet.";
     }
     for (const ciclo of e.ciclos) {
       const fila = tabla.insertRow();
-      for (const texto of [fecha(ciclo.inicio_utc), valor(ciclo.temperatura), valor(ciclo.conductividad), estados[ciclo.estado]]) {
+      for (const texto of [fecha(ciclo.inicio_utc), valor(ciclo.temperatura), valor(ciclo.conductividad)]) {
         fila.insertCell().textContent = texto;
       }
+      const estado = document.createElement("span");
+      estado.className = "cycle-status";
+      estado.dataset.status = ciclo.estado;
+      estado.textContent = estados[ciclo.estado];
+      fila.insertCell().append(estado);
       const enlace = document.createElement("a");
       enlace.href = "/api/ciclos/" + ciclo.id;
       enlace.textContent = "JSON";
-      enlace.setAttribute("aria-label", "Datos originales del ciclo " + ciclo.id);
+      enlace.setAttribute("aria-label", "Raw data for cycle " + ciclo.id);
       fila.insertCell().append(enlace);
     }
   }
@@ -200,25 +496,30 @@
       if (!r.ok) throw Error();
       mostrar(await r.json());
     } catch {
-      el("estado").textContent = "Sin conexión con el monitor";
-      el("guardar").disabled = el("medir").disabled = true;
+      el("modo").textContent = "Offline";
+      el("modo").setAttribute("data-offline", "");
+      el("estado").textContent = "Disconnected from monitor";
+      el("estado").parentElement.dataset.state = "error";
+      el("guardar").disabled = el("medir").disabled = el("save-optical").disabled = true;
     } finally {
       refrescando = false;
     }
   }
 
-  async function enviar(ruta, datos, mensaje) {
+  async function enviar(ruta, datos, mensaje, salida = "mensaje") {
     ocupada = true;
-    el("guardar").disabled = el("medir").disabled = true;
+    el("guardar").disabled = el("medir").disabled = el("save-optical").disabled = true;
+    const aviso = el(salida);
     try {
       const r = await fetch(ruta, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(datos)});
       if (!r.ok) throw Error((await r.json()).error);
-      el("mensaje").removeAttribute("data-error");
-      el("mensaje").textContent = mensaje;
+      aviso.removeAttribute("data-error");
+      aviso.textContent = mensaje;
       if (ruta === "/api/config") editando = false;
+      if (ruta === "/api/optica") editandoOptica = false;
     } catch (error) {
-      el("mensaje").setAttribute("data-error", "");
-      el("mensaje").textContent = error.message || "No se pudo completar la operación.";
+      aviso.setAttribute("data-error", "");
+      aviso.textContent = error.message || "Could not complete the request.";
     } finally {
       ocupada = false;
       await actualizar();
@@ -226,11 +527,37 @@
   }
 
   el("config").addEventListener("input", () => { editando = true; });
+  el("optical-view").addEventListener("change", () => {
+    const fluo = el("optical-view").value === "fluorescence";
+    [el("range-min").value, el("range-max").value] = rangos[el("optical-view").value];
+    el("range-min-label").textContent = fluo ? "From (nm)" : "From (pixel)";
+    el("range-max-label").textContent = fluo ? "To (nm)" : "To (pixel)";
+    mostrarEspectro();
+  });
+  el("light-source").addEventListener("change", mostrarEspectro);
+  el("range-min").addEventListener("input", mostrarEspectro);
+  el("range-max").addEventListener("input", mostrarEspectro);
+  el("optical-config").addEventListener("input", () => { editandoOptica = true; });
+  el("optical-config").addEventListener("submit", ev => {
+    ev.preventDefault();
+    const n = id => el(id).valueAsNumber;
+    const ajustes = {
+      exposure_ms: n("exposure_ms"), analogue_gain: n("analogue_gain"),
+      pixel_format: el("pixel_format").value,
+      roi: {x1: n("x1"), y1: n("y1"), x2: n("x2"), y2: n("y2")},
+      replicates: n("replicates"), cooldown_after: n("cooldown_after"),
+      cooldown_enabled: el("cooldown_enabled").checked,
+      cooldown_seconds: n("cooldown_seconds"),
+      as7265x_gain: el("as7265x_gain").value === "" ? null : Number(el("as7265x_gain").value),
+      as7265x_integration: el("as7265x_integration").value === "" ? null : n("as7265x_integration")
+    };
+    enviar("/api/optica", ajustes, "Optical settings saved.", "optical-message");
+  });
   el("config").addEventListener("submit", ev => {
     ev.preventDefault();
-    enviar("/api/config", {intervalo_s: el("intervalo").valueAsNumber, automatico: el("automatico").checked}, "Configuración guardada.");
+    enviar("/api/config", {intervalo_s: el("intervalo").valueAsNumber, automatico: el("automatico").checked}, "Schedule saved.");
   });
-  el("medir").addEventListener("click", () => enviar("/api/medir", {}, "Medición solicitada."));
+  el("medir").addEventListener("click", () => enviar("/api/medir", {}, "Measurement requested."));
   actualizar();
   setInterval(actualizar, 2000);
 </script>

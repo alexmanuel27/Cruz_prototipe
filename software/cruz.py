@@ -21,6 +21,12 @@ from adquisicion import ambiental, simulada
 
 BASE = Path(__file__).resolve().parent
 DEFAULTS = {"intervalo_s": 900, "automatico": True}
+OPTICAL_DEFAULTS = {
+    "exposure_ms": 50, "analogue_gain": 11.0, "pixel_format": "raw10",
+    "roi": {"x1": 100, "y1": 300, "x2": 1100, "y2": 420},
+    "replicates": 10, "cooldown_enabled": True, "cooldown_after": 3, "cooldown_seconds": 60,
+    "as7265x_gain": None, "as7265x_integration": None,
+}
 RESUMEN_SQL = """
     SELECT id, inicio_utc, fin_utc, duracion_ms, estado,
            json_extract(datos, '$.temperatura.valor') AS temperatura,
@@ -42,7 +48,39 @@ def validar_config(config, modo):
         or not minimo <= config["intervalo_s"] <= 86400
         or type(config["automatico"]) is not bool
     ):
-        raise ValueError(f"El intervalo debe ser un entero entre {minimo} y 86400 segundos.")
+        raise ValueError(f"Interval must be an integer between {minimo} and 86400 seconds.")
+    return config
+
+
+def validar_optica(config):
+    def numero(valor, minimo, maximo):
+        return type(valor) in (int, float) and math.isfinite(valor) and minimo <= valor <= maximo
+
+    def entero(valor, minimo, maximo):
+        return type(valor) is int and minimo <= valor <= maximo
+
+    if not isinstance(config, dict) or config.keys() != OPTICAL_DEFAULTS.keys():
+        raise ValueError("Incomplete optical settings.")
+    roi = config["roi"]
+    if not isinstance(roi, dict) or roi.keys() != {"x1", "y1", "x2", "y2"}:
+        raise ValueError("ROI must contain four coordinates.")
+    if not all(entero(roi[k], 0, 1280 if k[0] == "x" else 800) for k in roi):
+        raise ValueError("ROI coordinates must be within 1280 × 800.")
+    if roi["x2"] - roi["x1"] < 2 or roi["y2"] - roi["y1"] < 2:
+        raise ValueError("ROI must be at least 2 × 2 pixels.")
+    if (
+        not numero(config["exposure_ms"], 0.01, 200)
+        or not numero(config["analogue_gain"], 1, 16)
+        or config["pixel_format"] not in ("raw10", "processed8")
+        or not entero(config["replicates"], 1, 100)
+        or type(config["cooldown_enabled"]) is not bool
+        or not entero(config["cooldown_after"], 1, 100)
+        or not entero(config["cooldown_seconds"], 0, 3600)
+        or (config["as7265x_gain"] is not None and config["as7265x_gain"] not in (1, 3.7, 16, 64))
+        or type(config["as7265x_gain"]) is bool
+        or (config["as7265x_integration"] is not None and not entero(config["as7265x_integration"], 0, 255))
+    ):
+        raise ValueError("Optical settings are outside the allowed range.")
     return config
 
 
@@ -60,7 +98,23 @@ class Almacen:
                     fin_utc TEXT, duracion_ms INTEGER, estado TEXT NOT NULL,
                     config TEXT NOT NULL, datos TEXT
                 );
+                CREATE TABLE IF NOT EXISTS ajustes_opticos (
+                    id INTEGER PRIMARY KEY CHECK (id=1), config TEXT NOT NULL
+                );
             """)
+            columnas = {col["name"] for col in db.execute("PRAGMA table_info(ciclos)")}
+            if "optica" not in columnas:
+                db.execute("ALTER TABLE ciclos ADD COLUMN optica TEXT")
+            db.execute("INSERT OR IGNORE INTO ajustes_opticos VALUES (1, ?)",
+                       (json.dumps(OPTICAL_DEFAULTS),))
+            optica_guardada = json.loads(db.execute(
+                "SELECT config FROM ajustes_opticos WHERE id=1"
+            ).fetchone()["config"])
+            if "cooldown_enabled" not in optica_guardada:
+                optica_guardada["cooldown_enabled"] = True
+                db.execute("UPDATE ajustes_opticos SET config=? WHERE id=1",
+                           (json.dumps(optica_guardada),))
+            self.optica = validar_optica(optica_guardada)
             anterior = db.execute("SELECT modo, config FROM despliegue WHERE id=1").fetchone()
             if anterior is None:
                 db.execute("INSERT INTO despliegue VALUES (1, ?, ?)", (modo, json.dumps(inicial)))
@@ -82,12 +136,16 @@ class Almacen:
         with self.conexion() as db:
             db.execute("UPDATE despliegue SET config=? WHERE id=1", (json.dumps(config),))
 
-    def ciclo(self, config):
+    def guardar_optica(self, config):
+        with self.conexion() as db:
+            db.execute("UPDATE ajustes_opticos SET config=? WHERE id=1", (json.dumps(config),))
+
+    def ciclo(self, config, optica=None):
         inicio = time.monotonic()
         with self.conexion() as db:
             id_ciclo = db.execute(
-                "INSERT INTO ciclos (inicio_utc, estado, config) VALUES (?, 'en_curso', ?)",
-                (utc(), json.dumps(config)),
+                "INSERT INTO ciclos (inicio_utc, estado, config, optica) VALUES (?, 'en_curso', ?, ?)",
+                (utc(), json.dumps(config), json.dumps(optica or self.optica)),
             ).lastrowid
         try:
             datos = simulada(id_ciclo) if self.modo == "simulado" else ambiental()
@@ -115,7 +173,8 @@ class Almacen:
             if fila is None:
                 return None
             return {**fila, "modo": self.modo, "reloj": "sistema_no_verificado",
-                    "config": json.loads(fila["config"]), "datos": json.loads(fila["datos"] or "null")}
+                    "config": json.loads(fila["config"]), "optica": json.loads(fila["optica"] or "null"),
+                    "datos": json.loads(fila["datos"] or "null")}
 
     def csv(self):
         salida = io.StringIO(newline="")
@@ -127,11 +186,28 @@ class Almacen:
                 writer.writerow([fila["id"], self.modo, *tuple(fila)[1:]])
         return salida.getvalue()
 
+    def espectro_csv(self, id_ciclo):
+        detalle = self.detalle(id_ciclo)
+        if not detalle or not detalle["datos"] or "as7265x" not in detalle["datos"]:
+            return None
+        salida = io.StringIO(newline="")
+        writer = csv.writer(salida)
+        writer.writerow(["cycle", "mode", "wavelength_nm_nominal", "channel",
+                         "dark_raw", "blue_raw", "dark_factory_calibrated_simulated",
+                         "blue_factory_calibrated_simulated"])
+        for canal in detalle["datos"]["as7265x"]["canales"]:
+            writer.writerow([id_ciclo, detalle["modo"], canal["nm_nominal"], canal["canal"],
+                             canal["oscuro_crudo"], canal["azul_crudo"],
+                             canal["oscuro_calibrado_fabricante_simulado"],
+                             canal["azul_calibrado_fabricante_simulado"]])
+        return salida.getvalue()
+
 
 class Monitor:
     def __init__(self, almacen):
         self.almacen = almacen
         self.config = almacen.config
+        self.optica = almacen.optica
         self.condicion = threading.Condition()
         self.fin = threading.Event()
         self.siguiente = time.monotonic()
@@ -155,6 +231,12 @@ class Monitor:
             self.condicion.notify()
             return True
 
+    def configurar_optica(self, config):
+        validar_optica(config)
+        with self.condicion:
+            self.almacen.guardar_optica(config)
+            self.optica = config
+
     def estado(self):
         with self.condicion:
             ciclos = self.almacen.recientes()
@@ -167,7 +249,7 @@ class Monitor:
                 "pendiente": self.pendiente, "error": self.error, "reloj": "sistema_no_verificado",
                 "en_s": (max(0, math.ceil(self.siguiente - time.monotonic()))
                          if self.config["automatico"] and not self.error else None),
-                "ciclos": ciclos, "optica": optica,
+                "ciclos": ciclos, "optica": optica, "ajustes_opticos": self.optica,
             }
 
     def parar(self, *_):
@@ -188,14 +270,15 @@ class Monitor:
                 self.pendiente = False
                 self.midiendo = True
                 config = self.config
+                optica = self.optica
                 vencimiento = time.monotonic() + config["intervalo_s"]
                 self.siguiente = vencimiento
             try:
-                self.almacen.ciclo(config)
+                self.almacen.ciclo(config, optica)
             except (sqlite3.Error, OSError, ValueError) as exc:
                 with self.condicion:
                     self.midiendo = False
-                    self.error = f"Adquisición detenida: {exc}"
+                    self.error = f"Acquisition stopped: {exc}"
                 return
             with self.condicion:
                 self.midiendo = False
@@ -230,7 +313,7 @@ class Panel(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if not self.host_local():
-            self.enviar(403, {"error": "Usa el panel local de Cruz."})
+            self.enviar(403, {"error": "Use the local Cruz dashboard."})
             return
         ruta = urlsplit(self.path).path
         almacen = self.server.monitor.almacen
@@ -240,37 +323,46 @@ class Panel(BaseHTTPRequestHandler):
             self.enviar(200, self.server.monitor.estado())
         elif ruta == "/exportar.csv":
             self.enviar(200, almacen.csv(), "text/csv; charset=utf-8")
+        elif ruta.startswith("/espectro/") and (num := ruta.rsplit("/", 1)[1]).isascii() and num.isdigit() and len(num) <= 18:
+            espectro = almacen.espectro_csv(int(num))
+            if espectro is None:
+                self.enviar(404, {"error": "Spectrum not available for this cycle."})
+            else:
+                self.enviar(200, espectro, "text/csv; charset=utf-8")
         elif ruta.startswith("/api/ciclos/") and (num := ruta.rsplit("/", 1)[1]).isascii() and num.isdigit() and len(num) <= 18:
             detalle = almacen.detalle(int(num))
-            self.enviar(200 if detalle else 404, detalle or {"error": "Ciclo inexistente."})
+            self.enviar(200 if detalle else 404, detalle or {"error": "Measurement not found."})
         else:
-            self.enviar(404, {"error": "Ruta inexistente."})
+            self.enviar(404, {"error": "Page not found."})
 
     def do_POST(self):
         origen = self.headers.get("Origin")
         if not self.host_local() or (origen and origen != "http://" + self.headers["Host"]):
-            self.enviar(403, {"error": "Solo se aceptan cambios desde el panel local."})
+            self.enviar(403, {"error": "Changes are only accepted from the local dashboard."})
             return
         monitor = self.server.monitor
         try:
             longitud = int(self.headers.get("Content-Length", "0"))
             if self.headers.get_content_type() != "application/json" or not 0 < longitud <= 4096:
-                raise ValueError("La solicitud debe contener un JSON breve.")
+                raise ValueError("The request must contain a small JSON object.")
             cuerpo = json.loads(self.rfile.read(longitud))
             if self.path == "/api/config":
                 monitor.configurar(cuerpo)
+                self.enviar(200, {"ok": True})
+            elif self.path == "/api/optica":
+                monitor.configurar_optica(cuerpo)
                 self.enviar(200, {"ok": True})
             elif self.path == "/api/medir" and cuerpo == {}:
                 if monitor.pedir():
                     self.enviar(202, {"ok": True})
                 else:
-                    self.enviar(409, {"error": "Hay una lectura en curso o la adquisición está detenida."})
+                    self.enviar(409, {"error": "A measurement is in progress or acquisition has stopped."})
             else:
-                self.enviar(404, {"error": "Operación inexistente."})
+                self.enviar(404, {"error": "Operation not found."})
         except ValueError as exc:
             self.enviar(400, {"error": str(exc)})
         except sqlite3.Error:
-            self.enviar(503, {"error": "No se pudo guardar la configuración."})
+            self.enviar(503, {"error": "Could not save the settings."})
 
     def log_message(self, *_):
         pass
