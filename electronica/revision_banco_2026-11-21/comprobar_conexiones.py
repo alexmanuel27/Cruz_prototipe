@@ -23,6 +23,16 @@ def main():
         for net in root.findall("nets/net") for node in net.findall("node")
     }
     components = {part.get("ref"): part for part in root.findall("components/comp")}
+    # Los puentes soldados conectan sus terminales sin crear una segunda cara de cobre.
+    bridges = {}
+    for ref, part in components.items():
+        if not part.find("libsource").get("part", "").startswith("WireBridge_"):
+            continue
+        terminals = {name for (node_ref, _), name in nets.items() if node_ref == ref}
+        logical = {name.split("__WIRE_", 1)[0] for name in terminals}
+        assert len(terminals) >= 2 and len(logical) == 1, (ref, terminals)
+        bridges.update({name: next(iter(logical)) for name in terminals})
+    nets = {pin: bridges.get(name, name) for pin, name in nets.items()}
     expected = {
         ("J1", "15"): "HAL_EN", ("J1", "16"): "BLUE_EN",
         ("J1", "36"): "ORANGE_EN", ("J1", "38"): "IR_EN",
@@ -83,7 +93,10 @@ def main():
     assert components["U15"].findtext("footprint") == "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
     assert all("TerminalBlock_Phoenix" in components[ref].findtext("footprint")
                for ref in ("U5", "U6", "J23"))
-    assert components["J1"].findtext("footprint") == "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical"
+    assert components["J1"].findtext("footprint") in (
+        "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical",
+        "Cross:CNC_Connector_IDC_IDC-Header_2x20_P2_54mm_Vertical",
+    )
     assert all(nets["J1", pin].startswith("unconnected-") for pin in ("2", "4"))
     print("OK: señales, cuatro canales activos altos, resistencias, rama de sensores y separación EC.")
 
