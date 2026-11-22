@@ -1,5 +1,7 @@
 # PCB V8 · cierre de colocación y trazado
 
+**Histórico: el 22/11 Alex pidió retirar todo el trazado y los puentes. La PCB vigente está [sin rutear y con el esquema reorganizado](LEEME_PRIMERO.md).** Sus informes y hashes describen el estado anterior.
+
 21 de noviembre de 2026 · Codex GPT-6. Diseño de prototipo pendiente de liberación eléctrica y mecánica. No equivale a ensayo físico ni a autorización de fabricación.
 
 ## Resultado guardado

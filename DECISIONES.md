@@ -186,3 +186,22 @@ Alex confirma que comprará otra conversión batería→5 V para Pi y que los do
 Selección de ingeniería para completar el diseño: U4 R-78HE5.0-0.3 permanente de 300 mA, U13 R05CT05S aislado a 3,3 V y U15 ISO1540D; son piezas adicionales por adquirir, sin compra ni prueba física registrada. Colocación y trazado de 122 huellas dentro de 170 × 68 mm; DRC sin errores/avisos y sin conexiones pendientes, paridad 0; ERC 0 errores/0 avisos tras sincronizar bibliotecas con comprobación de pines idénticos. Algunos pasivos se montan por debajo. Cambios y fuentes en [CIERRE_PCB_2026-11-21.md](electronica/cross_v8_raspberry/CIERRE_PCB_2026-11-21.md).
 
 No se liberan fabricación ni alimentación: fusibles/protección de transitorios, corriente del motor, encendido/apagado autónomo, detector de fuga/watchdog, térmica, cable USB-C y encaje real siguen pendientes. La tabla BCM/pines previa se conserva y la comprobación de redes se amplía al aislamiento real y las bornas externas. Sin cambios en software de banco ni mecánica; ensayos integrados por realizar.
+
+
+## D58 — Cobre en una cara y tamaño para Bantam antigua (2026-11-22)
+
+Alex exige pistas en una sola cara y permite pasantes/SMD en ambas caras. Aclara que la máquina es una Bantam antigua y corrige la herramienta mínima de 3 mm a **0,3 mm**. Se sustituye el PCB de 170 × 68 mm/dos caras por **132 × 102 mm/cobre inferior**, sin vías: 120 componentes montados, dos DNP y 87 tramos de cable aislado representados en 57 conjuntos W. No se declara mínimo de puentes ni montaje físico validado. La envolvente publicada de la Desktop PCB es 140 × 114 mm; modelo exacto, material y sujeción por confirmar. No se modifica la bandeja ni se inventan fijaciones.
+
+Huella de U11 cambiada a SN74CBTLV3125D SOIC con Ioff y señales de 3,3 V, tres TO-92 con patas separadas y pads CNC locales con anillo mínimo de 0,2 mm. ERC/DRC sin errores/avisos, paridad 0; preservados los 409 pines mediante equivalencia de puentes. Gerber de una sola cara ya orientado con cobre arriba, contorno y 251 taladros circulares, sin G85; G-code y ejecución CAM no realizados. Alimentaciones de la guía de cableado en estrella, con puntos pasantes robustos cuando están disponibles.
+
+[Guía y archivos](electronica/cross_v8_raspberry/MONOCARA_BANTAM_2026-11-22.md). La revisión del 21/11 queda histórica. Permanecen pendientes de liberación fusibles/protecciones, ajuste del motor, encendido/apagado, fuga/watchdog, térmica y encaje. Los dos DC/DC principales siguen externos e independientes. Sin commit/push.
+
+
+## D59 · Retirada del trazado y los puentes (22/11/2026)
+
+Alex rechaza el resultado con puentes y pide eliminar todas las pistas/vías, retirar los puentes añadidos al esquema y reorganizarlo siguiendo sus bloques numerados. Se retiran pistas y zonas, W1–W57 y las redes `__WIRE_`; se restauran las conexiones directas originales. PCB conservado sin rutear, con 122 posiciones y 301 conexiones pendientes. El requisito de una sola cara de pistas sigue vigente para un trabajo posterior. D58 describe una revisión descartada, no el estado actual. Informes en `electronica/reorganizacion_2026-11-22/`.
+
+
+## D60 · Conexiones internas dibujadas en el esquema (22/11/2026)
+
+Alex pide líneas de conexión entre componentes del mismo bloque y etiquetas únicamente para conexiones a otro bloque. Se aplica a los once bloques: 377 etiquetas se reducen a 105, una por red y bloque que comparte esa red con otro bloque. Las 409 conexiones de pines son idénticas; 39 redes internas sin etiqueta reciben nombres automáticos de KiCad, sincronizados en la PCB. ERC y paridad sin incidencias. La PCB permanece sin trazado.

@@ -2,6 +2,7 @@
 
 from pathlib import Path
 import shutil
+import re
 import subprocess
 import tempfile
 import xml.etree.ElementTree as ET
@@ -23,16 +24,26 @@ def main():
         for net in root.findall("nets/net") for node in net.findall("node")
     }
     components = {part.get("ref"): part for part in root.findall("components/comp")}
-    # Los puentes soldados conectan sus terminales sin crear una segunda cara de cobre.
-    bridges = {}
-    for ref, part in components.items():
-        if not part.find("libsource").get("part", "").startswith("WireBridge_"):
-            continue
-        terminals = {name for (node_ref, _), name in nets.items() if node_ref == ref}
-        logical = {name.split("__WIRE_", 1)[0] for name in terminals}
-        assert len(terminals) >= 2 and len(logical) == 1, (ref, terminals)
-        bridges.update({name: next(iter(logical)) for name in terminals})
-    nets = {pin: bridges.get(name, name) for pin, name in nets.items()}
+    assert not any(re.fullmatch(r"W\d+", ref) for ref in components)
+    assert not any("__WIRE_" in name for name in nets.values())
+    original = ET.parse(project.parent / "cierre_pcb_2026-11-21/redes.xml").getroot()
+    original_nets = {
+        (node.get("ref"), node.get("pin")): net.get("name")
+        for net in original.findall("nets/net") for node in net.findall("node")
+    }
+    # Al quitar etiquetas internas, KiCad asigna nombres automáticos a esas redes.
+    # La identidad eléctrica se comprueba mediante el conjunto completo de pines.
+    current_groups = {}
+    original_groups = {}
+    for pin, name in nets.items():
+        current_groups.setdefault(name, set()).add(pin)
+    for pin, name in original_nets.items():
+        original_groups.setdefault(name, set()).add(pin)
+    original_names = {frozenset(pins): name for name, pins in original_groups.items()}
+    assert {frozenset(pins) for pins in current_groups.values()} == set(original_names), \
+        "Cambió la conectividad original del esquema"
+    aliases = {name: original_names[frozenset(pins)] for name, pins in current_groups.items()}
+    nets = {pin: aliases[name] for pin, name in nets.items()}
     expected = {
         ("J1", "15"): "HAL_EN", ("J1", "16"): "BLUE_EN",
         ("J1", "36"): "ORANGE_EN", ("J1", "38"): "IR_EN",
@@ -98,7 +109,12 @@ def main():
         "Cross:CNC_Connector_IDC_IDC-Header_2x20_P2_54mm_Vertical",
     )
     assert all(nets["J1", pin].startswith("unconnected-") for pin in ("2", "4"))
-    print("OK: señales, cuatro canales activos altos, resistencias, rama de sensores y separación EC.")
+    board = (project / "cross_v8_draft.kicad_pcb").read_text()
+    assert not re.search(r'^\t\((segment|via|arc|zone)\b', board, re.MULTILINE)
+    assert not re.search(r'"Reference" "W\d+"', board)
+    assert "__WIRE_" not in board
+    assert components["U11"].findtext("value") == "SN74CBTLV3125D"
+    print("OK: 409 conexiones originales, sin puentes W y PCB sin pistas/vías/zonas.")
 
 
 if __name__ == "__main__":

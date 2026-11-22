@@ -183,7 +183,7 @@
 		)
 		(embedded_fonts no)
 	)
-(symbol "SN74CB3Q3125PW"
+(symbol "SN74CBTLV3125D"
 		(pin_names
 			(offset 1.016)
 		)
@@ -199,7 +199,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "SN74CB3Q3125PW"
+		(property "Value" "SN74CBTLV3125D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -208,7 +208,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -217,7 +217,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74cb3q3125.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74cbtlv3125.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -235,7 +235,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SN74CB3Q3125PW_0_1"
+		(symbol "SN74CBTLV3125D_0_1"
 			(rectangle
 				(start -15.24 17.78)
 				(end 15.24 -17.78)
@@ -248,7 +248,7 @@
 				)
 			)
 		)
-		(symbol "SN74CB3Q3125PW_1_1"
+		(symbol "SN74CBTLV3125D_1_1"
 			(pin input line
 				(at -17.78 15.24 0)
 				(length 2.54)

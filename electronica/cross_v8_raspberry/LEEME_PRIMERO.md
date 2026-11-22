@@ -1,25 +1,15 @@
-# PCB V8 · revisión vigente
+# PCB V8 · esquema reorganizado y placa sin trazado
 
-La V8 tiene **colocación y trazado completos** dentro de 170 × 68 mm: 122 huellas, dos capas, planos de masa separados para conductividad y ambos DC/DC principales **externos y cableados**, según confirma Alex. Batería→5 V para Pi y batería→12 V para óptica en paralelo. No alimentar la Pi a 12 V.
+**Estado vigente: 22/11/2026.** Por indicación de Alex se ha retirado todo el trazado y descartado la revisión con puentes de cable.
 
-**Estado: prototipo pendiente de liberación eléctrica y mecánica; no fabricar ni energizar el conjunto todavía.** Faltan cerrar protecciones/fusibles, corriente por fase, encendido/apagado autónomo, térmica y encaje con piezas reales. El trazado completo no resuelve estos puntos.
+- [Proyecto KiCad](cross_v8_draft.kicad_pro) · [esquema](cross_v8_draft.kicad_sch) · [PCB](cross_v8_draft.kicad_pcb).
+- 122 posiciones originales, incluidas dos DNP. Sin W1–W57 ni redes auxiliares `__WIRE_`.
+- PCB: **0 pistas, 0 vías y 0 zonas de cobre**. Contorno de 132 × 102 mm y componentes conservados. **301 conexiones pendientes de trazar.**
+- Esquema: bloques funcionales numerados con la disposición de Alex, ampliada para potencia óptica y alimentación/aislamiento de sensores. **Conexiones internas mediante líneas; una etiqueta por red y bloque únicamente para las conexiones entre bloques.** U7 está en conversión de alimentación; EC-OEM y su conector de sonda están con el aislamiento EC.
+- Comprobación: ERC sin incidencias; DRC sin infracciones geométricas y sin diferencias esquema–PCB. Las 409 conexiones de pines originales se conservan.
+- [Informes y vista del esquema](../reorganizacion_2026-11-22/).
+- [Contrato GPIO y resultados de banco](REVISION_BANCO_2026-11-21.md#tabla-vigente-para-software).
 
-- [Abrir proyecto KiCad](cross_v8_draft.kicad_pro), [esquema](cross_v8_draft.kicad_sch), [PCB trazado](cross_v8_draft.kicad_pcb).
-- [Revisión de cierre, alimentación, montaje, vistas y pendientes](CIERRE_PCB_2026-11-21.md).
-- [Contrato de GPIO y resultados de banco conservados](REVISION_BANCO_2026-11-21.md#tabla-vigente-para-software).
-- [Informes ERC/DRC, BOM, conexiones, posiciones y STEP](../cierre_pcb_2026-11-21/).
-- [Bibliotecas locales](Cross.pretty/) y [archivo histórico](../../archivo/electronica/cross_v8_raspberry/).
+Los dos DC/DC principales siguen externos y cableados; la Pi recibe 5 V por su alimentación USB-C. J1.2/J1.4 quedan sin conectar. Se conservan U11 SN74CBTLV3125D y las huellas de componentes de la revisión anterior.
 
-| Comprobación · KiCad 9.0.7 · 21/11/2026 | Resultado |
-| --- | --- |
-| DRC | 0 errores y 0 avisos |
-| Conexiones por rutear | 0 |
-| Paridad esquema–PCB | 0 diferencias |
-| ERC | 0 errores y 0 avisos |
-| Comprobación del contrato de redes | Correcta |
-
-El aislamiento antes virtual es ahora U13 **RECOM R05CT05S** + U15 **ISO1540D**; ambos deben adquirirse y cotejarse físicamente. U4 pasa a un pequeño **R-78HE5.0-0.3** permanente en placa, otra pieza adicional. U5/U6 son bornas para los dos convertidores principales fuera de placa. La BOM no acredita disponibilidad.
-
-Pi 5, halógena 12 V/10 W, azul/naranja con LM317 y red de 10,4 Ω; IR con 220 Ω/1 W. Cuatro órdenes activas altas más OPT_ARM BCM21/pin 40. J1 es IDC40 de señales con pines 2/4 sin conectar; alimentación Pi por J23/cable USB-C. Parte de los pasivos se monta en la cara inferior: comprobar espacio en bandeja. No hay fijaciones nuevas definidas.
-
-Alex transcribe pack 24 V/3 Ah, entrada 25,2 V y salida 22–25 V (5–8 A); cargador 25,2 V/2 A; motor Kamoer 24 V/20 W. Máximo medido, comportamiento del BMS, transitorios y corriente nominal por fase siguen pendientes. F1/F2 no tienen calibre liberado. HOLD_PI alto solicita corte; CD4013 carece de estado inicial garantizado y SET mantenido puede impedir apagar. No hay detector de fuga ni watchdog externo integrado.
+La revisión de fabricación con 87 cables y su ZIP CNC están descartados y respaldados fuera del proyecto activo. **Esta PCB está sin rutear y no está lista para fabricar.** Se mantiene como requisito futuro una sola cara de pistas para la Bantam, con fresa prevista de 0,3 mm; dimensiones útiles y sujeción reales por confirmar. Continúan pendientes las protecciones, corriente del motor, arranque/apagado y térmica.

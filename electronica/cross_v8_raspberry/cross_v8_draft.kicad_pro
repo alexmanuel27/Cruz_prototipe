@@ -117,8 +117,8 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.2,
-        "min_connection": 0.0,
+        "min_clearance": 0.35,
+        "min_connection": 0.3,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
@@ -129,9 +129,9 @@
         "min_silk_clearance": 0.15,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
-        "min_via_annular_width": 0.1,
+        "min_through_hole_diameter": 0.5,
+        "min_track_width": 0.3,
+        "min_via_annular_width": 0.2,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -458,7 +458,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.35,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -469,50 +469,50 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.7,
-        "via_drill": 0.35,
+        "track_width": 0.35,
+        "via_diameter": 1.6,
+        "via_drill": 0.8,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.35,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Power24",
+        "name": "AuxPower",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.5,
-        "via_diameter": 1.3,
-        "via_drill": 0.7,
+        "track_width": 0.35,
+        "via_diameter": 1.6,
+        "via_drill": 0.8,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.35,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Power12",
+        "name": "Ground",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.2,
-        "via_diameter": 1.0,
-        "via_drill": 0.5,
+        "track_width": 1.0,
+        "via_diameter": 1.6,
+        "via_drill": 0.8,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.35,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -524,26 +524,44 @@
         "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.8,
-        "via_diameter": 1.0,
-        "via_drill": 0.5,
+        "via_diameter": 1.6,
+        "via_drill": 0.8,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.35,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "AuxPower",
+        "name": "Power12",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "via_diameter": 0.7,
-        "via_drill": 0.35,
+        "track_width": 1.5,
+        "via_diameter": 1.6,
+        "via_drill": 0.8,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.35,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power24",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 2.0,
+        "via_diameter": 1.6,
+        "via_drill": 0.8,
         "wire_width": 6
       }
     ],
@@ -559,7 +577,15 @@
       },
       {
         "netclass": "Power24",
+        "pattern": "/VBAT_RAW__WIRE_*"
+      },
+      {
+        "netclass": "Power24",
         "pattern": "/VBAT_FUSED"
+      },
+      {
+        "netclass": "Power24",
+        "pattern": "/VBAT_FUSED__WIRE_*"
       },
       {
         "netclass": "Power24",
@@ -567,7 +593,15 @@
       },
       {
         "netclass": "Power24",
+        "pattern": "/VBAT_SW__WIRE_*"
+      },
+      {
+        "netclass": "Power24",
         "pattern": "/CHG_PLUS"
+      },
+      {
+        "netclass": "Power24",
+        "pattern": "/CHG_PLUS__WIRE_*"
       },
       {
         "netclass": "Power24",
@@ -575,7 +609,15 @@
       },
       {
         "netclass": "Power24",
+        "pattern": "/CHG_MINUS__WIRE_*"
+      },
+      {
+        "netclass": "Power24",
         "pattern": "/CHG_FUSED"
+      },
+      {
+        "netclass": "Power24",
+        "pattern": "/CHG_FUSED__WIRE_*"
       },
       {
         "netclass": "Power12",
@@ -583,7 +625,15 @@
       },
       {
         "netclass": "Power12",
+        "pattern": "/12V_OPT__WIRE_*"
+      },
+      {
+        "netclass": "Power12",
         "pattern": "/HAL_LOW"
+      },
+      {
+        "netclass": "Power12",
+        "pattern": "/HAL_LOW__WIRE_*"
       },
       {
         "netclass": "Motor",
@@ -591,7 +641,15 @@
       },
       {
         "netclass": "Motor",
+        "pattern": "/M1A__WIRE_*"
+      },
+      {
+        "netclass": "Motor",
         "pattern": "/M1B"
+      },
+      {
+        "netclass": "Motor",
+        "pattern": "/M1B__WIRE_*"
       },
       {
         "netclass": "Motor",
@@ -599,7 +657,15 @@
       },
       {
         "netclass": "Motor",
+        "pattern": "/M2A__WIRE_*"
+      },
+      {
+        "netclass": "Motor",
         "pattern": "/M2B"
+      },
+      {
+        "netclass": "Motor",
+        "pattern": "/M2B__WIRE_*"
       },
       {
         "netclass": "AuxPower",
@@ -607,7 +673,15 @@
       },
       {
         "netclass": "AuxPower",
+        "pattern": "/5V_PI__WIRE_*"
+      },
+      {
+        "netclass": "AuxPower",
         "pattern": "/5V_AON"
+      },
+      {
+        "netclass": "AuxPower",
+        "pattern": "/5V_AON__WIRE_*"
       },
       {
         "netclass": "AuxPower",
@@ -615,7 +689,15 @@
       },
       {
         "netclass": "AuxPower",
+        "pattern": "/3V3_SENS__WIRE_*"
+      },
+      {
+        "netclass": "AuxPower",
         "pattern": "/3V3_EC_ISO"
+      },
+      {
+        "netclass": "AuxPower",
+        "pattern": "/3V3_EC_ISO__WIRE_*"
       },
       {
         "netclass": "AuxPower",
@@ -623,15 +705,31 @@
       },
       {
         "netclass": "AuxPower",
+        "pattern": "/3V3_PI__WIRE_*"
+      },
+      {
+        "netclass": "AuxPower",
         "pattern": "/3V3_AON"
       },
       {
         "netclass": "AuxPower",
+        "pattern": "/3V3_AON__WIRE_*"
+      },
+      {
+        "netclass": "Ground",
         "pattern": "/GND"
       },
       {
-        "netclass": "AuxPower",
+        "netclass": "Ground",
+        "pattern": "/GND__WIRE_*"
+      },
+      {
+        "netclass": "Ground",
         "pattern": "/GND_EC_ISO"
+      },
+      {
+        "netclass": "Ground",
+        "pattern": "/GND_EC_ISO__WIRE_*"
       }
     ]
   },
